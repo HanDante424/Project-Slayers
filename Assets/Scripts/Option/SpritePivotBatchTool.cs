@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.U2D.Sprites;
@@ -163,3 +164,4 @@ public class SpritePivotBatchTool : EditorWindow
         );
     }
 }
+#endif

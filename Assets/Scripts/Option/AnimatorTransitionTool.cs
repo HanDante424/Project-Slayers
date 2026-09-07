@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Animations;
@@ -126,3 +127,4 @@ public static class AnimatorTransitionTool
         return changedCount;
     }
 }
+#endif
