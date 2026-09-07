@@ -45,13 +45,16 @@ MonoBehaviour:
     growthPerLevel: 1.47
   accuracy:
     level1Value: 100
-    growthPerLevel: 4.59
+    growthPerLevel: 0.84
   evasion:
     level1Value: 1
     growthPerLevel: 0.37
   recovery:
     level1Value: 160
     growthPerLevel: 4.59
+  cooldownReduction:
+    level1Value: 0
+    growthPerLevel: 0
   awakening:
     level1Value: 0
     growthPerLevel: 0
@@ -70,6 +73,7 @@ MonoBehaviour:
   resistancePenetration:
     level1Value: 1
     growthPerLevel: 0.14
+  staggerGaugeHealthPercent: 40
   fireEnhancement:
     level1Value: 0
     growthPerLevel: 0
