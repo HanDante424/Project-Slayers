@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b55b5b80f0ff34380614bb4ccdf6c8, type: 3}
+  m_Name: MayhemStats
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsData
+  characterName: "\uBA54\uC774\uD5F4"
+  health:
+    level1Value: 443
+    growthPerLevel: 110.78
+  mana:
+    level1Value: 81
+    growthPerLevel: 12.45
+  attack:
+    level1Value: 9
+    growthPerLevel: 8.43
+  magic:
+    level1Value: 2
+    growthPerLevel: 1.86
+  defense:
+    level1Value: 3
+    growthPerLevel: 0.43
+  resistance:
+    level1Value: 2.8
+    growthPerLevel: 0.47
+  attackSpeed:
+    level1Value: 55
+    growthPerLevel: 2.55
+  moveSpeed:
+    level1Value: 72
+    growthPerLevel: 3.67
+  statusResistance:
+    level1Value: 4
+    growthPerLevel: 0.37
+  luck:
+    level1Value: 17
+    growthPerLevel: 1.47
+  accuracy:
+    level1Value: 100
+    growthPerLevel: 4.59
+  evasion:
+    level1Value: 1
+    growthPerLevel: 0.37
+  recovery:
+    level1Value: 160
+    growthPerLevel: 4.59
+  awakening:
+    level1Value: 0
+    growthPerLevel: 0
+  stagger:
+    level1Value: 100
+    growthPerLevel: 1.63
+  criticalChance:
+    level1Value: 4
+    growthPerLevel: 0.55
+  criticalDamage:
+    level1Value: 200
+    growthPerLevel: 2.49
+  defensePenetration:
+    level1Value: 4
+    growthPerLevel: 0.49
+  resistancePenetration:
+    level1Value: 1
+    growthPerLevel: 0.14
+  fireEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  waterEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  earthEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  windEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  lightningEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  iceEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  lightEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  darkEnhancement:
+    level1Value: 0
+    growthPerLevel: 0
+  fireResistance:
+    level1Value: 8
+    growthPerLevel: 0.31
+  waterResistance:
+    level1Value: 11
+    growthPerLevel: 0.41
+  earthResistance:
+    level1Value: 6
+    growthPerLevel: 0.31
+  windResistance:
+    level1Value: 17
+    growthPerLevel: 0.61
+  lightningResistance:
+    level1Value: 11
+    growthPerLevel: 0.41
+  iceResistance:
+    level1Value: 3
+    growthPerLevel: 0.1
+  lightResistance:
+    level1Value: 5
+    growthPerLevel: 0.1
+  darkResistance:
+    level1Value: 29
+    growthPerLevel: 0.82

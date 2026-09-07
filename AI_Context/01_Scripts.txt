@@ -1,0 +1,4038 @@
+==================================================
+SLAYERS - UNITY PROJECT SNAPSHOT
+==================================================
+
+Snapshot ID   : 20260907-133537
+Generated At  : 2026-09-07 13:35:37
+Unity Version : 6000.3.22f1
+Project Name  : Project Slayers
+Part          : 01_Scripts
+
+==================================================
+FILES
+==================================================
+
+Files Included: 28
+
+
+--------------------------------------------------
+FILE: Assets/Input/PlayerControl.inputactions
+--------------------------------------------------
+Size: 4.72 KB
+Last Modified: 2026-08-26 13:53:51
+
+{
+    "version": 1,
+    "name": "PlayerControl",
+    "maps": [
+        {
+            "name": "player",
+            "id": "2338b8a4-d1a8-409c-bfa8-e3c45a60859d",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "99c3bce1-23db-4894-be73-048de31765e5",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "b8081446-fc7b-464f-b199-48372ce158f5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "TestSkill",
+                    "type": "Button",
+                    "id": "89a222d7-c5b6-4a52-8bbf-2ed15be25db9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "37bc9b74-4450-4fe8-8851-66c1326e89bc",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "ae8bba62-64cc-4374-b1ef-407af110f5d4",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "d7fb1507-78e0-45a0-97c9-fbda2d3d60f5",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2f235ba8-360d-4f95-be3c-25e2f0b95643",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d66b99f4-5144-44b2-b8e0-e54aa9fb53f7",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b91e9520-92b3-4fb6-bf3e-d6535d803c56",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "95a3ca6a-9196-427b-9b6a-1464c60b59e2",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3805536-1eef-42b8-bc97-ef6fffc10a4c",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TestSkill",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Battle/TestBattleManager.cs
+--------------------------------------------------
+Size: 1.41 KB
+Last Modified: 2026-08-26 14:12:51
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class TestBattleManager : MonoBehaviour
+{
+    [Header("Clear Condition")]
+    [SerializeField] private int requiredSkillUses = 3;
+
+    [Header("Reward")]
+    [SerializeField] private int clearReward = 100;
+
+    [Header("Scene")]
+    [SerializeField] private string townSceneName = "Town";
+
+    private int currentSkillUses = 0;
+    private bool isCleared = false;
+
+
+    public void RegisterTestSkillUse()
+    {
+        if (isCleared)
+            return;
+
+        currentSkillUses++;
+
+        Debug.Log(
+            $"[Battle] TestSkill 사용 {currentSkillUses} / {requiredSkillUses}"
+        );
+
+        if (currentSkillUses >= requiredSkillUses)
+        {
+            ClearBattle();
+        }
+    }
+
+
+    private void ClearBattle()
+    {
+        if (isCleared)
+            return;
+
+        isCleared = true;
+
+        if (GameSession.Instance == null)
+        {
+            Debug.LogError("[Battle] GameSession이 없습니다.");
+            return;
+        }
+
+        GameSession.Instance.Data.testCurrency += clearReward;
+        GameSession.Instance.Data.stage1Cleared = true;
+
+        Debug.Log(
+            $"[Battle] 클리어 / 보상 +{clearReward}"
+        );
+
+        GameSession.Instance.SaveGame();
+
+        Debug.Log("[Battle] 자동 저장 완료");
+
+        SceneManager.LoadScene(townSceneName);
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Battle/TestSkillController.cs
+--------------------------------------------------
+Size: 723 B
+Last Modified: 2026-08-26 14:13:54
+
+using UnityEngine;
+
+public class TestSkillController : MonoBehaviour
+{
+    [SerializeField] private PlayerInputReader inputReader;
+    [SerializeField] private TestBattleManager battleManager;
+
+
+    private void Update()
+    {
+        if (!inputReader.ConsumeTestSkill())
+            return;
+
+        if (GameSession.Instance == null)
+            return;
+
+        if (!GameSession.Instance.Data.testSkillUnlocked)
+        {
+            Debug.Log("[TestSkill] 스킬이 해금되지 않았습니다.");
+            return;
+        }
+
+        Debug.Log("[TestSkill] 사용 성공");
+
+        if (battleManager != null)
+        {
+            battleManager.RegisterTestSkillUse();
+        }
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Enemy/Goblin/GoblinAnimationController.cs
+--------------------------------------------------
+Size: 1.07 KB
+Last Modified: 2026-08-26 07:29:04
+
+using UnityEngine;
+
+public class GoblinAnimationController : MonoBehaviour
+{
+    [Header("References")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private Rigidbody2D rb;
+
+    [Header("Settings")]
+    [SerializeField] private float moveThreshold = 0.01f;
+
+    private static readonly int IsMovingHash =
+        Animator.StringToHash("IsMoving");
+
+    private static readonly int AttackHash =
+        Animator.StringToHash("Attack");
+
+    private static readonly int HitHash =
+        Animator.StringToHash("Hit");
+
+    private void Update()
+    {
+        UpdateMovementAnimation();
+    }
+
+    private void UpdateMovementAnimation()
+    {
+        bool isMoving =
+            Mathf.Abs(rb.linearVelocity.x) > moveThreshold;
+
+        animator.SetBool(
+            IsMovingHash,
+            isMoving
+        );
+    }
+
+    public void PlayAttack()
+    {
+        animator.SetTrigger(
+            AttackHash
+        );
+    }
+
+    public void PlayHit()
+    {
+        animator.SetTrigger(
+            HitHash
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Enemy/Goblin/GoblinEnemy.cs
+--------------------------------------------------
+Size: 3.05 KB
+Last Modified: 2026-08-26 07:29:04
+
+using System;
+using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D))]
+public class GoblinEnemy : MonoBehaviour
+{
+    [Header("References")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [Header("Detection")]
+    [SerializeField] private float detectionRange = 7f;
+
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private float stopDistance = 0.8f;
+
+    private Rigidbody2D rb;
+    private Transform target;
+
+    private Action<GoblinEnemy> releaseAction;
+
+    private bool targetDetected;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        CheckTarget();
+        UpdateDirection();
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    public void Initialize(
+        Transform newTarget,
+        Action<GoblinEnemy> newReleaseAction)
+    {
+        target = newTarget;
+        releaseAction = newReleaseAction;
+
+        targetDetected = false;
+
+        rb.linearVelocity = Vector2.zero;
+    }
+
+    private void CheckTarget()
+    {
+        if (target == null)
+        {
+            targetDetected = false;
+            return;
+        }
+
+        float distance = Vector2.Distance(
+            transform.position,
+            target.position
+        );
+
+        targetDetected = distance <= detectionRange;
+    }
+
+    private void Move()
+    {
+        if (!targetDetected || target == null)
+        {
+            StopHorizontalMovement();
+            return;
+        }
+
+        float horizontalDistance =
+            target.position.x - transform.position.x;
+
+        if (Mathf.Abs(horizontalDistance) <= stopDistance)
+        {
+            StopHorizontalMovement();
+            return;
+        }
+
+        float direction = Mathf.Sign(horizontalDistance);
+
+        rb.linearVelocity = new Vector2(
+            direction * moveSpeed,
+            rb.linearVelocity.y
+        );
+    }
+
+    private void StopHorizontalMovement()
+    {
+        rb.linearVelocity = new Vector2(
+            0f,
+            rb.linearVelocity.y
+        );
+    }
+
+    private void UpdateDirection()
+    {
+        if (!targetDetected || target == null)
+            return;
+
+        float horizontalDistance =
+            target.position.x - transform.position.x;
+
+        if (horizontalDistance > 0.01f)
+        {
+            FaceRight();
+        }
+        else if (horizontalDistance < -0.01f)
+        {
+            FaceLeft();
+        }
+    }
+
+    private void FaceRight()
+    {
+        if (spriteRenderer == null)
+            return;
+
+        spriteRenderer.flipX = false;
+    }
+
+    private void FaceLeft()
+    {
+        if (spriteRenderer == null)
+            return;
+
+        spriteRenderer.flipX = true;
+    }
+
+    public void Despawn()
+    {
+        releaseAction?.Invoke(this);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(
+            transform.position,
+            detectionRange
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/MainMenu/MainMenuController.cs
+--------------------------------------------------
+Size: 1.42 KB
+Last Modified: 2026-08-31 14:50:31
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MainMenuController : MonoBehaviour
+{
+    [SerializeField] private string townSceneName = "Town";
+
+    [Header("Option UI")]
+    [SerializeField] private RectTransform optionWindow;
+
+    private void Start()
+    {
+        if (optionWindow != null)
+            optionWindow.localScale = Vector3.zero;
+    }
+
+    public void NewGame()
+    {
+        if (GameSession.Instance == null)
+        {
+            Debug.LogError("[MainMenu] GameSession이 없습니다.");
+            return;
+        }
+
+        GameSession.Instance.NewGame();
+        SceneManager.LoadScene(townSceneName);
+    }
+
+    public void LoadGame()
+    {
+        if (GameSession.Instance == null)
+        {
+            Debug.LogError("[MainMenu] GameSession이 없습니다.");
+            return;
+        }
+
+        bool success = GameSession.Instance.LoadGame();
+
+        if (!success)
+        {
+            Debug.Log("[MainMenu] 세이브 파일이 없어 Load할 수 없습니다.");
+            return;
+        }
+
+        SceneManager.LoadScene(townSceneName);
+    }
+
+    public void OpenOption()
+    {
+        if (optionWindow == null)
+            return;
+
+        optionWindow.localScale = Vector3.one;
+    }
+
+    public void CloseOption()
+    {
+        if (optionWindow == null)
+            return;
+
+        optionWindow.localScale = Vector3.zero;
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/MainMenu/OptionDisplayController.cs
+--------------------------------------------------
+Size: 3.24 KB
+Last Modified: 2026-09-07 12:43:14
+
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+public class OptionDisplayController : MonoBehaviour
+{
+    [Header("Dropdown")]
+    [SerializeField] private TMP_Dropdown displayModeDropdown;
+    [SerializeField] private TMP_Dropdown resolutionDropdown;
+
+    private readonly List<Vector2Int> resolutions = new();
+
+    private void Start()
+    {
+        InitializeDisplayModeDropdown();
+        InitializeResolutionDropdown();
+    }
+
+    private void InitializeDisplayModeDropdown()
+    {
+        if (displayModeDropdown == null)
+            return;
+
+        displayModeDropdown.ClearOptions();
+        displayModeDropdown.AddOptions(new List<string>
+        {
+            "전체화면",
+            "창모드"
+        });
+
+        displayModeDropdown.SetValueWithoutNotify(Screen.fullScreen ? 0 : 1);
+        displayModeDropdown.RefreshShownValue();
+
+        displayModeDropdown.onValueChanged.RemoveAllListeners();
+        displayModeDropdown.onValueChanged.AddListener(OnDisplayModeChanged);
+    }
+
+    private void InitializeResolutionDropdown()
+    {
+        if (resolutionDropdown == null)
+            return;
+
+        resolutionDropdown.ClearOptions();
+        resolutions.Clear();
+
+        List<string> options = new List<string>();
+        HashSet<string> added = new HashSet<string>();
+
+        Resolution[] screenResolutions = Screen.resolutions;
+
+        foreach (Resolution r in screenResolutions)
+        {
+            string key = $"{r.width}x{r.height}";
+
+            if (added.Contains(key))
+                continue;
+
+            added.Add(key);
+            resolutions.Add(new Vector2Int(r.width, r.height));
+            options.Add($"{r.width} x {r.height}");
+        }
+
+        if (options.Count == 0)
+        {
+            resolutions.Add(new Vector2Int(Screen.width, Screen.height));
+            options.Add($"{Screen.width} x {Screen.height}");
+        }
+
+        int currentIndex = 0;
+
+        for (int i = 0; i < resolutions.Count; i++)
+        {
+            if (resolutions[i].x == Screen.width &&
+                resolutions[i].y == Screen.height)
+            {
+                currentIndex = i;
+                break;
+            }
+        }
+
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.SetValueWithoutNotify(currentIndex);
+        resolutionDropdown.RefreshShownValue();
+
+        resolutionDropdown.onValueChanged.RemoveAllListeners();
+        resolutionDropdown.onValueChanged.AddListener(OnResolutionChanged);
+    }
+
+    public void OnDisplayModeChanged(int index)
+    {
+        bool isFullscreen = index == 0;
+        Screen.fullScreen = isFullscreen;
+
+        ApplyCurrentResolution();
+    }
+
+    public void OnResolutionChanged(int index)
+    {
+        ApplyResolution(index);
+    }
+
+    private void ApplyCurrentResolution()
+    {
+        if (resolutionDropdown == null)
+            return;
+
+        ApplyResolution(resolutionDropdown.value);
+    }
+
+    private void ApplyResolution(int index)
+    {
+        if (index < 0 || index >= resolutions.Count)
+            return;
+
+        Vector2Int resolution = resolutions[index];
+        Screen.SetResolution(resolution.x, resolution.y, Screen.fullScreen);
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Option/AnimatorTransitionTool.cs
+--------------------------------------------------
+Size: 3.45 KB
+Last Modified: 2026-08-26 07:29:04
+
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.Animations;
+
+public static class AnimatorTransitionTool
+{
+    [MenuItem("Tools/Slayers/Animator/Reset All Transitions")]
+    private static void ResetAllTransitions()
+    {
+        AnimatorController controller =
+            Selection.activeObject as AnimatorController;
+
+        if (controller == null)
+        {
+            EditorUtility.DisplayDialog(
+                "Animator Transition Tool",
+                "Project 창에서 Animator Controller를 선택한 뒤 실행하세요.",
+                "OK"
+            );
+
+            return;
+        }
+
+        int changedCount = 0;
+
+        Undo.RecordObject(
+            controller,
+            "Reset Animator Transitions"
+        );
+
+        foreach (AnimatorControllerLayer layer in controller.layers)
+        {
+            changedCount += ResetTransitionsRecursive(
+                layer.stateMachine
+            );
+        }
+
+        EditorUtility.SetDirty(controller);
+
+        AssetDatabase.SaveAssets();
+
+        EditorUtility.DisplayDialog(
+            "Completed",
+            $"{controller.name}\n\n" +
+            $"수정된 Transition: {changedCount}개\n\n" +
+            "Has Exit Time = OFF\n" +
+            "Transition Duration = 0",
+            "OK"
+        );
+
+        Debug.Log(
+            $"[{controller.name}] " +
+            $"Reset {changedCount} transitions. " +
+            $"Has Exit Time = OFF, Duration = 0."
+        );
+    }
+
+    private static int ResetTransitionsRecursive(
+        AnimatorStateMachine stateMachine)
+    {
+        int changedCount = 0;
+
+        // 일반 State → State Transition
+        foreach (ChildAnimatorState childState
+                 in stateMachine.states)
+        {
+            foreach (AnimatorStateTransition transition
+                     in childState.state.transitions)
+            {
+                bool changed = false;
+
+                if (transition.hasExitTime)
+                {
+                    transition.hasExitTime = false;
+                    changed = true;
+                }
+
+                if (transition.duration != 0f)
+                {
+                    transition.duration = 0f;
+                    changed = true;
+                }
+
+                if (changed)
+                {
+                    EditorUtility.SetDirty(transition);
+                    changedCount++;
+                }
+            }
+        }
+
+        // Any State → State Transition
+        foreach (AnimatorStateTransition transition
+                 in stateMachine.anyStateTransitions)
+        {
+            bool changed = false;
+
+            if (transition.hasExitTime)
+            {
+                transition.hasExitTime = false;
+                changed = true;
+            }
+
+            if (transition.duration != 0f)
+            {
+                transition.duration = 0f;
+                changed = true;
+            }
+
+            if (changed)
+            {
+                EditorUtility.SetDirty(transition);
+                changedCount++;
+            }
+        }
+
+        // 서브 State Machine도 재귀적으로 처리
+        foreach (ChildAnimatorStateMachine childStateMachine
+                 in stateMachine.stateMachines)
+        {
+            changedCount += ResetTransitionsRecursive(
+                childStateMachine.stateMachine
+            );
+        }
+
+        return changedCount;
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Option/MenuButtonVisual.cs
+--------------------------------------------------
+Size: 1.86 KB
+Last Modified: 2026-08-31 14:03:15
+
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class MenuButtonVisual : MonoBehaviour,
+    IPointerEnterHandler,
+    IPointerExitHandler,
+    IPointerDownHandler,
+    IPointerUpHandler
+{
+    [SerializeField] private Image background;
+    [SerializeField] private TMP_Text label;
+
+    [Header("Background")]
+    [SerializeField] private Color normalBackground = new Color(0.04f, 0.04f, 0.04f, 1f);
+    [SerializeField] private Color hoverBackground = new Color(0.10f, 0.10f, 0.10f, 1f);
+    [SerializeField] private Color pressedBackground = new Color(0.30f, 0.08f, 0.06f, 1f);
+
+    [Header("Text")]
+    [SerializeField] private Color normalText = new Color(0.85f, 0.84f, 0.81f, 1f);
+    [SerializeField] private Color hoverText = Color.white;
+    [SerializeField] private Color pressedText = new Color(0.89f, 0.60f, 0.55f, 1f);
+
+    private bool isPointerInside;
+
+    private void Awake()
+    {
+        SetNormal();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isPointerInside = true;
+        SetHover();
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isPointerInside = false;
+        SetNormal();
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        SetPressed();
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        if (isPointerInside)
+            SetHover();
+        else
+            SetNormal();
+    }
+
+    private void SetNormal()
+    {
+        background.color = normalBackground;
+        label.color = normalText;
+    }
+
+    private void SetHover()
+    {
+        background.color = hoverBackground;
+        label.color = hoverText;
+    }
+
+    private void SetPressed()
+    {
+        background.color = pressedBackground;
+        label.color = pressedText;
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Option/SlayersCodeSnapshotTool.cs
+--------------------------------------------------
+Size: 18.19 KB
+Last Modified: 2026-09-01 08:55:58
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using UnityEditor;
+using UnityEngine;
+
+public static class SlayersCodeSnapshotTool
+{
+    private const string AssetsRoot = "Assets";
+    private const string OutputDirectory = "AI_Context";
+
+    private const string IndexFileName = "00_ProjectIndex.txt";
+    private const string ScriptsFileName = "01_Scripts.txt";
+    private const string ScenesPrefabsFileName = "02_Scenes_Prefabs.txt";
+    private const string GameAssetsFileName = "03_GameAssets.txt";
+    private const string ExternalAssetsFileName = "04_ExternalAssets.txt";
+
+    // 외부 에셋 폴더
+    private const string ExternalAssetsRoot = "Assets/UnityAsset/";
+
+    // 코드/설정 계열
+    private static readonly HashSet<string> ScriptExtensions =
+        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ".cs",
+            ".inputactions",
+            ".asmdef",
+            ".asmref",
+            ".json"
+        };
+
+    // 씬/프리팹
+    private static readonly HashSet<string> ScenePrefabExtensions =
+        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ".unity",
+            ".prefab"
+        };
+
+    // 애니메이션/Unity 설정 계열
+    private static readonly HashSet<string> GameAssetExtensions =
+        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ".controller",
+            ".anim",
+            ".asset"
+        };
+
+    // 바이너리 파일은 내용 대신 경로/크기만 기록
+    private static readonly HashSet<string> BinaryExtensions =
+        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".psd",
+            ".tga",
+            ".bmp",
+            ".gif",
+            ".webp",
+
+            ".wav",
+            ".mp3",
+            ".ogg",
+            ".flac",
+            ".aiff",
+            ".aif",
+
+            ".fbx",
+            ".obj",
+            ".blend",
+
+            ".mp4",
+            ".mov",
+            ".avi",
+
+            ".ttf",
+            ".otf"
+        };
+
+    [MenuItem("Tools/Slayers/Export Project Snapshot")]
+    public static void ExportProjectSnapshot()
+    {
+        string projectRoot = Directory.GetParent(Application.dataPath)!.FullName;
+        string assetsFullPath = Path.Combine(projectRoot, AssetsRoot);
+        string outputDirectoryFullPath = Path.Combine(projectRoot, OutputDirectory);
+
+        if (!Directory.Exists(assetsFullPath))
+        {
+            EditorUtility.DisplayDialog(
+                "Export Failed",
+                $"Assets folder not found:\n{assetsFullPath}",
+                "OK"
+            );
+
+            return;
+        }
+
+        Directory.CreateDirectory(outputDirectoryFullPath);
+
+        string[] allFiles = Directory.GetFiles(
+            assetsFullPath,
+            "*",
+            SearchOption.AllDirectories
+        );
+
+        Array.Sort(allFiles, StringComparer.OrdinalIgnoreCase);
+
+        string snapshotId = DateTime.Now.ToString("yyyyMMdd-HHmmss");
+        string generatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+        try
+        {
+            ExportProjectIndex(
+                projectRoot,
+                outputDirectoryFullPath,
+                allFiles,
+                snapshotId,
+                generatedAt
+            );
+
+            ExportScripts(
+                projectRoot,
+                outputDirectoryFullPath,
+                allFiles,
+                snapshotId,
+                generatedAt
+            );
+
+            ExportScenesAndPrefabs(
+                projectRoot,
+                outputDirectoryFullPath,
+                allFiles,
+                snapshotId,
+                generatedAt
+            );
+
+            ExportGameAssets(
+                projectRoot,
+                outputDirectoryFullPath,
+                allFiles,
+                snapshotId,
+                generatedAt
+            );
+
+            ExportExternalAssets(
+                projectRoot,
+                outputDirectoryFullPath,
+                allFiles,
+                snapshotId,
+                generatedAt
+            );
+
+            AssetDatabase.Refresh();
+
+            EditorUtility.DisplayDialog(
+                "Snapshot Export Complete",
+                "Snapshot files created:\n\n" +
+                $"{OutputDirectory}/{IndexFileName}\n" +
+                $"{OutputDirectory}/{ScriptsFileName}\n" +
+                $"{OutputDirectory}/{ScenesPrefabsFileName}\n" +
+                $"{OutputDirectory}/{GameAssetsFileName}\n" +
+                $"{OutputDirectory}/{ExternalAssetsFileName}",
+                "OK"
+            );
+
+            Debug.Log(
+                $"[Slayers Snapshot] Export complete. Snapshot ID: {snapshotId}"
+            );
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+
+            EditorUtility.DisplayDialog(
+                "Export Failed",
+                ex.Message,
+                "OK"
+            );
+        }
+    }
+
+    // =========================================================
+    // 00 - Project Index
+    // =========================================================
+
+    private static void ExportProjectIndex(
+        string projectRoot,
+        string outputDirectory,
+        string[] allFiles,
+        string snapshotId,
+        string generatedAt)
+    {
+        StringBuilder builder = new StringBuilder(512 * 1024);
+
+        WriteHeader(
+            builder,
+            snapshotId,
+            generatedAt,
+            "00_ProjectIndex"
+        );
+
+        builder.AppendLine("==================================================");
+        builder.AppendLine("PROJECT SUMMARY");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+
+        builder.AppendLine($"Files Scanned : {allFiles.Length}");
+        builder.AppendLine();
+
+        WriteExtensionSummary(builder, allFiles);
+
+        builder.AppendLine();
+        builder.AppendLine("==================================================");
+        builder.AppendLine("ASSET TREE");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+
+        foreach (string fullPath in allFiles)
+        {
+            string relativePath = GetRelativePath(projectRoot, fullPath);
+            builder.AppendLine(relativePath);
+        }
+
+        WriteFile(
+            Path.Combine(outputDirectory, IndexFileName),
+            builder
+        );
+    }
+
+    // =========================================================
+    // 01 - Scripts
+    // =========================================================
+
+    private static void ExportScripts(
+        string projectRoot,
+        string outputDirectory,
+        string[] allFiles,
+        string snapshotId,
+        string generatedAt)
+    {
+        StringBuilder builder = new StringBuilder(1024 * 1024);
+
+        WriteHeader(
+            builder,
+            snapshotId,
+            generatedAt,
+            "01_Scripts"
+        );
+
+        string[] files = allFiles
+            .Where(path =>
+            {
+                string relativePath = GetRelativePath(projectRoot, path);
+                string extension = Path.GetExtension(path);
+
+                if (IsExternalAsset(relativePath))
+                    return false;
+
+                // Assets/Scripts 아래는 모든 등록된 코드 확장자 포함
+                if (relativePath.StartsWith(
+                    "Assets/Scripts/",
+                    StringComparison.OrdinalIgnoreCase))
+                {
+                    return ScriptExtensions.Contains(extension);
+                }
+
+                // Input Actions는 Scripts 밖에 있어도 포함
+                if (extension.Equals(
+                    ".inputactions",
+                    StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+
+                return false;
+            })
+            .ToArray();
+
+        WriteFileSectionHeader(builder, files.Length);
+
+        foreach (string file in files)
+        {
+            AppendTextFile(builder, projectRoot, file);
+        }
+
+        WriteFile(
+            Path.Combine(outputDirectory, ScriptsFileName),
+            builder
+        );
+    }
+
+    // =========================================================
+    // 02 - Scenes / Prefabs
+    // =========================================================
+
+    private static void ExportScenesAndPrefabs(
+        string projectRoot,
+        string outputDirectory,
+        string[] allFiles,
+        string snapshotId,
+        string generatedAt)
+    {
+        StringBuilder builder = new StringBuilder(1024 * 1024);
+
+        WriteHeader(
+            builder,
+            snapshotId,
+            generatedAt,
+            "02_Scenes_Prefabs"
+        );
+
+        string[] files = allFiles
+            .Where(path =>
+            {
+                string relativePath = GetRelativePath(projectRoot, path);
+                string extension = Path.GetExtension(path);
+
+                return !IsExternalAsset(relativePath) &&
+                       ScenePrefabExtensions.Contains(extension);
+            })
+            .ToArray();
+
+        WriteFileSectionHeader(builder, files.Length);
+
+        foreach (string file in files)
+        {
+            AppendTextFile(builder, projectRoot, file);
+        }
+
+        WriteFile(
+            Path.Combine(outputDirectory, ScenesPrefabsFileName),
+            builder
+        );
+    }
+
+    // =========================================================
+    // 03 - Game Assets
+    // =========================================================
+
+    private static void ExportGameAssets(
+        string projectRoot,
+        string outputDirectory,
+        string[] allFiles,
+        string snapshotId,
+        string generatedAt)
+    {
+        StringBuilder builder = new StringBuilder(1024 * 1024);
+
+        WriteHeader(
+            builder,
+            snapshotId,
+            generatedAt,
+            "03_GameAssets"
+        );
+
+        string[] textFiles = allFiles
+            .Where(path =>
+            {
+                string relativePath = GetRelativePath(projectRoot, path);
+                string extension = Path.GetExtension(path);
+
+                return !IsExternalAsset(relativePath) &&
+                       GameAssetExtensions.Contains(extension);
+            })
+            .ToArray();
+
+        builder.AppendLine("==================================================");
+        builder.AppendLine("TEXT GAME ASSETS");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+        builder.AppendLine($"Files: {textFiles.Length}");
+        builder.AppendLine();
+
+        foreach (string file in textFiles)
+        {
+            AppendTextFile(builder, projectRoot, file);
+        }
+
+        string[] binaryFiles = allFiles
+            .Where(path =>
+            {
+                string relativePath = GetRelativePath(projectRoot, path);
+                string extension = Path.GetExtension(path);
+
+                return !IsExternalAsset(relativePath) &&
+                       BinaryExtensions.Contains(extension);
+            })
+            .ToArray();
+
+        builder.AppendLine();
+        builder.AppendLine("==================================================");
+        builder.AppendLine("BINARY GAME ASSETS");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+        builder.AppendLine(
+            "Binary file contents are not included. " +
+            "Only path and size are recorded."
+        );
+        builder.AppendLine();
+
+        foreach (string file in binaryFiles)
+        {
+            FileInfo info = new FileInfo(file);
+
+            builder.AppendLine(
+                $"{GetRelativePath(projectRoot, file)} | {FormatFileSize(info.Length)}"
+            );
+        }
+
+        WriteFile(
+            Path.Combine(outputDirectory, GameAssetsFileName),
+            builder
+        );
+    }
+
+    // =========================================================
+    // 04 - External Assets
+    // =========================================================
+
+    private static void ExportExternalAssets(
+        string projectRoot,
+        string outputDirectory,
+        string[] allFiles,
+        string snapshotId,
+        string generatedAt)
+    {
+        StringBuilder builder = new StringBuilder(512 * 1024);
+
+        WriteHeader(
+            builder,
+            snapshotId,
+            generatedAt,
+            "04_ExternalAssets"
+        );
+
+        builder.AppendLine(
+            "External package contents are intentionally NOT embedded."
+        );
+        builder.AppendLine(
+            "Only file paths and file sizes are recorded."
+        );
+        builder.AppendLine();
+
+        string[] files = allFiles
+            .Where(path =>
+            {
+                string relativePath = GetRelativePath(projectRoot, path);
+                return IsExternalAsset(relativePath);
+            })
+            .ToArray();
+
+        builder.AppendLine($"External Files: {files.Length}");
+        builder.AppendLine();
+
+        foreach (string file in files)
+        {
+            FileInfo info = new FileInfo(file);
+
+            builder.AppendLine(
+                $"{GetRelativePath(projectRoot, file)} | {FormatFileSize(info.Length)}"
+            );
+        }
+
+        WriteFile(
+            Path.Combine(outputDirectory, ExternalAssetsFileName),
+            builder
+        );
+    }
+
+    // =========================================================
+    // Shared
+    // =========================================================
+
+    private static void WriteHeader(
+        StringBuilder builder,
+        string snapshotId,
+        string generatedAt,
+        string partName)
+    {
+        builder.AppendLine("==================================================");
+        builder.AppendLine("SLAYERS - UNITY PROJECT SNAPSHOT");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+
+        builder.AppendLine($"Snapshot ID   : {snapshotId}");
+        builder.AppendLine($"Generated At  : {generatedAt}");
+        builder.AppendLine($"Unity Version : {Application.unityVersion}");
+        builder.AppendLine($"Project Name  : {Application.productName}");
+        builder.AppendLine($"Part          : {partName}");
+        builder.AppendLine();
+    }
+
+    private static void WriteFileSectionHeader(
+        StringBuilder builder,
+        int fileCount)
+    {
+        builder.AppendLine("==================================================");
+        builder.AppendLine("FILES");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+
+        builder.AppendLine($"Files Included: {fileCount}");
+        builder.AppendLine();
+    }
+
+    private static void WriteExtensionSummary(
+        StringBuilder builder,
+        string[] allFiles)
+    {
+        builder.AppendLine("==================================================");
+        builder.AppendLine("EXTENSION SUMMARY");
+        builder.AppendLine("==================================================");
+        builder.AppendLine();
+
+        var groups = allFiles
+            .GroupBy(path =>
+            {
+                string extension = Path.GetExtension(path);
+
+                return string.IsNullOrEmpty(extension)
+                    ? "(no extension)"
+                    : extension.ToLowerInvariant();
+            })
+            .OrderBy(group => group.Key);
+
+        foreach (var group in groups)
+        {
+            builder.AppendLine($"{group.Key} : {group.Count()}");
+        }
+    }
+
+    private static void AppendTextFile(
+        StringBuilder builder,
+        string projectRoot,
+        string fullPath)
+    {
+        string relativePath = GetRelativePath(projectRoot, fullPath);
+
+        builder.AppendLine();
+        builder.AppendLine(
+            "--------------------------------------------------"
+        );
+        builder.AppendLine($"FILE: {relativePath}");
+        builder.AppendLine(
+            "--------------------------------------------------"
+        );
+
+        try
+        {
+            FileInfo info = new FileInfo(fullPath);
+
+            builder.AppendLine($"Size: {FormatFileSize(info.Length)}");
+            builder.AppendLine(
+                $"Last Modified: {info.LastWriteTime:yyyy-MM-dd HH:mm:ss}"
+            );
+            builder.AppendLine();
+
+            string content = File.ReadAllText(
+                fullPath,
+                Encoding.UTF8
+            );
+
+            builder.AppendLine(content);
+        }
+        catch (Exception ex)
+        {
+            builder.AppendLine(
+                $"[READ ERROR] {ex.GetType().Name}: {ex.Message}"
+            );
+        }
+
+        builder.AppendLine();
+    }
+
+    private static bool IsExternalAsset(string relativePath)
+    {
+        return relativePath.StartsWith(
+            ExternalAssetsRoot,
+            StringComparison.OrdinalIgnoreCase
+        );
+    }
+
+    private static string GetRelativePath(
+        string projectRoot,
+        string fullPath)
+    {
+        string relativePath = Path.GetRelativePath(
+            projectRoot,
+            fullPath
+        );
+
+        return relativePath.Replace('\\', '/');
+    }
+
+    private static string FormatFileSize(long bytes)
+    {
+        if (bytes >= 1024L * 1024L)
+        {
+            return $"{bytes / (1024d * 1024d):0.00} MB";
+        }
+
+        if (bytes >= 1024L)
+        {
+            return $"{bytes / 1024d:0.00} KB";
+        }
+
+        return $"{bytes} B";
+    }
+
+    private static void WriteFile(
+        string path,
+        StringBuilder builder)
+    {
+        File.WriteAllText(
+            path,
+            builder.ToString(),
+            new UTF8Encoding(false)
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Option/SpritePivotBatchTool.cs
+--------------------------------------------------
+Size: 4.91 KB
+Last Modified: 2026-08-26 07:29:04
+
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.U2D.Sprites;
+
+public class SpritePivotBatchTool : EditorWindow
+{
+    private Texture2D targetTexture;
+
+    private PivotPreset pivotPreset = PivotPreset.BottomCenter;
+    private Vector2 customPivot = new Vector2(0.5f, 0f);
+
+    private enum PivotPreset
+    {
+        Center,
+        BottomCenter,
+        Custom
+    }
+
+    [MenuItem("Tools/Slayers/Sprite Pivot Batch Tool")]
+    private static void OpenWindow()
+    {
+        GetWindow<SpritePivotBatchTool>("Sprite Pivot Batch Tool");
+    }
+
+    private void OnSelectionChange()
+    {
+        if (Selection.activeObject is Texture2D texture)
+        {
+            targetTexture = texture;
+            Repaint();
+        }
+    }
+
+    private void OnGUI()
+    {
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Batch Change Sprite Pivots", EditorStyles.boldLabel);
+        EditorGUILayout.Space();
+
+        targetTexture = (Texture2D)EditorGUILayout.ObjectField(
+            "Target Texture",
+            targetTexture,
+            typeof(Texture2D),
+            false
+        );
+
+        pivotPreset = (PivotPreset)EditorGUILayout.EnumPopup("Pivot Preset", pivotPreset);
+
+        if (pivotPreset == PivotPreset.Custom)
+        {
+            customPivot = EditorGUILayout.Vector2Field("Custom Pivot", customPivot);
+            customPivot.x = Mathf.Clamp01(customPivot.x);
+            customPivot.y = Mathf.Clamp01(customPivot.y);
+        }
+
+        EditorGUILayout.Space();
+
+        EditorGUILayout.HelpBox(
+            "This tool changes the pivot of all sprites inside the selected sprite sheet.\n" +
+            "Recommended for characters: BottomCenter",
+            MessageType.Info
+        );
+
+        EditorGUILayout.Space();
+
+        GUI.enabled = targetTexture != null;
+
+        if (GUILayout.Button("Apply Pivot To All Sprites", GUILayout.Height(30)))
+        {
+            ApplyPivotToAllSprites();
+        }
+
+        GUI.enabled = true;
+    }
+
+    private void ApplyPivotToAllSprites()
+    {
+        if (targetTexture == null)
+        {
+            EditorUtility.DisplayDialog("Error", "Please assign a target texture.", "OK");
+            return;
+        }
+
+        string assetPath = AssetDatabase.GetAssetPath(targetTexture);
+        TextureImporter importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+
+        if (importer == null)
+        {
+            EditorUtility.DisplayDialog("Error", "Could not find TextureImporter.", "OK");
+            return;
+        }
+
+        if (importer.textureType != TextureImporterType.Sprite)
+        {
+            EditorUtility.DisplayDialog("Error", "Selected texture is not imported as Sprite.", "OK");
+            return;
+        }
+
+        if (importer.spriteImportMode != SpriteImportMode.Multiple)
+        {
+            bool continueAnyway = EditorUtility.DisplayDialog(
+                "Warning",
+                "The selected texture is not set to Multiple sprite mode.\n\nContinue anyway?",
+                "Continue",
+                "Cancel"
+            );
+
+            if (!continueAnyway)
+                return;
+        }
+
+        SpriteDataProviderFactories factory = new SpriteDataProviderFactories();
+        factory.Init();
+
+        ISpriteEditorDataProvider dataProvider = factory.GetSpriteEditorDataProviderFromObject(importer);
+
+        if (dataProvider == null)
+        {
+            EditorUtility.DisplayDialog("Error", "Could not get sprite data provider.", "OK");
+            return;
+        }
+
+        dataProvider.InitSpriteEditorDataProvider();
+
+        SpriteRect[] spriteRects = dataProvider.GetSpriteRects();
+
+        if (spriteRects == null || spriteRects.Length == 0)
+        {
+            EditorUtility.DisplayDialog("Error", "No sprite rects found in this texture.", "OK");
+            return;
+        }
+
+        for (int i = 0; i < spriteRects.Length; i++)
+        {
+            switch (pivotPreset)
+            {
+                case PivotPreset.Center:
+                    spriteRects[i].alignment = SpriteAlignment.Center;
+                    spriteRects[i].pivot = new Vector2(0.5f, 0.5f);
+                    break;
+
+                case PivotPreset.BottomCenter:
+                    spriteRects[i].alignment = SpriteAlignment.BottomCenter;
+                    spriteRects[i].pivot = new Vector2(0.5f, 0f);
+                    break;
+
+                case PivotPreset.Custom:
+                    spriteRects[i].alignment = SpriteAlignment.Custom;
+                    spriteRects[i].pivot = customPivot;
+                    break;
+            }
+        }
+
+        dataProvider.SetSpriteRects(spriteRects);
+        dataProvider.Apply();
+
+        importer.SaveAndReimport();
+
+        EditorUtility.DisplayDialog(
+            "Completed",
+            $"Updated pivot for {spriteRects.Length} sprites.",
+            "OK"
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Player/CharacterMotor2D.cs
+--------------------------------------------------
+Size: 3.83 KB
+Last Modified: 2026-08-26 07:29:03
+
+using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CapsuleCollider2D))]
+public class CharacterMotor2D : MonoBehaviour
+{
+    [Header("References")]
+    [SerializeField] private PlayerInputReader inputReader;
+    [SerializeField] private LayerMask groundLayer;
+
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 5f;
+
+    [Header("Jump")]
+    [SerializeField] private float jumpForce = 10f;
+
+    [Header("Ground Check")]
+    [SerializeField] private float groundCheckDistance = 0.08f;
+
+    private Rigidbody2D rb;
+    private CapsuleCollider2D capsuleCollider;
+
+    private bool isGrounded;
+
+    // 나중에 스킬/넉백과 분리하기 위한 속도
+    private float inputVelocityX;
+    private Vector2 skillVelocity;
+    private Vector2 knockbackVelocity;
+
+    public bool IsGrounded => isGrounded;
+    public float MoveInputX => inputReader.MoveInput.x;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+    }
+
+    private void Update()
+    {
+        HandleInput();
+        HandleJump();
+    }
+
+    private void FixedUpdate()
+    {
+        CheckGround();
+        ApplyVelocity();
+    }
+
+    private void HandleInput()
+    {
+        inputVelocityX = inputReader.MoveInput.x * moveSpeed;
+
+        if (inputReader.MoveInput.x > 0.01f)
+        {
+            FaceRight();
+        }
+        else if (inputReader.MoveInput.x < -0.01f)
+        {
+            FaceLeft();
+        }
+    }
+
+    private void HandleJump()
+    {
+        if (!inputReader.ConsumeJump())
+            return;
+
+        if (!isGrounded)
+            return;
+
+        isGrounded = false;
+
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            0f
+        );
+
+        rb.AddForce(
+            Vector2.up * jumpForce,
+            ForceMode2D.Impulse
+        );
+    }
+
+    private void ApplyVelocity()
+    {
+        float finalX =
+            inputVelocityX +
+            skillVelocity.x +
+            knockbackVelocity.x;
+
+        rb.linearVelocity = new Vector2(
+            finalX,
+            rb.linearVelocity.y
+        );
+    }
+
+    private void CheckGround()
+    {
+        Bounds bounds = capsuleCollider.bounds;
+
+        Vector2 checkSize = new Vector2(
+            bounds.size.x * 0.8f,
+            0.05f
+        );
+
+        Vector2 checkPosition = new Vector2(
+            bounds.center.x,
+            bounds.min.y + 0.02f
+        );
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            checkPosition,
+            checkSize,
+            0f,
+            Vector2.down,
+            groundCheckDistance,
+            groundLayer
+        );
+
+        isGrounded = hit.collider != null;
+    }
+
+    private void FaceRight()
+    {
+        transform.localScale = new Vector3(
+            Mathf.Abs(transform.localScale.x),
+            transform.localScale.y,
+            transform.localScale.z
+        );
+    }
+
+    private void FaceLeft()
+    {
+        transform.localScale = new Vector3(
+            -Mathf.Abs(transform.localScale.x),
+            transform.localScale.y,
+            transform.localScale.z
+        );
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        CapsuleCollider2D capsule =
+            GetComponent<CapsuleCollider2D>();
+
+        if (capsule == null)
+            return;
+
+        Bounds bounds = capsule.bounds;
+
+        Vector2 checkSize = new Vector2(
+            bounds.size.x * 0.8f,
+            0.05f
+        );
+
+        Vector2 checkPosition = new Vector2(
+            bounds.center.x,
+            bounds.min.y + 0.02f
+        );
+
+        Gizmos.DrawWireCube(
+            checkPosition +
+            Vector2.down * groundCheckDistance,
+            checkSize
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Player/PlayerAnimationController.cs
+--------------------------------------------------
+Size: 2.09 KB
+Last Modified: 2026-08-26 07:29:03
+
+using UnityEngine;
+
+public class PlayerAnimationController : MonoBehaviour
+{
+    [Header("References")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private CharacterMotor2D motor;
+    [SerializeField] private Rigidbody2D rb;
+
+    [Header("Animation Settings")]
+    [SerializeField] private float moveThreshold = 0.01f;
+    [SerializeField] private float verticalThreshold = 0.05f;
+
+    // 방향 전환 시 순간적인 0 입력 때문에
+    // Stand로 바뀌는 것을 방지하는 시간
+    [SerializeField] private float moveGraceTime = 0.08f;
+
+    private float moveGraceTimer;
+
+    private static readonly int SpeedHash =
+        Animator.StringToHash("Speed");
+
+    private static readonly int IsGroundedHash =
+        Animator.StringToHash("IsGrounded");
+
+    private static readonly int VerticalSpeedHash =
+        Animator.StringToHash("VerticalSpeed");
+
+    private void Update()
+    {
+        UpdateAnimatorParameters();
+    }
+
+    private void UpdateAnimatorParameters()
+    {
+        float moveInput = Mathf.Abs(motor.MoveInputX);
+        float verticalSpeed = rb.linearVelocity.y;
+
+        float animationSpeed;
+
+        // 이동 입력이 존재하면
+        // 달리기 판정을 일정 시간 유지한다.
+        if (moveInput > moveThreshold)
+        {
+            moveGraceTimer = moveGraceTime;
+            animationSpeed = moveInput;
+        }
+        else
+        {
+            moveGraceTimer -= Time.deltaTime;
+
+            if (moveGraceTimer > 0f)
+            {
+                animationSpeed = 1f;
+            }
+            else
+            {
+                animationSpeed = 0f;
+            }
+        }
+
+        if (Mathf.Abs(verticalSpeed) < verticalThreshold)
+        {
+            verticalSpeed = 0f;
+        }
+
+        animator.SetFloat(
+            SpeedHash,
+            animationSpeed
+        );
+
+        animator.SetBool(
+            IsGroundedHash,
+            motor.IsGrounded
+        );
+
+        animator.SetFloat(
+            VerticalSpeedHash,
+            verticalSpeed
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Player/PlayerBindingLoader.cs
+--------------------------------------------------
+Size: 1.23 KB
+Last Modified: 2026-08-26 14:04:36
+
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerBindingLoader : MonoBehaviour
+{
+    [SerializeField] private PlayerInput playerInput;
+
+
+    private void Awake()
+    {
+        if (playerInput == null)
+        {
+            playerInput = GetComponent<PlayerInput>();
+        }
+
+        if (playerInput == null)
+        {
+            Debug.LogError("[PlayerBindingLoader] PlayerInput이 없습니다.");
+            return;
+        }
+
+        ApplySavedBindings();
+    }
+
+
+    private void ApplySavedBindings()
+    {
+        if (GameSession.Instance == null)
+        {
+            Debug.LogWarning(
+                "[PlayerBindingLoader] GameSession이 없습니다."
+            );
+
+            return;
+        }
+
+        string json =
+            GameSession.Instance.Data.controlBindingsJson;
+
+        if (string.IsNullOrEmpty(json))
+        {
+            Debug.Log(
+                "[PlayerBindingLoader] 저장된 키 설정 없음 - 기본값 사용"
+            );
+
+            return;
+        }
+
+        playerInput.actions.LoadBindingOverridesFromJson(json);
+
+        Debug.Log(
+            "[PlayerBindingLoader] 저장된 키 설정을 PlayerInput에 적용"
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Player/PlayerInputReader.cs
+--------------------------------------------------
+Size: 999 B
+Last Modified: 2026-08-26 13:50:49
+
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerInputReader : MonoBehaviour
+{
+    public Vector2 MoveInput { get; private set; }
+
+    public bool JumpPressed { get; private set; }
+    public bool TestSkillPressed { get; private set; }
+
+
+    public void OnMove(InputValue value)
+    {
+        MoveInput = value.Get<Vector2>();
+    }
+
+
+    public void OnJump(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            JumpPressed = true;
+        }
+    }
+
+
+    public void OnTestSkill(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            TestSkillPressed = true;
+        }
+    }
+
+
+    public bool ConsumeJump()
+    {
+        if (!JumpPressed)
+            return false;
+
+        JumpPressed = false;
+        return true;
+    }
+
+
+    public bool ConsumeTestSkill()
+    {
+        if (!TestSkillPressed)
+            return false;
+
+        TestSkillPressed = false;
+        return true;
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Character/CharacterStats.cs
+--------------------------------------------------
+Size: 3.55 KB
+Last Modified: 2026-09-07 13:34:20
+
+using UnityEngine;
+
+public class CharacterStats : MonoBehaviour
+{
+    [Header("Character Data")]
+    [SerializeField] private CharacterStatsData characterData;
+
+    [Header("Level")]
+    [SerializeField]
+    [Min(1)]
+    private int level = 1;
+
+    public int Level => level;
+    public CharacterStatsData Data => characterData;
+
+    // Basic Stats
+    public float MaxHealth => characterData.health.GetValue(level);
+    public float MaxMana => characterData.mana.GetValue(level);
+    public float Attack => characterData.attack.GetValue(level);
+    public float Magic => characterData.magic.GetValue(level);
+    public float Defense => characterData.defense.GetValue(level);
+    public float Resistance => characterData.resistance.GetValue(level);
+
+    // Detailed Stats
+    public float AttackSpeed => characterData.attackSpeed.GetValue(level);
+    public float MoveSpeed => characterData.moveSpeed.GetValue(level);
+    public float StatusResistance => characterData.statusResistance.GetValue(level);
+    public float Luck => characterData.luck.GetValue(level);
+    public float Accuracy => characterData.accuracy.GetValue(level);
+    public float Evasion => characterData.evasion.GetValue(level);
+    public float Recovery => characterData.recovery.GetValue(level);
+    public float CooldownReduction => characterData.cooldownReduction.GetValue(level);
+    public float Awakening => characterData.awakening.GetValue(level);
+    public float Stagger => characterData.stagger.GetValue(level);
+
+    public float CriticalChance => characterData.criticalChance.GetValue(level);
+    public float CriticalDamage => characterData.criticalDamage.GetValue(level);
+
+    public float DefensePenetration =>
+        characterData.defensePenetration.GetValue(level);
+
+    public float ResistancePenetration =>
+        characterData.resistancePenetration.GetValue(level);
+
+    // Derived Stats
+    public float StaggerGauge =>
+        MaxHealth *
+        (characterData.staggerGaugeHealthPercent / 100f);
+
+    // Element Enhancement
+    public float FireEnhancement => characterData.fireEnhancement.GetValue(level);
+    public float WaterEnhancement => characterData.waterEnhancement.GetValue(level);
+    public float EarthEnhancement => characterData.earthEnhancement.GetValue(level);
+    public float WindEnhancement => characterData.windEnhancement.GetValue(level);
+    public float LightningEnhancement => characterData.lightningEnhancement.GetValue(level);
+    public float IceEnhancement => characterData.iceEnhancement.GetValue(level);
+    public float LightEnhancement => characterData.lightEnhancement.GetValue(level);
+    public float DarkEnhancement => characterData.darkEnhancement.GetValue(level);
+
+    // Element Resistance
+    public float FireResistance => characterData.fireResistance.GetValue(level);
+    public float WaterResistance => characterData.waterResistance.GetValue(level);
+    public float EarthResistance => characterData.earthResistance.GetValue(level);
+    public float WindResistance => characterData.windResistance.GetValue(level);
+    public float LightningResistance => characterData.lightningResistance.GetValue(level);
+    public float IceResistance => characterData.iceResistance.GetValue(level);
+    public float LightResistance => characterData.lightResistance.GetValue(level);
+    public float DarkResistance => characterData.darkResistance.GetValue(level);
+
+    public void SetLevel(int newLevel)
+    {
+        level = Mathf.Max(1, newLevel);
+    }
+
+    private void OnValidate()
+    {
+        level = Mathf.Max(1, level);
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Character/CharacterStatsData.cs
+--------------------------------------------------
+Size: 4.71 KB
+Last Modified: 2026-09-07 13:33:47
+
+using UnityEngine;
+
+[CreateAssetMenu(
+    fileName = "CharacterStatsData",
+    menuName = "Slayers/Character Stats Data")]
+public class CharacterStatsData : ScriptableObject
+{
+    [Header("Identity")]
+    public string characterName;
+
+    [Header("Basic Stats")]
+    public StatGrowth health = new StatGrowth(0f, 0f);
+    public StatGrowth mana = new StatGrowth(0f, 0f);
+    public StatGrowth attack = new StatGrowth(0f, 0f);
+    public StatGrowth magic = new StatGrowth(0f, 0f);
+    public StatGrowth defense = new StatGrowth(0f, 0f);
+    public StatGrowth resistance = new StatGrowth(0f, 0f);
+
+    [Header("Detailed Stats")]
+    public StatGrowth attackSpeed = new StatGrowth(0f, 0f);
+    public StatGrowth moveSpeed = new StatGrowth(0f, 0f);
+    public StatGrowth statusResistance = new StatGrowth(0f, 0f);
+    public StatGrowth luck = new StatGrowth(0f, 0f);
+    public StatGrowth accuracy = new StatGrowth(0f, 0f);
+    public StatGrowth evasion = new StatGrowth(0f, 0f);
+    public StatGrowth recovery = new StatGrowth(0f, 0f);
+    public StatGrowth cooldownReduction = new StatGrowth(0f, 0f);
+    public StatGrowth awakening = new StatGrowth(0f, 0f);
+    public StatGrowth stagger = new StatGrowth(0f, 0f);
+    public StatGrowth criticalChance = new StatGrowth(0f, 0f);
+    public StatGrowth criticalDamage = new StatGrowth(0f, 0f);
+    public StatGrowth defensePenetration = new StatGrowth(0f, 0f);
+    public StatGrowth resistancePenetration = new StatGrowth(0f, 0f);
+
+    [Header("Derived Stats")]
+    [Min(0f)]
+    public float staggerGaugeHealthPercent = 40f;
+
+    [Header("Element Enhancement")]
+    public StatGrowth fireEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth waterEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth earthEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth windEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth lightningEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth iceEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth lightEnhancement = new StatGrowth(0f, 0f);
+    public StatGrowth darkEnhancement = new StatGrowth(0f, 0f);
+
+    [Header("Element Resistance")]
+    public StatGrowth fireResistance = new StatGrowth(0f, 0f);
+    public StatGrowth waterResistance = new StatGrowth(0f, 0f);
+    public StatGrowth earthResistance = new StatGrowth(0f, 0f);
+    public StatGrowth windResistance = new StatGrowth(0f, 0f);
+    public StatGrowth lightningResistance = new StatGrowth(0f, 0f);
+    public StatGrowth iceResistance = new StatGrowth(0f, 0f);
+    public StatGrowth lightResistance = new StatGrowth(0f, 0f);
+    public StatGrowth darkResistance = new StatGrowth(0f, 0f);
+
+    private void OnValidate()
+    {
+        EnsureAndValidate(ref health);
+        EnsureAndValidate(ref mana);
+        EnsureAndValidate(ref attack);
+        EnsureAndValidate(ref magic);
+        EnsureAndValidate(ref defense);
+        EnsureAndValidate(ref resistance);
+
+        EnsureAndValidate(ref attackSpeed);
+        EnsureAndValidate(ref moveSpeed);
+        EnsureAndValidate(ref statusResistance);
+        EnsureAndValidate(ref luck);
+        EnsureAndValidate(ref accuracy);
+        EnsureAndValidate(ref evasion);
+        EnsureAndValidate(ref recovery);
+        EnsureAndValidate(ref cooldownReduction);
+        EnsureAndValidate(ref awakening);
+        EnsureAndValidate(ref stagger);
+        EnsureAndValidate(ref criticalChance);
+        EnsureAndValidate(ref criticalDamage);
+        EnsureAndValidate(ref defensePenetration);
+        EnsureAndValidate(ref resistancePenetration);
+
+        EnsureAndValidate(ref fireEnhancement);
+        EnsureAndValidate(ref waterEnhancement);
+        EnsureAndValidate(ref earthEnhancement);
+        EnsureAndValidate(ref windEnhancement);
+        EnsureAndValidate(ref lightningEnhancement);
+        EnsureAndValidate(ref iceEnhancement);
+        EnsureAndValidate(ref lightEnhancement);
+        EnsureAndValidate(ref darkEnhancement);
+
+        EnsureAndValidate(ref fireResistance);
+        EnsureAndValidate(ref waterResistance);
+        EnsureAndValidate(ref earthResistance);
+        EnsureAndValidate(ref windResistance);
+        EnsureAndValidate(ref lightningResistance);
+        EnsureAndValidate(ref iceResistance);
+        EnsureAndValidate(ref lightResistance);
+        EnsureAndValidate(ref darkResistance);
+
+        staggerGaugeHealthPercent =
+            Mathf.Max(
+                0f,
+                Mathf.Round(staggerGaugeHealthPercent * 100f) / 100f
+            );
+    }
+
+    private static void EnsureAndValidate(ref StatGrowth stat)
+    {
+        if (stat == null)
+        {
+            stat = new StatGrowth(0f, 0f);
+        }
+
+        stat.Validate();
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Character/StatGrowth.cs
+--------------------------------------------------
+Size: 1.19 KB
+Last Modified: 2026-09-07 13:24:09
+
+using System;
+using UnityEngine;
+
+[Serializable]
+public class StatGrowth
+{
+    [SerializeField] private float level1Value;
+    [SerializeField] private float growthPerLevel;
+
+    public float Level1Value => level1Value;
+    public float GrowthPerLevel => growthPerLevel;
+
+    public StatGrowth(float level1Value, float growthPerLevel)
+    {
+        this.level1Value = level1Value;
+        this.growthPerLevel = NormalizeGrowth(growthPerLevel);
+    }
+
+    public float GetValue(int level)
+    {
+        level = Mathf.Max(1, level);
+
+        return level1Value +
+               growthPerLevel * (level - 1);
+    }
+
+    public float GetLevel50Value()
+    {
+        return GetValue(50);
+    }
+
+    public void Validate()
+    {
+        growthPerLevel = NormalizeGrowth(growthPerLevel);
+    }
+
+    private static float NormalizeGrowth(float value)
+    {
+        // 성장하지 않는 스탯
+        if (value == 0f)
+            return 0f;
+
+        // 양수 성장량의 최소값
+        if (value > 0f && value < 0.05f)
+            value = 0.05f;
+
+        // 소수 둘째 자리까지
+        value = Mathf.Round(value * 100f) / 100f;
+
+        return value;
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Data/GameData.cs
+--------------------------------------------------
+Size: 446 B
+Last Modified: 2026-08-26 13:12:25
+
+using System;
+
+[Serializable]
+public class GameData
+{
+    // 테스트용 스킬
+    public bool testSkillUnlocked = false;
+
+    // Input System의 Binding Override 저장용
+    // 지금은 사용하지 않고 나중에 연결한다.
+    public string controlBindingsJson = "";
+
+    // 테스트용 재화
+    public int testCurrency = 0;
+
+    // 테스트 스테이지 클리어 여부
+    public bool stage1Cleared = false;
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Game/GameSession.cs
+--------------------------------------------------
+Size: 1.18 KB
+Last Modified: 2026-09-01 08:55:58
+
+using UnityEngine;
+
+public class GameSession : MonoBehaviour
+{
+    public static GameSession Instance { get; private set; }
+
+    [Header("Current Game Data")]
+    [SerializeField]
+    private GameData data = new GameData();
+
+    public GameData Data => data;
+
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
+        Debug.Log("[GameSession] 생성됨");
+    }
+
+
+    public void NewGame()
+    {
+        data = new GameData();
+
+        Debug.Log("[GameSession] 새 게임 데이터 생성");
+    }
+
+
+    public bool LoadGame()
+    {
+        GameData loadedData = SaveManager.Load();
+
+        if (loadedData == null)
+        {
+            Debug.Log("[GameSession] 불러올 세이브가 없습니다.");
+            return false;
+        }
+
+        data = loadedData;
+
+        Debug.Log("[GameSession] 게임 데이터 로드 완료");
+
+        return true;
+    }
+
+
+    public void SaveGame()
+    {
+        SaveManager.Save(data);
+    }
+
+
+    public void DeleteSave()
+    {
+        SaveManager.DeleteSave();
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Input/InputBindingManager.cs
+--------------------------------------------------
+Size: 2.09 KB
+Last Modified: 2026-08-26 14:00:18
+
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class InputBindingManager : MonoBehaviour
+{
+    [SerializeField] private InputActionAsset inputActions;
+
+    private InputAction testSkillAction;
+
+
+    private void Awake()
+    {
+        if (inputActions == null)
+        {
+            Debug.LogError("[InputBinding] InputActionAsset이 없습니다.");
+            return;
+        }
+
+        testSkillAction = inputActions.FindAction("player/TestSkill");
+
+        if (testSkillAction == null)
+        {
+            Debug.LogError("[InputBinding] player/TestSkill을 찾을 수 없습니다.");
+            return;
+        }
+
+        ApplySavedBindings();
+    }
+
+
+    public void BindTestSkillToQ()
+    {
+        BindTestSkill("<Keyboard>/q");
+    }
+
+
+    public void BindTestSkillToE()
+    {
+        BindTestSkill("<Keyboard>/e");
+    }
+
+
+    private void BindTestSkill(string controlPath)
+    {
+        if (testSkillAction == null)
+            return;
+
+        // 현재 TestSkill에는 단일 키 Binding 하나가 있으므로 index 0
+        testSkillAction.ApplyBindingOverride(0, controlPath);
+
+        SaveBindingsToGameData();
+
+        Debug.Log(
+            $"[InputBinding] TestSkill 변경 완료 : {controlPath}"
+        );
+    }
+
+
+    private void SaveBindingsToGameData()
+    {
+        if (GameSession.Instance == null)
+        {
+            Debug.LogError("[InputBinding] GameSession이 없습니다.");
+            return;
+        }
+
+        string json = inputActions.SaveBindingOverridesAsJson();
+
+        GameSession.Instance.Data.controlBindingsJson = json;
+
+        Debug.Log("[InputBinding] 키 설정을 GameData에 기록");
+    }
+
+
+    private void ApplySavedBindings()
+    {
+        if (GameSession.Instance == null)
+            return;
+
+        string json =
+            GameSession.Instance.Data.controlBindingsJson;
+
+        if (string.IsNullOrEmpty(json))
+            return;
+
+        inputActions.LoadBindingOverridesFromJson(json);
+
+        Debug.Log("[InputBinding] 저장된 키 설정을 Town에 적용");
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Manager/SystemsRoot.cs
+--------------------------------------------------
+Size: 348 B
+Last Modified: 2026-09-01 08:55:58
+
+using UnityEngine;
+
+public class SystemsRoot : MonoBehaviour
+{
+    private static SystemsRoot instance;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Pool/GoblinPool.cs
+--------------------------------------------------
+Size: 2.17 KB
+Last Modified: 2026-08-26 07:29:04
+
+using UnityEngine;
+using UnityEngine.Pool;
+
+public class GoblinPool : MonoBehaviour
+{
+    [Header("Prefab")]
+    [SerializeField] private GoblinEnemy goblinPrefab;
+
+    [Header("Spawn")]
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform player;
+
+    [Header("Pool Settings")]
+    [SerializeField] private int defaultCapacity = 1;
+    [SerializeField] private int maxPoolSize = 1;
+
+    private ObjectPool<GoblinEnemy> pool;
+
+    private GoblinEnemy activeGoblin;
+
+    private void Awake()
+    {
+        pool = new ObjectPool<GoblinEnemy>(
+            CreateGoblin,
+            OnTakeFromPool,
+            OnReturnedToPool,
+            OnDestroyPoolObject,
+            true,
+            defaultCapacity,
+            maxPoolSize
+        );
+    }
+
+    public void SpawnGoblin()
+    {
+        // 현재 활성화된 고블린이 있다면
+        // 추가 소환하지 않는다.
+        if (activeGoblin != null &&
+            activeGoblin.gameObject.activeSelf)
+        {
+            return;
+        }
+
+        activeGoblin = pool.Get();
+
+        Vector3 spawnPosition =
+            spawnPoint != null
+                ? spawnPoint.position
+                : transform.position;
+
+        activeGoblin.transform.position =
+            spawnPosition;
+
+        activeGoblin.Initialize(
+            player,
+            ReleaseGoblin
+        );
+    }
+
+    private GoblinEnemy CreateGoblin()
+    {
+        GoblinEnemy goblin = Instantiate(
+            goblinPrefab
+        );
+
+        goblin.gameObject.SetActive(false);
+
+        return goblin;
+    }
+
+    private void OnTakeFromPool(
+        GoblinEnemy goblin)
+    {
+        goblin.gameObject.SetActive(true);
+    }
+
+    private void OnReturnedToPool(
+        GoblinEnemy goblin)
+    {
+        goblin.gameObject.SetActive(false);
+    }
+
+    private void OnDestroyPoolObject(
+        GoblinEnemy goblin)
+    {
+        Destroy(goblin.gameObject);
+    }
+
+    private void ReleaseGoblin(
+        GoblinEnemy goblin)
+    {
+        if (activeGoblin == goblin)
+        {
+            activeGoblin = null;
+        }
+
+        pool.Release(goblin);
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Save/SaveManager.cs
+--------------------------------------------------
+Size: 1.44 KB
+Last Modified: 2026-08-26 13:12:49
+
+using System.IO;
+using UnityEngine;
+
+public static class SaveManager
+{
+    private const string SaveFileName = "save.json";
+
+    private static string SavePath
+    {
+        get
+        {
+            return Path.Combine(
+                Application.persistentDataPath,
+                SaveFileName
+            );
+        }
+    }
+
+    public static void Save(GameData data)
+    {
+        if (data == null)
+        {
+            Debug.LogError("[SaveManager] 저장할 GameData가 없습니다.");
+            return;
+        }
+
+        string json = JsonUtility.ToJson(data, true);
+
+        File.WriteAllText(SavePath, json);
+
+        Debug.Log($"[SaveManager] 저장 완료\n{SavePath}");
+    }
+
+    public static GameData Load()
+    {
+        if (!File.Exists(SavePath))
+        {
+            Debug.Log("[SaveManager] 세이브 파일이 없습니다.");
+            return null;
+        }
+
+        string json = File.ReadAllText(SavePath);
+
+        GameData data = JsonUtility.FromJson<GameData>(json);
+
+        Debug.Log($"[SaveManager] 로드 완료\n{SavePath}");
+
+        return data;
+    }
+
+    public static bool HasSaveFile()
+    {
+        return File.Exists(SavePath);
+    }
+
+    public static void DeleteSave()
+    {
+        if (!File.Exists(SavePath))
+        {
+            return;
+        }
+
+        File.Delete(SavePath);
+
+        Debug.Log("[SaveManager] 세이브 파일 삭제 완료");
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/System/Scene/SceneLoader.cs
+--------------------------------------------------
+Size: 520 B
+Last Modified: 2026-08-26 07:29:04
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneLoader : MonoBehaviour
+{
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadTown()
+    {
+        SceneManager.LoadScene("Town");
+    }
+
+    public void LoadCombat()
+    {
+        SceneManager.LoadScene("Dev_Combat");
+    }
+
+    public void ReloadCurrentScene()
+    {
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().name
+        );
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Town/TownMenuController.cs
+--------------------------------------------------
+Size: 1.61 KB
+Last Modified: 2026-09-07 12:43:14
+
+using UnityEngine;
+
+public class TownMenuController : MonoBehaviour
+{
+    [Header("Panels")]
+    [SerializeField] private GameObject battlePanel;
+    [SerializeField] private GameObject characterPanel;
+    [SerializeField] private GameObject shopPanel;
+    [SerializeField] private GameObject researchPanel;
+    [SerializeField] private GameObject storagePanel;
+    [SerializeField] private GameObject optionPanel;
+
+    private void Start()
+    {
+        OpenBattle();
+    }
+
+    public void OpenBattle()
+    {
+        ShowPanel(battlePanel);
+    }
+
+    public void OpenCharacter()
+    {
+        ShowPanel(characterPanel);
+    }
+
+    public void OpenShop()
+    {
+        ShowPanel(shopPanel);
+    }
+
+    public void OpenResearch()
+    {
+        ShowPanel(researchPanel);
+    }
+
+    public void OpenStorage()
+    {
+        ShowPanel(storagePanel);
+    }
+
+    public void OpenOption()
+    {
+        ShowPanel(optionPanel);
+    }
+
+    private void ShowPanel(GameObject targetPanel)
+    {
+        if (battlePanel != null)
+            battlePanel.SetActive(battlePanel == targetPanel);
+
+        if (characterPanel != null)
+            characterPanel.SetActive(characterPanel == targetPanel);
+
+        if (shopPanel != null)
+            shopPanel.SetActive(shopPanel == targetPanel);
+
+        if (researchPanel != null)
+            researchPanel.SetActive(researchPanel == targetPanel);
+
+        if (storagePanel != null)
+            storagePanel.SetActive(storagePanel == targetPanel);
+
+        if (optionPanel != null)
+            optionPanel.SetActive(optionPanel == targetPanel);
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Scripts/Town/TownTestMenu.cs
+--------------------------------------------------
+Size: 1.98 KB
+Last Modified: 2026-08-31 12:42:42
+
+using TMPro;
+using UnityEngine;
+
+public class TownTestMenu : MonoBehaviour
+{
+    [Header("UI")]
+    [SerializeField] private TMP_Text skillStatusText;
+    [SerializeField] private TMP_Text currencyText;
+    [SerializeField] private TMP_Text stageClearText;
+
+
+    private void Start()
+    {
+        RefreshUI();
+    }
+
+
+    public void UnlockTestSkill()
+    {
+        GameSession.Instance.Data.testSkillUnlocked = true;
+
+        Debug.Log("[Town] 테스트 스킬 해금");
+
+        RefreshUI();
+    }
+
+
+    public void AddTestCurrency()
+    {
+        GameSession.Instance.Data.testCurrency += 10;
+
+        Debug.Log(
+            $"[Town] 테스트 재화 +10 / 현재: {GameSession.Instance.Data.testCurrency}"
+        );
+
+        RefreshUI();
+    }
+
+
+    public void SpendTestCurrency()
+    {
+        if (GameSession.Instance.Data.testCurrency < 10)
+        {
+            Debug.Log("[Town] 재화 부족");
+            return;
+        }
+
+        GameSession.Instance.Data.testCurrency -= 10;
+
+        Debug.Log(
+            $"[Town] 테스트 재화 -10 / 현재: {GameSession.Instance.Data.testCurrency}"
+        );
+
+        RefreshUI();
+    }
+
+
+    public void SaveGame()
+    {
+        GameSession.Instance.SaveGame();
+
+        Debug.Log("[Town] 저장 요청");
+    }
+
+
+    public void RefreshUI()
+    {
+        if (GameSession.Instance == null)
+        {
+            Debug.LogWarning("[Town] GameSession이 없습니다.");
+            return;
+        }
+
+        GameData data = GameSession.Instance.Data;
+
+        if (skillStatusText != null)
+            skillStatusText.text =
+                $"Test Skill : {(data.testSkillUnlocked ? "Unlocked" : "Locked")}";
+
+        if (currencyText != null)
+            currencyText.text =
+                $"Currency : {data.testCurrency}";
+
+        if (stageClearText != null)
+            stageClearText.text =
+                $"Stage 1 : {(data.stage1Cleared ? "Clear" : "Not Clear")}";
+    }
+}
+
+
+--------------------------------------------------
+FILE: Assets/Settings/InputSystem_Actions.inputactions
+--------------------------------------------------
+Size: 40.04 KB
+Last Modified: 2026-08-26 07:29:03
+
+{
+    "name": "InputSystem_Actions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "6b444451-8a00-4d00-a97e-f47457f736a8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "6c2ab1b8-8984-453a-af3d-a3c78ae1679a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "852140f2-7766-474d-8707-702459ba45f3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "27c5f898-bc57-4ee1-8800-db469aca5fe3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "f1ba0d36-48eb-4cd5-b651-1c94a6531f70",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Previous",
+                    "type": "Button",
+                    "id": "2776c80d-3c14-4091-8c56-d04ced07a2b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Next",
+                    "type": "Button",
+                    "id": "b7230bb6-fc9b-4f52-8b25-f5e19cb2c2ba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "641cd816-40e6-41b4-8c3d-04687c349290",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "WASD",
+                    "id": "00ca640b-d935-4593-8157-c05846ea39b3",
+                    "path": "Dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "e2062cb9-1b15-46a2-838c-2f8d72a0bdd9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "8180e8bd-4097-4f4e-ab88-4523101a6ce9",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "320bffee-a40b-4347-ac70-c210eb8bc73a",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "1c5327b5-f71c-4f60-99c7-4e737386f1d1",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d2581a9b-1d11-4566-b27d-b92aff5fabbc",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "2e46982e-44cc-431b-9f0b-c11910bf467a",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "fcfe95b8-67b9-4526-84b5-5d0bc98d6400",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "77bff152-3580-4b21-b6de-dcd0c7e41164",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1635d3fe-58b6-4ba9-a4e2-f4b964f6b5c8",
+                    "path": "<XRController>/{Primary2DAxis}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ea4d645-4504-4529-b061-ab81934c3752",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse;Touch",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
+                    "path": "<Joystick>/{Hatswitch}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05f6913d-c316-48b2-a6bb-e225f14c7960",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "886e731e-7071-4ae4-95c0-e61739dad6fd",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Touch",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee3d0cd2-254e-47a7-a8cb-bc94d9658c54",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8255d333-5683-4943-a58a-ccb207ff1dce",
+                    "path": "<XRController>/{PrimaryAction}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b3c1c7f0-bd20-4ee7-a0f1-899b24bca6d7",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbac6039-9c09-46a1-b5f2-4e5124ccb5ed",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e15ca19d-e649-4852-97d5-7fe8ccc44e94",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f2e9ba44-c423-42a7-ad56-f20975884794",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8cbb2f4b-a784-49cc-8d5e-c010b8c7f4e6",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8bf24bf-3f2f-4160-a97c-38ec1eb520ba",
+                    "path": "<XRController>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb40bb66-4559-4dfa-9a2f-820438abb426",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "daba33a1-ad0c-4742-a909-43ad1cdfbeb6",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "603f3daf-40bd-4854-8724-93e8017f59e3",
+                    "path": "<XRController>/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1534dc16-a6aa-499d-9c3a-22b47347b52a",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Previous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "25060bbd-a3a6-476e-8fba-45ae484aad05",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Previous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c04ea5f-b012-41d1-a6f7-02e963b52893",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b3f66d0b-7751-423f-908b-a11c5bd95930",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f4649ac-64a8-4a73-af11-b3faef356a4d",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36e52cba-0905-478e-a818-f4bfcb9f3b9a",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "272f6d14-89ba-496f-b7ff-215263d3219f",
+            "actions": [
+                {
+                    "name": "Navigate",
+                    "type": "PassThrough",
+                    "id": "c95b2375-e6d9-4b88-9c4c-c5e76515df4b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Submit",
+                    "type": "Button",
+                    "id": "7607c7b6-cd76-4816-beef-bd0341cfe950",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "15cef263-9014-4fd5-94d9-4e4a6234a6ef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Point",
+                    "type": "PassThrough",
+                    "id": "32b35790-4ed0-4e9a-aa41-69ac6d629449",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "3c7022bf-7922-4f7c-a998-c437916075ad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightClick",
+                    "type": "PassThrough",
+                    "id": "44b200b1-1557-4083-816c-b22cbdf77ddf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MiddleClick",
+                    "type": "PassThrough",
+                    "id": "dad70c86-b58c-4b17-88ad-f5e53adf419e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ScrollWheel",
+                    "type": "PassThrough",
+                    "id": "0489e84a-4833-4c40-bfae-cea84b696689",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TrackedDevicePosition",
+                    "type": "PassThrough",
+                    "id": "24908448-c609-4bc3-a128-ea258674378a",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TrackedDeviceOrientation",
+                    "type": "PassThrough",
+                    "id": "9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Gamepad",
+                    "id": "809f371f-c5e2-4e7a-83a1-d867598f40dd",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "14a5d6e8-4aaf-4119-a9ef-34b8c2c548bf",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "9144cbe6-05e1-4687-a6d7-24f99d23dd81",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2db08d65-c5fb-421b-983f-c71163608d67",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "58748904-2ea9-4a80-8579-b500e6a76df8",
+                    "path": "<Gamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "8ba04515-75aa-45de-966d-393d9bbd1c14",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "712e721c-bdfb-4b23-a86c-a0d9fcfea921",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "fcd248ae-a788-4676-a12e-f4d81205600b",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "1f04d9bc-c50b-41a1-bfcc-afb75475ec20",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fb8277d4-c5cd-4663-9dc7-ee3f0b506d90",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Joystick",
+                    "id": "e25d9774-381c-4a61-b47c-7b6b299ad9f9",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "3db53b26-6601-41be-9887-63ac74e79d19",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0cb3e13e-3d90-4178-8ae6-d9c5501d653f",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "0392d399-f6dd-4c82-8062-c1e9c0d34835",
+                    "path": "<Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "942a66d9-d42f-43d6-8d70-ecb4ba5363bc",
+                    "path": "<Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "ff527021-f211-4c02-933e-5976594c46ed",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "563fbfdd-0f09-408d-aa75-8642c4f08ef0",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "eb480147-c587-4a33-85ed-eb0ab9942c43",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2bf42165-60bc-42ca-8072-8c13ab40239b",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "85d264ad-e0a0-4565-b7ff-1a37edde51ac",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "74214943-c580-44e4-98eb-ad7eebe17902",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "cea9b045-a000-445b-95b8-0c171af70a3b",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "8607c725-d935-4808-84b1-8354e29bab63",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "4cda81dc-9edd-4e03-9d7c-a71a14345d0b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9e92bb26-7e3b-4ec4-b06b-3c8f8e498ddc",
+                    "path": "*/{Submit}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82627dcc-3b13-4ba9-841d-e4b746d6553e",
+                    "path": "*/{Cancel}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c52c8e0b-8179-41d3-b8a1-d149033bbe86",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1394cbc-336e-44ce-9ea8-6007ed6193f7",
+                    "path": "<Pen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5693e57a-238a-46ed-b5ae-e64e6e574302",
+                    "path": "<Touchscreen>/touch*/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4faf7dc9-b979-4210-aa8c-e808e1ef89f5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d66d5ba-88d7-48e6-b1cd-198bbfef7ace",
+                    "path": "<Pen>/tip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47c2a644-3ebc-4dae-a106-589b7ca75b59",
+                    "path": "<Touchscreen>/touch*/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb9e6b34-44bf-4381-ac63-5aa15d19f677",
+                    "path": "<XRController>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38c99815-14ea-4617-8627-164d27641299",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ScrollWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4c191405-5738-4d4b-a523-c6a301dbf754",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "RightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24066f69-da47-44f3-a07e-0015fb02eb2e",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "MiddleClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7236c0d9-6ca3-47cf-a6ee-a97f5b59ea77",
+                    "path": "<XRController>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "TrackedDevicePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23e01e3a-f935-4948-8d8b-9bcac77714fb",
+                    "path": "<XRController>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
+
