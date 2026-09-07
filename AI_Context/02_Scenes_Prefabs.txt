@@ -2,8 +2,8 @@
 SLAYERS - UNITY PROJECT SNAPSHOT
 ==================================================
 
-Snapshot ID   : 20260907-133537
-Generated At  : 2026-09-07 13:35:37
+Snapshot ID   : 20260907-205547
+Generated At  : 2026-09-07 20:55:47
 Unity Version : 6000.3.22f1
 Project Name  : Project Slayers
 Part          : 02_Scenes_Prefabs
@@ -18,8 +18,8 @@ Files Included: 7
 --------------------------------------------------
 FILE: Assets/Prefab/NormalEnemy/Goblin.prefab
 --------------------------------------------------
-Size: 6.77 KB
-Last Modified: 2026-08-26 07:29:03
+Size: 7.01 KB
+Last Modified: 2026-09-07 18:43:27
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -274,8 +274,8 @@ Animator:
 --------------------------------------------------
 FILE: Assets/Scenes/Dev_Combat.unity
 --------------------------------------------------
-Size: 43.68 KB
-Last Modified: 2026-09-07 13:35:26
+Size: 45.22 KB
+Last Modified: 2026-09-07 18:43:27
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -1855,8 +1855,8 @@ SceneRoots:
 --------------------------------------------------
 FILE: Assets/Scenes/MainMenu.unity
 --------------------------------------------------
-Size: 204.81 KB
-Last Modified: 2026-09-07 12:43:14
+Size: 211.44 KB
+Last Modified: 2026-09-07 18:43:27
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -3150,11 +3150,11 @@ Transform:
   m_GameObject: {fileID: 473595659}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -834.7782, y: -543.10474, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2001008106}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &555377746
 PrefabInstance:
@@ -8165,7 +8165,6 @@ Transform:
   m_Children:
   - {fileID: 751163294}
   - {fileID: 1313816486}
-  - {fileID: 473595662}
   - {fileID: 597312830}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8671,6 +8670,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 818425400}
+  - {fileID: 473595662}
   - {fileID: 2001008106}
   - {fileID: 775480976}
 
@@ -8679,8 +8679,8 @@ SceneRoots:
 --------------------------------------------------
 FILE: Assets/Scenes/Town.unity
 --------------------------------------------------
-Size: 82.58 KB
-Last Modified: 2026-09-07 13:35:04
+Size: 84.95 KB
+Last Modified: 2026-09-07 18:43:27
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -11115,17 +11115,17 @@ SceneRoots:
   m_Roots:
   - {fileID: 1744656558}
   - {fileID: 1311012026}
+  - {fileID: 580663594}
   - {fileID: 597169113}
   - {fileID: 1913265148}
-  - {fileID: 580663594}
 
 
 
 --------------------------------------------------
 FILE: Assets/Settings/Scenes/URP2DSceneTemplate.unity
 --------------------------------------------------
-Size: 9.65 KB
-Last Modified: 2026-08-26 07:29:03
+Size: 9.99 KB
+Last Modified: 2026-09-07 18:43:27
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -11483,8 +11483,8 @@ Transform:
 --------------------------------------------------
 FILE: Assets/StrainAsset/BlackButton.prefab
 --------------------------------------------------
-Size: 13.95 KB
-Last Modified: 2026-08-31 14:16:21
+Size: 14.30 KB
+Last Modified: 2026-09-07 18:43:28
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
@@ -11858,8 +11858,8 @@ MonoBehaviour:
 --------------------------------------------------
 FILE: Assets/StrainAsset/OptionSlider.prefab
 --------------------------------------------------
-Size: 11.95 KB
-Last Modified: 2026-09-01 08:55:58
+Size: 12.35 KB
+Last Modified: 2026-09-07 18:43:28
 
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:

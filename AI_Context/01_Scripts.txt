@@ -2,8 +2,8 @@
 SLAYERS - UNITY PROJECT SNAPSHOT
 ==================================================
 
-Snapshot ID   : 20260907-133537
-Generated At  : 2026-09-07 13:35:37
+Snapshot ID   : 20260907-205547
+Generated At  : 2026-09-07 20:55:47
 Unity Version : 6000.3.22f1
 Project Name  : Project Slayers
 Part          : 01_Scripts
@@ -18,8 +18,8 @@ Files Included: 28
 --------------------------------------------------
 FILE: Assets/Input/PlayerControl.inputactions
 --------------------------------------------------
-Size: 4.72 KB
-Last Modified: 2026-08-26 13:53:51
+Size: 4.85 KB
+Last Modified: 2026-09-07 18:43:27
 
 {
     "version": 1,
@@ -160,7 +160,7 @@ Last Modified: 2026-08-26 13:53:51
 FILE: Assets/Scripts/Battle/TestBattleManager.cs
 --------------------------------------------------
 Size: 1.41 KB
-Last Modified: 2026-08-26 14:12:51
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -231,7 +231,7 @@ public class TestBattleManager : MonoBehaviour
 FILE: Assets/Scripts/Battle/TestSkillController.cs
 --------------------------------------------------
 Size: 723 B
-Last Modified: 2026-08-26 14:13:54
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -269,7 +269,7 @@ public class TestSkillController : MonoBehaviour
 FILE: Assets/Scripts/Enemy/Goblin/GoblinAnimationController.cs
 --------------------------------------------------
 Size: 1.07 KB
-Last Modified: 2026-08-26 07:29:04
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -327,7 +327,7 @@ public class GoblinAnimationController : MonoBehaviour
 FILE: Assets/Scripts/Enemy/Goblin/GoblinEnemy.cs
 --------------------------------------------------
 Size: 3.05 KB
-Last Modified: 2026-08-26 07:29:04
+Last Modified: 2026-09-07 18:43:27
 
 using System;
 using UnityEngine;
@@ -482,7 +482,7 @@ public class GoblinEnemy : MonoBehaviour
 FILE: Assets/Scripts/MainMenu/MainMenuController.cs
 --------------------------------------------------
 Size: 1.42 KB
-Last Modified: 2026-08-31 14:50:31
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -553,7 +553,7 @@ public class MainMenuController : MonoBehaviour
 FILE: Assets/Scripts/MainMenu/OptionDisplayController.cs
 --------------------------------------------------
 Size: 3.24 KB
-Last Modified: 2026-09-07 12:43:14
+Last Modified: 2026-09-07 18:43:27
 
 using System.Collections.Generic;
 using TMPro;
@@ -678,9 +678,10 @@ public class OptionDisplayController : MonoBehaviour
 --------------------------------------------------
 FILE: Assets/Scripts/Option/AnimatorTransitionTool.cs
 --------------------------------------------------
-Size: 3.45 KB
-Last Modified: 2026-08-26 07:29:04
+Size: 3.47 KB
+Last Modified: 2026-09-07 18:43:27
 
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Animations;
@@ -809,13 +810,15 @@ public static class AnimatorTransitionTool
         return changedCount;
     }
 }
+#endif
+
 
 
 --------------------------------------------------
 FILE: Assets/Scripts/Option/MenuButtonVisual.cs
 --------------------------------------------------
 Size: 1.86 KB
-Last Modified: 2026-08-31 14:03:15
+Last Modified: 2026-09-07 18:43:27
 
 using TMPro;
 using UnityEngine;
@@ -896,9 +899,10 @@ public class MenuButtonVisual : MonoBehaviour,
 --------------------------------------------------
 FILE: Assets/Scripts/Option/SlayersCodeSnapshotTool.cs
 --------------------------------------------------
-Size: 18.19 KB
-Last Modified: 2026-09-01 08:55:58
+Size: 18.22 KB
+Last Modified: 2026-09-07 18:43:27
 
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -1522,14 +1526,17 @@ public static class SlayersCodeSnapshotTool
         );
     }
 }
+#endif
+
 
 
 --------------------------------------------------
 FILE: Assets/Scripts/Option/SpritePivotBatchTool.cs
 --------------------------------------------------
-Size: 4.91 KB
-Last Modified: 2026-08-26 07:29:04
+Size: 4.94 KB
+Last Modified: 2026-09-07 18:43:27
 
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.U2D.Sprites;
@@ -1695,13 +1702,15 @@ public class SpritePivotBatchTool : EditorWindow
         );
     }
 }
+#endif
+
 
 
 --------------------------------------------------
 FILE: Assets/Scripts/Player/CharacterMotor2D.cs
 --------------------------------------------------
 Size: 3.83 KB
-Last Modified: 2026-08-26 07:29:03
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -1878,7 +1887,7 @@ public class CharacterMotor2D : MonoBehaviour
 FILE: Assets/Scripts/Player/PlayerAnimationController.cs
 --------------------------------------------------
 Size: 2.09 KB
-Last Modified: 2026-08-26 07:29:03
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -1968,7 +1977,7 @@ public class PlayerAnimationController : MonoBehaviour
 FILE: Assets/Scripts/Player/PlayerBindingLoader.cs
 --------------------------------------------------
 Size: 1.23 KB
-Last Modified: 2026-08-26 14:04:36
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -2031,7 +2040,7 @@ public class PlayerBindingLoader : MonoBehaviour
 FILE: Assets/Scripts/Player/PlayerInputReader.cs
 --------------------------------------------------
 Size: 999 B
-Last Modified: 2026-08-26 13:50:49
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -2093,7 +2102,7 @@ public class PlayerInputReader : MonoBehaviour
 FILE: Assets/Scripts/System/Character/CharacterStats.cs
 --------------------------------------------------
 Size: 3.55 KB
-Last Modified: 2026-09-07 13:34:20
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -2180,7 +2189,7 @@ public class CharacterStats : MonoBehaviour
 FILE: Assets/Scripts/System/Character/CharacterStatsData.cs
 --------------------------------------------------
 Size: 4.71 KB
-Last Modified: 2026-09-07 13:33:47
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -2305,7 +2314,7 @@ public class CharacterStatsData : ScriptableObject
 FILE: Assets/Scripts/System/Character/StatGrowth.cs
 --------------------------------------------------
 Size: 1.19 KB
-Last Modified: 2026-09-07 13:24:09
+Last Modified: 2026-09-07 18:43:27
 
 using System;
 using UnityEngine;
@@ -2365,7 +2374,7 @@ public class StatGrowth
 FILE: Assets/Scripts/System/Data/GameData.cs
 --------------------------------------------------
 Size: 446 B
-Last Modified: 2026-08-26 13:12:25
+Last Modified: 2026-09-07 18:43:27
 
 using System;
 
@@ -2391,7 +2400,7 @@ public class GameData
 FILE: Assets/Scripts/System/Game/GameSession.cs
 --------------------------------------------------
 Size: 1.18 KB
-Last Modified: 2026-09-01 08:55:58
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -2463,7 +2472,7 @@ public class GameSession : MonoBehaviour
 FILE: Assets/Scripts/System/Input/InputBindingManager.cs
 --------------------------------------------------
 Size: 2.09 KB
-Last Modified: 2026-08-26 14:00:18
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -2561,7 +2570,7 @@ public class InputBindingManager : MonoBehaviour
 FILE: Assets/Scripts/System/Manager/SystemsRoot.cs
 --------------------------------------------------
 Size: 348 B
-Last Modified: 2026-09-01 08:55:58
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -2587,7 +2596,7 @@ public class SystemsRoot : MonoBehaviour
 FILE: Assets/Scripts/System/Pool/GoblinPool.cs
 --------------------------------------------------
 Size: 2.17 KB
-Last Modified: 2026-08-26 07:29:04
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.Pool;
@@ -2694,7 +2703,7 @@ public class GoblinPool : MonoBehaviour
 FILE: Assets/Scripts/System/Save/SaveManager.cs
 --------------------------------------------------
 Size: 1.44 KB
-Last Modified: 2026-08-26 13:12:49
+Last Modified: 2026-09-07 18:43:27
 
 using System.IO;
 using UnityEngine;
@@ -2769,7 +2778,7 @@ public static class SaveManager
 FILE: Assets/Scripts/System/Scene/SceneLoader.cs
 --------------------------------------------------
 Size: 520 B
-Last Modified: 2026-08-26 07:29:04
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -2804,7 +2813,7 @@ public class SceneLoader : MonoBehaviour
 FILE: Assets/Scripts/Town/TownMenuController.cs
 --------------------------------------------------
 Size: 1.61 KB
-Last Modified: 2026-09-07 12:43:14
+Last Modified: 2026-09-07 18:43:27
 
 using UnityEngine;
 
@@ -2880,7 +2889,7 @@ public class TownMenuController : MonoBehaviour
 FILE: Assets/Scripts/Town/TownTestMenu.cs
 --------------------------------------------------
 Size: 1.98 KB
-Last Modified: 2026-08-31 12:42:42
+Last Modified: 2026-09-07 18:43:27
 
 using TMPro;
 using UnityEngine;
@@ -2975,8 +2984,8 @@ public class TownTestMenu : MonoBehaviour
 --------------------------------------------------
 FILE: Assets/Settings/InputSystem_Actions.inputactions
 --------------------------------------------------
-Size: 40.04 KB
-Last Modified: 2026-08-26 07:29:03
+Size: 41.08 KB
+Last Modified: 2026-09-07 18:43:27
 
 {
     "name": "InputSystem_Actions",
