@@ -33,7 +33,7 @@ public class CharacterStatsEditor : Editor
         );
 
         EditorGUILayout.LabelField(
-            $"Level {stats.Level} 기준 / Modifier 미적용 상태",
+            $"Level {stats.Level} 기준 / Modifier {stats.ModifierCount}개 적용",
             EditorStyles.miniLabel
         );
 
