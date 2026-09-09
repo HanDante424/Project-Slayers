@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 30, y: -70}
-  m_SizeDelta: {x: 0, y: 100}
+  m_SizeDelta: {x: 0, y: 75}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &7745924248200964712
 MonoBehaviour:
@@ -73,8 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
   m_Padding:
-    m_Left: 20
-    m_Right: 20
+    m_Left: 0
+    m_Right: 0
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
@@ -128,15 +128,15 @@ RectTransform:
   m_GameObject: {fileID: 7620879706790878600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1989843265544364067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 4, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8586590756600585532
 CanvasRenderer:
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
-  m_IgnoreLayout: 0
+  m_IgnoreLayout: 1
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: -1
@@ -204,9 +204,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989843265544364067}
     m_Modifications:
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342957821621138886, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4853247111915698784, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
       propertyPath: m_text
-      value: "\uB4A4\uD2C0\uB9B0"
+      value: "\uB4A4\uD2C0\uB9B0 \uD669\uCC9C\uC758 \uACE0\uBE14\uB9B0"
       objectReference: {fileID: 0}
     - target: {fileID: 4853247111915698784, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
       propertyPath: m_fontSize
@@ -354,6 +382,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5804570074607469526, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3540487321922108850}
+    - targetCorrespondingSourceObject: {fileID: 5804570074607469526, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1204776165537634787}
   m_SourcePrefab: {fileID: 100100000, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
 --- !u!1 &2937371051917893420 stripped
 GameObject:
@@ -400,6 +431,32 @@ MonoBehaviour:
   normalText: {r: 0.85, g: 0.84, b: 0.81, a: 1}
   hoverText: {r: 1, g: 1, b: 1, a: 1}
   pressedText: {r: 0.89, g: 0.6, b: 0.55, a: 1}
+--- !u!114 &1204776165537634787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2937371051917893420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 30
+    m_Right: 30
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!224 &3270841914000341921 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6136725920808003419, guid: 31bda3bc3ac8fbe43ac9515d013fd351, type: 3}
