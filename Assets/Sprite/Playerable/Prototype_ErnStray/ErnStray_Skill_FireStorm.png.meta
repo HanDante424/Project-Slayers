@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 8c18abf39fe7f2342972b0be14d6433b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2967062886290573619
+    second: ErnStray_Skill_FireStorm_0
+  - first:
+      213: 250199024091602064
+    second: ErnStray_Skill_FireStorm_1
+  - first:
+      213: -2573947515982660555
+    second: ErnStray_Skill_FireStorm_2
+  - first:
+      213: -3074767827820214331
+    second: ErnStray_Skill_FireStorm_3
+  - first:
+      213: -8887718676288611866
+    second: ErnStray_Skill_FireStorm_4
+  - first:
+      213: 7429172033349607269
+    second: ErnStray_Skill_FireStorm_5
+  - first:
+      213: 7633080034926362744
+    second: ErnStray_Skill_FireStorm_6
+  - first:
+      213: -8065826233254744705
+    second: ErnStray_Skill_FireStorm_7
+  - first:
+      213: 5080431484479473345
+    second: ErnStray_Skill_FireStorm_8
+  - first:
+      213: -6511792324165752212
+    second: ErnStray_Skill_FireStorm_9
+  - first:
+      213: 6893299763160755459
+    second: ErnStray_Skill_FireStorm_10
+  - first:
+      213: 2864431253523852369
+    second: ErnStray_Skill_FireStorm_11
+  - first:
+      213: 1121387563173378386
+    second: ErnStray_Skill_FireStorm_12
+  - first:
+      213: 8020984019106505057
+    second: ErnStray_Skill_FireStorm_13
+  - first:
+      213: 2526097433001917732
+    second: ErnStray_Skill_FireStorm_14
+  - first:
+      213: -4074945900023730849
+    second: ErnStray_Skill_FireStorm_15
+  - first:
+      213: -2907563038902793844
+    second: ErnStray_Skill_FireStorm_16
+  - first:
+      213: -7883966694321666107
+    second: ErnStray_Skill_FireStorm_17
+  - first:
+      213: 8955901297426994572
+    second: ErnStray_Skill_FireStorm_18
+  - first:
+      213: -3444036556881412064
+    second: ErnStray_Skill_FireStorm_19
+  - first:
+      213: -1805161441211006041
+    second: ErnStray_Skill_FireStorm_20
+  - first:
+      213: -411048882997970948
+    second: ErnStray_Skill_FireStorm_21
+  - first:
+      213: -7545312120972034568
+    second: ErnStray_Skill_FireStorm_22
+  - first:
+      213: 8644740969532044290
+    second: ErnStray_Skill_FireStorm_23
+  - first:
+      213: -7394076828394673642
+    second: ErnStray_Skill_FireStorm_24
+  - first:
+      213: 4041898842476206132
+    second: ErnStray_Skill_FireStorm_25
+  - first:
+      213: -9141788762242051786
+    second: ErnStray_Skill_FireStorm_26
+  - first:
+      213: 819857589934064858
+    second: ErnStray_Skill_FireStorm_27
+  - first:
+      213: 1696484448829743069
+    second: ErnStray_Skill_FireStorm_28
+  - first:
+      213: -2621789271191123751
+    second: ErnStray_Skill_FireStorm_29
+  - first:
+      213: 3223204014344001020
+    second: ErnStray_Skill_FireStorm_30
+  - first:
+      213: -6021288253151783488
+    second: ErnStray_Skill_FireStorm_31
+  - first:
+      213: 4343802750655550146
+    second: ErnStray_Skill_FireStorm_32
+  - first:
+      213: -208977105264428504
+    second: ErnStray_Skill_FireStorm_33
+  - first:
+      213: 8433222232306146721
+    second: ErnStray_Skill_FireStorm_34
+  - first:
+      213: 8434222994654578371
+    second: ErnStray_Skill_FireStorm_35
+  - first:
+      213: 8770028160008719029
+    second: ErnStray_Skill_FireStorm_36
+  - first:
+      213: -2043946231121809986
+    second: ErnStray_Skill_FireStorm_37
+  - first:
+      213: -8174919421135059398
+    second: ErnStray_Skill_FireStorm_38
+  - first:
+      213: -7005179076525648844
+    second: ErnStray_Skill_FireStorm_39
+  - first:
+      213: 6918951472882963214
+    second: ErnStray_Skill_FireStorm_40
+  - first:
+      213: -7699432814012852594
+    second: ErnStray_Skill_FireStorm_41
+  - first:
+      213: -7805402554285960267
+    second: ErnStray_Skill_FireStorm_42
+  - first:
+      213: 7871575467449040116
+    second: ErnStray_Skill_FireStorm_43
+  - first:
+      213: -5989681579698721263
+    second: ErnStray_Skill_FireStorm_44
+  - first:
+      213: 2003964765913912568
+    second: ErnStray_Skill_FireStorm_45
+  - first:
+      213: -2116369285640349064
+    second: ErnStray_Skill_FireStorm_46
+  - first:
+      213: -2832754092424559515
+    second: ErnStray_Skill_FireStorm_47
+  - first:
+      213: 8874229204634421173
+    second: ErnStray_Skill_FireStorm_48
+  - first:
+      213: -3529336782628233926
+    second: ErnStray_Skill_FireStorm_49
+  - first:
+      213: 3654210271482551340
+    second: ErnStray_Skill_FireStorm_50
+  - first:
+      213: -3672442034969214807
+    second: ErnStray_Skill_FireStorm_51
+  - first:
+      213: -3299455257371826959
+    second: ErnStray_Skill_FireStorm_52
+  - first:
+      213: 2261962353534140404
+    second: ErnStray_Skill_FireStorm_53
+  - first:
+      213: -8774574564943710639
+    second: ErnStray_Skill_FireStorm_54
+  - first:
+      213: 3326003041982109506
+    second: ErnStray_Skill_FireStorm_55
+  - first:
+      213: 7895322207050013652
+    second: ErnStray_Skill_FireStorm_56
+  - first:
+      213: 541161070790183023
+    second: ErnStray_Skill_FireStorm_57
+  - first:
+      213: 3412740309988534398
+    second: ErnStray_Skill_FireStorm_58
+  - first:
+      213: -693497188811350799
+    second: ErnStray_Skill_FireStorm_59
+  - first:
+      213: 2383992147182734753
+    second: ErnStray_Skill_FireStorm_60
+  - first:
+      213: -5551320157060812093
+    second: ErnStray_Skill_FireStorm_61
+  - first:
+      213: -5119471649385415349
+    second: ErnStray_Skill_FireStorm_62
+  - first:
+      213: -2454973649198143924
+    second: ErnStray_Skill_FireStorm_63
+  - first:
+      213: -977813538291098962
+    second: ErnStray_Skill_FireStorm_64
+  - first:
+      213: 1089091252177446298
+    second: ErnStray_Skill_FireStorm_65
+  - first:
+      213: 987503271461298747
+    second: ErnStray_Skill_FireStorm_66
+  - first:
+      213: 1923047818708675067
+    second: ErnStray_Skill_FireStorm_67
+  - first:
+      213: -3429168796672307957
+    second: ErnStray_Skill_FireStorm_68
+  - first:
+      213: -3262997822527278166
+    second: ErnStray_Skill_FireStorm_69
+  - first:
+      213: 4866508612316767639
+    second: ErnStray_Skill_FireStorm_70
+  - first:
+      213: 4867571751000115936
+    second: ErnStray_Skill_FireStorm_71
+  - first:
+      213: -8109583476742476857
+    second: ErnStray_Skill_FireStorm_72
+  - first:
+      213: 3088324341266476774
+    second: ErnStray_Skill_FireStorm_73
+  - first:
+      213: -5090262545940979241
+    second: ErnStray_Skill_FireStorm_74
+  - first:
+      213: 7467836518669921622
+    second: ErnStray_Skill_FireStorm_75
+  - first:
+      213: -6002801884102505464
+    second: ErnStray_Skill_FireStorm_76
+  - first:
+      213: -744910030549202683
+    second: ErnStray_Skill_FireStorm_77
+  - first:
+      213: -5587976290696059406
+    second: ErnStray_Skill_FireStorm_78
+  - first:
+      213: 7185206443107580864
+    second: ErnStray_Skill_FireStorm_79
+  - first:
+      213: 8405363690620223922
+    second: ErnStray_Skill_FireStorm_80
+  - first:
+      213: -4153096644017982096
+    second: ErnStray_Skill_FireStorm_81
+  - first:
+      213: 820661073715661057
+    second: ErnStray_Skill_FireStorm_82
+  - first:
+      213: 1618294886038873382
+    second: ErnStray_Skill_FireStorm_83
+  - first:
+      213: -4333114767049823475
+    second: ErnStray_Skill_FireStorm_84
+  - first:
+      213: 5485887514328843493
+    second: ErnStray_Skill_FireStorm_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3948
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec58c5d3fbfa484ea485f7325d09be8
+      internalID: -1595151923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_1
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 3948
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0616527f0f8079745b488b1de9d065b0
+      internalID: 1679563839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_2
+      rect:
+        serializedVersion: 2
+        x: 5660
+        y: 3948
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995dd81a922c0c04190b667edd3e1356
+      internalID: -1800850092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_3
+      rect:
+        serializedVersion: 2
+        x: 8490
+        y: 3948
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aecb50f40b74341a0963a249147c7e
+      internalID: -34260120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1974
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075c814239ba9544fb94ba5c1b35d7e4
+      internalID: -1490356951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_5
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1974
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772227b9e38ed2a4c8f8123f8cd8be83
+      internalID: 2032104017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_6
+      rect:
+        serializedVersion: 2
+        x: 5660
+        y: 1974
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7ee78b01c35624497607cd68c27258
+      internalID: -1271236825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_7
+      rect:
+        serializedVersion: 2
+        x: 8490
+        y: 1974
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3007d952556aa45b47d568f38a58d5
+      internalID: -1055227540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireStorm_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2830
+        height: 1974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3808ff23874ba89458fd0a01541b7f3d
+      internalID: 344613275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6854de7734464ec408592b6c6a18ef5b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ErnStray_Skill_FireStorm_0: -1595151923
+      ErnStray_Skill_FireStorm_1: 1679563839
+      ErnStray_Skill_FireStorm_2: -1800850092
+      ErnStray_Skill_FireStorm_3: -34260120
+      ErnStray_Skill_FireStorm_4: -1490356951
+      ErnStray_Skill_FireStorm_5: 2032104017
+      ErnStray_Skill_FireStorm_6: -1271236825
+      ErnStray_Skill_FireStorm_7: -1055227540
+      ErnStray_Skill_FireStorm_8: 344613275
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

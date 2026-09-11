@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: d31ab37f11e3d6d40a118d207a9c6145
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7527495425353936442
+    second: ErnStray_Skill_FireExcution_0
+  - first:
+      213: 2963635935858350343
+    second: ErnStray_Skill_FireExcution_1
+  - first:
+      213: 28129290158090621
+    second: ErnStray_Skill_FireExcution_2
+  - first:
+      213: 8468948587493297964
+    second: ErnStray_Skill_FireExcution_3
+  - first:
+      213: -5552086598026179120
+    second: ErnStray_Skill_FireExcution_4
+  - first:
+      213: 4790057372834525089
+    second: ErnStray_Skill_FireExcution_5
+  - first:
+      213: -4865668354839663970
+    second: ErnStray_Skill_FireExcution_6
+  - first:
+      213: -1919027398818333693
+    second: ErnStray_Skill_FireExcution_7
+  - first:
+      213: -347885484633768077
+    second: ErnStray_Skill_FireExcution_8
+  - first:
+      213: -1070581298562594028
+    second: ErnStray_Skill_FireExcution_9
+  - first:
+      213: -5330554441027199165
+    second: ErnStray_Skill_FireExcution_10
+  - first:
+      213: -2538729122896111503
+    second: ErnStray_Skill_FireExcution_11
+  - first:
+      213: -2987026050953663313
+    second: ErnStray_Skill_FireExcution_12
+  - first:
+      213: 3927768231569931543
+    second: ErnStray_Skill_FireExcution_13
+  - first:
+      213: -7207995562030391704
+    second: ErnStray_Skill_FireExcution_14
+  - first:
+      213: 6201877919707299953
+    second: ErnStray_Skill_FireExcution_15
+  - first:
+      213: -179656782424320674
+    second: ErnStray_Skill_FireExcution_16
+  - first:
+      213: -2513679742916273090
+    second: ErnStray_Skill_FireExcution_17
+  - first:
+      213: 2055658773680243165
+    second: ErnStray_Skill_FireExcution_18
+  - first:
+      213: 5867969884092408802
+    second: ErnStray_Skill_FireExcution_19
+  - first:
+      213: -1797606762938309607
+    second: ErnStray_Skill_FireExcution_20
+  - first:
+      213: -5712309697568311359
+    second: ErnStray_Skill_FireExcution_21
+  - first:
+      213: 7856626647875325541
+    second: ErnStray_Skill_FireExcution_22
+  - first:
+      213: 5374784352676967014
+    second: ErnStray_Skill_FireExcution_23
+  - first:
+      213: 4621688929388978103
+    second: ErnStray_Skill_FireExcution_24
+  - first:
+      213: -4986177625130405923
+    second: ErnStray_Skill_FireExcution_25
+  - first:
+      213: -2403422354484167281
+    second: ErnStray_Skill_FireExcution_26
+  - first:
+      213: 7914415922932165099
+    second: ErnStray_Skill_FireExcution_27
+  - first:
+      213: -8131364492086811864
+    second: ErnStray_Skill_FireExcution_28
+  - first:
+      213: -6770031422841958006
+    second: ErnStray_Skill_FireExcution_29
+  - first:
+      213: -8971476482273142935
+    second: ErnStray_Skill_FireExcution_30
+  - first:
+      213: -2898936944913224482
+    second: ErnStray_Skill_FireExcution_31
+  - first:
+      213: 770763310349179836
+    second: ErnStray_Skill_FireExcution_32
+  - first:
+      213: -1659874215704946245
+    second: ErnStray_Skill_FireExcution_33
+  - first:
+      213: 6220937986660798798
+    second: ErnStray_Skill_FireExcution_34
+  - first:
+      213: 1991111022656045913
+    second: ErnStray_Skill_FireExcution_35
+  - first:
+      213: -574558588176489862
+    second: ErnStray_Skill_FireExcution_36
+  - first:
+      213: -8802178297923779209
+    second: ErnStray_Skill_FireExcution_37
+  - first:
+      213: 1389961761852936125
+    second: ErnStray_Skill_FireExcution_38
+  - first:
+      213: -340421709525304655
+    second: ErnStray_Skill_FireExcution_39
+  - first:
+      213: 4347845563263990445
+    second: ErnStray_Skill_FireExcution_40
+  - first:
+      213: 3114019461826068827
+    second: ErnStray_Skill_FireExcution_41
+  - first:
+      213: 1008474129850001098
+    second: ErnStray_Skill_FireExcution_42
+  - first:
+      213: 2562414106637020231
+    second: ErnStray_Skill_FireExcution_43
+  - first:
+      213: 3088363859326362390
+    second: ErnStray_Skill_FireExcution_44
+  - first:
+      213: 6827525643643868383
+    second: ErnStray_Skill_FireExcution_45
+  - first:
+      213: -5839079507530657426
+    second: ErnStray_Skill_FireExcution_46
+  - first:
+      213: -3577855375135563729
+    second: ErnStray_Skill_FireExcution_47
+  - first:
+      213: -1190499106156822468
+    second: ErnStray_Skill_FireExcution_48
+  - first:
+      213: 7490040996362415609
+    second: ErnStray_Skill_FireExcution_49
+  - first:
+      213: -6668927945570910757
+    second: ErnStray_Skill_FireExcution_50
+  - first:
+      213: -50484219199926313
+    second: ErnStray_Skill_FireExcution_51
+  - first:
+      213: -6170733905759680860
+    second: ErnStray_Skill_FireExcution_52
+  - first:
+      213: -7665824374790728412
+    second: ErnStray_Skill_FireExcution_53
+  - first:
+      213: 8312301257645996582
+    second: ErnStray_Skill_FireExcution_54
+  - first:
+      213: -1234498662658243878
+    second: ErnStray_Skill_FireExcution_55
+  - first:
+      213: 4924334859951078418
+    second: ErnStray_Skill_FireExcution_56
+  - first:
+      213: 2586706569528522142
+    second: ErnStray_Skill_FireExcution_57
+  - first:
+      213: 1006361919841366864
+    second: ErnStray_Skill_FireExcution_58
+  - first:
+      213: -2747463639655492438
+    second: ErnStray_Skill_FireExcution_59
+  - first:
+      213: -7709931552952090196
+    second: ErnStray_Skill_FireExcution_60
+  - first:
+      213: -8088674712958418935
+    second: ErnStray_Skill_FireExcution_61
+  - first:
+      213: 7416831013408053777
+    second: ErnStray_Skill_FireExcution_62
+  - first:
+      213: -3134563274423912886
+    second: ErnStray_Skill_FireExcution_63
+  - first:
+      213: 7295698617512510532
+    second: ErnStray_Skill_FireExcution_64
+  - first:
+      213: 7543479789345685406
+    second: ErnStray_Skill_FireExcution_65
+  - first:
+      213: -6084567383002515396
+    second: ErnStray_Skill_FireExcution_66
+  - first:
+      213: 6189408771239325669
+    second: ErnStray_Skill_FireExcution_67
+  - first:
+      213: 3750574832148604349
+    second: ErnStray_Skill_FireExcution_68
+  - first:
+      213: -4443562587902674912
+    second: ErnStray_Skill_FireExcution_69
+  - first:
+      213: 2828544613282161486
+    second: ErnStray_Skill_FireExcution_70
+  - first:
+      213: -4900350899124252691
+    second: ErnStray_Skill_FireExcution_71
+  - first:
+      213: 6914658798912608342
+    second: ErnStray_Skill_FireExcution_72
+  - first:
+      213: 1872824836727533542
+    second: ErnStray_Skill_FireExcution_73
+  - first:
+      213: -4008469513258332398
+    second: ErnStray_Skill_FireExcution_74
+  - first:
+      213: 5561387491007400532
+    second: ErnStray_Skill_FireExcution_75
+  - first:
+      213: 5571263703096313240
+    second: ErnStray_Skill_FireExcution_76
+  - first:
+      213: 7481922934569883165
+    second: ErnStray_Skill_FireExcution_77
+  - first:
+      213: -5595468239275782003
+    second: ErnStray_Skill_FireExcution_78
+  - first:
+      213: -7021771851556230856
+    second: ErnStray_Skill_FireExcution_79
+  - first:
+      213: -5760874795636302055
+    second: ErnStray_Skill_FireExcution_80
+  - first:
+      213: 3666702489507489724
+    second: ErnStray_Skill_FireExcution_81
+  - first:
+      213: 8140496666882381901
+    second: ErnStray_Skill_FireExcution_82
+  - first:
+      213: 8456577893824678599
+    second: ErnStray_Skill_FireExcution_83
+  - first:
+      213: 7021292859864385250
+    second: ErnStray_Skill_FireExcution_84
+  - first:
+      213: -7260053251656790682
+    second: ErnStray_Skill_FireExcution_85
+  - first:
+      213: 3927628784632139811
+    second: ErnStray_Skill_FireExcution_86
+  - first:
+      213: 8134518611850537902
+    second: ErnStray_Skill_FireExcution_87
+  - first:
+      213: 68143132443680605
+    second: ErnStray_Skill_FireExcution_88
+  - first:
+      213: 903761088918017095
+    second: ErnStray_Skill_FireExcution_89
+  - first:
+      213: 1309064807072391871
+    second: ErnStray_Skill_FireExcution_90
+  - first:
+      213: 6112549156266140919
+    second: ErnStray_Skill_FireExcution_91
+  - first:
+      213: -5717513816164353401
+    second: ErnStray_Skill_FireExcution_92
+  - first:
+      213: 995719619778421484
+    second: ErnStray_Skill_FireExcution_93
+  - first:
+      213: 4830843082056646495
+    second: ErnStray_Skill_FireExcution_94
+  - first:
+      213: -5296409790307861641
+    second: ErnStray_Skill_FireExcution_95
+  - first:
+      213: -8094060788795993029
+    second: ErnStray_Skill_FireExcution_96
+  - first:
+      213: 2470465596436718097
+    second: ErnStray_Skill_FireExcution_97
+  - first:
+      213: 1097695194383484646
+    second: ErnStray_Skill_FireExcution_98
+  - first:
+      213: -670519622027333279
+    second: ErnStray_Skill_FireExcution_99
+  - first:
+      213: 3052823287924149617
+    second: ErnStray_Skill_FireExcution_100
+  - first:
+      213: -3477806821626538232
+    second: ErnStray_Skill_FireExcution_101
+  - first:
+      213: -3584034321863633419
+    second: ErnStray_Skill_FireExcution_102
+  - first:
+      213: -3601049242260820085
+    second: ErnStray_Skill_FireExcution_103
+  - first:
+      213: -3152302264548010476
+    second: ErnStray_Skill_FireExcution_104
+  - first:
+      213: -6814811373503618629
+    second: ErnStray_Skill_FireExcution_105
+  - first:
+      213: -1241248541699470973
+    second: ErnStray_Skill_FireExcution_106
+  - first:
+      213: 4725963951657524377
+    second: ErnStray_Skill_FireExcution_107
+  - first:
+      213: 4332562090930463081
+    second: ErnStray_Skill_FireExcution_108
+  - first:
+      213: 2742745908598243458
+    second: ErnStray_Skill_FireExcution_109
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5118
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff32b958ffe35fe45a9a810e596de12c
+      internalID: -1152074640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_1
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 5118
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639d415c64e311e4b9ae48cd15ca5b87
+      internalID: -528263946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_2
+      rect:
+        serializedVersion: 2
+        x: 3956
+        y: 5118
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0d73f989c989649853df61cc8a230e
+      internalID: -1638899507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_3
+      rect:
+        serializedVersion: 2
+        x: 5934
+        y: 5118
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c943459897e883d4aad3413ee55d1afd
+      internalID: -975129183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_4
+      rect:
+        serializedVersion: 2
+        x: 7912
+        y: 5118
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6f0ccb55059b1418aad74639a91e06
+      internalID: 1017718704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3412
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5106332ae965ff499e946375a02a3d4
+      internalID: 770214670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_6
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3412
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bddc38fdf004ec46b4a72bd88fbf133
+      internalID: -2085364246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_7
+      rect:
+        serializedVersion: 2
+        x: 3956
+        y: 3412
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfb555a198c9e449ac88c5dad0c721e
+      internalID: 1013780783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_8
+      rect:
+        serializedVersion: 2
+        x: 5934
+        y: 3412
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5943aa6494ed1d042ba93b6c66bf3560
+      internalID: 495672100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_9
+      rect:
+        serializedVersion: 2
+        x: 7912
+        y: 3412
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0cb38914720be4d99e1672bbf9d2ee
+      internalID: 1636719910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1706
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5bc629eb01ba94eb36a6ff75cbb077
+      internalID: -1152587581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_11
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1706
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab9ddb70953ab84bbc647d13e2f0d00
+      internalID: 122114220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_12
+      rect:
+        serializedVersion: 2
+        x: 3956
+        y: 1706
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91ede3b140b2854386547425d6c11be
+      internalID: -1781580854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_13
+      rect:
+        serializedVersion: 2
+        x: 5934
+        y: 1706
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b962b9160af1c94cb69e1026c53566b
+      internalID: 918834972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_14
+      rect:
+        serializedVersion: 2
+        x: 7912
+        y: 1706
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bca549f282ad0d47b460d21e715719e
+      internalID: -1695929689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cd1fb800c62934a9ff94b315a33e67
+      internalID: 826145457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_16
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 0
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3983bc76b749b418f6d215b38f64f7
+      internalID: -484817770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_17
+      rect:
+        serializedVersion: 2
+        x: 3956
+        y: 0
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e36b01fb7a694408681f4a7b0289ea
+      internalID: 1585040732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_FireExcution_18
+      rect:
+        serializedVersion: 2
+        x: 5934
+        y: 0
+        width: 1978
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1495c1a7d426243ac72c68c6b08207
+      internalID: 916214635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f09fb97a4e089494bad71fd58af827ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ErnStray_Skill_FireExcution_0: -1152074640
+      ErnStray_Skill_FireExcution_1: -528263946
+      ErnStray_Skill_FireExcution_10: -1152587581
+      ErnStray_Skill_FireExcution_11: 122114220
+      ErnStray_Skill_FireExcution_12: -1781580854
+      ErnStray_Skill_FireExcution_13: 918834972
+      ErnStray_Skill_FireExcution_14: -1695929689
+      ErnStray_Skill_FireExcution_15: 826145457
+      ErnStray_Skill_FireExcution_16: -484817770
+      ErnStray_Skill_FireExcution_17: 1585040732
+      ErnStray_Skill_FireExcution_18: 916214635
+      ErnStray_Skill_FireExcution_2: -1638899507
+      ErnStray_Skill_FireExcution_3: -975129183
+      ErnStray_Skill_FireExcution_4: 1017718704
+      ErnStray_Skill_FireExcution_5: 770214670
+      ErnStray_Skill_FireExcution_6: -2085364246
+      ErnStray_Skill_FireExcution_7: 1013780783
+      ErnStray_Skill_FireExcution_8: 495672100
+      ErnStray_Skill_FireExcution_9: 1636719910
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

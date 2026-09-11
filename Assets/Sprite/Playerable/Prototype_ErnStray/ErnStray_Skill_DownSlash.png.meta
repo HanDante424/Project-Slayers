@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 48d651fd8ecf2514681b131780316ef0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1843934481828935618
+    second: ErnStray_Skill_DownSlash_0
+  - first:
+      213: -3314467850185670216
+    second: ErnStray_Skill_DownSlash_1
+  - first:
+      213: -2998149348648692221
+    second: ErnStray_Skill_DownSlash_2
+  - first:
+      213: 4112773203969960855
+    second: ErnStray_Skill_DownSlash_3
+  - first:
+      213: 2106242698616017254
+    second: ErnStray_Skill_DownSlash_4
+  - first:
+      213: -4603462510846294379
+    second: ErnStray_Skill_DownSlash_5
+  - first:
+      213: -8207907282767887208
+    second: ErnStray_Skill_DownSlash_6
+  - first:
+      213: 5874062945271568028
+    second: ErnStray_Skill_DownSlash_7
+  - first:
+      213: -1798497435010318959
+    second: ErnStray_Skill_DownSlash_8
+  - first:
+      213: 6347602449378827328
+    second: ErnStray_Skill_DownSlash_9
+  - first:
+      213: 752017351848028973
+    second: ErnStray_Skill_DownSlash_10
+  - first:
+      213: -1425712756537272507
+    second: ErnStray_Skill_DownSlash_11
+  - first:
+      213: -2925724714064282573
+    second: ErnStray_Skill_DownSlash_12
+  - first:
+      213: 7928716669367831351
+    second: ErnStray_Skill_DownSlash_13
+  - first:
+      213: -8649052560667154539
+    second: ErnStray_Skill_DownSlash_14
+  - first:
+      213: -6279007336556545184
+    second: ErnStray_Skill_DownSlash_15
+  - first:
+      213: 4271826804003541421
+    second: ErnStray_Skill_DownSlash_16
+  - first:
+      213: -4454260468901232389
+    second: ErnStray_Skill_DownSlash_17
+  - first:
+      213: -1174128745277252813
+    second: ErnStray_Skill_DownSlash_18
+  - first:
+      213: 7839461020245788101
+    second: ErnStray_Skill_DownSlash_19
+  - first:
+      213: -4426676589980018347
+    second: ErnStray_Skill_DownSlash_20
+  - first:
+      213: 6631565563388363301
+    second: ErnStray_Skill_DownSlash_21
+  - first:
+      213: -4245595254087788376
+    second: ErnStray_Skill_DownSlash_22
+  - first:
+      213: -783820574501026517
+    second: ErnStray_Skill_DownSlash_23
+  - first:
+      213: -5330191631932832024
+    second: ErnStray_Skill_DownSlash_24
+  - first:
+      213: 5387867731689949152
+    second: ErnStray_Skill_DownSlash_25
+  - first:
+      213: 5633203326449881514
+    second: ErnStray_Skill_DownSlash_26
+  - first:
+      213: -6303974664452039384
+    second: ErnStray_Skill_DownSlash_27
+  - first:
+      213: -5331859570628855099
+    second: ErnStray_Skill_DownSlash_28
+  - first:
+      213: 402070092441170401
+    second: ErnStray_Skill_DownSlash_29
+  - first:
+      213: 7219007445751979072
+    second: ErnStray_Skill_DownSlash_30
+  - first:
+      213: 2769674950942432254
+    second: ErnStray_Skill_DownSlash_31
+  - first:
+      213: 5074281553701864005
+    second: ErnStray_Skill_DownSlash_32
+  - first:
+      213: 6792154450179512749
+    second: ErnStray_Skill_DownSlash_33
+  - first:
+      213: 6724764780371200927
+    second: ErnStray_Skill_DownSlash_34
+  - first:
+      213: -2032983255471680373
+    second: ErnStray_Skill_DownSlash_35
+  - first:
+      213: -6370543865312994856
+    second: ErnStray_Skill_DownSlash_36
+  - first:
+      213: 8742800823858582308
+    second: ErnStray_Skill_DownSlash_37
+  - first:
+      213: 4352594266025683007
+    second: ErnStray_Skill_DownSlash_38
+  - first:
+      213: 1637824743671393782
+    second: ErnStray_Skill_DownSlash_39
+  - first:
+      213: 2282687337383243571
+    second: ErnStray_Skill_DownSlash_40
+  - first:
+      213: -9099978080025387729
+    second: ErnStray_Skill_DownSlash_41
+  - first:
+      213: -2292122491017525869
+    second: ErnStray_Skill_DownSlash_42
+  - first:
+      213: 1294683238634445748
+    second: ErnStray_Skill_DownSlash_43
+  - first:
+      213: 2388865413009853277
+    second: ErnStray_Skill_DownSlash_44
+  - first:
+      213: -1909145099925743257
+    second: ErnStray_Skill_DownSlash_45
+  - first:
+      213: 1300646636617046034
+    second: ErnStray_Skill_DownSlash_46
+  - first:
+      213: 3044796812268868985
+    second: ErnStray_Skill_DownSlash_47
+  - first:
+      213: -4698274408876697901
+    second: ErnStray_Skill_DownSlash_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3398
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a644c3d05a8d94db4abc0f047c983c
+      internalID: -286110736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_1
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 3398
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d7aa43d254029468b2581b47d6ff27
+      internalID: 1431038582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_2
+      rect:
+        serializedVersion: 2
+        x: 4238
+        y: 3398
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fad4fa47a6ee84eb1a6ebbddd4db63
+      internalID: -1591617854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_3
+      rect:
+        serializedVersion: 2
+        x: 6357
+        y: 3398
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe186a6ca8c85c45b783363c78b735c
+      internalID: 311096747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1699
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d339f1dccd9d6574cbcc50bfd28db18d
+      internalID: -1836602316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_5
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1699
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aed8c934276be4291ec889602adf8a
+      internalID: 368370873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_6
+      rect:
+        serializedVersion: 2
+        x: 4238
+        y: 1699
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86e9a6d4bc2f424b82d3d2ea6a58a0e
+      internalID: -1032243350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_7
+      rect:
+        serializedVersion: 2
+        x: 6357
+        y: 1699
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4216ca7b650a66f4f9575c2f3bcfa610
+      internalID: 1721701234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be44ab44953d0334396d250a27600ef3
+      internalID: -217524293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_DownSlash_9
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 0
+        width: 2119
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74a51841ed8a6f4f91c14c7bedf670d
+      internalID: 1868388078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dd68338d8fdec6e499c240376b7f0a3b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ErnStray_Skill_DownSlash_0: -286110736
+      ErnStray_Skill_DownSlash_1: 1431038582
+      ErnStray_Skill_DownSlash_2: -1591617854
+      ErnStray_Skill_DownSlash_3: 311096747
+      ErnStray_Skill_DownSlash_4: -1836602316
+      ErnStray_Skill_DownSlash_5: 368370873
+      ErnStray_Skill_DownSlash_6: -1032243350
+      ErnStray_Skill_DownSlash_7: 1721701234
+      ErnStray_Skill_DownSlash_8: -217524293
+      ErnStray_Skill_DownSlash_9: 1868388078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

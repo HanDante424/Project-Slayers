@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 7d034ec440e37eb41a644192e986c421
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6214927899344322792
+    second: ErnStray_Skill_SolarSlash_0
+  - first:
+      213: 7630379451313747138
+    second: ErnStray_Skill_SolarSlash_1
+  - first:
+      213: 5988378671682434828
+    second: ErnStray_Skill_SolarSlash_2
+  - first:
+      213: -6110935552759491998
+    second: ErnStray_Skill_SolarSlash_3
+  - first:
+      213: -3843374554849437886
+    second: ErnStray_Skill_SolarSlash_4
+  - first:
+      213: -8004356747976337886
+    second: ErnStray_Skill_SolarSlash_5
+  - first:
+      213: 1083818557809210077
+    second: ErnStray_Skill_SolarSlash_6
+  - first:
+      213: -1811436542108880595
+    second: ErnStray_Skill_SolarSlash_7
+  - first:
+      213: 7828919330150404679
+    second: ErnStray_Skill_SolarSlash_8
+  - first:
+      213: -8972493680116141393
+    second: ErnStray_Skill_SolarSlash_9
+  - first:
+      213: 5740026965009389526
+    second: ErnStray_Skill_SolarSlash_10
+  - first:
+      213: 8832498638226560157
+    second: ErnStray_Skill_SolarSlash_11
+  - first:
+      213: 2224399072762208932
+    second: ErnStray_Skill_SolarSlash_12
+  - first:
+      213: 1247919273203893077
+    second: ErnStray_Skill_SolarSlash_13
+  - first:
+      213: -7052129911366761956
+    second: ErnStray_Skill_SolarSlash_14
+  - first:
+      213: 29784062350318572
+    second: ErnStray_Skill_SolarSlash_15
+  - first:
+      213: 5186314694930911837
+    second: ErnStray_Skill_SolarSlash_16
+  - first:
+      213: -4550445125631599943
+    second: ErnStray_Skill_SolarSlash_17
+  - first:
+      213: 4779346208494991730
+    second: ErnStray_Skill_SolarSlash_18
+  - first:
+      213: -4373089345667146607
+    second: ErnStray_Skill_SolarSlash_19
+  - first:
+      213: -2592937263945830702
+    second: ErnStray_Skill_SolarSlash_20
+  - first:
+      213: -5690123579032214735
+    second: ErnStray_Skill_SolarSlash_21
+  - first:
+      213: 1967938589962179951
+    second: ErnStray_Skill_SolarSlash_22
+  - first:
+      213: 6209687253392222816
+    second: ErnStray_Skill_SolarSlash_23
+  - first:
+      213: -5540334980281408236
+    second: ErnStray_Skill_SolarSlash_24
+  - first:
+      213: 7685444643874135919
+    second: ErnStray_Skill_SolarSlash_25
+  - first:
+      213: 7777956090770876064
+    second: ErnStray_Skill_SolarSlash_26
+  - first:
+      213: -397956181398998669
+    second: ErnStray_Skill_SolarSlash_27
+  - first:
+      213: -3531365008035015475
+    second: ErnStray_Skill_SolarSlash_28
+  - first:
+      213: 3708216217899920005
+    second: ErnStray_Skill_SolarSlash_29
+  - first:
+      213: 5361098356822146550
+    second: ErnStray_Skill_SolarSlash_30
+  - first:
+      213: 4797751776995636898
+    second: ErnStray_Skill_SolarSlash_31
+  - first:
+      213: -3401434893697535927
+    second: ErnStray_Skill_SolarSlash_32
+  - first:
+      213: 4181388758344851206
+    second: ErnStray_Skill_SolarSlash_33
+  - first:
+      213: -5594504321936025296
+    second: ErnStray_Skill_SolarSlash_34
+  - first:
+      213: 4433824179330948989
+    second: ErnStray_Skill_SolarSlash_35
+  - first:
+      213: 6973114739547790940
+    second: ErnStray_Skill_SolarSlash_36
+  - first:
+      213: -3829802924165251359
+    second: ErnStray_Skill_SolarSlash_37
+  - first:
+      213: -5348788985883789871
+    second: ErnStray_Skill_SolarSlash_38
+  - first:
+      213: 7456105359325066781
+    second: ErnStray_Skill_SolarSlash_39
+  - first:
+      213: -4681355003366149556
+    second: ErnStray_Skill_SolarSlash_40
+  - first:
+      213: -3340190388850434083
+    second: ErnStray_Skill_SolarSlash_41
+  - first:
+      213: -4435912454751107002
+    second: ErnStray_Skill_SolarSlash_42
+  - first:
+      213: 397457590769251846
+    second: ErnStray_Skill_SolarSlash_43
+  - first:
+      213: -4898680092122831168
+    second: ErnStray_Skill_SolarSlash_44
+  - first:
+      213: -4530468341917345965
+    second: ErnStray_Skill_SolarSlash_45
+  - first:
+      213: -1622739366392800439
+    second: ErnStray_Skill_SolarSlash_46
+  - first:
+      213: 6074897529199263788
+    second: ErnStray_Skill_SolarSlash_47
+  - first:
+      213: 7250717988860294804
+    second: ErnStray_Skill_SolarSlash_48
+  - first:
+      213: -4172547348181940674
+    second: ErnStray_Skill_SolarSlash_49
+  - first:
+      213: 3074521231560113646
+    second: ErnStray_Skill_SolarSlash_50
+  - first:
+      213: 5399481239817460889
+    second: ErnStray_Skill_SolarSlash_51
+  - first:
+      213: -7286225237775455259
+    second: ErnStray_Skill_SolarSlash_52
+  - first:
+      213: -5748098106546290961
+    second: ErnStray_Skill_SolarSlash_53
+  - first:
+      213: 4849905047043466139
+    second: ErnStray_Skill_SolarSlash_54
+  - first:
+      213: -6142612682097459713
+    second: ErnStray_Skill_SolarSlash_55
+  - first:
+      213: -2443232802605513130
+    second: ErnStray_Skill_SolarSlash_56
+  - first:
+      213: -3837972187248587798
+    second: ErnStray_Skill_SolarSlash_57
+  - first:
+      213: 8757449401957769660
+    second: ErnStray_Skill_SolarSlash_58
+  - first:
+      213: 3669024249735764503
+    second: ErnStray_Skill_SolarSlash_59
+  - first:
+      213: -5183270444732138765
+    second: ErnStray_Skill_SolarSlash_60
+  - first:
+      213: 5385515547519020531
+    second: ErnStray_Skill_SolarSlash_61
+  - first:
+      213: 7281658894291692118
+    second: ErnStray_Skill_SolarSlash_62
+  - first:
+      213: -6258820844232804726
+    second: ErnStray_Skill_SolarSlash_63
+  - first:
+      213: -5130005791456642671
+    second: ErnStray_Skill_SolarSlash_64
+  - first:
+      213: -6930693411217885761
+    second: ErnStray_Skill_SolarSlash_65
+  - first:
+      213: 3790553190131013904
+    second: ErnStray_Skill_SolarSlash_66
+  - first:
+      213: 5776094429931424914
+    second: ErnStray_Skill_SolarSlash_67
+  - first:
+      213: -1998256591285032088
+    second: ErnStray_Skill_SolarSlash_68
+  - first:
+      213: -6604717146739056062
+    second: ErnStray_Skill_SolarSlash_69
+  - first:
+      213: 2563275180856873167
+    second: ErnStray_Skill_SolarSlash_70
+  - first:
+      213: -4881987497182020336
+    second: ErnStray_Skill_SolarSlash_71
+  - first:
+      213: -1698694051732535209
+    second: ErnStray_Skill_SolarSlash_72
+  - first:
+      213: -473450692874031232
+    second: ErnStray_Skill_SolarSlash_73
+  - first:
+      213: 1741860770602968722
+    second: ErnStray_Skill_SolarSlash_74
+  - first:
+      213: -7187525315762764868
+    second: ErnStray_Skill_SolarSlash_75
+  - first:
+      213: 7809728673321366127
+    second: ErnStray_Skill_SolarSlash_76
+  - first:
+      213: 7084698362786493071
+    second: ErnStray_Skill_SolarSlash_77
+  - first:
+      213: 511648160313621391
+    second: ErnStray_Skill_SolarSlash_78
+  - first:
+      213: -2829928586186870031
+    second: ErnStray_Skill_SolarSlash_79
+  - first:
+      213: -4058034726188182081
+    second: ErnStray_Skill_SolarSlash_80
+  - first:
+      213: 2295047090784653987
+    second: ErnStray_Skill_SolarSlash_81
+  - first:
+      213: 4238845869232605505
+    second: ErnStray_Skill_SolarSlash_82
+  - first:
+      213: -8549410678371076437
+    second: ErnStray_Skill_SolarSlash_83
+  - first:
+      213: -4276159762170131082
+    second: ErnStray_Skill_SolarSlash_84
+  - first:
+      213: -1524949137991221840
+    second: ErnStray_Skill_SolarSlash_85
+  - first:
+      213: -7302554467818207916
+    second: ErnStray_Skill_SolarSlash_86
+  - first:
+      213: 8874350032561925162
+    second: ErnStray_Skill_SolarSlash_87
+  - first:
+      213: 7304466309153213734
+    second: ErnStray_Skill_SolarSlash_88
+  - first:
+      213: -83645133016985156
+    second: ErnStray_Skill_SolarSlash_89
+  - first:
+      213: -2998215142816096222
+    second: ErnStray_Skill_SolarSlash_90
+  - first:
+      213: 8939267194079933376
+    second: ErnStray_Skill_SolarSlash_91
+  - first:
+      213: 1745622950713847619
+    second: ErnStray_Skill_SolarSlash_92
+  - first:
+      213: -3943673076010200492
+    second: ErnStray_Skill_SolarSlash_93
+  - first:
+      213: 4766013664960141988
+    second: ErnStray_Skill_SolarSlash_94
+  - first:
+      213: -8118156763345734404
+    second: ErnStray_Skill_SolarSlash_95
+  - first:
+      213: -5055156886304540726
+    second: ErnStray_Skill_SolarSlash_96
+  - first:
+      213: 8466532442334228320
+    second: ErnStray_Skill_SolarSlash_97
+  - first:
+      213: -982144262455492913
+    second: ErnStray_Skill_SolarSlash_98
+  - first:
+      213: 3149454353035341807
+    second: ErnStray_Skill_SolarSlash_99
+  - first:
+      213: -5696087120322879533
+    second: ErnStray_Skill_SolarSlash_100
+  - first:
+      213: 1708278805891563700
+    second: ErnStray_Skill_SolarSlash_101
+  - first:
+      213: 3235862299071337552
+    second: ErnStray_Skill_SolarSlash_102
+  - first:
+      213: 5625394123002304197
+    second: ErnStray_Skill_SolarSlash_103
+  - first:
+      213: 6251600299440744342
+    second: ErnStray_Skill_SolarSlash_104
+  - first:
+      213: 6094974756919261556
+    second: ErnStray_Skill_SolarSlash_105
+  - first:
+      213: -3162152637188437649
+    second: ErnStray_Skill_SolarSlash_106
+  - first:
+      213: -5635048974685623324
+    second: ErnStray_Skill_SolarSlash_107
+  - first:
+      213: -6871906695155504118
+    second: ErnStray_Skill_SolarSlash_108
+  - first:
+      213: -1468058956716051621
+    second: ErnStray_Skill_SolarSlash_109
+  - first:
+      213: -3250596947176447127
+    second: ErnStray_Skill_SolarSlash_110
+  - first:
+      213: -6593969461961303310
+    second: ErnStray_Skill_SolarSlash_111
+  - first:
+      213: -4652214981874091419
+    second: ErnStray_Skill_SolarSlash_112
+  - first:
+      213: -8872984927157618149
+    second: ErnStray_Skill_SolarSlash_113
+  - first:
+      213: -2449212243751480680
+    second: ErnStray_Skill_SolarSlash_114
+  - first:
+      213: 3497678485899519884
+    second: ErnStray_Skill_SolarSlash_115
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2460
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5906ba5e5a23fd440b0a92527d4f7c2f
+      internalID: -1196320429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_1
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 2460
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe30c5fa3a3b454a8ec3d9ded1bac79
+      internalID: -480301075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_2
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 2460
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eca4d14212be544081cc89d222f8c32
+      internalID: -1513612023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_3
+      rect:
+        serializedVersion: 2
+        x: 4542
+        y: 2460
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f8c79a4c9cb1c439da653e298b4250
+      internalID: 575425638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b90a2a3914f59b4382acfa54f434140
+      internalID: -1303097633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_5
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1230
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a328e389e3d14bb640f4764a2978f
+      internalID: -1937841040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_6
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 1230
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68179cfe6edf25409c26bd1d3e7a056
+      internalID: 575972420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_7
+      rect:
+        serializedVersion: 2
+        x: 4542
+        y: 1230
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9720a251bd4f945adab6d708e53430
+      internalID: -1057774560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4c91bc9d06f6049956dfe1c08dd19e
+      internalID: 395978536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_9
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 0
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd73ada8f353f841bcec9f8145a3700
+      internalID: -479915767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_10
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 0
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dda193c03d0cd748aac958767a59f0c
+      internalID: -490843203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_SolarSlash_11
+      rect:
+        serializedVersion: 2
+        x: 4542
+        y: 0
+        width: 1514
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdcd7bc241fbdb4b993dddacea1d774
+      internalID: 1535795980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5c4dc27d15bc265448019b73f7dd3851
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ErnStray_Skill_SolarSlash_0: -1196320429
+      ErnStray_Skill_SolarSlash_1: -480301075
+      ErnStray_Skill_SolarSlash_10: -490843203
+      ErnStray_Skill_SolarSlash_11: 1535795980
+      ErnStray_Skill_SolarSlash_2: -1513612023
+      ErnStray_Skill_SolarSlash_3: 575425638
+      ErnStray_Skill_SolarSlash_4: -1303097633
+      ErnStray_Skill_SolarSlash_5: -1937841040
+      ErnStray_Skill_SolarSlash_6: 575972420
+      ErnStray_Skill_SolarSlash_7: -1057774560
+      ErnStray_Skill_SolarSlash_8: 395978536
+      ErnStray_Skill_SolarSlash_9: -479915767
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

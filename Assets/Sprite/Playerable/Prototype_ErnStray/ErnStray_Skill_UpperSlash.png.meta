@@ -1,0 +1,543 @@
+fileFormatVersion: 2
+guid: f8923cc0d90b147439db32f85040cfd5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4315675202647707028
+    second: ErnStray_Skill_UpperSlash_0
+  - first:
+      213: -2983805462254912416
+    second: ErnStray_Skill_UpperSlash_1
+  - first:
+      213: -2470532994117427077
+    second: ErnStray_Skill_UpperSlash_2
+  - first:
+      213: 5821554429262634048
+    second: ErnStray_Skill_UpperSlash_3
+  - first:
+      213: 287987760641084512
+    second: ErnStray_Skill_UpperSlash_4
+  - first:
+      213: -4603548971938621645
+    second: ErnStray_Skill_UpperSlash_5
+  - first:
+      213: -1443520701749210563
+    second: ErnStray_Skill_UpperSlash_6
+  - first:
+      213: -2848873928953951444
+    second: ErnStray_Skill_UpperSlash_7
+  - first:
+      213: 1093100820735894750
+    second: ErnStray_Skill_UpperSlash_8
+  - first:
+      213: -198258741173434668
+    second: ErnStray_Skill_UpperSlash_9
+  - first:
+      213: 3799526301822773987
+    second: ErnStray_Skill_UpperSlash_10
+  - first:
+      213: -6199815577403240626
+    second: ErnStray_Skill_UpperSlash_11
+  - first:
+      213: 6175816525805272123
+    second: ErnStray_Skill_UpperSlash_12
+  - first:
+      213: 4041814906484077084
+    second: ErnStray_Skill_UpperSlash_13
+  - first:
+      213: -6525428562914644668
+    second: ErnStray_Skill_UpperSlash_14
+  - first:
+      213: -2588488587598164329
+    second: ErnStray_Skill_UpperSlash_15
+  - first:
+      213: -4957428215186614995
+    second: ErnStray_Skill_UpperSlash_16
+  - first:
+      213: 4031720912125145970
+    second: ErnStray_Skill_UpperSlash_17
+  - first:
+      213: -740080804817954353
+    second: ErnStray_Skill_UpperSlash_18
+  - first:
+      213: -1839081713661038128
+    second: ErnStray_Skill_UpperSlash_19
+  - first:
+      213: 8828939888630369682
+    second: ErnStray_Skill_UpperSlash_20
+  - first:
+      213: 4380450296703730598
+    second: ErnStray_Skill_UpperSlash_21
+  - first:
+      213: -6655142696917417229
+    second: ErnStray_Skill_UpperSlash_22
+  - first:
+      213: 46562021677304881
+    second: ErnStray_Skill_UpperSlash_23
+  - first:
+      213: -204670631989026855
+    second: ErnStray_Skill_UpperSlash_24
+  - first:
+      213: 1163027528736970216
+    second: ErnStray_Skill_UpperSlash_25
+  - first:
+      213: -9059826876613010220
+    second: ErnStray_Skill_UpperSlash_26
+  - first:
+      213: 2663364891139929889
+    second: ErnStray_Skill_UpperSlash_27
+  - first:
+      213: 3691335695425483885
+    second: ErnStray_Skill_UpperSlash_28
+  - first:
+      213: 3542719529505245821
+    second: ErnStray_Skill_UpperSlash_29
+  - first:
+      213: 8063549053262464132
+    second: ErnStray_Skill_UpperSlash_30
+  - first:
+      213: -8416066153098555571
+    second: ErnStray_Skill_UpperSlash_31
+  - first:
+      213: 4542202700908807952
+    second: ErnStray_Skill_UpperSlash_32
+  - first:
+      213: -3903023423077533732
+    second: ErnStray_Skill_UpperSlash_33
+  - first:
+      213: 3969706730234599098
+    second: ErnStray_Skill_UpperSlash_34
+  - first:
+      213: -7219189349318772242
+    second: ErnStray_Skill_UpperSlash_35
+  - first:
+      213: 8693488709378214520
+    second: ErnStray_Skill_UpperSlash_36
+  - first:
+      213: -7705300734175425020
+    second: ErnStray_Skill_UpperSlash_37
+  - first:
+      213: 7804239273928279565
+    second: ErnStray_Skill_UpperSlash_38
+  - first:
+      213: -7658288547275779833
+    second: ErnStray_Skill_UpperSlash_39
+  - first:
+      213: 606563090032570293
+    second: ErnStray_Skill_UpperSlash_40
+  - first:
+      213: -8218076903467723342
+    second: ErnStray_Skill_UpperSlash_41
+  - first:
+      213: 9187953312265864380
+    second: ErnStray_Skill_UpperSlash_42
+  - first:
+      213: 103525389985213812
+    second: ErnStray_Skill_UpperSlash_43
+  - first:
+      213: -498912230636671322
+    second: ErnStray_Skill_UpperSlash_44
+  - first:
+      213: 1834450216739315360
+    second: ErnStray_Skill_UpperSlash_45
+  - first:
+      213: -5758326684597419650
+    second: ErnStray_Skill_UpperSlash_46
+  - first:
+      213: -3977960090322574747
+    second: ErnStray_Skill_UpperSlash_47
+  - first:
+      213: 3941589858789299393
+    second: ErnStray_Skill_UpperSlash_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3166
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33955527695391241ac31581fba88908
+      internalID: -894012157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_1
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 3166
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64df268021eccd84baf37e4e34077e47
+      internalID: 1760711000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_2
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 3166
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb8736fb6bd65b48915048c1270b952
+      internalID: 292763649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_3
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 3166
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de5eb98612dcc14298587063c893ac9
+      internalID: 1926618999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1583
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64e678902e51a3438416307f9dfda4a
+      internalID: 2066365052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_5
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1583
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea485dd16c982840a69a213920aa121
+      internalID: 399904541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_6
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 1583
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb46ccba5d34fc94bb568a982005e62b
+      internalID: -698549613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_7
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 1583
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247c9be929b86c7458479868c290f90d
+      internalID: 132637029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f31e8ef7542594989e890bb5eef4d7
+      internalID: 1047716158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_9
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 0
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3be7099feca142478a79886b86c6872
+      internalID: 2015069953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_Skill_UpperSlash_10
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 1144
+        height: 1583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a115e08a9d9a0744195495970a1fce91
+      internalID: -353583834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4faef50157da6d341a160d1f7517c3e9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ErnStray_Skill_UpperSlash_0: -894012157
+      ErnStray_Skill_UpperSlash_1: 1760711000
+      ErnStray_Skill_UpperSlash_10: -353583834
+      ErnStray_Skill_UpperSlash_2: 292763649
+      ErnStray_Skill_UpperSlash_3: 1926618999
+      ErnStray_Skill_UpperSlash_4: 2066365052
+      ErnStray_Skill_UpperSlash_5: 399904541
+      ErnStray_Skill_UpperSlash_6: -698549613
+      ErnStray_Skill_UpperSlash_7: 132637029
+      ErnStray_Skill_UpperSlash_8: 1047716158
+      ErnStray_Skill_UpperSlash_9: 2015069953
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

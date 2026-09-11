@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: 7c2b991a91b70774495bfa37b68ad416
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3437935480610197682
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_0"
+  - first:
+      213: -8191633297453770980
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_1"
+  - first:
+      213: 3600666306961594874
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_2"
+  - first:
+      213: -8890195582925614390
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_3"
+  - first:
+      213: 2950457243896005700
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_4"
+  - first:
+      213: 1289722819835019093
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_5"
+  - first:
+      213: -8130519171123897038
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_6"
+  - first:
+      213: -6062761156382334
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_7"
+  - first:
+      213: 6816976673449171165
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_8"
+  - first:
+      213: -5075280621163329799
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_9"
+  - first:
+      213: -2510612832801769151
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_10"
+  - first:
+      213: -3544571774705780048
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_11"
+  - first:
+      213: 2817734454489587323
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_12"
+  - first:
+      213: -1866106453411178201
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_13"
+  - first:
+      213: -8419664958851629986
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_14"
+  - first:
+      213: -1562714041583794674
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_15"
+  - first:
+      213: 7305913815271135208
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_16"
+  - first:
+      213: -1558057225931815590
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_17"
+  - first:
+      213: 5169685933389201375
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_18"
+  - first:
+      213: 4238368469102493036
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_19"
+  - first:
+      213: -4111759708981249069
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_20"
+  - first:
+      213: 7114363462080339334
+    second: "\uC5D0\uB978\uC2A4\uD2B8\uB808\uC774 \uD569\uBCF8_21"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ErnStray_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2392
+        width: 230
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c5ecb8191b8b34a9d0dedd94fb06f4
+      internalID: -570298280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2392
+        width: 230
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aae62e0763a12e48bdef98d9c444963
+      internalID: 32762538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2392
+        width: 230
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27ca0836ecbe074b8ef86db4ecc009d
+      internalID: -1287369449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_3
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 2392
+        width: 230
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109ac5f1919ec2a49a7ea16457783049
+      internalID: -132907076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_4
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 2400
+        width: 425
+        height: 480
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e687b8cc6ff4d4c8ee6725a16897dc
+      internalID: 49833155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_5
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 2400
+        width: 450
+        height: 480
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcb864b17a40874db7a1b12cd6ab788
+      internalID: 1001602609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_6
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 2437
+        width: 312
+        height: 496
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025156e47f231a041a86a246eabdf1ab
+      internalID: 581002092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1920
+        width: 345
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc0fd537ee53084589d6109b58be754
+      internalID: -353254551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_8
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1920
+        width: 446
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35412bd1f197eeb4595177abbea0b4e0
+      internalID: -378675694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_9
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1920
+        width: 399
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1351663bbaf8e744c8ee5ebf1cb07ca1
+      internalID: 1989010539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_10
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1920
+        width: 417
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcc50977f2bed745b54f6662963e54a
+      internalID: 1099165433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_11
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 1920
+        width: 370
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b0d9007b74c1d4db19ab55509d05ae
+      internalID: -1175473397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_12
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1920
+        width: 437
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a6a35f94d60b2429dc562c5ea0c807
+      internalID: 1888413448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_13
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 1920
+        width: 381
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90613e06426d95c49a46786a211f9820
+      internalID: -1281307338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_14
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 1920
+        width: 381
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cfb03fd95185d4ead37d9291dd2dd1
+      internalID: 1116859591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1175
+        width: 341
+        height: 515
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85b9feb4605d404a8fefa20b71d0d61
+      internalID: 633764678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_16
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1175
+        width: 500
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e122fc7c7259c043b008f745388db79
+      internalID: -1715661405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_17
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1175
+        width: 522
+        height: 360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b408932244016f43a2e112248917ded
+      internalID: -1631223324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_18
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 1175
+        width: 485
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309c3c2f8f6192a40b5b1b293b265843
+      internalID: 1742546356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_19
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 1175
+        width: 422
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebd4eb23e0307645bdb3c5a49a1b461
+      internalID: -1068567469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_20
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 1175
+        width: 248
+        height: 420
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adecd6a96584b24a958dd50b1256f5a
+      internalID: -2031690026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_21
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 1175
+        width: 388
+        height: 670
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e56670ab013e924cace03b92813a5c4
+      internalID: 2102346208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_22
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 1175
+        width: 184
+        height: 701
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c4cf1e32d1b054f88ec30a0561e9ff
+      internalID: -429414878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_23
+      rect:
+        serializedVersion: 2
+        x: 3613
+        y: 1175
+        width: 386
+        height: 465
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2654cb36e1894d4780c3c4c14f631cd
+      internalID: 1399933974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 330
+        width: 390
+        height: 790
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f67e72c000ad3c4f97a57f48780afc7
+      internalID: 186115998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_26
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 330
+        width: 525
+        height: 360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12245d40bbf17c41b041e4f23debb84
+      internalID: -1752835240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_27
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 330
+        width: 339
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867de0a9071c494469b0de7b5770f041
+      internalID: -1948836989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_28
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 330
+        width: 579
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929bcdcdb1b28fd4b9856ee04a69d09e
+      internalID: 1722397165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_29
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 330
+        width: 368
+        height: 665
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be716eb60e0bac746b38831bf6311bd5
+      internalID: 453822238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErnStray_30
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 330
+        width: 542
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c103aee0f3b8a644a34c9789d1f00fc
+      internalID: -1857515383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 549e62fd15069bd418a4eb90fb0b7f67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ErnStray_0: -570298280
+      ErnStray_1: 32762538
+      ErnStray_10: 1099165433
+      ErnStray_11: -1175473397
+      ErnStray_12: 1888413448
+      ErnStray_13: -1281307338
+      ErnStray_14: 1116859591
+      ErnStray_15: 633764678
+      ErnStray_16: -1715661405
+      ErnStray_17: -1631223324
+      ErnStray_18: 1742546356
+      ErnStray_19: -1068567469
+      ErnStray_2: -1287369449
+      ErnStray_20: -2031690026
+      ErnStray_21: 2102346208
+      ErnStray_22: -429414878
+      ErnStray_23: 1399933974
+      ErnStray_24: 2038016569
+      ErnStray_25: 186115998
+      ErnStray_26: -1752835240
+      ErnStray_27: -1948836989
+      ErnStray_28: 1722397165
+      ErnStray_29: 453822238
+      ErnStray_3: -132907076
+      ErnStray_30: -1857515383
+      ErnStray_4: 49833155
+      ErnStray_5: 1001602609
+      ErnStray_6: 581002092
+      ErnStray_7: -353254551
+      ErnStray_8: -378675694
+      ErnStray_9: 1989010539
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
