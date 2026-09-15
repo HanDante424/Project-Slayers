@@ -4,6 +4,13 @@ using UnityEngine;
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class CharacterMotor2D : MonoBehaviour
 {
+    public enum MovementControl
+    {
+        Free,
+        Reduced,
+        Locked
+    }
+
     [Header("References")]
     [SerializeField] private PlayerInputReader inputReader;
     [SerializeField] private LayerMask groundLayer;
@@ -21,6 +28,9 @@ public class CharacterMotor2D : MonoBehaviour
     private CapsuleCollider2D capsuleCollider;
 
     private bool isGrounded;
+
+    [SerializeField] private MovementControl movementControl = MovementControl.Free;
+    [SerializeField] private float reducedMoveMultiplier = 0.5f;
 
     // 나중에 스킬/넉백과 분리하기 위한 속도
     private float inputVelocityX;
@@ -50,7 +60,25 @@ public class CharacterMotor2D : MonoBehaviour
 
     private void HandleInput()
     {
-        inputVelocityX = inputReader.MoveInput.x * moveSpeed;
+        float moveInput = inputReader.MoveInput.x;
+
+        switch (movementControl)
+        {
+            case MovementControl.Free:
+                inputVelocityX = moveInput * moveSpeed;
+                break;
+
+            case MovementControl.Reduced:
+                inputVelocityX =
+                    moveInput *
+                    moveSpeed *
+                    reducedMoveMultiplier;
+                break;
+
+            case MovementControl.Locked:
+                inputVelocityX = 0f;
+                break;
+        }
 
         if (inputReader.MoveInput.x > 0.01f)
         {
@@ -165,5 +193,10 @@ public class CharacterMotor2D : MonoBehaviour
             Vector2.down * groundCheckDistance,
             checkSize
         );
+    }
+
+    public void SetMovementControl(MovementControl control)
+    {
+        movementControl = control;
     }
 }

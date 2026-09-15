@@ -17,14 +17,14 @@ public class PlayerAnimationController : MonoBehaviour
 
     private float moveGraceTimer;
 
-    private static readonly int SpeedHash =
-        Animator.StringToHash("Speed");
+    private static readonly int MoveSpeedHash =
+        Animator.StringToHash("MoveSpeed");
 
-    private static readonly int IsGroundedHash =
-        Animator.StringToHash("IsGrounded");
+    private static readonly int GroundedHash =
+        Animator.StringToHash("Grounded");
 
-    private static readonly int VerticalSpeedHash =
-        Animator.StringToHash("VerticalSpeed");
+    private static readonly int VerticalVelocityHash =
+        Animator.StringToHash("VerticalVelocity");
 
     private void Update()
     {
@@ -65,17 +65,17 @@ public class PlayerAnimationController : MonoBehaviour
         }
 
         animator.SetFloat(
-            SpeedHash,
+            MoveSpeedHash,
             animationSpeed
         );
 
         animator.SetBool(
-            IsGroundedHash,
+            GroundedHash,
             motor.IsGrounded
         );
 
         animator.SetFloat(
-            VerticalSpeedHash,
+            VerticalVelocityHash,
             verticalSpeed
         );
     }
