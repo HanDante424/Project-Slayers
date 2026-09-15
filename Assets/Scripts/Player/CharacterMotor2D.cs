@@ -80,19 +80,25 @@ public class CharacterMotor2D : MonoBehaviour
                 break;
         }
 
-        if (inputReader.MoveInput.x > 0.01f)
+        if (movementControl != MovementControl.Locked)
         {
-            FaceRight();
-        }
-        else if (inputReader.MoveInput.x < -0.01f)
-        {
-            FaceLeft();
+            if (inputReader.MoveInput.x > 0.01f)
+            {
+                FaceRight();
+            }
+            else if (inputReader.MoveInput.x < -0.01f)
+            {
+                FaceLeft();
+            }
         }
     }
 
     private void HandleJump()
     {
         if (!inputReader.ConsumeJump())
+            return;
+
+        if (movementControl == MovementControl.Locked)
             return;
 
         if (!isGrounded)
