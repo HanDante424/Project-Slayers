@@ -11,6 +11,9 @@ public class PlayerActionController : MonoBehaviour
     [Header("Prototype Ern")]
     [SerializeField] private AnimationClip tripleSlashClip;
 
+    [SerializeField] private GameObject tripleSlashEffectPrefab;
+    [SerializeField] private Transform effectSpawnPoint;
+
     private bool isActing;
 
     private static readonly int TripleSlashHash =
@@ -39,6 +42,17 @@ public class PlayerActionController : MonoBehaviour
         );
 
         animator.SetTrigger(TripleSlashHash);
+
+        GameObject effect = Instantiate(
+            tripleSlashEffectPrefab,
+            effectSpawnPoint.position,
+            effectSpawnPoint.rotation
+        );
+
+        Destroy(
+            effect,
+            tripleSlashClip.length
+        );
 
         yield return new WaitForSeconds(
             tripleSlashClip.length
