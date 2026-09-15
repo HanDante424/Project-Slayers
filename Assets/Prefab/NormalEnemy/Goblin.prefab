@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
   spriteRenderer: {fileID: 8974337636297055885}
+  animationController: {fileID: 6463237554576551475}
   detectionRange: 7
   moveSpeed: 2
   stopDistance: 0.8

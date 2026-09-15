@@ -7,6 +7,8 @@ public class GoblinEnemy : MonoBehaviour
     [Header("References")]
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private GoblinAnimationController animationController;
+
     [Header("Detection")]
     [SerializeField] private float detectionRange = 7f;
 
@@ -143,5 +145,13 @@ public class GoblinEnemy : MonoBehaviour
             transform.position,
             detectionRange
         );
+    }
+
+    public void ReceiveTestHit()
+    {
+        Debug.Log($"{name} hit");
+
+        if (animationController != null)
+            animationController.PlayHit();
     }
 }
