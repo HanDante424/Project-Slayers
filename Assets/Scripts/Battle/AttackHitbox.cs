@@ -4,12 +4,12 @@ public class AttackHitbox : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        GoblinEnemy goblin =
-            other.GetComponentInParent<GoblinEnemy>();
+        HitReceiver receiver =
+            other.GetComponentInParent<HitReceiver>();
 
-        if (goblin == null)
+        if (receiver == null)
             return;
 
-        goblin.ReceiveTestHit();
+        receiver.ReceiveHit();
     }
 }
