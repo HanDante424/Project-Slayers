@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
+    public bool IsDead => currentHealth <= 0;
 
     private void Awake()
     {
@@ -27,5 +28,10 @@ public class Health : MonoBehaviour
         Debug.Log(
             $"{name} HP: {currentHealth} / {maxHealth}"
         );
+
+        if (IsDead)
+        {
+            Debug.Log($"{name} Dead");
+        }
     }
 }
