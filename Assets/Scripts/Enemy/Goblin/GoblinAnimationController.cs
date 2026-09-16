@@ -5,6 +5,7 @@ public class GoblinAnimationController : MonoBehaviour
     [Header("References")]
     [SerializeField] private Animator animator;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Health health;
 
     [Header("Settings")]
     [SerializeField] private float moveThreshold = 0.01f;

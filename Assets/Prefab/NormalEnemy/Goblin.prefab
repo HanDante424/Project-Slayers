@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8234516027613093974}
   - component: {fileID: 6463237554576551475}
   - component: {fileID: 2909979034650657553}
+  - component: {fileID: 3423481023180233819}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -114,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
   spriteRenderer: {fileID: 8974337636297055885}
-  animationController: {fileID: 6463237554576551475}
   detectionRange: 7
   moveSpeed: 2
   stopDistance: 0.8
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GoblinAnimationController
   animator: {fileID: 5739718673374458533}
   rb: {fileID: 2594821375690545798}
+  health: {fileID: 0}
   moveThreshold: 0.01
 --- !u!114 &2909979034650657553
 MonoBehaviour:
@@ -146,6 +147,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReceiver
   animationController: {fileID: 6463237554576551475}
+  health: {fileID: 0}
+--- !u!114 &3423481023180233819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361718633194865004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd489b83a4c2b40b2bcd5ad2088d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 100
 --- !u!1 &7559240499658922092
 GameObject:
   m_ObjectHideFlags: 0
