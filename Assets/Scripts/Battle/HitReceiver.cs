@@ -5,6 +5,13 @@ public class HitReceiver : MonoBehaviour
     [SerializeField] private GoblinAnimationController animationController;
     [SerializeField] private Health health;
 
+    private GoblinEnemy goblinEnemy;
+
+    private void Awake()
+    {
+        goblinEnemy = GetComponent<GoblinEnemy>();
+    }
+
     public void ReceiveHit(HitData hitData)
     {
         if (health != null && health.IsDead)
@@ -17,7 +24,25 @@ public class HitReceiver : MonoBehaviour
         if (health != null)
             health.TakeDamage(hitData.damage);
 
+        if (health != null && health.IsDead)
+            return;
+
         if (animationController != null)
             animationController.PlayHit();
+
+        if (goblinEnemy == null || hitData.source == null)
+            return;
+
+        float horizontalOffset =
+            goblinEnemy.transform.position.x -
+            hitData.source.transform.position.x;
+
+        if (Mathf.Approximately(horizontalOffset, 0f))
+            return;
+
+        float knockbackDirection =
+            horizontalOffset > 0f ? 1f : -1f;
+
+        goblinEnemy.ApplyKnockback(knockbackDirection);
     }
 }

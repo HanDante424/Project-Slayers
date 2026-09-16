@@ -16,6 +16,10 @@ public class GoblinEnemy : MonoBehaviour
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float stopDistance = 0.8f;
 
+    [Header("Knockback")]
+    [SerializeField] private float knockbackSpeed = 4f;
+    [SerializeField] private float knockbackDuration = 0.12f;
+
     [Header("Death")]
     [SerializeField] private float deathDespawnDelay = 1.5f;
 
@@ -26,9 +30,11 @@ public class GoblinEnemy : MonoBehaviour
 
     private Action<GoblinEnemy> releaseAction;
     private Coroutine deathDespawnCoroutine;
+    private Coroutine knockbackCoroutine;
     private RigidbodyConstraints2D constraintsBeforeDeath;
 
     private bool targetDetected;
+    private bool isKnockedBack;
     private bool rigidbodyFrozenForDeath;
 
     private void Awake()
@@ -59,6 +65,9 @@ public class GoblinEnemy : MonoBehaviour
         if (health.IsDead)
             return;
 
+        if (isKnockedBack)
+            return;
+
         Move();
     }
 
@@ -75,6 +84,8 @@ public class GoblinEnemy : MonoBehaviour
             deathDespawnCoroutine = null;
         }
 
+        CancelKnockback();
+
         health.ResetHealth();
         animationController.ResetForReuse();
         targetDetected = false;
@@ -89,8 +100,52 @@ public class GoblinEnemy : MonoBehaviour
         rb.angularVelocity = 0f;
     }
 
+    public void ApplyKnockback(float direction)
+    {
+        if (health.IsDead)
+            return;
+
+        float horizontalDirection = Mathf.Sign(direction);
+
+        if (Mathf.Approximately(horizontalDirection, 0f))
+            return;
+
+        CancelKnockback();
+
+        isKnockedBack = true;
+        rb.linearVelocity = new Vector2(
+            horizontalDirection * knockbackSpeed,
+            rb.linearVelocity.y
+        );
+
+        knockbackCoroutine = StartCoroutine(
+            EndKnockbackAfterDuration()
+        );
+    }
+
+    private IEnumerator EndKnockbackAfterDuration()
+    {
+        yield return new WaitForSeconds(knockbackDuration);
+
+        knockbackCoroutine = null;
+        isKnockedBack = false;
+        StopHorizontalMovement();
+    }
+
+    private void CancelKnockback()
+    {
+        if (knockbackCoroutine != null)
+        {
+            StopCoroutine(knockbackCoroutine);
+            knockbackCoroutine = null;
+        }
+
+        isKnockedBack = false;
+    }
+
     private void HandleDeath()
     {
+        CancelKnockback();
         targetDetected = false;
         animationController.PlayDie();
         rb.linearVelocity = Vector2.zero;
