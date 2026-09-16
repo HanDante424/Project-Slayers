@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class AttackHitbox : MonoBehaviour
 {
+    [SerializeField] private int damage = 10;
+    [SerializeField] private int hitIndex;
+    [SerializeField] private GameObject source;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         HitReceiver receiver =
@@ -10,6 +14,13 @@ public class AttackHitbox : MonoBehaviour
         if (receiver == null)
             return;
 
-        receiver.ReceiveHit();
+        HitData hitData = new HitData
+        {
+            damage = damage,
+            hitIndex = hitIndex,
+            source = source
+        };
+
+        receiver.ReceiveHit(hitData);
     }
 }
