@@ -14,10 +14,10 @@ TagManager:
   - UI
   - Ground
   - Playerable
-  - 
-  - 
-  - 
-  - 
+  - PlayerBody
+  - EnemyBody
+  - PlayerAttack
+  - EnemyAttack
   - 
   - 
   - 
