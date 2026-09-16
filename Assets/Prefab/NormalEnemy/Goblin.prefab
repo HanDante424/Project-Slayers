@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReceiver
   animationController: {fileID: 6463237554576551475}
-  health: {fileID: 0}
+  health: {fileID: 3423481023180233819}
 --- !u!114 &3423481023180233819
 MonoBehaviour:
   m_ObjectHideFlags: 0
