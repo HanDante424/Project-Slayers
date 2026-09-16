@@ -120,8 +120,8 @@ MonoBehaviour:
   attackHitboxTransform: {fileID: 4761903847219038471}
   attack: 2
   basicAttackSkillData: {fileID: 11400000, guid: f3ec04b73c2b4264ae93151ed375ff66, type: 2}
-  attackWindup: 1
-  attackMovementLockDuration: 1
+  attackWindup: 1.5
+  attackMovementLockDuration: 1.5
   detectionRange: 7
   moveSpeed: 2
   stopDistance: 0.8
