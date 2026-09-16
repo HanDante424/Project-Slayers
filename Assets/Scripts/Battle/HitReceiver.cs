@@ -30,7 +30,17 @@ public class HitReceiver : MonoBehaviour
         if (animationController != null)
             animationController.PlayHit();
 
+        if (goblinEnemy != null && hitData.hitStunDuration > 0f)
+        {
+            goblinEnemy.ApplyHitStun(
+                hitData.hitStunDuration
+            );
+        }
+
         if (goblinEnemy == null || hitData.source == null)
+            return;
+
+        if (hitData.knockbackPower <= goblinEnemy.Toughness)
             return;
 
         float horizontalOffset =

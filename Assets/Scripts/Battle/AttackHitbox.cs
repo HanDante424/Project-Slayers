@@ -2,18 +2,20 @@ using UnityEngine;
 
 public class AttackHitbox : MonoBehaviour
 {
-    [SerializeField] private int damagePercent = 100;
     [SerializeField] private int hitIndex;
 
     private float attack;
     private GameObject source;
+    private SkillData skillData;
 
     public void Initialize(
         float newAttack,
-        GameObject newSource)
+        GameObject newSource,
+        SkillData newSkillData)
     {
         attack = newAttack;
         source = newSource;
+        skillData = newSkillData;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -24,8 +26,29 @@ public class AttackHitbox : MonoBehaviour
         if (receiver == null)
             return;
 
+        if (skillData == null)
+        {
+            Debug.LogWarning(
+                $"{name} has no SkillData.",
+                this
+            );
+            return;
+        }
+
+        if (!skillData.TryGetHitData(
+                hitIndex,
+                out SkillHitData skillHitData))
+        {
+            Debug.LogWarning(
+                $"{name} has invalid hitIndex {hitIndex} " +
+                $"for {skillData.name}.",
+                this
+            );
+            return;
+        }
+
         float baseDamage =
-            attack * damagePercent / 100f;
+            attack * skillHitData.damagePercent / 100f;
 
         // TEMP: rounding rule unresolved.
         int damage = Mathf.RoundToInt(baseDamage);
@@ -34,7 +57,9 @@ public class AttackHitbox : MonoBehaviour
         {
             damage = damage,
             hitIndex = hitIndex,
-            source = source
+            source = source,
+            hitStunDuration = skillHitData.hitStunDuration,
+            knockbackPower = skillHitData.knockbackPower
         };
 
         receiver.ReceiveHit(hitData);

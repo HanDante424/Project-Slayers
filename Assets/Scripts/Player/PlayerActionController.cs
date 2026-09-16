@@ -11,6 +11,7 @@ public class PlayerActionController : MonoBehaviour
 
     [Header("Prototype Ern")]
     [SerializeField] private AnimationClip tripleSlashClip;
+    [SerializeField] private SkillData tripleSlashSkillData;
 
     [SerializeField] private GameObject tripleSlashEffectPrefab;
     [SerializeField] private Transform effectSpawnPoint;
@@ -63,7 +64,8 @@ public class PlayerActionController : MonoBehaviour
         {
             hitboxController.Initialize(
                 characterStats.FinalAttack,
-                gameObject
+                gameObject,
+                tripleSlashSkillData
             );
         }
 

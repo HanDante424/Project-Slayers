@@ -16,6 +16,9 @@ public class GoblinEnemy : MonoBehaviour
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float stopDistance = 0.8f;
 
+    [Header("Reaction")]
+    [SerializeField] private float toughness = 0f;
+
     [Header("Knockback")]
     [SerializeField] private float knockbackSpeed = 4f;
     [SerializeField] private float knockbackDuration = 0.12f;
@@ -30,12 +33,16 @@ public class GoblinEnemy : MonoBehaviour
 
     private Action<GoblinEnemy> releaseAction;
     private Coroutine deathDespawnCoroutine;
+    private Coroutine hitStunCoroutine;
     private Coroutine knockbackCoroutine;
     private RigidbodyConstraints2D constraintsBeforeDeath;
 
     private bool targetDetected;
+    private bool isHitStunned;
     private bool isKnockedBack;
     private bool rigidbodyFrozenForDeath;
+
+    public float Toughness => toughness;
 
     private void Awake()
     {
@@ -65,7 +72,7 @@ public class GoblinEnemy : MonoBehaviour
         if (health.IsDead)
             return;
 
-        if (isKnockedBack)
+        if (isKnockedBack || isHitStunned)
             return;
 
         Move();
@@ -85,6 +92,7 @@ public class GoblinEnemy : MonoBehaviour
         }
 
         CancelKnockback();
+        CancelHitStun();
 
         health.ResetHealth();
         animationController.ResetForReuse();
@@ -98,6 +106,42 @@ public class GoblinEnemy : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+    }
+
+    public void ApplyHitStun(float duration)
+    {
+        if (health.IsDead || duration <= 0f)
+            return;
+
+        CancelHitStun();
+
+        isHitStunned = true;
+
+        if (!isKnockedBack)
+            StopHorizontalMovement();
+
+        hitStunCoroutine = StartCoroutine(
+            EndHitStunAfterDuration(duration)
+        );
+    }
+
+    private IEnumerator EndHitStunAfterDuration(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+
+        hitStunCoroutine = null;
+        isHitStunned = false;
+    }
+
+    private void CancelHitStun()
+    {
+        if (hitStunCoroutine != null)
+        {
+            StopCoroutine(hitStunCoroutine);
+            hitStunCoroutine = null;
+        }
+
+        isHitStunned = false;
     }
 
     public void ApplyKnockback(float direction)
@@ -146,6 +190,7 @@ public class GoblinEnemy : MonoBehaviour
     private void HandleDeath()
     {
         CancelKnockback();
+        CancelHitStun();
         targetDetected = false;
         animationController.PlayDie();
         rb.linearVelocity = Vector2.zero;

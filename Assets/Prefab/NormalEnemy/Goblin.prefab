@@ -118,8 +118,9 @@ MonoBehaviour:
   detectionRange: 7
   moveSpeed: 2
   stopDistance: 0.8
+  toughness: 0
   knockbackSpeed: 4
-  knockbackDuration: 0.12
+  knockbackDuration: 0.4
   deathDespawnDelay: 1.5
 --- !u!114 &6463237554576551475
 MonoBehaviour:
