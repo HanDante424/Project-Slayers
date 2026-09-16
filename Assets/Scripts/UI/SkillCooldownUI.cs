@@ -8,7 +8,9 @@ public class SkillCooldownUI : MonoBehaviour
     [SerializeField] private Image cooldownFill;
     [SerializeField] private TMP_Text cooldownText;
     [SerializeField] private Image readyFlash;
-    [SerializeField] private float readyFlashDuration = 0.18f;
+    [SerializeField] private float readyFlashMaxAlpha = 0.75f;
+    [SerializeField] private float readyFlashDuration = 0.25f;
+
 
     private Coroutine readyFlashCoroutine;
 
@@ -54,12 +56,43 @@ public class SkillCooldownUI : MonoBehaviour
 
     private IEnumerator PlayReadyFlash()
     {
+        Color color = readyFlash.color;
+
+        // 매번 시작 밝기로 복구
+        color.a = readyFlashMaxAlpha;
+        readyFlash.color = color;
+
         readyFlash.gameObject.SetActive(true);
-        yield return new WaitForSeconds(readyFlashDuration);
+
+        float elapsed = 0f;
+
+        while (elapsed < readyFlashDuration)
+        {
+            elapsed += Time.deltaTime;
+
+            float t = Mathf.Clamp01(
+                elapsed / readyFlashDuration
+            );
+
+            color.a = Mathf.Lerp(
+                readyFlashMaxAlpha,
+                0f,
+                t
+            );
+
+            readyFlash.color = color;
+
+            yield return null;
+        }
+
+        color.a = 0f;
+        readyFlash.color = color;
 
         readyFlash.gameObject.SetActive(false);
+
         cooldownFill.fillAmount = 0f;
         cooldownFill.gameObject.SetActive(false);
+
         readyFlashCoroutine = null;
     }
 
