@@ -7,6 +7,9 @@ public class HitReceiver : MonoBehaviour
 
     public void ReceiveHit(HitData hitData)
     {
+        if (health != null && health.IsDead)
+            return;
+
         Debug.Log(
             $"{name} hit / damage: {hitData.damage} / hitIndex: {hitData.hitIndex}"
         );

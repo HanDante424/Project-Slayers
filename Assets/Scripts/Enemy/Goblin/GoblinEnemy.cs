@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Health))]
 public class GoblinEnemy : MonoBehaviour
 {
     [Header("References")]
@@ -14,26 +16,47 @@ public class GoblinEnemy : MonoBehaviour
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float stopDistance = 0.8f;
 
+    [Header("Death")]
+    [SerializeField] private float deathDespawnDelay = 1.5f;
+
     private Rigidbody2D rb;
+    private Health health;
     private Transform target;
 
     private Action<GoblinEnemy> releaseAction;
+    private Coroutine deathDespawnCoroutine;
+    private RigidbodyConstraints2D constraintsBeforeDeath;
 
     private bool targetDetected;
+    private bool rigidbodyFrozenForDeath;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        health = GetComponent<Health>();
+        health.Died += HandleDeath;
+    }
+
+    private void OnDestroy()
+    {
+        if (health != null)
+            health.Died -= HandleDeath;
     }
 
     private void Update()
     {
+        if (health.IsDead)
+            return;
+
         CheckTarget();
         UpdateDirection();
     }
 
     private void FixedUpdate()
     {
+        if (health.IsDead)
+            return;
+
         Move();
     }
 
@@ -44,9 +67,49 @@ public class GoblinEnemy : MonoBehaviour
         target = newTarget;
         releaseAction = newReleaseAction;
 
+        if (deathDespawnCoroutine != null)
+        {
+            StopCoroutine(deathDespawnCoroutine);
+            deathDespawnCoroutine = null;
+        }
+
+        health.ResetHealth();
         targetDetected = false;
 
+        if (rigidbodyFrozenForDeath)
+        {
+            rb.constraints = constraintsBeforeDeath;
+            rigidbodyFrozenForDeath = false;
+        }
+
         rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+    }
+
+    private void HandleDeath()
+    {
+        targetDetected = false;
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+
+        constraintsBeforeDeath = rb.constraints;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        rigidbodyFrozenForDeath = true;
+
+        if (deathDespawnCoroutine == null)
+        {
+            deathDespawnCoroutine = StartCoroutine(
+                DespawnAfterDeathDelay()
+            );
+        }
+    }
+
+    private IEnumerator DespawnAfterDeathDelay()
+    {
+        yield return new WaitForSeconds(deathDespawnDelay);
+
+        deathDespawnCoroutine = null;
+        Despawn();
     }
 
     private void CheckTarget()
