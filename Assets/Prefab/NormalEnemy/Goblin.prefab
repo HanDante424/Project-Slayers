@@ -118,6 +118,7 @@ MonoBehaviour:
   detectionRange: 7
   moveSpeed: 2
   stopDistance: 0.8
+  deathDespawnDelay: 1.5
 --- !u!114 &6463237554576551475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GoblinAnimationController
   animator: {fileID: 5739718673374458533}
   rb: {fileID: 2594821375690545798}
-  health: {fileID: 0}
   moveThreshold: 0.01
 --- !u!114 &2909979034650657553
 MonoBehaviour:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bd489b83a4c2b40b2bcd5ad2088d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHealth: 100
+  maxHealth: 30
 --- !u!1 &7559240499658922092
 GameObject:
   m_ObjectHideFlags: 0

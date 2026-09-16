@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterStats))]
 public class PlayerActionController : MonoBehaviour
 {
     [Header("References")]
@@ -14,10 +15,16 @@ public class PlayerActionController : MonoBehaviour
     [SerializeField] private GameObject tripleSlashEffectPrefab;
     [SerializeField] private Transform effectSpawnPoint;
 
+    private CharacterStats characterStats;
     private bool isActing;
 
     private static readonly int TripleSlashHash =
         Animator.StringToHash("TripleSlash");
+
+    private void Awake()
+    {
+        characterStats = GetComponent<CharacterStats>();
+    }
 
     private void Update()
     {
@@ -48,6 +55,17 @@ public class PlayerActionController : MonoBehaviour
             effectSpawnPoint.position,
             effectSpawnPoint.rotation
         );
+
+        AttackHitboxController hitboxController =
+            effect.GetComponent<AttackHitboxController>();
+
+        if (hitboxController != null)
+        {
+            hitboxController.Initialize(
+                characterStats.FinalAttack,
+                gameObject
+            );
+        }
 
         Destroy(
             effect,

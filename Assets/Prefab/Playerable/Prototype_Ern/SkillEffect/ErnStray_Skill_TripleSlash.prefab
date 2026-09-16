@@ -91,9 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cf2338297327d498086bfe8a70146e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackHitbox
-  damage: 10
+  damagePercent: 100
   hitIndex: 0
-  source: {fileID: 0}
 --- !u!1 &2868521879224747355
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,9 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cf2338297327d498086bfe8a70146e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackHitbox
-  damage: 10
+  damagePercent: 150
   hitIndex: 2
-  source: {fileID: 0}
 --- !u!1 &4972741934759580746
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +411,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cf2338297327d498086bfe8a70146e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackHitbox
-  damage: 10
+  damagePercent: 110
   hitIndex: 1
-  source: {fileID: 0}
