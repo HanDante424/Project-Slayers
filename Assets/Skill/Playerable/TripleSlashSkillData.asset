@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TripleSlashSkillData
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: TripleSlash
+  cooldown: 1
   hits:
   - damagePercent: 100
     hitStunDuration: 0.2

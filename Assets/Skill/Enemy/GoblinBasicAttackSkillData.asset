@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GoblinBasicAttackSkillData
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Goblin Basic Attack
+  cooldown: 0
   hits:
   - damagePercent: 100
     hitStunDuration: 0.2

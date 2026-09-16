@@ -16,6 +16,7 @@ public class SkillHitData
 public class SkillData : ScriptableObject
 {
     public string skillName;
+    public float cooldown;
     public SkillHitData[] hits;
 
     public bool TryGetHitData(

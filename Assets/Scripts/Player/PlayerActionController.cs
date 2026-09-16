@@ -12,12 +12,14 @@ public class PlayerActionController : MonoBehaviour
     [Header("Prototype Ern")]
     [SerializeField] private AnimationClip tripleSlashClip;
     [SerializeField] private SkillData tripleSlashSkillData;
+    [SerializeField] private SkillCooldownUI tripleSlashCooldownUI;
 
     [SerializeField] private GameObject tripleSlashEffectPrefab;
     [SerializeField] private Transform effectSpawnPoint;
 
     private CharacterStats characterStats;
     private bool isActing;
+    private float tripleSlashCooldownRemaining;
 
     private static readonly int TripleSlashHash =
         Animator.StringToHash("TripleSlash");
@@ -29,6 +31,8 @@ public class PlayerActionController : MonoBehaviour
 
     private void Update()
     {
+        UpdateTripleSlashCooldown();
+
         if (isActing)
             return;
 
@@ -38,7 +42,44 @@ public class PlayerActionController : MonoBehaviour
         if (!motor.IsGrounded)
             return;
 
+        if (tripleSlashCooldownRemaining > 0f)
+            return;
+
+        StartTripleSlashCooldown();
         StartCoroutine(PlayTripleSlash());
+    }
+
+    private void StartTripleSlashCooldown()
+    {
+        float cooldown = tripleSlashSkillData.cooldown;
+
+        if (cooldown <= 0f)
+            return;
+
+        tripleSlashCooldownRemaining = cooldown;
+        tripleSlashCooldownUI?.StartCooldown(cooldown);
+    }
+
+    private void UpdateTripleSlashCooldown()
+    {
+        if (tripleSlashCooldownRemaining <= 0f)
+            return;
+
+        float cooldown = tripleSlashSkillData.cooldown;
+
+        tripleSlashCooldownRemaining = Mathf.Max(
+            tripleSlashCooldownRemaining - Time.deltaTime,
+            0f
+        );
+
+        float elapsed = cooldown - tripleSlashCooldownRemaining;
+        tripleSlashCooldownUI?.SetCooldownProgress(
+            elapsed,
+            cooldown
+        );
+
+        if (tripleSlashCooldownRemaining <= 0f)
+            tripleSlashCooldownUI?.CompleteCooldown();
     }
 
     private IEnumerator PlayTripleSlash()
