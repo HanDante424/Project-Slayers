@@ -61,12 +61,14 @@ public class GoblinAnimationController : MonoBehaviour
         isDead = true;
 
         animator.ResetTrigger(HitHash);
+        animator.ResetTrigger(AttackHash);
         animator.SetTrigger(DieHash);
     }
 
     public void ResetForReuse()
     {
         isDead = false;
+        animator.ResetTrigger(AttackHash);
         animator.ResetTrigger(HitHash);
         animator.ResetTrigger(DieHash);
     }

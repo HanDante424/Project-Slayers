@@ -1227,6 +1227,8 @@ GameObject:
   - component: {fileID: 1584064936}
   - component: {fileID: 1584064937}
   - component: {fileID: 1584064938}
+  - component: {fileID: 1584064939}
+  - component: {fileID: 1584064940}
   m_Layer: 0
   m_Name: Playerable
   m_TagString: Untagged
@@ -1442,6 +1444,34 @@ MonoBehaviour:
   tripleSlashSkillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
   tripleSlashEffectPrefab: {fileID: 2868521879224747355, guid: b3bb9abb9252cfa4384ea654c04cb795, type: 3}
   effectSpawnPoint: {fileID: 2032861792}
+--- !u!114 &1584064939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584064927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd489b83a4c2b40b2bcd5ad2088d08, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 100
+--- !u!114 &1584064940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584064927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a3d39278ce4c4a93df14214a21e8af, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHitReceiver
+  health: {fileID: 1584064939}
+  animationController: {fileID: 1584064934}
+  motor: {fileID: 1584064928}
 --- !u!1 &1682287570
 GameObject:
   m_ObjectHideFlags: 0

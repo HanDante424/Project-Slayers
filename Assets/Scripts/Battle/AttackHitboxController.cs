@@ -3,12 +3,16 @@ using UnityEngine;
 public class AttackHitboxController : MonoBehaviour
 {
     [SerializeField] private Collider2D[] hitboxes;
-
-    private AttackHitbox[] attackHitboxes;
+    [SerializeField] private AttackHitbox[] attackHitboxes;
 
     private void Awake()
     {
-        attackHitboxes = GetComponentsInChildren<AttackHitbox>(true);
+        if (attackHitboxes == null || attackHitboxes.Length == 0)
+        {
+            attackHitboxes =
+                GetComponentsInChildren<AttackHitbox>(true);
+        }
+
         DisableAllHitboxes();
     }
 

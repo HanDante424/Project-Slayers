@@ -7,6 +7,7 @@ public class SkillHitData
     public int damagePercent;
     public float hitStunDuration;
     public float knockbackPower;
+    public float knockbackMultiplier = 1f;
 }
 
 [CreateAssetMenu(

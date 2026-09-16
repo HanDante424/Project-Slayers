@@ -8,6 +8,14 @@ public class GoblinEnemy : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private AttackHitboxController attackHitboxController;
+    [SerializeField] private Transform attackHitboxTransform;
+
+    [Header("Attack")]
+    [SerializeField] private float attack = 2f;
+    [SerializeField] private SkillData basicAttackSkillData;
+    [SerializeField] private float attackWindup = 1.5f;
+    [SerializeField] private float attackMovementLockDuration = 1.5f;
 
     [Header("Detection")]
     [SerializeField] private float detectionRange = 7f;
@@ -35,12 +43,15 @@ public class GoblinEnemy : MonoBehaviour
     private Coroutine deathDespawnCoroutine;
     private Coroutine hitStunCoroutine;
     private Coroutine knockbackCoroutine;
+    private Coroutine attackCoroutine;
     private RigidbodyConstraints2D constraintsBeforeDeath;
 
     private bool targetDetected;
     private bool isHitStunned;
     private bool isKnockedBack;
     private bool rigidbodyFrozenForDeath;
+    private bool isAttacking;
+    private float attackHitboxOffsetX;
 
     public float Toughness => toughness;
 
@@ -50,6 +61,9 @@ public class GoblinEnemy : MonoBehaviour
         health = GetComponent<Health>();
         animationController = GetComponent<GoblinAnimationController>();
         health.Died += HandleDeath;
+
+        if (attackHitboxTransform != null)
+            attackHitboxOffsetX = Mathf.Abs(attackHitboxTransform.localPosition.x);
     }
 
     private void OnDestroy()
@@ -64,7 +78,11 @@ public class GoblinEnemy : MonoBehaviour
             return;
 
         CheckTarget();
-        UpdateDirection();
+
+        if (!isAttacking)
+            UpdateDirection();
+
+        TryStartAttack();
     }
 
     private void FixedUpdate()
@@ -72,7 +90,7 @@ public class GoblinEnemy : MonoBehaviour
         if (health.IsDead)
             return;
 
-        if (isKnockedBack || isHitStunned)
+        if (isKnockedBack || isHitStunned || isAttacking)
             return;
 
         Move();
@@ -93,6 +111,7 @@ public class GoblinEnemy : MonoBehaviour
 
         CancelKnockback();
         CancelHitStun();
+        CancelAttack();
 
         health.ResetHealth();
         animationController.ResetForReuse();
@@ -106,6 +125,15 @@ public class GoblinEnemy : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+
+        if (attackHitboxController != null)
+        {
+            attackHitboxController.Initialize(
+                attack,
+                gameObject,
+                basicAttackSkillData
+            );
+        }
     }
 
     public void ApplyHitStun(float duration)
@@ -116,6 +144,7 @@ public class GoblinEnemy : MonoBehaviour
         CancelHitStun();
 
         isHitStunned = true;
+        attackHitboxController?.DisableAllHitboxes();
 
         if (!isKnockedBack)
             StopHorizontalMovement();
@@ -189,6 +218,7 @@ public class GoblinEnemy : MonoBehaviour
 
     private void HandleDeath()
     {
+        CancelAttack();
         CancelKnockback();
         CancelHitStun();
         targetDetected = false;
@@ -230,6 +260,58 @@ public class GoblinEnemy : MonoBehaviour
         );
 
         targetDetected = distance <= detectionRange;
+    }
+
+    private void TryStartAttack()
+    {
+        if (isAttacking || isHitStunned || isKnockedBack ||
+            !targetDetected || target == null)
+        {
+            return;
+        }
+
+        float horizontalDistance =
+            target.position.x - transform.position.x;
+
+        if (Mathf.Abs(horizontalDistance) > stopDistance)
+            return;
+
+        isAttacking = true;
+        StopHorizontalMovement();
+        attackCoroutine = StartCoroutine(AttackRoutine());
+    }
+
+    private IEnumerator AttackRoutine()
+    {
+        yield return new WaitForSeconds(attackWindup);
+
+        while (isHitStunned || isKnockedBack)
+            yield return null;
+
+        if (health.IsDead)
+            yield break;
+
+        animationController.PlayAttack();
+
+        yield return new WaitForSeconds(
+            attackMovementLockDuration
+        );
+
+        attackHitboxController?.DisableAllHitboxes();
+        attackCoroutine = null;
+        isAttacking = false;
+    }
+
+    private void CancelAttack()
+    {
+        if (attackCoroutine != null)
+        {
+            StopCoroutine(attackCoroutine);
+            attackCoroutine = null;
+        }
+
+        attackHitboxController?.DisableAllHitboxes();
+        isAttacking = false;
     }
 
     private void Move()
@@ -289,6 +371,7 @@ public class GoblinEnemy : MonoBehaviour
             return;
 
         spriteRenderer.flipX = false;
+        SetAttackHitboxDirection(1f);
     }
 
     private void FaceLeft()
@@ -297,6 +380,17 @@ public class GoblinEnemy : MonoBehaviour
             return;
 
         spriteRenderer.flipX = true;
+        SetAttackHitboxDirection(-1f);
+    }
+
+    private void SetAttackHitboxDirection(float direction)
+    {
+        if (attackHitboxTransform == null)
+            return;
+
+        Vector3 localPosition = attackHitboxTransform.localPosition;
+        localPosition.x = attackHitboxOffsetX * direction;
+        attackHitboxTransform.localPosition = localPosition;
     }
 
     public void Despawn()

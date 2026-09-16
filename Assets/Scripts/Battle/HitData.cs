@@ -7,4 +7,5 @@ public struct HitData
     public GameObject source;
     public float hitStunDuration;
     public float knockbackPower;
+    public float knockbackMultiplier;
 }

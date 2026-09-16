@@ -26,6 +26,9 @@ public class PlayerAnimationController : MonoBehaviour
     private static readonly int VerticalVelocityHash =
         Animator.StringToHash("VerticalVelocity");
 
+    private static readonly int Hit0Hash =
+        Animator.StringToHash("Hit0");
+
     private void Update()
     {
         UpdateAnimatorParameters();
@@ -78,5 +81,10 @@ public class PlayerAnimationController : MonoBehaviour
             VerticalVelocityHash,
             verticalSpeed
         );
+    }
+
+    public void PlayHit()
+    {
+        animator.SetTrigger(Hit0Hash);
     }
 }

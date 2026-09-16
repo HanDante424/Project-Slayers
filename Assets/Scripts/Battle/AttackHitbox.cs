@@ -20,10 +20,25 @@ public class AttackHitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (source != null &&
+            (other.transform == source.transform ||
+             other.transform.IsChildOf(source.transform)))
+        {
+            return;
+        }
+
         HitReceiver receiver =
             other.GetComponentInParent<HitReceiver>();
 
+        PlayerHitReceiver playerReceiver = null;
+
         if (receiver == null)
+        {
+            playerReceiver =
+                other.GetComponentInParent<PlayerHitReceiver>();
+        }
+
+        if (receiver == null && playerReceiver == null)
             return;
 
         if (skillData == null)
@@ -59,9 +74,13 @@ public class AttackHitbox : MonoBehaviour
             hitIndex = hitIndex,
             source = source,
             hitStunDuration = skillHitData.hitStunDuration,
-            knockbackPower = skillHitData.knockbackPower
+            knockbackPower = skillHitData.knockbackPower,
+            knockbackMultiplier = skillHitData.knockbackMultiplier
         };
 
-        receiver.ReceiveHit(hitData);
+        if (receiver != null)
+            receiver.ReceiveHit(hitData);
+        else
+            playerReceiver.ReceiveHit(hitData);
     }
 }

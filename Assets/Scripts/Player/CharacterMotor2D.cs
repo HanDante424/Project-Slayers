@@ -36,6 +36,7 @@ public class CharacterMotor2D : MonoBehaviour
     private float inputVelocityX;
     private Vector2 skillVelocity;
     private Vector2 knockbackVelocity;
+    private bool hitStunLocked;
 
     public bool IsGrounded => isGrounded;
     public float MoveInputX => inputReader.MoveInput.x;
@@ -62,7 +63,11 @@ public class CharacterMotor2D : MonoBehaviour
     {
         float moveInput = inputReader.MoveInput.x;
 
-        switch (movementControl)
+        if (hitStunLocked)
+        {
+            inputVelocityX = 0f;
+        }
+        else switch (movementControl)
         {
             case MovementControl.Free:
                 inputVelocityX = moveInput * moveSpeed;
@@ -80,7 +85,7 @@ public class CharacterMotor2D : MonoBehaviour
                 break;
         }
 
-        if (movementControl != MovementControl.Locked)
+        if (!IsMovementLocked)
         {
             if (inputReader.MoveInput.x > 0.01f)
             {
@@ -98,7 +103,7 @@ public class CharacterMotor2D : MonoBehaviour
         if (!inputReader.ConsumeJump())
             return;
 
-        if (movementControl == MovementControl.Locked)
+        if (IsMovementLocked)
             return;
 
         if (!isGrounded)
@@ -205,4 +210,16 @@ public class CharacterMotor2D : MonoBehaviour
     {
         movementControl = control;
     }
+
+    public void SetHitStunLocked(bool locked)
+    {
+        hitStunLocked = locked;
+
+        if (locked)
+            inputVelocityX = 0f;
+    }
+
+    private bool IsMovementLocked =>
+        hitStunLocked ||
+        movementControl == MovementControl.Locked;
 }
