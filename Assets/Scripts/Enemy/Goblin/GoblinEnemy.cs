@@ -21,6 +21,7 @@ public class GoblinEnemy : MonoBehaviour
 
     private Rigidbody2D rb;
     private Health health;
+    private GoblinAnimationController animationController;
     private Transform target;
 
     private Action<GoblinEnemy> releaseAction;
@@ -34,6 +35,7 @@ public class GoblinEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
+        animationController = GetComponent<GoblinAnimationController>();
         health.Died += HandleDeath;
     }
 
@@ -74,6 +76,7 @@ public class GoblinEnemy : MonoBehaviour
         }
 
         health.ResetHealth();
+        animationController.ResetForReuse();
         targetDetected = false;
 
         if (rigidbodyFrozenForDeath)
@@ -89,6 +92,7 @@ public class GoblinEnemy : MonoBehaviour
     private void HandleDeath()
     {
         targetDetected = false;
+        animationController.PlayDie();
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
 

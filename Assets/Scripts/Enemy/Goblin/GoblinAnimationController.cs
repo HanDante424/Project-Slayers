@@ -18,6 +18,11 @@ public class GoblinAnimationController : MonoBehaviour
     private static readonly int HitHash =
         Animator.StringToHash("Hit");
 
+    private static readonly int DieHash =
+        Animator.StringToHash("Die");
+
+    private bool isDead;
+
     private void Update()
     {
         UpdateMovementAnimation();
@@ -43,8 +48,26 @@ public class GoblinAnimationController : MonoBehaviour
 
     public void PlayHit()
     {
+        if (isDead)
+            return;
+
         animator.SetTrigger(
             HitHash
         );
+    }
+
+    public void PlayDie()
+    {
+        isDead = true;
+
+        animator.ResetTrigger(HitHash);
+        animator.SetTrigger(DieHash);
+    }
+
+    public void ResetForReuse()
+    {
+        isDead = false;
+        animator.ResetTrigger(HitHash);
+        animator.ResetTrigger(DieHash);
     }
 }
