@@ -4,15 +4,15 @@ using UnityEngine.UI;
 public class PlayerManaUI : MonoBehaviour
 {
     [SerializeField] private PlayerMana playerMana;
-    [SerializeField] private Image manaFill;
+    [SerializeField] private Image manaCover;
 
     private void OnEnable()
     {
         if (playerMana == null)
             return;
 
-        playerMana.ManaChanged += UpdateManaBar;
-        UpdateManaBar(playerMana.CurrentMana, playerMana.MaxMana);
+        playerMana.ManaChanged += UpdateMana;
+        UpdateMana(playerMana.CurrentMana, playerMana.MaxMana);
     }
 
     private void OnDisable()
@@ -20,16 +20,18 @@ public class PlayerManaUI : MonoBehaviour
         if (playerMana == null)
             return;
 
-        playerMana.ManaChanged -= UpdateManaBar;
+        playerMana.ManaChanged -= UpdateMana;
     }
 
-    private void UpdateManaBar(float currentMana, float maxMana)
+    private void UpdateMana(float currentMana, float maxMana)
     {
-        if (manaFill == null)
+        if (manaCover == null)
             return;
 
-        manaFill.fillAmount = maxMana > 0f
-            ? currentMana / maxMana
+        float manaRatio = maxMana > 0f
+            ? Mathf.Clamp01(currentMana / maxMana)
             : 0f;
+
+        manaCover.fillAmount = 1f - manaRatio;
     }
 }

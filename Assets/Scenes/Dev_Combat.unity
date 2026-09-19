@@ -3455,7 +3455,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManaUI
   playerMana: {fileID: 1584064941}
-  manaFill: {fileID: 1440742697}
+  manaCover: {fileID: 2068456944}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
