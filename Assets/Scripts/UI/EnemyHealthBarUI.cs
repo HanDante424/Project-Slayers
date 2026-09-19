@@ -31,4 +31,22 @@ public class EnemyHealthBarUI : MonoBehaviour
         float healthRatio = (float)currentHealth / maxHealth;
         damageCover.fillAmount = 1f - healthRatio;
     }
+    public void Bind(Health targetHealth)
+    {
+        if (health != null)
+        {
+            health.HealthChanged -= UpdateHealthBar;
+        }
+
+        health = targetHealth;
+
+        if (health == null)
+            return;
+
+        health.HealthChanged += UpdateHealthBar;
+        UpdateHealthBar(
+            health.CurrentHealth,
+            health.MaxHealth
+        );
+    }
 }
