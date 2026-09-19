@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterStats))]
+[RequireComponent(typeof(PlayerMana))]
 public class PlayerActionController : MonoBehaviour
 {
     [Header("References")]
@@ -18,6 +19,7 @@ public class PlayerActionController : MonoBehaviour
     [SerializeField] private Transform effectSpawnPoint;
 
     private CharacterStats characterStats;
+    private PlayerMana playerMana;
     private bool isActing;
     private float tripleSlashCooldownRemaining;
 
@@ -27,6 +29,7 @@ public class PlayerActionController : MonoBehaviour
     private void Awake()
     {
         characterStats = GetComponent<CharacterStats>();
+        playerMana = GetComponent<PlayerMana>();
     }
 
     private void Update()
@@ -43,6 +46,11 @@ public class PlayerActionController : MonoBehaviour
             return;
 
         if (tripleSlashCooldownRemaining > 0f)
+            return;
+
+        // Temporary cost: 10% of the current final maximum mana.
+        float manaCost = playerMana.MaxMana * 0.1f;
+        if (!playerMana.Spend(manaCost))
             return;
 
         StartTripleSlashCooldown();

@@ -520,14 +520,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5645082663091813469, guid: 968132e19729f5b4da81d2a566f2bb67, type: 3}
+  m_Sprite: {fileID: 6026151842308396209, guid: bd057922a4b8d344f917a5823399daa3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1559,6 +1559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020443666}
+  - component: {fileID: 1020443667}
   m_Layer: 5
   m_Name: ManaBar
   m_TagString: Untagged
@@ -2331,10 +2332,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 6026151842308396209, guid: bd057922a4b8d344f917a5823399daa3, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -2504,6 +2505,7 @@ GameObject:
   - component: {fileID: 1584064938}
   - component: {fileID: 1584064939}
   - component: {fileID: 1584064940}
+  - component: {fileID: 1584064941}
   m_Layer: 8
   m_Name: Playerable
   m_TagString: Untagged
@@ -3427,6 +3429,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068456942}
   m_CullTransparentMesh: 1
+--- !u!114 &1584064941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584064927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0dc4bcee0c24c298710a8e3222c2bfe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMana
+  characterStats: {fileID: 1584064937}
+--- !u!114 &1020443667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020443665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9124560622b14506940f847dd4cc9698, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerManaUI
+  playerMana: {fileID: 1584064941}
+  manaFill: {fileID: 1440742697}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
