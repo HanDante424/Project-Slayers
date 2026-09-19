@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
     public bool IsDead => currentHealth <= 0;
 
     public event Action Died;
+    public event Action<int, int> HealthChanged;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class Health : MonoBehaviour
     public void ResetHealth()
     {
         currentHealth = maxHealth;
+        HealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
     public void TakeDamage(int damage)
@@ -32,6 +34,8 @@ public class Health : MonoBehaviour
             currentHealth - damage,
             0
         );
+
+        HealthChanged?.Invoke(currentHealth, maxHealth);
 
         Debug.Log(
             $"{name} HP: {currentHealth} / {maxHealth}"
