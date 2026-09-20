@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
@@ -10,6 +11,13 @@ public class SkillHitData
     public float knockbackMultiplier = 1f;
 }
 
+[Serializable]
+public class SkillPrerequisite
+{
+    public SkillData skill;
+    public int requiredLevel;
+}
+
 [CreateAssetMenu(
     fileName = "SkillData",
     menuName = "Slayers/Skill Data")]
@@ -18,6 +26,8 @@ public class SkillData : ScriptableObject
     public string skillName;
     public float cooldown;
     public SkillHitData[] hits;
+    public SkillMechanism mechanism;
+    public List<SkillPrerequisite> prerequisites = new();
 
     public bool TryGetHitData(
         int hitIndex,
