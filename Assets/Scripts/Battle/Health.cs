@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField, Min(1)] private int maxHealth = 100;
 
     private int currentHealth;
 
@@ -19,8 +19,18 @@ public class Health : MonoBehaviour
         ResetHealth();
     }
 
+    public void SetMaxHealth(int value, bool resetCurrent = true)
+    {
+        maxHealth = Mathf.Max(1, value);
+        currentHealth = resetCurrent
+            ? maxHealth
+            : Mathf.Clamp(currentHealth, 0, maxHealth);
+        HealthChanged?.Invoke(currentHealth, maxHealth);
+    }
+
     public void ResetHealth()
     {
+        maxHealth = Mathf.Max(1, maxHealth);
         currentHealth = maxHealth;
         HealthChanged?.Invoke(currentHealth, maxHealth);
     }

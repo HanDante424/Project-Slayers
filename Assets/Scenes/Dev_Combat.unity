@@ -2506,6 +2506,7 @@ GameObject:
   - component: {fileID: 1584064939}
   - component: {fileID: 1584064940}
   - component: {fileID: 1584064941}
+  - component: {fileID: 1584064942}
   m_Layer: 8
   m_Name: Playerable
   m_TagString: Untagged
@@ -3150,6 +3151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1842472618}
+  - component: {fileID: 1842472619}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -3456,6 +3458,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManaUI
   playerMana: {fileID: 1584064941}
   manaCover: {fileID: 2068456944}
+--- !u!114 &1584064942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584064927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdb483158294318ad5ab476395985a1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  characterStats: {fileID: 1584064937}
+  health: {fileID: 1584064939}
+--- !u!114 &1842472619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842472617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f727960ab3c94a07b60c84e1a3983601, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthUI
+  health: {fileID: 1584064939}
+  healthCover: {fileID: 1062238323}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
