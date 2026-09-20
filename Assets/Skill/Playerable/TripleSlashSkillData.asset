@@ -18,9 +18,14 @@ MonoBehaviour:
   - damagePercent: 100
     hitStunDuration: 0.2
     knockbackPower: 1
+    knockbackMultiplier: 1
   - damagePercent: 110
     hitStunDuration: 0.2
     knockbackPower: 1
+    knockbackMultiplier: 1
   - damagePercent: 150
     hitStunDuration: 0.2
     knockbackPower: 1
+    knockbackMultiplier: 1
+  mechanism: {fileID: 0}
+  prerequisites: []
