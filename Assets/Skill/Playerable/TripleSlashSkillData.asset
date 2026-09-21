@@ -12,13 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39100bb5a0048f3b3366cb1064a0449, type: 3}
   m_Name: TripleSlashSkillData
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
+  thumbnail: {fileID: 0}
   skillName: TripleSlash
+  description: 
+  maxLevel: 0
+  mechanism: {fileID: 0}
+  costType: 0
+  costAmount: 0
+  prerequisites: []
   cooldown: 1
+  attackType: 0
+  elementType: 0
+  category: 0
+  skillTypes: 00000000
+  effects:
+  - effectType: 0
+    baseCoefficient: 0
+    coefficientGrowthPerLevel: 0
   hits:
-  - damagePercent: 100
+  - baseDamagePercent: 100
+    damageGrowthPerLevel: 0
+    damageCount: 1
     hitStunDuration: 0.2
     knockbackPower: 1
     knockbackMultiplier: 1
+<<<<<<< HEAD
   - damagePercent: 110
     hitStunDuration: 0.2
     knockbackPower: 1
@@ -29,3 +47,23 @@ MonoBehaviour:
     knockbackMultiplier: 1
   mechanism: {fileID: 0}
   prerequisites: []
+=======
+    staggerMultiplier: 0
+    effects: []
+  - baseDamagePercent: 110
+    damageGrowthPerLevel: 0
+    damageCount: 1
+    hitStunDuration: 0.2
+    knockbackPower: 1
+    knockbackMultiplier: 1
+    staggerMultiplier: 0
+    effects: []
+  - baseDamagePercent: 150
+    damageGrowthPerLevel: 0
+    damageCount: 1
+    hitStunDuration: 0.2
+    knockbackPower: 1
+    knockbackMultiplier: 1
+    staggerMultiplier: 0
+    effects: []
+>>>>>>> codex/expand-skill-data
