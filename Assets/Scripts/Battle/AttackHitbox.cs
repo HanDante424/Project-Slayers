@@ -63,7 +63,7 @@ public class AttackHitbox : MonoBehaviour
         }
 
         float baseDamage =
-            attack * skillHitData.damagePercent / 100f;
+            attack * skillHitData.baseDamagePercent / 100f;
 
         // TEMP: rounding rule unresolved.
         int damage = Mathf.RoundToInt(baseDamage);
