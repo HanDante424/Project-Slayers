@@ -50,7 +50,18 @@ public class PlayerActionController : MonoBehaviour
         if (tripleSlashCooldownRemaining > 0f)
             return;
 
-        if (!CanExecuteTripleSlash())
+        if (tripleSlashSkillData == null)
+        {
+            Debug.LogWarning(
+                "TripleSlash has no SkillData assigned.",
+                this
+            );
+            return;
+        }
+
+        SkillExecutionContext context = CreateSkillExecutionContext();
+
+        if (!CanExecuteTripleSlash(context))
             return;
 
         // Temporary cost: 10% of the current final maximum mana.
@@ -59,7 +70,7 @@ public class PlayerActionController : MonoBehaviour
             return;
 
         StartTripleSlashCooldown();
-        StartCoroutine(ExecuteSkill(tripleSlashSkillData));
+        StartCoroutine(ExecuteSkill(tripleSlashSkillData, context));
     }
 
     private void StartTripleSlashCooldown()
@@ -95,7 +106,18 @@ public class PlayerActionController : MonoBehaviour
             tripleSlashCooldownUI?.CompleteCooldown();
     }
 
-    private bool CanExecuteTripleSlash()
+    private SkillExecutionContext CreateSkillExecutionContext()
+    {
+        return new SkillExecutionContext(
+            gameObject,
+            characterStats,
+            animator,
+            effectSpawnPoint
+        );
+    }
+
+    private bool CanExecuteTripleSlash(
+        SkillExecutionContext context)
     {
         if (tripleSlashSkillData == null)
         {
@@ -106,22 +128,32 @@ public class PlayerActionController : MonoBehaviour
             return false;
         }
 
-        if (motor == null ||
-            animator == null ||
-            characterStats == null ||
-            effectSpawnPoint == null)
+        if (motor == null)
         {
             Debug.LogWarning(
-                "TripleSlash execution references are incomplete.",
+                "TripleSlash requires a CharacterMotor2D reference.",
                 this
             );
             return false;
         }
 
         if (tripleSlashSkillData.mechanism != null)
-            return true;
+        {
+            return tripleSlashSkillData.mechanism.CanExecute(
+                context,
+                tripleSlashSkillData
+            );
+        }
+
+        bool hasExecutionContext =
+            context != null &&
+            context.Owner != null &&
+            context.CharacterStats != null &&
+            context.Animator != null &&
+            context.EffectSpawnPoint != null;
 
         bool hasLegacyFallback =
+            hasExecutionContext &&
             tripleSlashClip != null &&
             tripleSlashEffectPrefab != null;
 
@@ -136,15 +168,10 @@ public class PlayerActionController : MonoBehaviour
         return hasLegacyFallback;
     }
 
-    private IEnumerator ExecuteSkill(SkillData skillData)
+    private IEnumerator ExecuteSkill(
+        SkillData skillData,
+        SkillExecutionContext context)
     {
-        SkillExecutionContext context = new SkillExecutionContext(
-            gameObject,
-            characterStats,
-            animator,
-            effectSpawnPoint
-        );
-
         IEnumerator execution = skillData.mechanism != null
             ? skillData.mechanism.Execute(context, skillData)
             : ExecuteLegacyTripleSlash(context, skillData);

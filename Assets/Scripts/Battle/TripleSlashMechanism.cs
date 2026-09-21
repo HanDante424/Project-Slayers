@@ -14,7 +14,7 @@ public class TripleSlashMechanism : SkillMechanism
         SkillExecutionContext context,
         SkillData skillData)
     {
-        if (!HasRequiredReferences(context, skillData))
+        if (!CanExecute(context, skillData))
             yield break;
 
         int triggerHash = Animator.StringToHash(animatorTrigger);
@@ -43,7 +43,7 @@ public class TripleSlashMechanism : SkillMechanism
         yield return new WaitForSeconds(animationClip.length);
     }
 
-    private bool HasRequiredReferences(
+    public override bool CanExecute(
         SkillExecutionContext context,
         SkillData skillData)
     {
