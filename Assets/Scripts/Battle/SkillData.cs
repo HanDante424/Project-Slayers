@@ -25,13 +25,6 @@ public class SkillPrerequisite
     public int requiredLevel;
 }
 
-[Serializable]
-public class SkillPrerequisite
-{
-    public SkillData skill;
-    public int requiredLevel;
-}
-
 [CreateAssetMenu(
     fileName = "SkillData",
     menuName = "Slayers/Skill Data")]
@@ -69,8 +62,6 @@ public class SkillData : ScriptableObject
 
     [Header("Hits")]
     public SkillHitData[] hits;
-    public SkillMechanism mechanism;
-    public List<SkillPrerequisite> prerequisites = new();
 
     public bool TryGetHitData(
         int hitIndex,
