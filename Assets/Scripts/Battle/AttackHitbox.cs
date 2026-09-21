@@ -68,9 +68,13 @@ public class AttackHitbox : MonoBehaviour
         // TEMP: rounding rule unresolved.
         int damage = Mathf.RoundToInt(baseDamage);
 
+        float staggerAmount =
+            damage * skillHitData.staggerPercent / 100f;
+
         HitData hitData = new HitData
         {
             damage = damage,
+            staggerAmount = staggerAmount,
             hitIndex = hitIndex,
             source = source,
             hitStunDuration = skillHitData.hitStunDuration,

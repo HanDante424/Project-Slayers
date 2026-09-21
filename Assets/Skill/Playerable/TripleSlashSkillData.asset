@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39100bb5a0048f3b3366cb1064a0449, type: 3}
   m_Name: TripleSlashSkillData
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: -484492926, guid: 6b714e10528933c45be834e77d933313, type: 3}
   skillName: TripleSlash
-  description: 
-  maxLevel: 0
+  description: "\uAC80\uC5D0 \uD654\uC5FC\uC744 \uD718\uAC10\uC544 \uC801\uC744 3\uBC88
+    \uBCA0\uC5B4\uB0B8\uB2E4."
+  maxLevel: 50
   mechanism: {fileID: 0}
-  costType: 0
+  costType: 2
   costAmount: 0
   prerequisites: []
   cooldown: 1
-  attackType: 0
-  elementType: 0
+  attackType: 1
+  elementType: 1
   category: 0
-  skillTypes: []
+  skillTypes: 00000000
   effects: []
   hits:
   - baseDamagePercent: 100

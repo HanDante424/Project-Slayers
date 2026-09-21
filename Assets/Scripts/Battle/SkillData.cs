@@ -13,9 +13,11 @@ public class SkillHitData
     public float hitStunDuration;
     public float knockbackPower;
     public float knockbackMultiplier = 1f;
-    [Tooltip("Fixed multiplier of damage dealt. Not applied by the current runtime.")]
-    public float staggerMultiplier = 0f;
-    public List<SkillEffectData> effects = new();
+    [FormerlySerializedAs("staggerMultiplier")]
+    [Tooltip("Stagger amount as a percentage of the final damage dealt. 20 = 20%.")]
+    public float staggerPercent = 0f;
+    [InspectorName("Hit Effects")]
+    public List<SkillHitEffectData> effects = new();
 }
 
 [Serializable]
@@ -42,8 +44,10 @@ public class SkillData : ScriptableObject
 
     [Header("Cost")]
     public SkillCostType costType;
-    [Tooltip("Interpretation is defined by the future mechanism or runtime.")]
+    [Tooltip("Base cost at skill level 1; not connected to current resource consumption.")]
     public float costAmount;
+    [Tooltip("Additional cost per skill level: costAmount + costGrowthPerLevel * (skillLevel - 1).")]
+    public float costGrowthPerLevel;
 
     [Header("Prerequisites")]
     public List<SkillPrerequisite> prerequisites = new();
@@ -57,8 +61,8 @@ public class SkillData : ScriptableObject
     public SkillCategory category;
     public List<SkillType> skillTypes = new();
 
-    [Header("Effects")]
-    public List<SkillEffectData> effects = new();
+    [Header("Classification Effects")]
+    public List<SkillClassificationEffectData> effects = new();
 
     [Header("Hits")]
     public SkillHitData[] hits;

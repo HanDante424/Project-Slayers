@@ -3,6 +3,7 @@ using UnityEngine;
 public struct HitData
 {
     public int damage;
+    public float staggerAmount;
     public int hitIndex;
     public GameObject source;
     public float hitStunDuration;
