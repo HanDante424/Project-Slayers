@@ -14,6 +14,7 @@ public class PlayerActionController : MonoBehaviour
     [Tooltip("Legacy fallback until TripleSlashSkillData has a Mechanism assigned.")]
     [SerializeField] private AnimationClip tripleSlashClip;
     [SerializeField] private SkillData tripleSlashSkillData;
+    [SerializeField] private LearnedSkill tripleSlashSkill = new();
     [SerializeField] private SkillCooldownUI tripleSlashCooldownUI;
 
     [Tooltip("Legacy fallback until TripleSlashSkillData has a Mechanism assigned.")]
@@ -32,6 +33,10 @@ public class PlayerActionController : MonoBehaviour
     {
         characterStats = GetComponent<CharacterStats>();
         playerMana = GetComponent<PlayerMana>();
+        if (tripleSlashSkill == null)
+            tripleSlashSkill = new LearnedSkill();
+
+        tripleSlashSkill.Bind(tripleSlashSkillData);
     }
 
     private void Update()
@@ -112,7 +117,8 @@ public class PlayerActionController : MonoBehaviour
             gameObject,
             characterStats,
             animator,
-            effectSpawnPoint
+            effectSpawnPoint,
+            tripleSlashSkill.CurrentLevel
         );
     }
 
@@ -239,7 +245,8 @@ public class PlayerActionController : MonoBehaviour
             hitboxController.Initialize(
                 context.CharacterStats.FinalAttack,
                 context.Owner,
-                skillData
+                skillData,
+                context.SkillLevel
             );
         }
 

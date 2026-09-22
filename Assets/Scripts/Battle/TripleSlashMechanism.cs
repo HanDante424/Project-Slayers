@@ -34,7 +34,8 @@ public class TripleSlashMechanism : SkillMechanism
             hitboxController.Initialize(
                 context.CharacterStats.FinalAttack,
                 context.Owner,
-                skillData
+                skillData,
+                context.SkillLevel
             );
         }
 

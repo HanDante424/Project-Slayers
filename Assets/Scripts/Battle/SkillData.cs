@@ -67,6 +67,17 @@ public class SkillData : ScriptableObject
     [Header("Hits")]
     public SkillHitData[] hits;
 
+    public int GetEffectiveLevel(int level)
+    {
+        return Mathf.Clamp(level, 1, Mathf.Max(1, maxLevel));
+    }
+
+    public float GetCostAtLevel(int level)
+    {
+        int effectiveLevel = GetEffectiveLevel(level);
+        return costAmount + costGrowthPerLevel * (effectiveLevel - 1);
+    }
+
     public bool TryGetHitData(
         int hitIndex,
         out SkillHitData hitData)

@@ -7,15 +7,20 @@ public class AttackHitbox : MonoBehaviour
     private float attack;
     private GameObject source;
     private SkillData skillData;
+    private int skillLevel = 1;
 
     public void Initialize(
         float newAttack,
         GameObject newSource,
-        SkillData newSkillData)
+        SkillData newSkillData,
+        int newSkillLevel = 1)
     {
         attack = newAttack;
         source = newSource;
         skillData = newSkillData;
+        skillLevel = newSkillData != null
+            ? newSkillData.GetEffectiveLevel(newSkillLevel)
+            : Mathf.Max(1, newSkillLevel);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -62,11 +67,14 @@ public class AttackHitbox : MonoBehaviour
             return;
         }
 
-        float baseDamage =
-            attack * skillHitData.baseDamagePercent / 100f;
+        float damagePercent =
+            skillHitData.baseDamagePercent +
+            skillHitData.damageGrowthPerLevel * (skillLevel - 1);
+
+        float rawDamage = attack * damagePercent / 100f;
 
         // TEMP: rounding rule unresolved.
-        int damage = Mathf.RoundToInt(baseDamage);
+        int damage = Mathf.RoundToInt(rawDamage);
 
         float staggerAmount =
             damage * skillHitData.staggerPercent / 100f;

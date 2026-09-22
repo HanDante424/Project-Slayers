@@ -19,14 +19,16 @@ public class AttackHitboxController : MonoBehaviour
     public void Initialize(
         float attack,
         GameObject source,
-        SkillData skillData)
+        SkillData skillData,
+        int skillLevel = 1)
     {
         foreach (AttackHitbox attackHitbox in attackHitboxes)
         {
             attackHitbox.Initialize(
                 attack,
                 source,
-                skillData
+                skillData,
+                skillLevel
             );
         }
     }
