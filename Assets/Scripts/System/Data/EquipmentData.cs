@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(
@@ -15,10 +16,10 @@ public class EquipmentData : ScriptableObject
     public EquipmentSlot slot;
 
     [Header("Stats")]
-    public EquipmentBaseStats baseStats = new();
-    public EquipmentDetailStats detailStats = new();
-    public EquipmentElementEnhancementStats elementEnhancementStats = new();
-    public EquipmentElementResistanceStats elementResistanceStats = new();
+    public List<EquipmentStatModifier> baseStatModifiers = new();
+    public List<EquipmentStatModifier> detailStatModifiers = new();
+    public List<EquipmentStatModifier> elementEnhancementModifiers = new();
+    public List<EquipmentStatModifier> elementResistanceModifiers = new();
 
     [Header("Set")]
     public EquipmentSetData set;
