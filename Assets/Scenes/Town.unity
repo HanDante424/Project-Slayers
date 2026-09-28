@@ -5222,6 +5222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 71433031}
+  - component: {fileID: 2147000003}
   m_Layer: 5
   m_Name: ShopPanel
   m_TagString: Untagged
@@ -41979,6 +41980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595515305}
+  - component: {fileID: 2147000002}
   m_Layer: 5
   m_Name: CharacterPanel
   m_TagString: Untagged
@@ -82820,6 +82822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1158290237}
+  - component: {fileID: 2147000001}
   m_Layer: 5
   m_Name: BattlePanel
   m_TagString: Untagged
@@ -86137,9 +86140,14 @@ MonoBehaviour:
   battlePanel: {fileID: 1158290236}
   characterPanel: {fileID: 595515304}
   shopPanel: {fileID: 71433030}
-  researchPanel: {fileID: 0}
+  researchPanel: {fileID: 1447030877}
   storagePanel: {fileID: 37586869}
   optionPanel: {fileID: 0}
+  battleButtonRoot: {fileID: 945599285}
+  characterButtonRoot: {fileID: 770585532}
+  shopButtonRoot: {fileID: 906360621}
+  researchButtonRoot: {fileID: 884585817}
+  storageButtonRoot: {fileID: 641739148}
 --- !u!1 &1193100211
 GameObject:
   m_ObjectHideFlags: 0
@@ -104598,6 +104606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1447030878}
+  - component: {fileID: 2147000004}
   m_Layer: 5
   m_Name: ResearchPanel
   m_TagString: Untagged
@@ -155770,6 +155779,115 @@ RectTransform:
   m_AnchoredPosition: {x: 912.5, y: -85}
   m_SizeDelta: {x: 325, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2147000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158290236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f6b08088ef43efa51093785eae8cb0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TownBattleNavigationController
+  battleSelectPanel: {fileID: 1898182178}
+  stageSelectPanel: {fileID: 833063215}
+  basicDescriptionPanel: {fileID: 1765971311}
+  monsterDescriptionPanel: {fileID: 502827523}
+  rewardDescriptionPanel: {fileID: 370600278}
+  questDescriptionPanel: {fileID: 989926049}
+  selectButtonRoot: {fileID: 1203108354}
+  backButtonRoot: {fileID: 1116524381}
+  basicButtonRoot: {fileID: 1956722660}
+  monsterButtonRoot: {fileID: 1664099029}
+  rewardButtonRoot: {fileID: 697342506}
+  questButtonRoot: {fileID: 13709612}
+--- !u!114 &2147000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595515304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e24031b02504a9593fc012381f6a146, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TownCharacterNavigationController
+  statPanel: {fileID: 787590504}
+  equipPanel: {fileID: 1189520327}
+  skillPanel: {fileID: 2036174503}
+  mainStatPanel: {fileID: 1207169611}
+  subStatPanel: {fileID: 687335393}
+  elementPowerStatPanel: {fileID: 2089552192}
+  elementResistStatPanel: {fileID: 1630534533}
+  equipMainPanel: {fileID: 401277512}
+  equipSelectPartsPanel: {fileID: 828456892}
+  statButtonRoot: {fileID: 1448007893}
+  equipButtonRoot: {fileID: 2048055511}
+  skillButtonRoot: {fileID: 804655825}
+  mainStatButtonRoot: {fileID: 699660081}
+  subStatButtonRoot: {fileID: 1955270357}
+  elementPowerButtonRoot: {fileID: 670333115}
+  elementResistButtonRoot: {fileID: 304996266}
+  equipPartButtonRoots:
+  - {fileID: 1389386215}
+  - {fileID: 417675443}
+  - {fileID: 1640869624}
+  - {fileID: 213669934}
+  - {fileID: 947229}
+  - {fileID: 799939154}
+  - {fileID: 1673649063}
+  - {fileID: 1551054125}
+  - {fileID: 1871996642}
+  equipBackButtonRoot: {fileID: 184185777}
+--- !u!114 &2147000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71433030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0032c5dd8d24721843815fa62d45305, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TownShopNavigationController
+  generalExchangePanel: {fileID: 845344791}
+  blackMarketPanel: {fileID: 218173743}
+  blackSmithPanel: {fileID: 322119463}
+  blackSmithPartsPanel: {fileID: 1753200443}
+  blackSmithMainPanel: {fileID: 289976094}
+  generalExchangeButtonRoot: {fileID: 1508586917}
+  blackMarketButtonRoot: {fileID: 691322757}
+  blackSmithButtonRoot: {fileID: 200552818}
+  craftButtonRoot: {fileID: 244422918}
+  enhanceButtonRoot: {fileID: 906319405}
+  blackSmithPartButtonRoots:
+  - {fileID: 112932140}
+  - {fileID: 1791752742}
+  - {fileID: 1692299736}
+  - {fileID: 1882601088}
+  - {fileID: 717169470}
+  - {fileID: 2081304242}
+  - {fileID: 857013516}
+  - {fileID: 804998343}
+  - {fileID: 1431523529}
+--- !u!114 &2147000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447030877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbba83a81304dddae0ef0c685bf3992, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TownResearchNavigationController
+  skillPanel: {fileID: 660130814}
+  skillButtonRoot: {fileID: 212338176}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
