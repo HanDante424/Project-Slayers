@@ -12,16 +12,14 @@ public class MapData : ScriptableObject
     [TextArea(3, 8)] public string description;
 
     [Header("Classification")]
+    [Min(1)] public int rank = 1;
+    [Min(0)] public int corruption;
     public MapType mapType;
-    public MapRank mapRank;
-
-    [Header("Rewards")]
-    [Min(0)] public int goldReward;
-    [Min(0)] public int memoryFragmentReward;
 
     [Header("Enemies")]
     public List<MonsterData> enemies = new();
 
-    [Header("Quests")]
-    public List<QuestData> quests = new();
+    [Header("Rewards")]
+    [Min(0)] public int goldReward;
+    [Min(0)] public int memoryFragmentReward;
 }
