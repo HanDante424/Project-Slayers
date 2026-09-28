@@ -19,3 +19,6 @@ MonoBehaviour:
   statsData: {fileID: 0}
   skills:
   - {fileID: 11400000, guid: f3ec04b73c2b4264ae93151ed375ff66, type: 2}
+  itemDrops:
+  - item: {fileID: 11400000, guid: 4cfe87ec572a89944b8fdde73fef671e, type: 2}
+    dropChance: 30
