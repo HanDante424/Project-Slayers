@@ -69579,18 +69579,6 @@ PrefabInstance:
       propertyPath: m_PreferredHeight
       value: 250
       objectReference: {fileID: 0}
-    - target: {fileID: 2876597359609214891, guid: 8585bed37a2db0d42aa992285cb96003, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1189737314}
-    - target: {fileID: 2876597359609214891, guid: 8585bed37a2db0d42aa992285cb96003, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenBattle
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876597359609214891, guid: 8585bed37a2db0d42aa992285cb96003, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TownMenuController, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 3162345960187820259, guid: 8585bed37a2db0d42aa992285cb96003, type: 3}
       propertyPath: m_text
       value: "\uD68D\uB4DD\uD558\uAE30"
@@ -155859,11 +155847,16 @@ MonoBehaviour:
   blackSmithPanel: {fileID: 322119463}
   blackSmithPartsPanel: {fileID: 1753200443}
   blackSmithMainPanel: {fileID: 289976094}
+  blackSmithMaterialLabel: {fileID: 337110135}
+  blackSmithCostLabel: {fileID: 1311522338}
   generalExchangeButtonRoot: {fileID: 1508586917}
   blackMarketButtonRoot: {fileID: 691322757}
   blackSmithButtonRoot: {fileID: 200552818}
+  buyButtonRoot: {fileID: 1911125974}
+  sellButtonRoot: {fileID: 359393195}
   craftButtonRoot: {fileID: 244422918}
   enhanceButtonRoot: {fileID: 906319405}
+  questButtonRoot: {fileID: 896294350}
   blackSmithPartButtonRoots:
   - {fileID: 112932140}
   - {fileID: 1791752742}

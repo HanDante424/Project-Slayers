@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public sealed class TownShopNavigationController : MonoBehaviour
 {
@@ -11,13 +12,18 @@ public sealed class TownShopNavigationController : MonoBehaviour
     [Header("Blacksmith Screens")]
     [SerializeField] private GameObject blackSmithPartsPanel;
     [SerializeField] private GameObject blackSmithMainPanel;
+    [SerializeField] private TMP_Text blackSmithMaterialLabel;
+    [SerializeField] private TMP_Text blackSmithCostLabel;
 
     [Header("Shop Buttons")]
     [SerializeField] private Transform generalExchangeButtonRoot;
     [SerializeField] private Transform blackMarketButtonRoot;
     [SerializeField] private Transform blackSmithButtonRoot;
+    [SerializeField] private Transform buyButtonRoot;
+    [SerializeField] private Transform sellButtonRoot;
     [SerializeField] private Transform craftButtonRoot;
     [SerializeField] private Transform enhanceButtonRoot;
+    [SerializeField] private Transform questButtonRoot;
 
     [Header("Blacksmith Navigation Buttons")]
     [SerializeField] private Transform[] blackSmithPartButtonRoots;
@@ -62,16 +68,20 @@ public sealed class TownShopNavigationController : MonoBehaviour
     public void OpenGeneralExchange()
     {
         ShowShopScreen(generalExchangePanel);
+        ShowRetailMenuButtons();
     }
 
     public void OpenBlackMarket()
     {
         ShowShopScreen(blackMarketPanel);
+        ShowRetailMenuButtons();
     }
 
     public void OpenBlackSmith()
     {
         ShowShopScreen(blackSmithPanel);
+        ShowBlackSmithMenuButtons();
+        ShowCraftLabels();
         OpenBlackSmithParts();
     }
 
@@ -83,6 +93,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
     public void OpenEnhance()
     {
         OpenBlackSmith();
+        ShowEnhanceLabels();
     }
 
     public void OpenBlackSmithParts()
@@ -102,6 +113,48 @@ public sealed class TownShopNavigationController : MonoBehaviour
         SetActive(generalExchangePanel, generalExchangePanel == targetPanel);
         SetActive(blackMarketPanel, blackMarketPanel == targetPanel);
         SetActive(blackSmithPanel, blackSmithPanel == targetPanel);
+    }
+
+    private void ShowRetailMenuButtons()
+    {
+        SetButtonActive(buyButtonRoot, true);
+        SetButtonActive(sellButtonRoot, true);
+        SetButtonActive(questButtonRoot, true);
+        SetButtonActive(craftButtonRoot, false);
+        SetButtonActive(enhanceButtonRoot, false);
+    }
+
+    private void ShowBlackSmithMenuButtons()
+    {
+        SetButtonActive(buyButtonRoot, false);
+        SetButtonActive(sellButtonRoot, false);
+        SetButtonActive(questButtonRoot, true);
+        SetButtonActive(craftButtonRoot, true);
+        SetButtonActive(enhanceButtonRoot, true);
+    }
+
+    private void ShowCraftLabels()
+    {
+        SetLabel(blackSmithMaterialLabel, "제작 재료");
+        SetLabel(blackSmithCostLabel, "제작 비용");
+    }
+
+    private void ShowEnhanceLabels()
+    {
+        SetLabel(blackSmithMaterialLabel, "강화 재료");
+        SetLabel(blackSmithCostLabel, "강화 비용");
+    }
+
+    private static void SetLabel(TMP_Text label, string value)
+    {
+        if (label != null)
+            label.text = value;
+    }
+
+    private static void SetButtonActive(Transform buttonRoot, bool isActive)
+    {
+        if (buttonRoot != null)
+            buttonRoot.gameObject.SetActive(isActive);
     }
 
     private static void SetActive(GameObject panel, bool isActive)

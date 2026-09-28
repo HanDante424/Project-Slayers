@@ -49,7 +49,7 @@ namespace BloodlinesUI
         /// <param name="eventData">Pointer event data</param>
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (isDisabled) return;
+            if (isDisabled || buttonText == null) return;
             
             isHighlighted = true;
             if (!isPressed)
@@ -62,7 +62,7 @@ namespace BloodlinesUI
         /// <param name="eventData">Pointer event data</param>
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (isDisabled) return;
+            if (isDisabled || buttonText == null) return;
             
             isHighlighted = false;
             if (!isPressed)
@@ -75,7 +75,7 @@ namespace BloodlinesUI
         /// <param name="eventData">Pointer event data</param>
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (isDisabled) return;
+            if (isDisabled || buttonText == null) return;
             
             isPressed = true;
             buttonText.color = pressedColor;
@@ -87,7 +87,7 @@ namespace BloodlinesUI
         /// <param name="eventData">Pointer event data</param>
         public void OnPointerUp(PointerEventData eventData)
         {
-            if (isDisabled) return;
+            if (isDisabled || buttonText == null) return;
             
             isPressed = false;
             buttonText.color = isHighlighted ? highlightedColor : defaultColor;
