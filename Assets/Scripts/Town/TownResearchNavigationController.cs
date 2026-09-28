@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public sealed class TownResearchNavigationController : MonoBehaviour
 {
+    [SerializeField] private TownTitleController titleController;
     [SerializeField] private GameObject skillPanel;
     [SerializeField] private Transform skillButtonRoot;
 
@@ -23,5 +24,7 @@ public sealed class TownResearchNavigationController : MonoBehaviour
     {
         if (skillPanel != null)
             skillPanel.SetActive(true);
+
+        titleController?.SetTitle("스킬 - 해금");
     }
 }

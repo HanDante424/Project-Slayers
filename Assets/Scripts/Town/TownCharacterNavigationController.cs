@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public sealed class TownCharacterNavigationController : MonoBehaviour
 {
+    [SerializeField] private TownTitleController titleController;
+
     [Header("Character Screens")]
     [SerializeField] private GameObject statPanel;
     [SerializeField] private GameObject equipPanel;
@@ -30,7 +32,15 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     [SerializeField] private Transform elementResistButtonRoot;
 
     [Header("Equipment Navigation Buttons")]
-    [SerializeField] private Transform[] equipPartButtonRoots;
+    [SerializeField] private Transform beltButtonRoot;
+    [SerializeField] private Transform braceletButtonRoot;
+    [SerializeField] private Transform necklaceButtonRoot;
+    [SerializeField] private Transform glovesButtonRoot;
+    [SerializeField] private Transform hairAccessoryButtonRoot;
+    [SerializeField] private Transform backAccessoryButtonRoot;
+    [SerializeField] private Transform earringsButtonRoot;
+    [SerializeField] private Transform ringsButtonRoot;
+    [SerializeField] private Transform badgeButtonRoot;
     [SerializeField] private Transform equipBackButtonRoot;
 
     private Button statButton;
@@ -40,7 +50,15 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     private Button subStatButton;
     private Button elementPowerButton;
     private Button elementResistButton;
-    private Button[] equipPartButtons;
+    private Button beltButton;
+    private Button braceletButton;
+    private Button necklaceButton;
+    private Button glovesButton;
+    private Button hairAccessoryButton;
+    private Button backAccessoryButton;
+    private Button earringsButton;
+    private Button ringsButton;
+    private Button badgeButton;
     private Button equipBackButton;
 
     private void OnEnable()
@@ -52,11 +70,16 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
         subStatButton = TownButtonBinder.Bind(subStatButtonRoot, ToggleSubStats, this);
         elementPowerButton = TownButtonBinder.Bind(elementPowerButtonRoot, ToggleElementPowerStats, this);
         elementResistButton = TownButtonBinder.Bind(elementResistButtonRoot, ToggleElementResistStats, this);
+        beltButton = TownButtonBinder.Bind(beltButtonRoot, OpenBeltSelection, this);
+        braceletButton = TownButtonBinder.Bind(braceletButtonRoot, OpenBraceletSelection, this);
+        necklaceButton = TownButtonBinder.Bind(necklaceButtonRoot, OpenNecklaceSelection, this);
+        glovesButton = TownButtonBinder.Bind(glovesButtonRoot, OpenGlovesSelection, this);
+        hairAccessoryButton = TownButtonBinder.Bind(hairAccessoryButtonRoot, OpenHairAccessorySelection, this);
+        backAccessoryButton = TownButtonBinder.Bind(backAccessoryButtonRoot, OpenBackAccessorySelection, this);
+        earringsButton = TownButtonBinder.Bind(earringsButtonRoot, OpenEarringsSelection, this);
+        ringsButton = TownButtonBinder.Bind(ringsButtonRoot, OpenRingsSelection, this);
+        badgeButton = TownButtonBinder.Bind(badgeButtonRoot, OpenBadgeSelection, this);
         equipBackButton = TownButtonBinder.Bind(equipBackButtonRoot, OpenEquipMain, this);
-
-        equipPartButtons = new Button[equipPartButtonRoots.Length];
-        for (int i = 0; i < equipPartButtonRoots.Length; i++)
-            equipPartButtons[i] = TownButtonBinder.Bind(equipPartButtonRoots[i], OpenEquipSelection, this);
 
         OpenStat();
     }
@@ -70,18 +93,22 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
         TownButtonBinder.Unbind(subStatButton, ToggleSubStats);
         TownButtonBinder.Unbind(elementPowerButton, ToggleElementPowerStats);
         TownButtonBinder.Unbind(elementResistButton, ToggleElementResistStats);
+        TownButtonBinder.Unbind(beltButton, OpenBeltSelection);
+        TownButtonBinder.Unbind(braceletButton, OpenBraceletSelection);
+        TownButtonBinder.Unbind(necklaceButton, OpenNecklaceSelection);
+        TownButtonBinder.Unbind(glovesButton, OpenGlovesSelection);
+        TownButtonBinder.Unbind(hairAccessoryButton, OpenHairAccessorySelection);
+        TownButtonBinder.Unbind(backAccessoryButton, OpenBackAccessorySelection);
+        TownButtonBinder.Unbind(earringsButton, OpenEarringsSelection);
+        TownButtonBinder.Unbind(ringsButton, OpenRingsSelection);
+        TownButtonBinder.Unbind(badgeButton, OpenBadgeSelection);
         TownButtonBinder.Unbind(equipBackButton, OpenEquipMain);
-
-        if (equipPartButtons == null)
-            return;
-
-        foreach (Button button in equipPartButtons)
-            TownButtonBinder.Unbind(button, OpenEquipSelection);
     }
 
     public void OpenStat()
     {
         ShowCharacterScreen(statPanel);
+        titleController?.SetTitle("능력치");
     }
 
     public void OpenEquip()
@@ -93,6 +120,7 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     public void OpenSkill()
     {
         ShowCharacterScreen(skillPanel);
+        titleController?.SetTitle("스킬");
     }
 
     public void ToggleMainStats()
@@ -119,12 +147,32 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     {
         SetActive(equipMainPanel, true);
         SetActive(equipSelectPartsPanel, false);
+        titleController?.SetTitle("장비");
     }
 
-    public void OpenEquipSelection()
+    public void OpenBeltSelection() => OpenEquipSelection("장비 - 벨트");
+
+    public void OpenBraceletSelection() => OpenEquipSelection("장비 - 팔찌");
+
+    public void OpenNecklaceSelection() => OpenEquipSelection("장비 - 목걸이");
+
+    public void OpenGlovesSelection() => OpenEquipSelection("장비 - 장갑");
+
+    public void OpenHairAccessorySelection() => OpenEquipSelection("장비 - 머리 장식");
+
+    public void OpenBackAccessorySelection() => OpenEquipSelection("장비 - 등 장식");
+
+    public void OpenEarringsSelection() => OpenEquipSelection("장비 - 귀걸이");
+
+    public void OpenRingsSelection() => OpenEquipSelection("장비 - 반지");
+
+    public void OpenBadgeSelection() => OpenEquipSelection("장비 - 문양");
+
+    private void OpenEquipSelection(string title)
     {
         SetActive(equipMainPanel, false);
         SetActive(equipSelectPartsPanel, true);
+        titleController?.SetTitle(title);
     }
 
     private void ShowCharacterScreen(GameObject targetPanel)
