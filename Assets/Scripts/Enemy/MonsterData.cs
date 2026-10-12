@@ -24,7 +24,7 @@ public class MonsterData : ScriptableObject
     public List<DescriptionEntry> descriptions = new();
 
     [Header("Stats")]
-    public CharacterStatsData statsData;
+    public MonsterStatsData statsData;
 
     [Header("Skills")]
     public List<SkillData> skills = new();
