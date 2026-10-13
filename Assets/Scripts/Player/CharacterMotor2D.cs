@@ -39,6 +39,7 @@ public class CharacterMotor2D : MonoBehaviour
     private bool hitStunLocked;
 
     public bool IsGrounded => isGrounded;
+    public MovementControl CurrentMovementControl => movementControl;
     public float MoveInputX => inputReader.MoveInput.x;
 
     private void Awake()

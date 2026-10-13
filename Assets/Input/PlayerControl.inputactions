@@ -27,6 +27,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "BasicAttack",
+                    "type": "Button",
+                    "id": "36522890-0259-457f-b873-c9ea74c78695",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "TestSkill",
                     "type": "Button",
                     "id": "89a222d7-c5b6-4a52-8bbf-2ed15be25db9",
@@ -107,11 +117,22 @@
                 {
                     "name": "",
                     "id": "95a3ca6a-9196-427b-9b6a-1464c60b59e2",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "faf9782b-a03f-4497-9e51-1fc9c1c424cc",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BasicAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

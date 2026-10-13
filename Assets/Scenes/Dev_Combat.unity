@@ -2552,6 +2552,7 @@ GameObject:
   - component: {fileID: 1584064940}
   - component: {fileID: 1584064941}
   - component: {fileID: 1584064942}
+  - component: {fileID: 1584064943}
   m_Layer: 8
   m_Name: Playerable
   m_TagString: Untagged
@@ -2764,6 +2765,7 @@ MonoBehaviour:
   inputReader: {fileID: 1584064929}
   motor: {fileID: 1584064928}
   animator: {fileID: 1365979351}
+  characterMechanismBehaviour: {fileID: 1584064943}
   tripleSlashClip: {fileID: 7400000, guid: 3d55f38dd1bddd24689519bbbaaa1b89, type: 2}
   tripleSlashSkillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
   tripleSlashSkill:
@@ -2826,6 +2828,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   characterStats: {fileID: 1584064937}
   health: {fileID: 1584064939}
+--- !u!114 &1584064943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584064927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cf61bfb56c4f2a9cbb9fa2eb58ac91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MayhemMechanism
+  motor: {fileID: 1584064928}
+  animator: {fileID: 1365979351}
+  effectSpawnPoint: {fileID: 2032861792}
+  bloodSword00:
+    animatorTrigger: BloodSword00
+    animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_00
+    animationClip: {fileID: 7400000, guid: b514ae8b30fb21a41bd78f3ad2bc14ad, type: 2}
+    effectPrefab: {fileID: 8874275379427361900, guid: 752ce0c76189e834b821b0d02062369d, type: 3}
+    effectClip: {fileID: 7400000, guid: 297c55cdedb10314d93881956115b2ad, type: 2}
+    movementControl: 0
+  bloodSword01:
+    animatorTrigger: BloodSword01
+    animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_01
+    animationClip: {fileID: 7400000, guid: 1d550fecf911f0b43839920c9d122d49, type: 2}
+    effectPrefab: {fileID: 7512385157729660577, guid: a72cf64171671694aac566cb29531ed5, type: 3}
+    effectClip: {fileID: 7400000, guid: f18dbdc15949bf7439b860b942b73abd, type: 2}
+    movementControl: 0
+  bloodSword02:
+    animatorTrigger: BloodSword02
+    animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_02
+    animationClip: {fileID: 7400000, guid: f8f0449edcf544f47ab3cabfbcdd4ec1, type: 2}
+    effectPrefab: {fileID: 6776932425870002335, guid: ef1c1b0c7f338f84a914de49680d4c0e, type: 3}
+    effectClip: {fileID: 7400000, guid: 318d3d25757462848b5279437fb1b3b3, type: 2}
+    movementControl: 0
 --- !u!1 &1594059953
 GameObject:
   m_ObjectHideFlags: 0

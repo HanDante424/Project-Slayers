@@ -9,6 +9,10 @@ public class PlayerActionController : MonoBehaviour
     [SerializeField] private PlayerInputReader inputReader;
     [SerializeField] private CharacterMotor2D motor;
     [SerializeField] private Animator animator;
+    [Tooltip("Optional character-specific input handler. Leave empty for Prototype Ern.")]
+    [SerializeField] private MonoBehaviour characterMechanismBehaviour;
+
+    private ICharacterMechanism characterMechanism;
 
     [Header("Prototype Ern")]
     [Tooltip("Legacy fallback until TripleSlashSkillData has a Mechanism assigned.")]
@@ -31,6 +35,10 @@ public class PlayerActionController : MonoBehaviour
 
     private void Awake()
     {
+        characterMechanism = characterMechanismBehaviour as ICharacterMechanism;
+        if (characterMechanismBehaviour != null && characterMechanism == null)
+            Debug.LogError("Character mechanism must implement ICharacterMechanism.", this);
+
         characterStats = GetComponent<CharacterStats>();
         playerMana = GetComponent<PlayerMana>();
         if (tripleSlashSkill == null)
@@ -42,6 +50,16 @@ public class PlayerActionController : MonoBehaviour
     private void Update()
     {
         UpdateTripleSlashCooldown();
+
+        bool basicAttackPressed = inputReader.ConsumeBasicAttack();
+        if (characterMechanism != null)
+        {
+            // The assigned character owns its actions; the Ern test skill stays a fallback.
+            inputReader.ConsumeTestSkill();
+            if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && basicAttackPressed)
+                characterMechanism.RequestBasicAttack();
+            return;
+        }
 
         if (isActing)
             return;
@@ -274,6 +292,7 @@ public class PlayerActionController : MonoBehaviour
 
     private void OnDisable()
     {
+        characterMechanism?.CancelAction();
         if (isActing)
             RestoreActionState();
     }
