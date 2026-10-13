@@ -1,0 +1,635 @@
+fileFormatVersion: 2
+guid: 92f3e3aa03b76d94a939892608d77671
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7010438124727539411
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_0
+  - first:
+      213: 7841175992834120964
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_1
+  - first:
+      213: 6942842220848869395
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_2
+  - first:
+      213: -2051102772115733735
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_3
+  - first:
+      213: 8364562240553745561
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_4
+  - first:
+      213: 6559333842334651477
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_5
+  - first:
+      213: 4079264673712101482
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_6
+  - first:
+      213: 8471156819128811859
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_7
+  - first:
+      213: -4931085935576949981
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_8
+  - first:
+      213: -10470283346905532
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_9
+  - first:
+      213: -3970133964095887688
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_10
+  - first:
+      213: 5571851890220050370
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_11
+  - first:
+      213: 6857276645729563995
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_12
+  - first:
+      213: -8276002235899022841
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_13
+  - first:
+      213: 8723246816895848188
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_14
+  - first:
+      213: -7035777123913385220
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_15
+  - first:
+      213: 7401448106150311476
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_16
+  - first:
+      213: -8024241376416151919
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_17
+  - first:
+      213: 8721306105878976398
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_18
+  - first:
+      213: -2890160721352228411
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_19
+  - first:
+      213: 3397373024701759808
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_20
+  - first:
+      213: -3763290242755382756
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_21
+  - first:
+      213: -2276776901386722880
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_22
+  - first:
+      213: -2594931923520812571
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_23
+  - first:
+      213: -3632568395572197678
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_24
+  - first:
+      213: -3136789352092903882
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_25
+  - first:
+      213: 7463374423130739611
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_26
+  - first:
+      213: 3600286927428200493
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_27
+  - first:
+      213: 6968425515182945617
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_28
+  - first:
+      213: 238753024306696714
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_29
+  - first:
+      213: -2671923939906756455
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_30
+  - first:
+      213: 6994167500135278293
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_31
+  - first:
+      213: 6183987822850928147
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_32
+  - first:
+      213: -6106080712103319033
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_33
+  - first:
+      213: -7482321389764988157
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_34
+  - first:
+      213: -7715707061041311139
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_35
+  - first:
+      213: 3830506727233789672
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_36
+  - first:
+      213: 7406043945231180093
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_37
+  - first:
+      213: 9064667619544318407
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_38
+  - first:
+      213: -5988270528467152738
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_39
+  - first:
+      213: -893150753294232884
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_40
+  - first:
+      213: 288563812288533783
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_41
+  - first:
+      213: -8007569825304618062
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_42
+  - first:
+      213: 8481473758916280240
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_43
+  - first:
+      213: -7935895508615817053
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_44
+  - first:
+      213: 1144015423890581494
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_45
+  - first:
+      213: 464686880405440332
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_46
+  - first:
+      213: -5211805885367957533
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_47
+  - first:
+      213: -3102803040339770912
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_48
+  - first:
+      213: -4240856655446142904
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_49
+  - first:
+      213: 1218712282274799790
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_50
+  - first:
+      213: 5958071445573900884
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_51
+  - first:
+      213: 6924554897696985156
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_52
+  - first:
+      213: 2964821949811807032
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_53
+  - first:
+      213: 4157068453702153580
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_54
+  - first:
+      213: -2180090326363006518
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_55
+  - first:
+      213: 6603990087259933742
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_56
+  - first:
+      213: 533308169225145611
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_57
+  - first:
+      213: 1728104058859776992
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_58
+  - first:
+      213: 318323795442769570
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_59
+  - first:
+      213: 2048527448534257037
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_60
+  - first:
+      213: -8743402702691846169
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_61
+  - first:
+      213: -7740473835935413512
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_62
+  - first:
+      213: 3112344179882826103
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_63
+  - first:
+      213: 3314595604324447400
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_64
+  - first:
+      213: 1549351306288739203
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_65
+  - first:
+      213: -7194546199482539639
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_66
+  - first:
+      213: 189733141851746331
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_67
+  - first:
+      213: 9214780773568528738
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_68
+  - first:
+      213: 5660538973783421872
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_69
+  - first:
+      213: -1803488144572213801
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_70
+  - first:
+      213: -6514305243217807917
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_71
+  - first:
+      213: 2654079897026739161
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_72
+  - first:
+      213: -621911896318529916
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_73
+  - first:
+      213: -5976019818011838909
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_74
+  - first:
+      213: 3126448827193748360
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_75
+  - first:
+      213: 7324415568335779172
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_76
+  - first:
+      213: 5491364249953125244
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_77
+  - first:
+      213: -7954886774255840541
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_78
+  - first:
+      213: -3532634912342826125
+    second: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1598
+        width: 1046
+        height: 760
+      alignment: 9
+      pivot: {x: 0.044126082, y: 0.07129565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2962cf1babe5be90800000000000000
+      internalID: -7010438124727539411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_1
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1593
+        width: 807
+        height: 764
+      alignment: 9
+      pivot: {x: 0.1404223, y: 0.08242478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebb22b5241b0ea4dac3fc7c2db2efc2
+      internalID: 7841175992834120964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_2
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 1596
+        width: 577
+        height: 757
+      alignment: 9
+      pivot: {x: 0.20590025, y: 0.07632184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa27c490282ff4b4795cabb60c2e9d96
+      internalID: 6942842220848869395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_3
+      rect:
+        serializedVersion: 2
+        x: 2846
+        y: 1593
+        width: 500
+        height: 755
+      alignment: 9
+      pivot: {x: 0.22169922, y: 0.09767565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a809c89d1b68d1a4888ac989ab1b27bb
+      internalID: -2051102772115733735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1132
+        width: 1122
+        height: 380
+      alignment: 9
+      pivot: {x: 0.96885544, y: 0.45534316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5e0bf75b4ef704482b94a32ce5498d
+      internalID: 8364562240553745561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_5
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1140
+        width: 864
+        height: 338
+      alignment: 9
+      pivot: {x: 0.9340587, y: 0.48995882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afa6db9e29e9f14ba5ac249be05edea
+      internalID: 6559333842334651477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_6
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 1199
+        width: 535
+        height: 199
+      alignment: 9
+      pivot: {x: 0.8171875, y: 0.51705486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1483acbd6065e4f4085ec9ecad9b43d5
+      internalID: 4079264673712101482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_7
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1227
+        width: 351
+        height: 176
+      alignment: 9
+      pivot: {x: 0.44681907, y: 0.4325076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad23793d69051b34a8da016707cfdcf9
+      internalID: 8471156819128811859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 198
+        width: 1039
+        height: 755
+      alignment: 9
+      pivot: {x: 0.6257608, y: 0.06845683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c32b7bc2e0f0e4f91cb3534d24432c
+      internalID: -4931085935576949981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_9
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 191
+        width: 817
+        height: 625
+      alignment: 9
+      pivot: {x: 0.51453936, y: 0.079155564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ceb7dae9c2f4347af673db938a2457
+      internalID: -10470283346905532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_10
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 193
+        width: 853
+        height: 518
+      alignment: 9
+      pivot: {x: 0.46021193, y: 0.10688299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cebcd047cf63cc42a27a3174894d356
+      internalID: -3970133964095887688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_023_BloodCombination_11
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 191
+        width: 980
+        height: 526
+      alignment: 9
+      pivot: {x: 0.5121211, y: 0.1031839}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85198bdc07ef3d743bac725b2e0d2014
+      internalID: 5571851890220050370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3681691d8ed37b4419c87ffb1a0c7b52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":4000.0,"y":2400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_0: -7010438124727539411
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_1: 7841175992834120964
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_10: -3970133964095887688
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_11: 5571851890220050370
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_2: 6942842220848869395
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_3: -2051102772115733735
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_4: 8364562240553745561
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_5: 6559333842334651477
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_6: 4079264673712101482
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_7: 8471156819128811859
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_8: -4931085935576949981
+      Playerable_Mayhem_Skill_Sprite_023_BloodCombination_9: -10470283346905532
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

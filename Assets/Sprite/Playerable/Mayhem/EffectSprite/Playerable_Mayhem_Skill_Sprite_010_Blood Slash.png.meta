@@ -1,0 +1,383 @@
+fileFormatVersion: 2
+guid: d492b210f92c3e74687d42f77711e1b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8414091332477422636
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_0
+  - first:
+      213: -1850685530098746220
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_1
+  - first:
+      213: -3898392542475602260
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_2
+  - first:
+      213: 8960163441210947740
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_3
+  - first:
+      213: -5774133070098549513
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_4
+  - first:
+      213: 1479199715440676325
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_5
+  - first:
+      213: 7541877689971102643
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_6
+  - first:
+      213: 3081926603458037668
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_7
+  - first:
+      213: -7911769976750616962
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_8
+  - first:
+      213: 7022335305643834602
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_9
+  - first:
+      213: 8208732440172208537
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_10
+  - first:
+      213: 2770214782172585415
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_11
+  - first:
+      213: 5967911931675994474
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_12
+  - first:
+      213: -7906074672866858696
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_13
+  - first:
+      213: -8405350250116272188
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_14
+  - first:
+      213: -3808280148870741113
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_15
+  - first:
+      213: 4756941479269045447
+    second: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1881
+        width: 864
+        height: 434
+      alignment: 9
+      pivot: {x: 0.5984783, y: 0.5170471}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d37dfb43842b3b80800000000000000
+      internalID: -8414091332477422636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_1
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1881
+        width: 712
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c3283d05b0156e0800000000000000
+      internalID: -1850685530098746220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_2
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1882
+        width: 627
+        height: 327
+      alignment: 9
+      pivot: {x: 0.4822992, y: 0.6810067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6b5be13a026e9c0800000000000000
+      internalID: -3898392542475602260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_3
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1336
+        width: 994
+        height: 448
+      alignment: 9
+      pivot: {x: 0.4795304, y: 0.28117508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98f1d24d25e85c70800000000000000
+      internalID: 8960163441210947740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1361
+        width: 943
+        height: 399
+      alignment: 9
+      pivot: {x: 0.4941155, y: 0.28675327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4b0feb0982edfa0800000000000000
+      internalID: -5774133070098549513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_5
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1336
+        width: 662
+        height: 455
+      alignment: 9
+      pivot: {x: 0.7350772, y: 0.27641144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed43b6dd4c278410800000000000000
+      internalID: 1479199715440676325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_6
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 398
+        width: 940
+        height: 700
+      alignment: 9
+      pivot: {x: 0.7858349, y: 0.37503088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3db2aecc12aa860800000000000000
+      internalID: 7541877689971102643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 437
+        width: 1010
+        height: 820
+      alignment: 9
+      pivot: {x: 0.78664553, y: 0.390779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991a0b0a9a64be170800000000000000
+      internalID: 8208732440172208537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_11
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 416
+        width: 953
+        height: 800
+      alignment: 9
+      pivot: {x: 0.8037902, y: 0.34639212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cddeeacaa7c17620800000000000000
+      internalID: 2770214782172585415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a403100d1df16414cbb8da5d4412377b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_0: -8414091332477422636
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_1: -1850685530098746220
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_10: 8208732440172208537
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_11: 2770214782172585415
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_12: 5967911931675994474
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_13: -7906074672866858696
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_14: -8405350250116272188
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_15: -3808280148870741113
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_16: 4756941479269045447
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_2: -3898392542475602260
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_3: 8960163441210947740
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_4: -5774133070098549513
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_5: 1479199715440676325
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_6: 7541877689971102643
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_7: 3081926603458037668
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_8: -7911769976750616962
+      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_9: 7022335305643834602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1069 @@
+fileFormatVersion: 2
+guid: f18232d1b398b5b408d41690f78808b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7260872865444819728
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_0
+  - first:
+      213: 5938045166741919103
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_1
+  - first:
+      213: -2029311002920313181
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_2
+  - first:
+      213: 4874849109455854627
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_3
+  - first:
+      213: 4018400645481716222
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_4
+  - first:
+      213: -1898061034425644898
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_5
+  - first:
+      213: -5161842298778342719
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_6
+  - first:
+      213: -9173021615221385196
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_7
+  - first:
+      213: -7958308255365956549
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_8
+  - first:
+      213: -3317931203029624407
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_9
+  - first:
+      213: 4246494978672617440
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_10
+  - first:
+      213: -7818704869661805825
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_11
+  - first:
+      213: 7101434507396466269
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_12
+  - first:
+      213: -250737748920835850
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_13
+  - first:
+      213: -4774858529022397940
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_14
+  - first:
+      213: 2937521674886790124
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_15
+  - first:
+      213: 1331065793440568197
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_16
+  - first:
+      213: -845081769511444017
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_17
+  - first:
+      213: -3031788896504232642
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_18
+  - first:
+      213: 3008508003152582401
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_19
+  - first:
+      213: 3048253956558036253
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_20
+  - first:
+      213: -7395738211662977002
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_21
+  - first:
+      213: 1356606711333005906
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_22
+  - first:
+      213: -5208747455400499621
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_23
+  - first:
+      213: -6921516351262728962
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_24
+  - first:
+      213: -5080858692283147092
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_25
+  - first:
+      213: 6168364273315520854
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_26
+  - first:
+      213: -4821859777335501670
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_27
+  - first:
+      213: -194195968066094262
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_28
+  - first:
+      213: 799157771166025327
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_29
+  - first:
+      213: -8523377489471397876
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_30
+  - first:
+      213: 4917560530095876399
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_31
+  - first:
+      213: 6146545577484392172
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_32
+  - first:
+      213: 6881418788809533101
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_33
+  - first:
+      213: 7270152421711416230
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_34
+  - first:
+      213: 1099160329723697261
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_35
+  - first:
+      213: 3476856618821816993
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_36
+  - first:
+      213: -5953030281618128125
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_37
+  - first:
+      213: 1359553586804031378
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_38
+  - first:
+      213: 2905773311057630150
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_39
+  - first:
+      213: 4013128224019406127
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_40
+  - first:
+      213: -6655108215699851760
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_41
+  - first:
+      213: 970403184908070910
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_42
+  - first:
+      213: 232073762196822028
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_43
+  - first:
+      213: 6461839232141947638
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_44
+  - first:
+      213: -2385219202491097007
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_45
+  - first:
+      213: -6206922582990205118
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_46
+  - first:
+      213: -3348804433652894113
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_47
+  - first:
+      213: 3399561555120007037
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_48
+  - first:
+      213: -8701782495863724329
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_49
+  - first:
+      213: 8643066016249553186
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_50
+  - first:
+      213: 164912642028424478
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_51
+  - first:
+      213: -2136921750438077856
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_52
+  - first:
+      213: -6372768294106981442
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_53
+  - first:
+      213: 587549968176248410
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_54
+  - first:
+      213: -8262866923385697285
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_55
+  - first:
+      213: 8692474595475056400
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_56
+  - first:
+      213: 824975061606287274
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_57
+  - first:
+      213: -4776289104763170586
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_58
+  - first:
+      213: -5055742958136219487
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_59
+  - first:
+      213: -6944340117737688876
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_60
+  - first:
+      213: -7766283506939226896
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_61
+  - first:
+      213: -1773604664796709430
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_62
+  - first:
+      213: -3178241002139033813
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_63
+  - first:
+      213: 4770219014350627854
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_64
+  - first:
+      213: 40624327792496182
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_65
+  - first:
+      213: 8283307334030960484
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_66
+  - first:
+      213: -4517162004568083851
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_67
+  - first:
+      213: 2506974421949669652
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_68
+  - first:
+      213: 7840259308716322091
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_69
+  - first:
+      213: -2931866948216093167
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_70
+  - first:
+      213: -5572620147796854284
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_71
+  - first:
+      213: 8105779040035795263
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_72
+  - first:
+      213: -4702284497006120450
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_73
+  - first:
+      213: 2288782025598232759
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_74
+  - first:
+      213: -6056214643498711169
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_75
+  - first:
+      213: -3922445102106696306
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_76
+  - first:
+      213: 3540018832697088399
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_77
+  - first:
+      213: 8362045830681883866
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_78
+  - first:
+      213: -7625825575512940890
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_79
+  - first:
+      213: -3425617676804630802
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_80
+  - first:
+      213: 4428672324480755341
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_81
+  - first:
+      213: 8753046622004784737
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_82
+  - first:
+      213: -2722884315940741756
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_83
+  - first:
+      213: 6657693872735924319
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_84
+  - first:
+      213: 4279352971658387843
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_85
+  - first:
+      213: 9008845318173382296
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_86
+  - first:
+      213: 7448144363601031990
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_87
+  - first:
+      213: 1113859861763543654
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_88
+  - first:
+      213: 2290153991928040161
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_89
+  - first:
+      213: 4222798688541527900
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_90
+  - first:
+      213: 3321779449376343909
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_91
+  - first:
+      213: 4137951326873901999
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_92
+  - first:
+      213: -8989598053747402073
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_93
+  - first:
+      213: -1875335206950749715
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_94
+  - first:
+      213: 418519142467530043
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_95
+  - first:
+      213: -4367677460672332856
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_96
+  - first:
+      213: 1622766617702738124
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_97
+  - first:
+      213: 2716805804925121156
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_98
+  - first:
+      213: -4721358896758876044
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_99
+  - first:
+      213: 4460870159035491617
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_100
+  - first:
+      213: -6957979675738087911
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_101
+  - first:
+      213: -8688695191094865932
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_102
+  - first:
+      213: -4648675293330607348
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_103
+  - first:
+      213: -6230332869522479098
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_104
+  - first:
+      213: -2216893969417880581
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_105
+  - first:
+      213: -2725270453424228167
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_106
+  - first:
+      213: 6642547370597040312
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_107
+  - first:
+      213: -2621021851715829337
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_108
+  - first:
+      213: -3165425113517416182
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_109
+  - first:
+      213: 9000680486163541705
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_110
+  - first:
+      213: 2241521110878045803
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_111
+  - first:
+      213: 951276146550568843
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_112
+  - first:
+      213: 166706459678801267
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_113
+  - first:
+      213: -868283033136923842
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_114
+  - first:
+      213: -1373941893937446788
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_115
+  - first:
+      213: 4865844736141558430
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_116
+  - first:
+      213: 9128789363901205414
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_117
+  - first:
+      213: -6158690732252803789
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_118
+  - first:
+      213: -4074118176229935634
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_119
+  - first:
+      213: 1525233623309700503
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_120
+  - first:
+      213: 7806172024302693711
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_121
+  - first:
+      213: -3584736316035670965
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_122
+  - first:
+      213: 4208999766483750825
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_123
+  - first:
+      213: 1563505823504084779
+    second: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_124
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4285
+        width: 936
+        height: 689
+      alignment: 9
+      pivot: {x: 0.7185483, y: 0.47443858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0137c10c66dc3c460800000000000000
+      internalID: 7260872865444819728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_1
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 4285
+        width: 584
+        height: 687
+      alignment: 9
+      pivot: {x: 0.49304074, y: 0.4605608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737df2ffa25ef914c9dc9ffbfbb7f580
+      internalID: 5938045166741919103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_2
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 4281
+        width: 522
+        height: 693
+      alignment: 9
+      pivot: {x: 0.43771398, y: 0.4530827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64af89a2ac52b52468d4441645a1c233
+      internalID: -2029311002920313181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_3
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 4204
+        width: 882
+        height: 770
+      alignment: 9
+      pivot: {x: 0.1544101, y: 0.06543666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a1d06135b314846a0c4c18cfefcc02
+      internalID: 4874849109455854627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_4
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 4200
+        width: 698
+        height: 772
+      alignment: 9
+      pivot: {x: 0.21857686, y: 0.08060056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354758ee2d43e5e499cd53a74076a0f5
+      internalID: 4018400645481716222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_5
+      rect:
+        serializedVersion: 2
+        x: 3927
+        y: 4198
+        width: 532
+        height: 774
+      alignment: 9
+      pivot: {x: 0.41596606, y: 0.09043549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe8398948ec2864fac7908ef76e6399
+      internalID: -1898061034425644898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_6
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 3303
+        width: 992
+        height: 945
+      alignment: 9
+      pivot: {x: 0.37026456, y: 0.0598979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db409fd83df598e45985ecf496e7eb6c
+      internalID: -5161842298778342719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_7
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 3303
+        width: 798
+        height: 945
+      alignment: 9
+      pivot: {x: 0.3234461, y: 0.045562323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c097549c527bf4a43902d922e0ba8df9
+      internalID: -9173021615221385196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_8
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 3303
+        width: 588
+        height: 833
+      alignment: 9
+      pivot: {x: 0.35485217, y: 0.06415037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3149acec4d8ef46b7df2fd29730339
+      internalID: -7958308255365956549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_9
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 3303
+        width: 540
+        height: 837
+      alignment: 9
+      pivot: {x: 0.3795808, y: 0.079181485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b0e439454bb4547ab2d970602268b7
+      internalID: -3317931203029624407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2811
+        width: 1459
+        height: 436
+      alignment: 9
+      pivot: {x: 0.07917113, y: 0.51220983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c92824f854bb647b4845111c6175eb
+      internalID: 4246494978672617440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_11
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 2810
+        width: 1141
+        height: 437
+      alignment: 9
+      pivot: {x: 0.114299, y: 0.4796961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9cf6b07f602f54c8688009018fe447
+      internalID: -7818704869661805825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_12
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 2810
+        width: 719
+        height: 431
+      alignment: 9
+      pivot: {x: 0.14953528, y: 0.45882747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c602ebb28c3e70744bc6da58d1ab91d1
+      internalID: 7101434507396466269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_13
+      rect:
+        serializedVersion: 2
+        x: 3674
+        y: 2806
+        width: 528
+        height: 437
+      alignment: 9
+      pivot: {x: 0.3588437, y: 0.46751422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a508d5f99a9d2bf4db81d76d3ad92d9c
+      internalID: -250737748920835850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1734
+        width: 1139
+        height: 983
+      alignment: 9
+      pivot: {x: 0.0840202, y: 0.5180522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9df5efc52e40d47ba2a4c29330dda5
+      internalID: -4774858529022397940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_15
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1734
+        width: 1108
+        height: 989
+      alignment: 9
+      pivot: {x: 0.08519428, y: 0.5448567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d93b8f5d8f8aa48bc075dd553e07f9
+      internalID: 2937521674886790124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_16
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 1730
+        width: 1066
+        height: 985
+      alignment: 9
+      pivot: {x: 0.060527638, y: 0.5540468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a391a78a6e37d1646a79d6a9b6d5be48
+      internalID: 1331065793440568197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_17
+      rect:
+        serializedVersion: 2
+        x: 3455
+        y: 1729
+        width: 1084
+        height: 1019
+      alignment: 9
+      pivot: {x: 0.030173665, y: 0.55398476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3af6e9c2ee4c8489af9038bfb924d2
+      internalID: -845081769511444017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1239
+        width: 1014
+        height: 477
+      alignment: 9
+      pivot: {x: 0.07946976, y: 0.45274216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a3378fcccc998448b69d5d620c4bf8
+      internalID: -3031788896504232642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_19
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1251
+        width: 756
+        height: 353
+      alignment: 9
+      pivot: {x: 0.09249652, y: 0.55853635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9098508220a514682bdbc23dd7d10f
+      internalID: 3008508003152582401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_20
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 1244
+        width: 533
+        height: 316
+      alignment: 9
+      pivot: {x: 0.07355091, y: 0.64267004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66efd82d3c0bb21438b34ce1b38ec6e9
+      internalID: 3048253956558036253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 230
+        width: 1461
+        height: 850
+      alignment: 9
+      pivot: {x: 0.93458605, y: 0.94199806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21315d658c227f45bfb734503026659
+      internalID: -7395738211662977002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_22
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 226
+        width: 1442
+        height: 898
+      alignment: 9
+      pivot: {x: 0.9311933, y: 0.90582114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b884ad0cfe743624f8dea7393fd14621
+      internalID: 1356606711333005906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_23
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 214
+        width: 1417
+        height: 914
+      alignment: 9
+      pivot: {x: 0.9374752, y: 0.89666176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f068dc1841da00143b41167e23fdf501
+      internalID: -5208747455400499621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_020_BloodRampage_24
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 200
+        width: 1305
+        height: 928
+      alignment: 9
+      pivot: {x: 0.92751884, y: 0.9129444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e900c61bfe660744e95911157018aa63
+      internalID: -6921516351262728962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bd205aad422d42044b4649b58f5c0273
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":6000.0,"y":5000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_0: 7260872865444819728
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_1: 5938045166741919103
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_10: 4246494978672617440
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_11: -7818704869661805825
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_12: 7101434507396466269
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_13: -250737748920835850
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_14: -4774858529022397940
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_15: 2937521674886790124
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_16: 1331065793440568197
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_17: -845081769511444017
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_18: -3031788896504232642
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_19: 3008508003152582401
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_2: -2029311002920313181
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_20: 3048253956558036253
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_21: -7395738211662977002
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_22: 1356606711333005906
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_23: -5208747455400499621
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_24: -6921516351262728962
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_3: 4874849109455854627
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_4: 4018400645481716222
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_5: -1898061034425644898
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_6: -5161842298778342719
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_7: -9173021615221385196
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_8: -7958308255365956549
+      Playerable_Mayhem_Skill_Sprite_020_BloodRampage_9: -3317931203029624407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

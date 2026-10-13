@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: 8ab2da2c49dde484997031e304e524f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5836575946061975771
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_0
+  - first:
+      213: 1486250107621837568
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_1
+  - first:
+      213: -8280964523565880041
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_2
+  - first:
+      213: -3254286906962870826
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_3
+  - first:
+      213: 1854673336977054777
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_4
+  - first:
+      213: -6009849868973823606
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_5
+  - first:
+      213: -7691343418399269184
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_6
+  - first:
+      213: 990582359523302194
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_7
+  - first:
+      213: -4020772003577169360
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_8
+  - first:
+      213: 7497959634999997350
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_9
+  - first:
+      213: -718912441425568907
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_10
+  - first:
+      213: -666838891635407013
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_11
+  - first:
+      213: 1471378186424367270
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_12
+  - first:
+      213: -6886060559656344656
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_13
+  - first:
+      213: 7474280966563707785
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_14
+  - first:
+      213: -2075331509762641215
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_15
+  - first:
+      213: -4830776328746960683
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_16
+  - first:
+      213: -8270722774480797735
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_17
+  - first:
+      213: 4789606125817068304
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_18
+  - first:
+      213: -6262559088367322410
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_19
+  - first:
+      213: -3032491248837286440
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_20
+  - first:
+      213: -4944010353777319641
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_21
+  - first:
+      213: -8494576428086436181
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_22
+  - first:
+      213: -2191386670463047772
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_23
+  - first:
+      213: -7398289838228300909
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_24
+  - first:
+      213: -6786748513632600435
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_25
+  - first:
+      213: 4330154006218093375
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_26
+  - first:
+      213: -8754766077109171415
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_27
+  - first:
+      213: 3975417927524900149
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_28
+  - first:
+      213: -6831599646407092091
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_29
+  - first:
+      213: 2962470269186052317
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_30
+  - first:
+      213: 6717654585012378022
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_31
+  - first:
+      213: -679214361157492574
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_32
+  - first:
+      213: -743296337116675906
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_33
+  - first:
+      213: 8026545025084745003
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_34
+  - first:
+      213: 3427054302687946934
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_35
+  - first:
+      213: 1008725218571197558
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_36
+  - first:
+      213: -5104770570747960325
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_37
+  - first:
+      213: 4517124033055215758
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_38
+  - first:
+      213: -3790295922719693035
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_39
+  - first:
+      213: 2619496707090965395
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_40
+  - first:
+      213: 4443551850842787616
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_41
+  - first:
+      213: -4296446786622392453
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_42
+  - first:
+      213: 8093849432431590599
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_43
+  - first:
+      213: -6753974962337158161
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_44
+  - first:
+      213: -8977177674916702045
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_45
+  - first:
+      213: -5692938318047443684
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_46
+  - first:
+      213: -2500600270086859957
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_47
+  - first:
+      213: -4196789900213213493
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_48
+  - first:
+      213: 2118032278892294851
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_49
+  - first:
+      213: -4156286277170444649
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_50
+  - first:
+      213: 5766751284849216948
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_51
+  - first:
+      213: 8188544436099193107
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_52
+  - first:
+      213: 5038973175434159485
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_53
+  - first:
+      213: -1077771212190978903
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_54
+  - first:
+      213: 6278681881986987853
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_55
+  - first:
+      213: -413786873483415975
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_56
+  - first:
+      213: 6857973756417752742
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_57
+  - first:
+      213: -1986435226269387777
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_58
+  - first:
+      213: -5548810852962786701
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_59
+  - first:
+      213: 7563630326712932005
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_60
+  - first:
+      213: 218227094442908823
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_61
+  - first:
+      213: 2211994705680190415
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_62
+  - first:
+      213: 8416161119221636471
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_63
+  - first:
+      213: 3501200140979911894
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_64
+  - first:
+      213: 3083244320729317367
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_65
+  - first:
+      213: -1389997246854462450
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_66
+  - first:
+      213: 2037814266187469763
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_67
+  - first:
+      213: -5313045219574318342
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_68
+  - first:
+      213: -3304341656724329733
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_69
+  - first:
+      213: 7681594050712606272
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_70
+  - first:
+      213: -2662374342562348608
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_71
+  - first:
+      213: -6701201786093684505
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_72
+  - first:
+      213: 3062587134257801996
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_73
+  - first:
+      213: 1068637065644251068
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_74
+  - first:
+      213: -6629592263369664868
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_75
+  - first:
+      213: 6468742536551472028
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_76
+  - first:
+      213: 1760467414513121201
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_77
+  - first:
+      213: -1332095476328899394
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_78
+  - first:
+      213: 569213502843312655
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_79
+  - first:
+      213: -4062224533141677336
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_80
+  - first:
+      213: 2119543080202816639
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_81
+  - first:
+      213: 6131540231584962452
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_82
+  - first:
+      213: -8248673151382884434
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_83
+  - first:
+      213: 3816866374045839328
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_84
+  - first:
+      213: 3760915682676902274
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_85
+  - first:
+      213: -8542046138985161411
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_86
+  - first:
+      213: -5857570006406265991
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_87
+  - first:
+      213: -6304917759485042271
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_88
+  - first:
+      213: 1974596108150734807
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_89
+  - first:
+      213: -6997261134825706509
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_90
+  - first:
+      213: 4428421645215121253
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_91
+  - first:
+      213: -2754563011409142065
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_92
+  - first:
+      213: 301461997032165929
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_93
+  - first:
+      213: 3113881922169797344
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_94
+  - first:
+      213: -7109662131991560111
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_95
+  - first:
+      213: 3576909870666935886
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_96
+  - first:
+      213: 2639223920840744416
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_97
+  - first:
+      213: 658286890399627645
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_98
+  - first:
+      213: 7351578404534688629
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_99
+  - first:
+      213: -246803196594701274
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_100
+  - first:
+      213: -8095429795586972126
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_101
+  - first:
+      213: -1757972052679045677
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_102
+  - first:
+      213: 5247040930447769985
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_103
+  - first:
+      213: -770808000110114570
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_104
+  - first:
+      213: -204291116565100556
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_105
+  - first:
+      213: -8135355749478797131
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_106
+  - first:
+      213: -2251554446477693215
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_107
+  - first:
+      213: -8053318923509951876
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_108
+  - first:
+      213: -5933262450074615114
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_109
+  - first:
+      213: 6343315166657707680
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_110
+  - first:
+      213: -5133308720424359388
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_111
+  - first:
+      213: 3811511776931144279
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_112
+  - first:
+      213: 2674980749581649415
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_113
+  - first:
+      213: 2597796297080730796
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_114
+  - first:
+      213: 2517127382962218464
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_115
+  - first:
+      213: -4074719746166123904
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_116
+  - first:
+      213: 290570172121691978
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_117
+  - first:
+      213: -210771672110258382
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_118
+  - first:
+      213: -633208539176433947
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_119
+  - first:
+      213: 3893042318535946395
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_120
+  - first:
+      213: -2625900587216858633
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_121
+  - first:
+      213: -4284969412601343379
+    second: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_122
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1623
+        width: 513
+        height: 663
+      alignment: 9
+      pivot: {x: 0.5211795, y: 0.45288455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd01d9146eeaff050800000000000000
+      internalID: 5836575946061975771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_1
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1600
+        width: 493
+        height: 686
+      alignment: 9
+      pivot: {x: 0.51377404, y: 0.4881209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d84886f0a50bf4298aeed41a100752
+      internalID: 1486250107621837568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_2
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1480
+        width: 1030
+        height: 863
+      alignment: 9
+      pivot: {x: 0.7347078, y: 0.10971094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162fec7b4362cf049b56dcb16d8bbd3d
+      internalID: -8280964523565880041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_3
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 1482
+        width: 615
+        height: 846
+      alignment: 9
+      pivot: {x: 0.58833283, y: 0.09544629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fddb0065ae46524c9cd939d04220d0d
+      internalID: -3254286906962870826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_4
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 1475
+        width: 365
+        height: 390
+      alignment: 9
+      pivot: {x: 0.5186035, y: 0.20747665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd69cf0878d69d4eb44520f8183c772
+      internalID: 1854673336977054777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_5
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 1477
+        width: 194
+        height: 279
+      alignment: 9
+      pivot: {x: 0.25496966, y: 0.27607536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a6ca3a8b31c8146b7dba748a92d97e
+      internalID: -6009849868973823606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 774
+        width: 762
+        height: 703
+      alignment: 9
+      pivot: {x: 0.48119432, y: 0.35935068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ac76c3712056545b9e2ee4ba3aa4b0
+      internalID: -7691343418399269184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 757
+        width: 820
+        height: 706
+      alignment: 9
+      pivot: {x: 0.50174755, y: 0.36806715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1b4fbb8eae83f4cae4fc4b6bd3329d
+      internalID: 990582359523302194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_8
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 732
+        width: 909
+        height: 745
+      alignment: 9
+      pivot: {x: 0.5031529, y: 0.38608015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e66ab0dca889f4bbea6d2a1eee82ae
+      internalID: -4020772003577169360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 107
+        width: 771
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5037172, y: 0.034353003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3fe672fc44c0c40ba563743917c9d6
+      internalID: 7497959634999997350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_10
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 109
+        width: 960
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5104487, y: 0.03825845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017f56a36c489fc4988b7c4f90ae048b
+      internalID: -718912441425568907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_012_BloodAxe_11
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 109
+        width: 1003
+        height: 535
+      alignment: 9
+      pivot: {x: 0.54714715, y: 0.03394305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc719ab189424444a43e9f4f008fc58
+      internalID: -666838891635407013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3eb940efc14da264ab28079121c559ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":4000.0,"y":2400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_0: 5836575946061975771
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_1: 1486250107621837568
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_10: -718912441425568907
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_11: -666838891635407013
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_2: -8280964523565880041
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_3: -3254286906962870826
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_4: 1854673336977054777
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_5: -6009849868973823606
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_6: -7691343418399269184
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_7: 990582359523302194
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_8: -4020772003577169360
+      Playerable_Mayhem_Skill_Sprite_012_BloodAxe_9: 7497959634999997350
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

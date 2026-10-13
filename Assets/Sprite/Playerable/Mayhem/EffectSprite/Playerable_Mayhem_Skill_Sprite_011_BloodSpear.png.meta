@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: a6e4af52e64fd5141a683ce69179fe36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4811501227498891655
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_0
+  - first:
+      213: -5923005427244524967
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_1
+  - first:
+      213: -5514334630692114659
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_2
+  - first:
+      213: 2738385915670030228
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_3
+  - first:
+      213: 8791398519050825122
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_4
+  - first:
+      213: -3696209418465757807
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_5
+  - first:
+      213: 3531805260335112990
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_6
+  - first:
+      213: -4395556392595706233
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_7
+  - first:
+      213: -9156273034767647575
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_8
+  - first:
+      213: 7143657020514958699
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_9
+  - first:
+      213: 1897538217091970277
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_10
+  - first:
+      213: 3685428285651456485
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_11
+  - first:
+      213: -4025605275475022298
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_12
+  - first:
+      213: -8073460250307425369
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_13
+  - first:
+      213: 3986024511185364113
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_14
+  - first:
+      213: -5893543352025635011
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_15
+  - first:
+      213: 2342985529967034111
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_16
+  - first:
+      213: -1949677024975496411
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_17
+  - first:
+      213: -3342204818716603669
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_18
+  - first:
+      213: -1291637481100067206
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_19
+  - first:
+      213: -3868269898023804176
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_20
+  - first:
+      213: -6431306602284570983
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_21
+  - first:
+      213: -7654361193092840436
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_22
+  - first:
+      213: 1787729929430416096
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_23
+  - first:
+      213: -8918396404244450445
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_24
+  - first:
+      213: -6340086002410448723
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_25
+  - first:
+      213: 6743637111215984958
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_26
+  - first:
+      213: 4832116320988387306
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_27
+  - first:
+      213: 2152632944231282770
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_28
+  - first:
+      213: -4396966588108426477
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_29
+  - first:
+      213: 3779235409943561914
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_30
+  - first:
+      213: 6016788665340125583
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_31
+  - first:
+      213: 8960346477848065985
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_32
+  - first:
+      213: -6260261486936715725
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_33
+  - first:
+      213: -4439287607141370507
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_34
+  - first:
+      213: 2503000368469542498
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_35
+  - first:
+      213: 5601119880510132944
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_36
+  - first:
+      213: 637528406007333186
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_37
+  - first:
+      213: -7200356338870789739
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_38
+  - first:
+      213: -8364751905225538655
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_39
+  - first:
+      213: 5287299835361651613
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_40
+  - first:
+      213: 3925228583698479985
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_41
+  - first:
+      213: 616533210273498853
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_42
+  - first:
+      213: -4301954385914222927
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_43
+  - first:
+      213: 7341252033884455175
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_44
+  - first:
+      213: 3082313753903826682
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_45
+  - first:
+      213: 6860358521411827197
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_46
+  - first:
+      213: -5270238262805744507
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_47
+  - first:
+      213: 967033712692179704
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_48
+  - first:
+      213: 7549275776403772469
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_49
+  - first:
+      213: 6185127987087657933
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_50
+  - first:
+      213: 1611144632435242168
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_51
+  - first:
+      213: -3944795556640738630
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_52
+  - first:
+      213: 4554503259602999438
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_53
+  - first:
+      213: 7785773096219188885
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_54
+  - first:
+      213: 50217024531039114
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_55
+  - first:
+      213: -6365400753419796587
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_56
+  - first:
+      213: 1039466398894379661
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_57
+  - first:
+      213: 528348377953859322
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_58
+  - first:
+      213: 6821183658582896528
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_59
+  - first:
+      213: 3472009831517899447
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_60
+  - first:
+      213: 9083377456877932065
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_61
+  - first:
+      213: -2243933854113551105
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_62
+  - first:
+      213: -2110890907052360891
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_63
+  - first:
+      213: -2895441098805035887
+    second: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_0
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2018
+        width: 1126
+        height: 235
+      alignment: 9
+      pivot: {x: 0.9465, y: 0.38452148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9769292402d1a3db0800000000000000
+      internalID: -4811501227498891655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_1
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 2016
+        width: 926
+        height: 228
+      alignment: 9
+      pivot: {x: 0.89949, y: 0.44362065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a116202f14dcda0800000000000000
+      internalID: -5923005427244524967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_2
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 2015
+        width: 780
+        height: 221
+      alignment: 9
+      pivot: {x: 0.8186192, y: 0.4159836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f26fc9ed52973b0800000000000000
+      internalID: -5514334630692114659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_3
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 2020
+        width: 617
+        height: 215
+      alignment: 9
+      pivot: {x: 0.7500091, y: 0.40035203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497e1715b73b00620800000000000000
+      internalID: 2738385915670030228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_4
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1236
+        width: 261
+        height: 219
+      alignment: 9
+      pivot: {x: 0.5057462, y: 0.41782382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad6beecf52510a70800000000000000
+      internalID: 8791398519050825122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_5
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1039
+        width: 629
+        height: 676
+      alignment: 9
+      pivot: {x: 0.49284714, y: 0.42678905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19535e40e1d64bcc0800000000000000
+      internalID: -3696209418465757807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_6
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1021
+        width: 614
+        height: 695
+      alignment: 9
+      pivot: {x: 0.4780174, y: 0.44605336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1361260c2e730130800000000000000
+      internalID: 3531805260335112990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playerable_Mayhem_Skill_Sprite_011_BloodSpear_7
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 978
+        width: 773
+        height: 775
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.43614116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ea225efb8dff2c0800000000000000
+      internalID: -4395556392595706233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d095fd645cece02418780b6fa5a9fae6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_0: -4811501227498891655
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_1: -5923005427244524967
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_10: 1897538217091970277
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_11: 3685428285651456485
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_12: -4025605275475022298
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_13: -8073460250307425369
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_14: 3986024511185364113
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_15: -5893543352025635011
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_16: 2342985529967034111
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_17: -1949677024975496411
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_18: -3342204818716603669
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_19: -1291637481100067206
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_2: -5514334630692114659
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_20: -3868269898023804176
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_21: -6431306602284570983
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_22: -7654361193092840436
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_23: 1787729929430416096
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_24: -8918396404244450445
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_25: -6340086002410448723
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_26: 6743637111215984958
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_27: 4832116320988387306
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_28: 2152632944231282770
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_29: -4396966588108426477
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_3: 2738385915670030228
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_30: 3779235409943561914
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_31: 6016788665340125583
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_32: 8960346477848065985
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_33: -6260261486936715725
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_34: -4439287607141370507
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_35: 2503000368469542498
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_36: 5601119880510132944
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_37: 637528406007333186
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_38: -7200356338870789739
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_39: -8364751905225538655
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_4: 8791398519050825122
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_40: 5287299835361651613
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_41: 3925228583698479985
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_42: 616533210273498853
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_43: -4301954385914222927
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_44: 7341252033884455175
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_45: 3082313753903826682
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_46: 6860358521411827197
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_47: -5270238262805744507
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_48: 967033712692179704
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_49: 7549275776403772469
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_5: -3696209418465757807
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_50: 6185127987087657933
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_51: 1611144632435242168
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_52: -3944795556640738630
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_53: 4554503259602999438
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_54: 7785773096219188885
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_55: 50217024531039114
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_56: -6365400753419796587
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_57: 1039466398894379661
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_58: 528348377953859322
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_59: 6821183658582896528
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_6: 3531805260335112990
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_60: 3472009831517899447
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_61: 9083377456877932065
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_62: -2243933854113551105
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_63: -2110890907052360891
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_64: -2895441098805035887
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_7: -4395556392595706233
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_8: -9156273034767647575
+      Playerable_Mayhem_Skill_Sprite_011_BloodSpear_9: 7143657020514958699
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
