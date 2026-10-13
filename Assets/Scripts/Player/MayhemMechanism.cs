@@ -13,8 +13,9 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
         public AnimationClip animationClip;
         public GameObject effectPrefab;
         public AnimationClip effectClip;
+        public Vector2 effectSpawnOffset = Vector2.zero;
         public CharacterMotor2D.MovementControl movementControl =
-            CharacterMotor2D.MovementControl.Free;
+            CharacterMotor2D.MovementControl.Locked;
 
         public BloodSwordStep(string suffix)
         {
@@ -81,8 +82,11 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             return false;
         }
 
-        previousMovementControl = motor.CurrentMovementControl;
-        ownsMovementControl = true;
+        if (!ownsMovementControl)
+        {
+            previousMovementControl = motor.CurrentMovementControl;
+            ownsMovementControl = true;
+        }
         activeStep = step;
         motor.SetMovementControl(step.movementControl);
 
@@ -127,10 +131,14 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             bool runQueuedAttack = attackQueued;
             float inputAt = queuedInputAt;
             attackQueued = false;
-            CompleteAction();
+            CompleteAction(keepMovementControl: runQueuedAttack);
 
             if (!runQueuedAttack || !BeginAttack(inputAt))
+            {
+                // A queued attack can fail its ground/reference checks.
+                CleanupAttack();
                 break;
+            }
         }
 
         attackCoroutine = null;
@@ -139,19 +147,22 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     private void SpawnEffect(BloodSwordStep step)
     {
         effects.RemoveAll(effect => effect == null);
+        float facing = motor.transform.localScale.x < 0f ? -1f : 1f;
+        Vector3 spawnPosition = effectSpawnPoint.position + new Vector3(
+            step.effectSpawnOffset.x * facing, step.effectSpawnOffset.y, 0f);
         GameObject effect = Instantiate(
-            step.effectPrefab, effectSpawnPoint.position, effectSpawnPoint.rotation);
+            step.effectPrefab, spawnPosition, effectSpawnPoint.rotation);
         effects.Add(effect);
 
         Vector3 scale = effect.transform.localScale;
-        scale.x = Mathf.Abs(scale.x) * (motor.transform.localScale.x < 0f ? -1f : 1f);
+        scale.x = Mathf.Abs(scale.x) * facing;
         effect.transform.localScale = scale;
         Destroy(effect, step.effectClip.length);
     }
 
-    private void CompleteAction()
+    private void CompleteAction(bool keepMovementControl)
     {
-        CleanupAttack();
+        CleanupAttack(restoreMovementControl: !keepMovementControl);
     }
 
     public void CancelAction()
@@ -172,15 +183,18 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
         effects.Clear();
     }
 
-    private void CleanupAttack()
+    private void CleanupAttack(bool restoreMovementControl = true)
     {
         if (activeStep != null && animator != null)
             animator.ResetTrigger(activeStep.animatorTrigger);
 
-        if (ownsMovementControl && motor != null)
-            motor.SetMovementControl(previousMovementControl);
+        if (restoreMovementControl)
+        {
+            if (ownsMovementControl && motor != null)
+                motor.SetMovementControl(previousMovementControl);
 
-        ownsMovementControl = false;
+            ownsMovementControl = false;
+        }
         activeStep = null;
     }
 

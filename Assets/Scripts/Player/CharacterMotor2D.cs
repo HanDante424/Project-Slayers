@@ -210,6 +210,9 @@ public class CharacterMotor2D : MonoBehaviour
     public void SetMovementControl(MovementControl control)
     {
         movementControl = control;
+        // FixedUpdate may run before the next input update after an action starts.
+        if (control == MovementControl.Locked)
+            inputVelocityX = 0f;
     }
 
     public void SetHitStunLocked(bool locked)
