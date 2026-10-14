@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Playerable_Mayhem_Skill_Animation_004_BloodSword_00
+  m_Name: Playerable_Mayhem_Skill_Motion_010_BloodSlash_02
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2526750931801745336, guid: 0e6e7cfdfc7dcbe4fa72f798aa718808, type: 3}
-    - time: 0.083333336
-      value: {fileID: -5362371316097722740, guid: 0e6e7cfdfc7dcbe4fa72f798aa718808, type: 3}
+      value: {fileID: -2878553434758103892, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
+    - time: 0.16666667
+      value: {fileID: 7112163475819361000, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
+    - time: 0.25
+      value: {fileID: 7112163475819361000, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,14 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2526750931801745336, guid: 0e6e7cfdfc7dcbe4fa72f798aa718808, type: 3}
-    - {fileID: -5362371316097722740, guid: 0e6e7cfdfc7dcbe4fa72f798aa718808, type: 3}
+    - {fileID: -2878553434758103892, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
+    - {fileID: 7112163475819361000, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
+    - {fileID: 7112163475819361000, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.16666667
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -35,6 +35,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     [SerializeField] private BloodSwordStep bloodSword02 = new("02");
 
     private const float ComboWindow = 1f;
+    private const int EffectSpawnFrame = 2;
     private readonly List<GameObject> effects = new();
     private BloodSwordStep nextStep;
     private BloodSwordStep activeStep;
@@ -42,6 +43,9 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     private float lastAttackStartedAt = float.NegativeInfinity;
     private bool attackQueued;
     private float queuedInputAt;
+    private bool motionFinished;
+    private bool motionInterrupted;
+    private bool effectSpawned;
     private bool ownsMovementControl;
     private CharacterMotor2D.MovementControl previousMovementControl;
 
@@ -88,12 +92,14 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             ownsMovementControl = true;
         }
         activeStep = step;
+        motionFinished = false;
+        motionInterrupted = false;
+        effectSpawned = false;
         motor.SetMovementControl(step.movementControl);
 
         try
         {
             animator.SetTrigger(step.animatorTrigger);
-            SpawnEffect(step);
         }
         catch (Exception exception)
         {
@@ -113,6 +119,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     {
         return step != null && animator != null && animator.isActiveAndEnabled &&
             animator.runtimeAnimatorController != null && effectSpawnPoint != null &&
+            animator.GetBehaviours<BloodSwordMotionRelay>().Length > 0 &&
             step.animationClip != null && step.animationClip.length > 0f &&
             step.effectPrefab != null && step.effectClip != null && step.effectClip.length > 0f &&
             !string.IsNullOrEmpty(step.animatorTrigger) &&
@@ -124,9 +131,23 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     {
         while (IsActing)
         {
-            // Gameplay owns completion. Waiting starts at frame end so a buffered trigger
-            // cannot cut off the last rendered frame of the current motion.
-            yield return new WaitForSeconds(activeStep.animationClip.length);
+            // The presentation relay reports the actual end, including Animator speed.
+            // Gameplay still owns buffering, completion, interruption and cleanup.
+            while (!motionFinished && !motionInterrupted)
+            {
+                if (animator == null || !animator.isActiveAndEnabled)
+                {
+                    motionInterrupted = true;
+                    break;
+                }
+                yield return null;
+            }
+
+            if (motionInterrupted)
+            {
+                CancelAction();
+                yield break;
+            }
 
             bool runQueuedAttack = attackQueued;
             float inputAt = queuedInputAt;
@@ -165,6 +186,51 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
         CleanupAttack(restoreMovementControl: !keepMovementControl);
     }
 
+    public void NotifyBloodSwordMotionEntered(int stateHash)
+    {
+        if (MatchesActiveMotion(stateHash))
+            lastAttackStartedAt = Time.time;
+    }
+
+    public void NotifyBloodSwordMotionExited(int stateHash, bool completed)
+    {
+        if (!MatchesActiveMotion(stateHash))
+            return;
+
+        motionFinished = completed;
+        motionInterrupted = !completed;
+    }
+
+    public void NotifyBloodSwordMotionUpdated(int stateHash, float normalizedTime)
+    {
+        if (!isActiveAndEnabled || !MatchesActiveMotion(stateHash) || effectSpawned ||
+            motionFinished || motionInterrupted)
+            return;
+
+        // Animation window 0:02 means frame 2, not a fixed wall-clock delay.
+        AnimationClip clip = activeStep.animationClip;
+        float effectTime = EffectSpawnFrame / clip.frameRate;
+        if (normalizedTime * clip.length < effectTime)
+            return;
+
+        effectSpawned = true;
+        try
+        {
+            SpawnEffect(activeStep);
+        }
+        catch (Exception exception)
+        {
+            CancelAction();
+            Debug.LogException(exception, this);
+        }
+    }
+
+    private bool MatchesActiveMotion(int stateHash)
+    {
+        return activeStep != null && stateHash ==
+            Animator.StringToHash("Base Layer." + activeStep.animatorState);
+    }
+
     public void CancelAction()
     {
         if (attackCoroutine != null)
@@ -196,6 +262,9 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             ownsMovementControl = false;
         }
         activeStep = null;
+        motionFinished = false;
+        motionInterrupted = false;
+        effectSpawned = false;
     }
 
     private void OnDisable()

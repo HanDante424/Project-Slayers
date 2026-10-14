@@ -148,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_0
+      name: 0
       rect:
         serializedVersion: 2
         x: 133
@@ -170,15 +170,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_1
+      name: 1
       rect:
         serializedVersion: 2
         x: 1060
-        y: 1881
+        y: 1867
         width: 712
-        height: 400
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 414
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55499417}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_2
+      name: 2
       rect:
         serializedVersion: 2
         x: 1812
@@ -214,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_3
+      name: 4
       rect:
         serializedVersion: 2
         x: 1170
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_4
+      name: 3
       rect:
         serializedVersion: 2
         x: 137
@@ -258,7 +258,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_5
+      name: 5
       rect:
         serializedVersion: 2
         x: 2230
@@ -280,7 +280,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_6
+      name: 8
       rect:
         serializedVersion: 2
         x: 2172
@@ -302,7 +302,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_10
+      name: 6
       rect:
         serializedVersion: 2
         x: 77
@@ -324,7 +324,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playerable_Mayhem_Skill_Sprite_010_Blood Slash_11
+      name: 7
       rect:
         serializedVersion: 2
         x: 1152
@@ -359,20 +359,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_0: -8414091332477422636
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_1: -1850685530098746220
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_10: 8208732440172208537
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_11: 2770214782172585415
+      0: -8414091332477422636
+      1: -1850685530098746220
+      2: -3898392542475602260
+      3: -5774133070098549513
+      4: 8960163441210947740
+      5: 1479199715440676325
+      6: 8208732440172208537
+      7: 2770214782172585415
+      8: 7541877689971102643
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_12: 5967911931675994474
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_13: -7906074672866858696
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_14: -8405350250116272188
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_15: -3808280148870741113
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_16: 4756941479269045447
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_2: -3898392542475602260
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_3: 8960163441210947740
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_4: -5774133070098549513
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_5: 1479199715440676325
-      Playerable_Mayhem_Skill_Sprite_010_Blood Slash_6: 7541877689971102643
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_7: 3081926603458037668
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_8: -7911769976750616962
       Playerable_Mayhem_Skill_Sprite_010_Blood Slash_9: 7022335305643834602
