@@ -14,3 +14,8 @@ public interface IBloodSpearMechanism
 {
     void RequestBloodSpear();
 }
+
+public interface IBloodAxeMechanism
+{
+    void RequestBloodAxe();
+}

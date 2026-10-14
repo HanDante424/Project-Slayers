@@ -57,6 +57,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "BloodAxe",
+                    "type": "Button",
+                    "id": "6df5e7f4-1e60-41b7-9b76-8c2fb466fd0e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "BloodSpear",
                     "type": "Button",
                     "id": "9ed3c657-471f-4fb9-af47-d23192ef2f0a",
@@ -175,6 +185,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SecondaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26be7495-4aee-43af-92d4-8d50e6186ef0",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BloodAxe",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

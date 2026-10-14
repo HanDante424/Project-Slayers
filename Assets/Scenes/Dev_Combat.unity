@@ -2790,6 +2790,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cf61bfb56c4f2a9cbb9fa2eb58ac91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MayhemMechanism
+  bloodAxeReady:
+    animationClip: {fileID: 7400000, guid: 82c821b06449092469d70672fed3a991, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_012_BloodAxe_Ready
+    animatorTrigger: BloodAxeReady
+  bloodAxeAttack:
+    animationClip: {fileID: 7400000, guid: 1578f8bf233263b4790966010c2d447f, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_012_BloodAxe_Attack
+    animatorTrigger: BloodAxeAttack
+  bloodAxeEffectReady:
+    effectPrefab: {fileID: 48799676336045232, guid: 2accfd6490a777843b3cfe2092519035, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 0cf02e00ffa0c17468ed90363e7e0550, type: 2}
+    effectSpawnOffset: {x: 0, y: 0}
+  bloodAxeEffectAttack:
+    effectPrefab: {fileID: 6120578073460108736, guid: bc61bae496f6e6e47bdfbb1fc258067a, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: af21e41c10b81fd4f9d3f95fb5f4f0a3, type: 2}
+    effectSpawnOffset: {x: 1.9, y: -1.25}
+  bloodAxeEffectBurst00:
+    effectPrefab: {fileID: 6441742134382726601, guid: dbde45f62bddc954d97cab91a368293e, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: e43035fb5353ed94390f58e8f2c33a1d, type: 2}
+    effectSpawnOffset: {x: 0, y: 0}
+  bloodAxeEffectBurst01:
+    effectPrefab: {fileID: 4108319611262251097, guid: bdf06267e29d7fc4c8f3b6de4dde2412, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 65af27c74ec652a43b4a9147cd16b4f0, type: 2}
+    effectSpawnOffset: {x: 2, y: -1.5}
   bloodSpearReady:
     animationClip: {fileID: 7400000, guid: ee44aa338bf87804e8b1ae29b789e9d4, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_Ready

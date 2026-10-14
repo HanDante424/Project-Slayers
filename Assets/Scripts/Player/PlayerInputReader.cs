@@ -10,6 +10,7 @@ public class PlayerInputReader : MonoBehaviour
     public bool BasicAttackPressed { get; private set; }
     public bool SecondaryAttackPressed { get; private set; }
     public bool BloodSpearPressed { get; private set; }
+    public bool BloodAxePressed { get; private set; }
 
 
     public void OnMove(InputValue value)
@@ -83,6 +84,19 @@ public class PlayerInputReader : MonoBehaviour
     {
         bool pressed = BloodSpearPressed;
         BloodSpearPressed = false;
+        return pressed;
+    }
+
+    public void OnBloodAxe(InputValue value)
+    {
+        if (value.isPressed)
+            BloodAxePressed = true;
+    }
+
+    public bool ConsumeBloodAxe()
+    {
+        bool pressed = BloodAxePressed;
+        BloodAxePressed = false;
         return pressed;
     }
 
