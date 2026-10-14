@@ -9,6 +9,7 @@ public class PlayerInputReader : MonoBehaviour
     public bool TestSkillPressed { get; private set; }
     public bool BasicAttackPressed { get; private set; }
     public bool SecondaryAttackPressed { get; private set; }
+    public bool BloodSpearPressed { get; private set; }
 
 
     public void OnMove(InputValue value)
@@ -72,6 +73,18 @@ public class PlayerInputReader : MonoBehaviour
         return true;
     }
 
+    public void OnBloodSpear(InputValue value)
+    {
+        if (value.isPressed)
+            BloodSpearPressed = true;
+    }
+
+    public bool ConsumeBloodSpear()
+    {
+        bool pressed = BloodSpearPressed;
+        BloodSpearPressed = false;
+        return pressed;
+    }
 
     public bool ConsumeTestSkill()
     {

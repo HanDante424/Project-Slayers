@@ -2790,6 +2790,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cf61bfb56c4f2a9cbb9fa2eb58ac91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MayhemMechanism
+  bloodSpearReady:
+    animationClip: {fileID: 7400000, guid: ee44aa338bf87804e8b1ae29b789e9d4, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_Ready
+    animatorTrigger: BloodSpearReady
+  bloodSpearAttackDash:
+    animationClip: {fileID: 7400000, guid: 69a59bb07c51b874db54907c142736cd, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_AttackDash
+    animatorTrigger: BloodSpearAttackDash
+  bloodSpearAttackFinish:
+    animationClip: {fileID: 7400000, guid: 963da0107ad0c7c4f8c8115f8719a4ca, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_AttackFinish
+    animatorTrigger: BloodSpearAttackFinish
+  bloodSpearDashDistance: 2.5
+  bloodSpearDashSpeed: 15
+  bloodSpearMaximumDashDuration: 0.5
+  bloodSpearEffect00:
+    effectPrefab: {fileID: 7549224415003939797, guid: 0d88dd7ef21bd4f4696602ffe3ce4e2e, type: 3}
+    effectClip: {fileID: 7400000, guid: 09de96f5af2956a48b16d2629b538e42, type: 2}
+    spawnOffset: {x: 2.5, y: 0.25}
+  bloodSpearEffect01:
+    effectPrefab: {fileID: 2998229809439003581, guid: 9ad82e8050593244c8395ac8e6eed18c, type: 3}
+    effectClip: {fileID: 7400000, guid: 56b0b8d9655497a42b6d2c3d813a9b5e, type: 2}
+    spawnOffset: {x: 3, y: 1.5}
+  enableTemporaryBloodSpearFollowUpEffect: 1
   motor: {fileID: 1584064928}
   animator: {fileID: 1365979351}
   effectSpawnPoint: {fileID: 2032861792}

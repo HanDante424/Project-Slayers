@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCharacterMechanism
+public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCharacterMechanism, IBloodSpearMechanism
 {
     [Serializable]
     private sealed class AttackStep
@@ -78,7 +78,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCha
     private bool ownsMovementControl;
     private CharacterMotor2D.MovementControl previousMovementControl;
 
-    public bool IsActing => activeStep != null;
+    public bool IsActing => activeStep != null || IsSpearActing;
 
     private void Awake()
     {
@@ -89,9 +89,23 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCha
     public void RequestBasicAttack() => RequestAttack(swordCombo);
     public void RequestSecondaryAttack() => RequestAttack(slashCombo);
 
+    private void Update() => UpdateBloodSpear();
+    private void FixedUpdate() => FixedUpdateBloodSpear();
+
+    public void RequestBloodSpear()
+    {
+        if (!isActiveAndEnabled || IsActing)
+            return;
+
+        attackBuffer.Clear();
+        TryStartBloodSpear();
+    }
+
     private void RequestAttack(AttackCombo combo)
     {
         if (!isActiveAndEnabled || motor == null)
+            return;
+        if (IsSpearActing)
             return;
 
         if (IsActing)
@@ -282,6 +296,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCha
 
     public void CancelAction()
     {
+        CancelBloodSpear();
         if (attackCoroutine != null)
         {
             StopCoroutine(attackCoroutine);

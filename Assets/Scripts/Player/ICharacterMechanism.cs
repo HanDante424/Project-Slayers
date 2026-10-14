@@ -9,3 +9,8 @@ public interface ISecondaryCharacterMechanism
 {
     void RequestSecondaryAttack();
 }
+
+public interface IBloodSpearMechanism
+{
+    void RequestBloodSpear();
+}

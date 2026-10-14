@@ -35,12 +35,16 @@ public class CharacterMotor2D : MonoBehaviour
     // 나중에 스킬/넉백과 분리하기 위한 속도
     private float inputVelocityX;
     private Vector2 skillVelocity;
+    private bool hasSkillDashTarget;
+    private float skillDashTargetX;
     private Vector2 knockbackVelocity;
     private bool hitStunLocked;
 
     public bool IsGrounded => isGrounded;
     public MovementControl CurrentMovementControl => movementControl;
     public float MoveInputX => inputReader.MoveInput.x;
+    public Vector2 PhysicsPosition => rb.position;
+    public bool IsHitStunLocked => hitStunLocked;
 
     private void Awake()
     {
@@ -125,9 +129,16 @@ public class CharacterMotor2D : MonoBehaviour
 
     private void ApplyVelocity()
     {
+        float skillX = skillVelocity.x;
+        if (hasSkillDashTarget && skillX != 0f)
+        {
+            float direction = Mathf.Sign(skillX);
+            float remaining = Mathf.Max(0f, (skillDashTargetX - rb.position.x) * direction);
+            skillX = direction * Mathf.Min(Mathf.Abs(skillX), remaining / Time.fixedDeltaTime);
+        }
         float finalX =
             inputVelocityX +
-            skillVelocity.x +
+            skillX +
             knockbackVelocity.x;
 
         rb.linearVelocity = new Vector2(
@@ -221,6 +232,19 @@ public class CharacterMotor2D : MonoBehaviour
 
         if (locked)
             inputVelocityX = 0f;
+    }
+
+    public void SetSkillDashVelocity(float horizontalSpeed, float targetX)
+    {
+        skillVelocity = new Vector2(horizontalSpeed, 0f);
+        skillDashTargetX = targetX;
+        hasSkillDashTarget = true;
+    }
+
+    public void ClearSkillVelocity()
+    {
+        skillVelocity = Vector2.zero;
+        hasSkillDashTarget = false;
     }
 
     private bool IsMovementLocked =>

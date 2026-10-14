@@ -53,6 +53,7 @@ public class PlayerActionController : MonoBehaviour
 
         bool basicAttackPressed = inputReader.ConsumeBasicAttack();
         bool secondaryAttackPressed = inputReader.ConsumeSecondaryAttack();
+        bool bloodSpearPressed = inputReader.ConsumeBloodSpear();
         if (characterMechanism != null)
         {
             // The assigned character owns its actions; the Ern test skill stays a fallback.
@@ -62,6 +63,9 @@ public class PlayerActionController : MonoBehaviour
             if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && secondaryAttackPressed &&
                 characterMechanism is ISecondaryCharacterMechanism secondaryMechanism)
                 secondaryMechanism.RequestSecondaryAttack();
+            if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && bloodSpearPressed &&
+                characterMechanism is IBloodSpearMechanism spearMechanism)
+                spearMechanism.RequestBloodSpear();
             return;
         }
 
