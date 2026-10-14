@@ -3,24 +3,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
+public class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCharacterMechanism
 {
     [Serializable]
-    private sealed class BloodSwordStep
+    private sealed class AttackStep
     {
         public string animatorTrigger;
         public string animatorState;
         public AnimationClip animationClip;
         public GameObject effectPrefab;
         public AnimationClip effectClip;
+        [Min(0)] public int effectSpawnFrame = 2;
+        [Tooltip("Combo retention from this attack's start. Frames use this motion clip's FPS; 12 frames at 12 FPS = 1 second. Not an attack cancel window.")]
+        [Min(0)] public int comboGraceFrames = 12;
+        [Tooltip("First motion clip frame accepting a queued input. Frame 0 is the motion start.")]
+        [Min(0)] public int inputBufferStartFrame = 0;
+        [Tooltip("Last motion clip frame accepting a queued input (inclusive). -1 means until motion completion.")]
+        [Min(-1)] public int inputBufferEndFrame = -1;
         public Vector2 effectSpawnOffset = Vector2.zero;
         public CharacterMotor2D.MovementControl movementControl =
             CharacterMotor2D.MovementControl.Locked;
 
-        public BloodSwordStep(string suffix)
+        public AttackStep(string suffix, bool bloodSlash = false)
         {
-            animatorTrigger = "BloodSword" + suffix;
-            animatorState = "Playerable_Mayhem_Skill_Animation_004_BloodSword_" + suffix;
+            animatorTrigger = (bloodSlash ? "BloodSlash" : "BloodSword") + suffix;
+            animatorState = (bloodSlash ? "Playerable_Mayhem_Skill_Motion_010_BloodSlash_"
+                : "Playerable_Mayhem_Skill_Animation_004_BloodSword_") + suffix;
+        }
+    }
+
+    private sealed class AttackCombo
+    {
+        public readonly AttackStep first;
+        public readonly AttackStep second;
+        public readonly AttackStep third;
+        public AttackStep next;
+        public float graceDuration;
+        public float lastStartedAt = float.NegativeInfinity;
+
+        public AttackCombo(AttackStep first, AttackStep second, AttackStep third)
+        {
+            this.first = first;
+            this.second = second;
+            this.third = third;
         }
     }
 
@@ -30,59 +55,71 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     [SerializeField] private Transform effectSpawnPoint;
 
     [Header("Blood Sword")]
-    [SerializeField] private BloodSwordStep bloodSword00 = new("00");
-    [SerializeField] private BloodSwordStep bloodSword01 = new("01");
-    [SerializeField] private BloodSwordStep bloodSword02 = new("02");
+    [SerializeField] private AttackStep bloodSword00 = new("00");
+    [SerializeField] private AttackStep bloodSword01 = new("01");
+    [SerializeField] private AttackStep bloodSword02 = new("02");
 
-    private const float ComboWindow = 1f;
-    private const int EffectSpawnFrame = 2;
+    [Header("Blood Slash")]
+    [SerializeField] private AttackStep bloodSlash00 = new("00", true);
+    [SerializeField] private AttackStep bloodSlash01 = new("01", true);
+    [SerializeField] private AttackStep bloodSlash02 = new("02", true);
+
     private readonly List<GameObject> effects = new();
-    private BloodSwordStep nextStep;
-    private BloodSwordStep activeStep;
+    private AttackCombo swordCombo;
+    private AttackCombo slashCombo;
+    private AttackCombo activeCombo;
+    private AttackStep activeStep;
     private Coroutine attackCoroutine;
-    private float lastAttackStartedAt = float.NegativeInfinity;
-    private bool attackQueued;
-    private float queuedInputAt;
+    private readonly ActionInputBuffer<AttackCombo> attackBuffer = new();
     private bool motionFinished;
     private bool motionInterrupted;
     private bool effectSpawned;
+    private int currentMotionFrame;
     private bool ownsMovementControl;
     private CharacterMotor2D.MovementControl previousMovementControl;
 
     public bool IsActing => activeStep != null;
 
-    public void RequestBasicAttack()
+    private void Awake()
+    {
+        swordCombo = new AttackCombo(bloodSword00, bloodSword01, bloodSword02);
+        slashCombo = new AttackCombo(bloodSlash00, bloodSlash01, bloodSlash02);
+    }
+
+    public void RequestBasicAttack() => RequestAttack(swordCombo);
+    public void RequestSecondaryAttack() => RequestAttack(slashCombo);
+
+    private void RequestAttack(AttackCombo combo)
     {
         if (!isActiveAndEnabled || motor == null)
             return;
 
         if (IsActing)
         {
-            if (!attackQueued)
-            {
-                attackQueued = true;
-                queuedInputAt = Time.time;
-            }
+            // Both attack kinds share the current motion's acceptance window.
+            if (!IsInputBufferOpen())
+                return;
+            attackBuffer.TryQueue(combo, Time.time);
             return;
         }
 
-        if (BeginAttack(Time.time))
+        if (BeginAttack(combo, Time.time))
             attackCoroutine = StartCoroutine(RunAttack());
     }
 
-    private bool BeginAttack(float inputAt)
+    private bool BeginAttack(AttackCombo combo, float inputAt)
     {
         // Recheck at execution time, including buffered input after the previous motion.
         if (!motor.IsGrounded)
             return false;
 
-        BloodSwordStep step = nextStep == null || inputAt - lastAttackStartedAt > ComboWindow
-            ? bloodSword00
-            : nextStep;
+        AttackStep step = combo.next == null || inputAt - combo.lastStartedAt > combo.graceDuration
+            ? combo.first
+            : combo.next;
 
         if (!HasRequiredReferences(step))
         {
-            Debug.LogWarning("Blood Sword requires its motion, effect, Animator and spawn references.", this);
+            Debug.LogWarning("Mayhem attack requires its motion, effect, Animator and spawn references.", this);
             return false;
         }
 
@@ -92,9 +129,11 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             ownsMovementControl = true;
         }
         activeStep = step;
+        activeCombo = combo;
         motionFinished = false;
         motionInterrupted = false;
         effectSpawned = false;
+        currentMotionFrame = 0;
         motor.SetMovementControl(step.movementControl);
 
         try
@@ -108,23 +147,31 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             return false;
         }
 
-        lastAttackStartedAt = Time.time;
-        nextStep = step == bloodSword00 ? bloodSword01
-            : step == bloodSword01 ? bloodSword02
-            : bloodSword00;
+        combo.lastStartedAt = Time.time;
+        combo.graceDuration = Mathf.Max(0, step.comboGraceFrames) / step.animationClip.frameRate;
+        combo.next = step == combo.first ? combo.second
+            : step == combo.second ? combo.third
+            : combo.first;
         return true;
     }
 
-    private bool HasRequiredReferences(BloodSwordStep step)
+    private bool HasRequiredReferences(AttackStep step)
     {
         return step != null && animator != null && animator.isActiveAndEnabled &&
             animator.runtimeAnimatorController != null && effectSpawnPoint != null &&
             animator.GetBehaviours<BloodSwordMotionRelay>().Length > 0 &&
-            step.animationClip != null && step.animationClip.length > 0f &&
+            step.animationClip != null && step.animationClip.length > 0f && step.animationClip.frameRate > 0f &&
             step.effectPrefab != null && step.effectClip != null && step.effectClip.length > 0f &&
             !string.IsNullOrEmpty(step.animatorTrigger) &&
             !string.IsNullOrEmpty(step.animatorState) &&
             animator.HasState(0, Animator.StringToHash("Base Layer." + step.animatorState));
+    }
+
+    private bool IsInputBufferOpen()
+    {
+        return !motionFinished && !motionInterrupted &&
+            currentMotionFrame >= activeStep.inputBufferStartFrame &&
+            (activeStep.inputBufferEndFrame < 0 || currentMotionFrame <= activeStep.inputBufferEndFrame);
     }
 
     private IEnumerator RunAttack()
@@ -149,12 +196,10 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
                 yield break;
             }
 
-            bool runQueuedAttack = attackQueued;
-            float inputAt = queuedInputAt;
-            attackQueued = false;
+            bool runQueuedAttack = attackBuffer.TryConsume(out AttackCombo combo, out float inputAt);
             CompleteAction(keepMovementControl: runQueuedAttack);
 
-            if (!runQueuedAttack || !BeginAttack(inputAt))
+            if (!runQueuedAttack || !BeginAttack(combo, inputAt))
             {
                 // A queued attack can fail its ground/reference checks.
                 CleanupAttack();
@@ -165,7 +210,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
         attackCoroutine = null;
     }
 
-    private void SpawnEffect(BloodSwordStep step)
+    private void SpawnEffect(AttackStep step)
     {
         effects.RemoveAll(effect => effect == null);
         float facing = motor.transform.localScale.x < 0f ? -1f : 1f;
@@ -189,7 +234,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
     public void NotifyBloodSwordMotionEntered(int stateHash)
     {
         if (MatchesActiveMotion(stateHash))
-            lastAttackStartedAt = Time.time;
+            activeCombo.lastStartedAt = Time.time;
     }
 
     public void NotifyBloodSwordMotionExited(int stateHash, bool completed)
@@ -203,13 +248,17 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
 
     public void NotifyBloodSwordMotionUpdated(int stateHash, float normalizedTime)
     {
-        if (!isActiveAndEnabled || !MatchesActiveMotion(stateHash) || effectSpawned ||
+        if (!isActiveAndEnabled || !MatchesActiveMotion(stateHash) ||
             motionFinished || motionInterrupted)
             return;
 
         // Animation window 0:02 means frame 2, not a fixed wall-clock delay.
         AnimationClip clip = activeStep.animationClip;
-        float effectTime = EffectSpawnFrame / clip.frameRate;
+        // Track the displayed clip frame even after the effect has been emitted.
+        currentMotionFrame = Mathf.FloorToInt(normalizedTime * clip.length * clip.frameRate + 0.0001f);
+        if (effectSpawned)
+            return;
+        float effectTime = activeStep.effectSpawnFrame / clip.frameRate;
         if (normalizedTime * clip.length < effectTime)
             return;
 
@@ -239,7 +288,7 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             attackCoroutine = null;
         }
 
-        attackQueued = false;
+        attackBuffer.Clear();
         CleanupAttack();
         foreach (GameObject effect in effects)
         {
@@ -262,6 +311,8 @@ public class MayhemMechanism : MonoBehaviour, ICharacterMechanism
             ownsMovementControl = false;
         }
         activeStep = null;
+        activeCombo = null;
+        currentMotionFrame = 0;
         motionFinished = false;
         motionInterrupted = false;
         effectSpawned = false;

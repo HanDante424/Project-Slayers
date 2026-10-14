@@ -545,56 +545,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351276638}
   m_CullTransparentMesh: 1
---- !u!1 &406610811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 406610813}
-  - component: {fileID: 406610812}
-  m_Layer: 0
-  m_Name: EnemyPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &406610812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406610811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cffa5a3b62f267648999db405b9b311c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoblinPool
-  goblinPrefab: {fileID: 8234516027613093974, guid: a1bd99b72bc45b3419fff0e58453d7e1, type: 3}
-  spawnPoint: {fileID: 1682287571}
-  player: {fileID: 1584064933}
-  defaultCapacity: 1
-  maxPoolSize: 1
---- !u!4 &406610813
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406610811}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1682287571}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453984798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1450,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 406610812}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GoblinPool, Assembly-CSharp
         m_MethodName: SpawnGoblin
         m_Mode: 1
@@ -2849,7 +2799,11 @@ MonoBehaviour:
     animationClip: {fileID: 7400000, guid: b514ae8b30fb21a41bd78f3ad2bc14ad, type: 2}
     effectPrefab: {fileID: 8874275379427361900, guid: 752ce0c76189e834b821b0d02062369d, type: 3}
     effectClip: {fileID: 7400000, guid: 297c55cdedb10314d93881956115b2ad, type: 2}
-    effectSpawnOffset: {x: 1.5, y: -0.25}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 1.75, y: -0.5}
     movementControl: 2
   bloodSword01:
     animatorTrigger: BloodSword01
@@ -2857,7 +2811,11 @@ MonoBehaviour:
     animationClip: {fileID: 7400000, guid: 1d550fecf911f0b43839920c9d122d49, type: 2}
     effectPrefab: {fileID: 7512385157729660577, guid: a72cf64171671694aac566cb29531ed5, type: 3}
     effectClip: {fileID: 7400000, guid: f18dbdc15949bf7439b860b942b73abd, type: 2}
-    effectSpawnOffset: {x: -0.75, y: 0}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: -1.75, y: 0}
     movementControl: 2
   bloodSword02:
     animatorTrigger: BloodSword02
@@ -2865,7 +2823,47 @@ MonoBehaviour:
     animationClip: {fileID: 7400000, guid: f8f0449edcf544f47ab3cabfbcdd4ec1, type: 2}
     effectPrefab: {fileID: 6776932425870002335, guid: ef1c1b0c7f338f84a914de49680d4c0e, type: 3}
     effectClip: {fileID: 7400000, guid: 318d3d25757462848b5279437fb1b3b3, type: 2}
-    effectSpawnOffset: {x: 1.5, y: -0.75}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 1.5, y: -1}
+    movementControl: 2
+  bloodSlash00:
+    animatorTrigger: BloodSlash00
+    animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_00
+    animationClip: {fileID: 7400000, guid: 92188e3d90393b74ca5732928dce7da7, type: 2}
+    effectPrefab: {fileID: 2950378199197764691, guid: dec19ccb651f4a8408e7a11c207b5de0, type: 3}
+    effectClip: {fileID: 7400000, guid: 9cc487e2614442b43aeb5b73efa364b4, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 1.25, y: 0.25}
+    movementControl: 2
+  bloodSlash01:
+    animatorTrigger: BloodSlash01
+    animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_01
+    animationClip: {fileID: 7400000, guid: 28665fd27f9fb7c4f88c9bd76b9f8b90, type: 2}
+    effectPrefab: {fileID: 3203232088661709218, guid: a46196a127463694890bb9295ffcd0a4, type: 3}
+    effectClip: {fileID: 7400000, guid: e0d9f5bac71119c48a92f00762ad0126, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 0.5, y: 0}
+    movementControl: 2
+  bloodSlash02:
+    animatorTrigger: BloodSlash02
+    animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_02
+    animationClip: {fileID: 7400000, guid: 6a00dc28129239243a8229465572525a, type: 2}
+    effectPrefab: {fileID: 8404979042444256450, guid: cd48406b4ef827643b4550026a2d73ea, type: 3}
+    effectClip: {fileID: 7400000, guid: a23ae478b52836b48976e5f19bd82d19, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 2.5, y: 0}
     movementControl: 2
 --- !u!1 &1594059953
 GameObject:
@@ -3092,97 +3090,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668795089}
   m_CullTransparentMesh: 1
---- !u!1 &1682287570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1682287571}
-  - component: {fileID: 1682287572}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1682287571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682287570}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -2.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 406610813}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1682287572
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682287570}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
 --- !u!1 &1765432101
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,4 +3481,3 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1262892109}
   - {fileID: 1584064933}
-  - {fileID: 406610813}

@@ -4,3 +4,8 @@ public interface ICharacterMechanism
     void RequestBasicAttack();
     void CancelAction();
 }
+
+public interface ISecondaryCharacterMechanism
+{
+    void RequestSecondaryAttack();
+}

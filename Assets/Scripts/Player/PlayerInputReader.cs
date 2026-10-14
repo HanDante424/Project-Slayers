@@ -8,6 +8,7 @@ public class PlayerInputReader : MonoBehaviour
     public bool JumpPressed { get; private set; }
     public bool TestSkillPressed { get; private set; }
     public bool BasicAttackPressed { get; private set; }
+    public bool SecondaryAttackPressed { get; private set; }
 
 
     public void OnMove(InputValue value)
@@ -47,6 +48,19 @@ public class PlayerInputReader : MonoBehaviour
 
         BasicAttackPressed = false;
         return true;
+    }
+
+    public void OnSecondaryAttack(InputValue value)
+    {
+        if (value.isPressed)
+            SecondaryAttackPressed = true;
+    }
+
+    public bool ConsumeSecondaryAttack()
+    {
+        bool pressed = SecondaryAttackPressed;
+        SecondaryAttackPressed = false;
+        return pressed;
     }
 
     public bool ConsumeJump()

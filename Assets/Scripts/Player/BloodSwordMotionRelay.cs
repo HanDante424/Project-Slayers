@@ -1,6 +1,7 @@
 using UnityEngine;
 
-// Presentation-only notifications; MayhemMechanism owns action and input state.
+// Shared Sword/Slash presentation relay. Keep the serialized script identity for existing states.
+// MayhemMechanism owns action, input buffering and cleanup; hashes correlate the active motion.
 public class BloodSwordMotionRelay : StateMachineBehaviour
 {
     [SerializeField] private bool interruptBloodSword;

@@ -52,12 +52,16 @@ public class PlayerActionController : MonoBehaviour
         UpdateTripleSlashCooldown();
 
         bool basicAttackPressed = inputReader.ConsumeBasicAttack();
+        bool secondaryAttackPressed = inputReader.ConsumeSecondaryAttack();
         if (characterMechanism != null)
         {
             // The assigned character owns its actions; the Ern test skill stays a fallback.
             inputReader.ConsumeTestSkill();
             if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && basicAttackPressed)
                 characterMechanism.RequestBasicAttack();
+            if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && secondaryAttackPressed &&
+                characterMechanism is ISecondaryCharacterMechanism secondaryMechanism)
+                secondaryMechanism.RequestSecondaryAttack();
             return;
         }
 
