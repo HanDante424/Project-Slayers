@@ -67,6 +67,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "BloodRampage",
+                    "type": "Button",
+                    "id": "af968a1e-a230-49d7-a9e1-a87f0928b864",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "BloodSpear",
                     "type": "Button",
                     "id": "9ed3c657-471f-4fb9-af47-d23192ef2f0a",
@@ -196,6 +206,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "BloodAxe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ebbd8e1-729c-40bd-8ef7-33f39ff69d0d",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BloodRampage",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

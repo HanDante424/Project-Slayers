@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCharacterMechanism, IBloodSpearMechanism, IBloodAxeMechanism
+public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISecondaryCharacterMechanism, IBloodSpearMechanism, IBloodAxeMechanism, IBloodRampageMechanism
 {
     [Serializable]
     private sealed class AttackStep
@@ -78,12 +78,13 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
     private bool ownsMovementControl;
     private CharacterMotor2D.MovementControl previousMovementControl;
 
-    public bool IsActing => activeStep != null || IsSpearActing || IsAxeActing;
+    public bool IsActing => activeStep != null || IsSpearActing || IsAxeActing || IsRampageActing;
 
     private void Awake()
     {
         swordCombo = new AttackCombo(bloodSword00, bloodSword01, bloodSword02);
         slashCombo = new AttackCombo(bloodSlash00, bloodSlash01, bloodSlash02);
+        InitializeBloodRampage();
     }
 
     public void RequestBasicAttack() => RequestAttack(swordCombo);
@@ -93,6 +94,7 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
     {
         UpdateBloodSpear();
         UpdateBloodAxe();
+        UpdateBloodRampage();
     }
     private void FixedUpdate() => FixedUpdateBloodSpear();
 
@@ -109,7 +111,7 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
     {
         if (!isActiveAndEnabled || motor == null)
             return;
-        if (IsSpearActing || IsAxeActing)
+        if (IsSpearActing || IsAxeActing || IsRampageActing)
             return;
 
         if (IsActing)
@@ -300,6 +302,7 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
 
     public void CancelAction()
     {
+        CancelBloodRampage();
         CancelBloodAxe();
         CancelBloodSpear();
         if (attackCoroutine != null)

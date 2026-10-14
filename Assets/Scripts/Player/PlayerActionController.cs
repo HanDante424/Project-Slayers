@@ -55,6 +55,7 @@ public class PlayerActionController : MonoBehaviour
         bool secondaryAttackPressed = inputReader.ConsumeSecondaryAttack();
         bool bloodSpearPressed = inputReader.ConsumeBloodSpear();
         bool bloodAxePressed = inputReader.ConsumeBloodAxe();
+        bool bloodRampagePressed = inputReader.ConsumeBloodRampage();
         if (characterMechanism != null)
         {
             // The assigned character owns its actions; the Ern test skill stays a fallback.
@@ -70,6 +71,9 @@ public class PlayerActionController : MonoBehaviour
             if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && bloodAxePressed &&
                 characterMechanism is IBloodAxeMechanism axeMechanism)
                 axeMechanism.RequestBloodAxe();
+            if (!isActing && characterMechanismBehaviour.isActiveAndEnabled && bloodRampagePressed &&
+                characterMechanism is IBloodRampageMechanism rampageMechanism)
+                rampageMechanism.RequestBloodRampage();
             return;
         }
 

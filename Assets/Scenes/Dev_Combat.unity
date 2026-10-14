@@ -2814,6 +2814,62 @@ MonoBehaviour:
     effectPrefab: {fileID: 4108319611262251097, guid: bdf06267e29d7fc4c8f3b6de4dde2412, type: 3}
     effectAnimationClip: {fileID: 7400000, guid: 65af27c74ec652a43b4a9147cd16b4f0, type: 2}
     effectSpawnOffset: {x: 2, y: -1.5}
+  bloodRampage00:
+    motionAnimationClip: {fileID: 7400000, guid: e645a57583941c94aaf2311cd62acbe4, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_00
+    animatorTrigger: BloodRampage00
+    effectPrefab: {fileID: 4116792233763330721, guid: 81a627f97ae8d0140915c377d5f4c0b4, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 15aa47685db94984d8db7802a71061a2, type: 2}
+    effectSpawnOffset: {x: 1.5, y: 0.5}
+    effectSpawnFrame: 2
+  bloodRampage01:
+    motionAnimationClip: {fileID: 7400000, guid: d190e0acc0916a141833fd63d440eded, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_01
+    animatorTrigger: BloodRampage01
+    effectPrefab: {fileID: 3577073536530358742, guid: 1882ed118a4c6a64c885bd498dfa6891, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 55c854fc1362e1f409bb9620d1092f44, type: 2}
+    effectSpawnOffset: {x: -1, y: -1.5}
+    effectSpawnFrame: 0
+  bloodRampage02:
+    motionAnimationClip: {fileID: 7400000, guid: 36aede80726ce8b46b8f2e4f9ce6c94c, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_02
+    animatorTrigger: BloodRampage02
+    effectPrefab: {fileID: 6530653202786414497, guid: 385452411075e7740be5dd2392f08097, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 935523ba0286ae84c977bdde3a73abae, type: 2}
+    effectSpawnOffset: {x: 0.5, y: -2}
+    effectSpawnFrame: 0
+  bloodRampage03:
+    motionAnimationClip: {fileID: 7400000, guid: 12a60f16f3ee2414795acf0b3fc3ebe3, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_03
+    animatorTrigger: BloodRampage03
+    effectPrefab: {fileID: 4584980425047760863, guid: 71e2f158269b7d5418291805365804c2, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: acb251e25dca59d4b9ed609e893a7b62, type: 2}
+    effectSpawnOffset: {x: -3, y: 0}
+    effectSpawnFrame: 0
+  bloodRampage04:
+    motionAnimationClip: {fileID: 7400000, guid: cb5a9c4d2049cea4c80462f65bbf3efc, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_04
+    animatorTrigger: BloodRampage04
+    effectPrefab: {fileID: 4883616476546417416, guid: 5f075dab3a853ff428c2fcf35c130069, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 7511fe504a2ddd142b9885ea0840795b, type: 2}
+    effectSpawnOffset: {x: -2, y: 0.75}
+    effectSpawnFrame: 0
+  bloodRampage05:
+    motionAnimationClip: {fileID: 7400000, guid: c46de0c353169b447bf71cf0de34ae39, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_05
+    animatorTrigger: BloodRampage05
+    effectPrefab: {fileID: 6186949303136281204, guid: 3b3d3d027102bf94eba101c92380f00d, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: af98911375262cd489064e52b082cb7a, type: 2}
+    effectSpawnOffset: {x: -1.5, y: 0}
+    effectSpawnFrame: 0
+  bloodRampage06:
+    motionAnimationClip: {fileID: 7400000, guid: 91c6cc36c48c9cc4682b9ad11c316c04, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_06
+    animatorTrigger: BloodRampage06
+    effectPrefab: {fileID: 33423686378015161, guid: 728899a0a06ca0b45abc3c2ebfb216c8, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 4a527a789e8a23045bd1f40f866e61bf, type: 2}
+    effectSpawnOffset: {x: 6, y: 3}
+    effectSpawnFrame: 0
   bloodSpearReady:
     animationClip: {fileID: 7400000, guid: ee44aa338bf87804e8b1ae29b789e9d4, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_Ready

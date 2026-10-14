@@ -19,3 +19,8 @@ public interface IBloodAxeMechanism
 {
     void RequestBloodAxe();
 }
+
+public interface IBloodRampageMechanism
+{
+    void RequestBloodRampage();
+}
