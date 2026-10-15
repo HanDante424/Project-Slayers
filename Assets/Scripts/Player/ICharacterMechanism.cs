@@ -24,3 +24,8 @@ public interface IBloodRampageMechanism
 {
     void RequestBloodRampage();
 }
+
+public interface IBloodCombinationMechanism
+{
+    void RequestBloodCombination();
+}

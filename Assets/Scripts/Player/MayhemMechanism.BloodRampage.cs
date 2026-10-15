@@ -14,10 +14,11 @@ public partial class MayhemMechanism
         public Vector2 effectSpawnOffset;
         [Min(0)] public int effectSpawnFrame;
 
-        public RampageStep(string suffix, int spawnFrame = 0)
+        public RampageStep(string suffix, int spawnFrame = 0, bool combination = false)
         {
-            animatorState = "Playerable_Mayhem_Skill_Motion_020_BloodRampage_" + suffix;
-            animatorTrigger = "BloodRampage" + suffix;
+            animatorState = (combination ? "Playerable_Mayhem_Skill_Motion_023_BloodCombination_"
+                : "Playerable_Mayhem_Skill_Motion_020_BloodRampage_") + suffix;
+            animatorTrigger = (combination ? "BloodCombination" : "BloodRampage") + suffix;
             effectSpawnFrame = spawnFrame;
         }
     }
@@ -32,8 +33,13 @@ public partial class MayhemMechanism
     [SerializeField] private RampageStep bloodRampage06 = new("06");
 
     private enum RampagePhase { Inactive, WaitingEntry, Playing, WaitingNext }
+    private enum AutomaticSequenceKind { None, BloodRampage, BloodCombination }
     private static readonly int RampagePlayingHash = Animator.StringToHash("BloodRampagePlaying");
     private RampageStep[] rampageSteps;
+    // Shared runtime only. Existing serialized Rampage fields and their layout remain unchanged.
+    private RampageStep[] activeSequenceSteps;
+    private AutomaticSequenceKind activeSequenceKind;
+    private int activeSequencePlayingHash;
     private RampagePhase rampagePhase;
     // This is the documented 00..06 sequence position, not a numeric skill identity.
     private int rampageStepIndex;
@@ -41,7 +47,8 @@ public partial class MayhemMechanism
     private float rampageFacing;
     private Health rampageHealth;
     private CharacterMotor2D.MovementControl rampagePreviousMovement;
-    private bool IsRampageActing => rampagePhase != RampagePhase.Inactive;
+    private bool IsRampageActing => rampagePhase != RampagePhase.Inactive &&
+        activeSequenceKind == AutomaticSequenceKind.BloodRampage;
 
     private void InitializeBloodRampage()
     {
@@ -50,39 +57,52 @@ public partial class MayhemMechanism
         rampageHealth = GetComponent<Health>();
     }
 
-    public void RequestBloodRampage()
+    public void RequestBloodRampage() => TryStartAutomaticSequence(rampageSteps,
+        AutomaticSequenceKind.BloodRampage, RampagePlayingHash, typeof(BloodRampageMotionRelay));
+
+    private void TryStartAutomaticSequence(RampageStep[] steps, AutomaticSequenceKind kind, int playingHash, Type relayType)
     {
         if (!isActiveAndEnabled || IsActing || motor == null || !motor.isActiveAndEnabled ||
             !motor.IsGrounded || motor.IsHitStunLocked || (rampageHealth != null && rampageHealth.IsDead))
             return;
-        if (!HasRampageReferences())
+        if (!HasSequenceReferences(steps, relayType))
         {
-            Debug.LogWarning("Blood Rampage requires all seven motion/effect references, Animator and spawn point.", this);
+            Debug.LogWarning($"{kind} requires its motion/effect references, reachable effect frames, Animator and spawn point.", this);
             return;
         }
 
         attackBuffer.Clear();
+        activeSequenceSteps = steps;
+        activeSequenceKind = kind;
+        activeSequencePlayingHash = playingHash;
         rampagePreviousMovement = motor.CurrentMovementControl;
         rampageFacing = motor.transform.localScale.x < 0f ? -1f : 1f;
         rampageStepIndex = 0;
         rampageEffectSpawned = false;
         rampagePhase = RampagePhase.WaitingEntry;
         if (rampageHealth != null)
-            rampageHealth.Died += CancelBloodRampage;
+            rampageHealth.Died += CancelAutomaticSequence;
         motor.SetMovementControl(CharacterMotor2D.MovementControl.Locked);
-        animator.SetBool(RampagePlayingHash, true);
-        animator.SetTrigger(bloodRampage00.animatorTrigger);
+        animator.SetBool(activeSequencePlayingHash, true);
+        animator.SetTrigger(steps[0].animatorTrigger);
     }
 
-    private bool HasRampageReferences()
+    private bool HasSequenceReferences(RampageStep[] steps, Type relayType)
     {
         if (animator == null || !animator.isActiveAndEnabled || animator.runtimeAnimatorController == null ||
-            effectSpawnPoint == null || animator.GetBehaviours<BloodRampageMotionRelay>().Length != rampageSteps.Length)
+            effectSpawnPoint == null || steps == null || steps.Length == 0)
             return false;
-        foreach (RampageStep step in rampageSteps)
+        int relayCount = 0;
+        foreach (StateMachineBehaviour relay in animator.GetBehaviours<StateMachineBehaviour>())
+            if (relay.GetType() == relayType) relayCount++;
+        if (relayCount != steps.Length)
+            return false;
+        foreach (RampageStep step in steps)
         {
             if (step == null || step.motionAnimationClip == null || step.motionAnimationClip.length <= 0f ||
-                step.motionAnimationClip.frameRate <= 0f || string.IsNullOrEmpty(step.animatorState) ||
+                step.motionAnimationClip.frameRate <= 0f || step.effectSpawnFrame < 0 ||
+                step.effectSpawnFrame > step.motionAnimationClip.length * step.motionAnimationClip.frameRate + .0001f ||
+                string.IsNullOrEmpty(step.animatorState) ||
                 string.IsNullOrEmpty(step.animatorTrigger) || !animator.HasState(0, RampageStateHash(step)) ||
                 step.effectPrefab == null || step.effectAnimationClip == null || step.effectAnimationClip.length <= 0f)
                 return false;
@@ -98,50 +118,74 @@ public partial class MayhemMechanism
 
     public void NotifyBloodRampageMotionEntered(int stateHash)
     {
-        if (!isActiveAndEnabled || !IsRampageActing)
+        if (IsRampageActing)
+            NotifySequenceMotionEntered(stateHash);
+    }
+
+    private void NotifySequenceMotionEntered(int stateHash)
+    {
+        if (!isActiveAndEnabled || rampagePhase == RampagePhase.Inactive)
             return;
         int expected = rampagePhase == RampagePhase.WaitingNext ? rampageStepIndex + 1 : rampageStepIndex;
         if ((rampagePhase != RampagePhase.WaitingEntry && rampagePhase != RampagePhase.WaitingNext) ||
-            expected >= rampageSteps.Length || stateHash != RampageStateHash(rampageSteps[expected]))
+            expected >= activeSequenceSteps.Length || stateHash != RampageStateHash(activeSequenceSteps[expected]))
         {
-            CancelBloodRampage();
+            CancelAutomaticSequence();
             return;
         }
         rampageStepIndex = expected;
         rampagePhase = RampagePhase.Playing;
         rampageEffectSpawned = false;
-        if (rampageSteps[expected].effectSpawnFrame == 0)
+        if (activeSequenceSteps[expected].effectSpawnFrame == 0)
             EmitRampageEffect();
     }
 
     public void NotifyBloodRampageMotionUpdated(int stateHash, float normalizedTime)
     {
-        if (rampagePhase != RampagePhase.Playing || stateHash != RampageStateHash(rampageSteps[rampageStepIndex]))
+        if (IsRampageActing)
+            NotifySequenceMotionUpdated(stateHash, normalizedTime);
+    }
+
+    private void NotifySequenceMotionUpdated(int stateHash, float normalizedTime)
+    {
+        if (rampagePhase != RampagePhase.Playing || stateHash != RampageStateHash(activeSequenceSteps[rampageStepIndex]))
             return;
-        RampageStep step = rampageSteps[rampageStepIndex];
+        RampageStep step = activeSequenceSteps[rampageStepIndex];
         // Same frame-2 convention as Blood Sword; process the last frame before requesting the next motion.
         if (!rampageEffectSpawned && normalizedTime * step.motionAnimationClip.length >=
             step.effectSpawnFrame / step.motionAnimationClip.frameRate)
             EmitRampageEffect();
-        if (!IsRampageActing)
+        if (rampagePhase == RampagePhase.Inactive)
             return;
-        if (normalizedTime >= 1f && rampageStepIndex + 1 < rampageSteps.Length)
+        if (normalizedTime >= 1f && rampageStepIndex + 1 < activeSequenceSteps.Length)
         {
             rampagePhase = RampagePhase.WaitingNext;
-            animator.SetTrigger(rampageSteps[rampageStepIndex + 1].animatorTrigger);
+            animator.SetTrigger(activeSequenceSteps[rampageStepIndex + 1].animatorTrigger);
         }
     }
 
     public void NotifyBloodRampageMotionExited(int stateHash, bool completed)
     {
-        if (!IsRampageActing || stateHash != RampageStateHash(rampageSteps[rampageStepIndex]))
+        if (IsRampageActing)
+            NotifySequenceMotionExited(stateHash, completed);
+    }
+
+    private void NotifySequenceMotionExited(int stateHash, bool completed)
+    {
+        if (rampagePhase == RampagePhase.Inactive || stateHash != RampageStateHash(activeSequenceSteps[rampageStepIndex]))
+            return;
+        // A non-looping state's final update can be replaced by its exit callback.
+        // All configured frames are validated as reachable; normal exit confirms the end frame was sampled.
+        if (completed && !rampageEffectSpawned)
+            EmitRampageEffect();
+        if (rampagePhase == RampagePhase.Inactive)
             return;
         if (completed && rampagePhase == RampagePhase.WaitingNext)
             return;
-        if (completed && rampagePhase == RampagePhase.Playing && rampageStepIndex == rampageSteps.Length - 1)
-            CompleteBloodRampage();
+        if (completed && rampagePhase == RampagePhase.Playing && rampageStepIndex == activeSequenceSteps.Length - 1)
+            CompleteAutomaticSequence();
         else
-            CancelBloodRampage();
+            CancelAutomaticSequence();
     }
 
     private void EmitRampageEffect()
@@ -152,7 +196,7 @@ public partial class MayhemMechanism
         GameObject instance = null;
         try
         {
-            RampageStep step = rampageSteps[rampageStepIndex];
+            RampageStep step = activeSequenceSteps[rampageStepIndex];
             Vector3 offset = new(step.effectSpawnOffset.x * rampageFacing, step.effectSpawnOffset.y, 0f);
             instance = Instantiate(step.effectPrefab, effectSpawnPoint.position + offset, effectSpawnPoint.rotation);
             Vector3 scale = instance.transform.localScale;
@@ -164,37 +208,45 @@ public partial class MayhemMechanism
         catch (Exception exception)
         {
             if (instance != null) Destroy(instance);
-            CancelBloodRampage();
+            CancelAutomaticSequence();
             Debug.LogException(exception, this);
         }
     }
 
     private void UpdateBloodRampage()
     {
-        if (IsRampageActing && (animator == null || !animator.isActiveAndEnabled || motor == null ||
+        if (rampagePhase != RampagePhase.Inactive && (animator == null || !animator.isActiveAndEnabled || motor == null ||
             !motor.isActiveAndEnabled || motor.IsHitStunLocked || (rampageHealth != null && rampageHealth.IsDead)))
-            CancelBloodRampage();
+            CancelAutomaticSequence();
     }
 
-    private void CompleteBloodRampage() => CleanupBloodRampage();
-    private void CancelBloodRampage() => CleanupBloodRampage();
+    private void CompleteAutomaticSequence() => CleanupAutomaticSequence();
+    private void CancelAutomaticSequence() => CleanupAutomaticSequence();
 
-    private void CleanupBloodRampage()
+    private void CancelBloodRampage()
     {
-        if (!IsRampageActing)
+        if (IsRampageActing)
+            CancelAutomaticSequence();
+    }
+
+    private void CleanupAutomaticSequence()
+    {
+        if (rampagePhase == RampagePhase.Inactive)
             return;
         if (rampageHealth != null)
-            rampageHealth.Died -= CancelBloodRampage;
+            rampageHealth.Died -= CancelAutomaticSequence;
         if (animator != null)
         {
-            foreach (RampageStep step in rampageSteps)
+            foreach (RampageStep step in activeSequenceSteps)
                 animator.ResetTrigger(step.animatorTrigger);
-            animator.SetBool(RampagePlayingHash, false);
+            animator.SetBool(activeSequencePlayingHash, false);
         }
         if (motor != null)
             motor.SetMovementControl(rampagePreviousMovement);
         attackBuffer.Clear();
         rampageEffectSpawned = false;
         rampagePhase = RampagePhase.Inactive;
+        activeSequenceKind = AutomaticSequenceKind.None;
+        activeSequenceSteps = null;
     }
 }
