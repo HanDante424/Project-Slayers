@@ -87,8 +87,7 @@ public class AttackHitbox : MonoBehaviour
             if (receiver == null || receiver.IsDead || other.GetComponentInParent<PlayerHitReceiver>() != null ||
                 (source != null && source.GetComponentInParent<HitReceiver>() != null))
                 return;
-            if (!effectController.TryRegisterEffectTarget(receiver) || !effectController.IsDamageReady ||
-                source == null || sourceStats == null)
+            if (!effectController.IsDamageReady || source == null || sourceStats == null)
                 return;
         }
 
@@ -123,6 +122,10 @@ public class AttackHitbox : MonoBehaviour
             );
             return;
         }
+
+        // Invalid data must not consume this effect instance's one hit per target.
+        if (effectController != null && !effectController.TryRegisterEffectTarget(receiver))
+            return;
 
         float damagePercent =
             skillHitData.baseDamagePercent +

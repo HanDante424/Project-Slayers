@@ -2803,11 +2803,11 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 0cf02e00ffa0c17468ed90363e7e0550, type: 2}
     effectSpawnOffset: {x: 0, y: 0}
     attackSettings:
-      hitPermission: 0
-      skillData: {fileID: 0}
+      hitPermission: 1
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodAxeEffectAttack:
@@ -2815,11 +2815,11 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: af21e41c10b81fd4f9d3f95fb5f4f0a3, type: 2}
     effectSpawnOffset: {x: 1.9, y: -1.25}
     attackSettings:
-      hitPermission: 0
-      skillData: {fileID: 0}
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodAxeEffectBurst00:
@@ -2827,11 +2827,11 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: e43035fb5353ed94390f58e8f2c33a1d, type: 2}
     effectSpawnOffset: {x: 0, y: 0}
     attackSettings:
-      hitPermission: 0
-      skillData: {fileID: 0}
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodAxeEffectBurst01:
@@ -2839,11 +2839,11 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 65af27c74ec652a43b4a9147cd16b4f0, type: 2}
     effectSpawnOffset: {x: 2, y: -1.5}
     attackSettings:
-      hitPermission: 0
-      skillData: {fileID: 0}
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodCombination00:
@@ -2856,10 +2856,10 @@ MonoBehaviour:
     effectSpawnFrame: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodCombination01:
@@ -2872,10 +2872,10 @@ MonoBehaviour:
     effectSpawnFrame: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodCombination02:
@@ -2888,10 +2888,10 @@ MonoBehaviour:
     effectSpawnFrame: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage00:
@@ -2904,10 +2904,10 @@ MonoBehaviour:
     effectSpawnFrame: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage01:
@@ -2920,10 +2920,10 @@ MonoBehaviour:
     effectSpawnFrame: 0
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage02:
@@ -2936,10 +2936,10 @@ MonoBehaviour:
     effectSpawnFrame: 0
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage03:
@@ -2952,10 +2952,10 @@ MonoBehaviour:
     effectSpawnFrame: 0
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage04:
@@ -2968,10 +2968,10 @@ MonoBehaviour:
     effectSpawnFrame: 0
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage05:
@@ -2984,10 +2984,10 @@ MonoBehaviour:
     effectSpawnFrame: 0
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodRampage06:
@@ -3000,10 +3000,10 @@ MonoBehaviour:
     effectSpawnFrame: 0
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSpearReady:
@@ -3027,10 +3027,10 @@ MonoBehaviour:
     spawnOffset: {x: 2.5, y: 0.25}
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSpearEffect01:
@@ -3039,10 +3039,10 @@ MonoBehaviour:
     spawnOffset: {x: 3, y: 1.5}
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   enableTemporaryBloodSpearFollowUpEffect: 1
@@ -3063,10 +3063,10 @@ MonoBehaviour:
     movementControl: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSword01:
@@ -3083,10 +3083,10 @@ MonoBehaviour:
     movementControl: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSword02:
@@ -3103,10 +3103,10 @@ MonoBehaviour:
     movementControl: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSlash00:
@@ -3123,10 +3123,10 @@ MonoBehaviour:
     movementControl: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSlash01:
@@ -3143,10 +3143,10 @@ MonoBehaviour:
     movementControl: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
   bloodSlash02:
@@ -3163,10 +3163,10 @@ MonoBehaviour:
     movementControl: 2
     attackSettings:
       hitPermission: 2
-      skillData: {fileID: 0}
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
       skill:
         currentLevel: 1
-      hitIndex: -1
+      hitIndex: 0
       hitboxStartTime: 0
       hitboxEndTime: -1
 --- !u!1 &1594059953
