@@ -1380,7 +1380,7 @@ GameObject:
   - component: {fileID: 959147686}
   - component: {fileID: 959147685}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: SpawnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
