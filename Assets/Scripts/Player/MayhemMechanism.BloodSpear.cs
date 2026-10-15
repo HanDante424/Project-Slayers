@@ -23,6 +23,7 @@ public partial class MayhemMechanism
         public GameObject effectPrefab;
         public AnimationClip effectClip;
         public Vector2 spawnOffset;
+        public EffectAttackSettings attackSettings = new();
     }
 
     private enum SpearPhase { Inactive, WaitingReady, Ready, WaitingDash, Dash, WaitingFinish, Finish }
@@ -196,6 +197,7 @@ public partial class MayhemMechanism
             // Sprite-only animation: keep world scale while following the dash, without editing the prefab.
             if (followPlayer)
                 instance.transform.SetParent(motor.transform, worldPositionStays: true);
+            InitializeMayhemEffectAttack(instance, effect.attackSettings);
             if (followPlayer)
                 Destroy(instance, effect.effectClip.length);
             else

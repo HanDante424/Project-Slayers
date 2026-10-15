@@ -13,6 +13,7 @@ public partial class MayhemMechanism
         public AnimationClip effectAnimationClip;
         public Vector2 effectSpawnOffset;
         [Min(0)] public int effectSpawnFrame;
+        public EffectAttackSettings attackSettings = new();
 
         public RampageStep(string suffix, int spawnFrame = 0, bool combination = false)
         {
@@ -202,6 +203,7 @@ public partial class MayhemMechanism
             Vector3 scale = instance.transform.localScale;
             scale.x = Mathf.Abs(scale.x) * rampageFacing;
             instance.transform.localScale = scale;
+            InitializeMayhemEffectAttack(instance, step.attackSettings);
             // Like Axe Attack/Spear 01: spawned presentation finishes independently of action cleanup.
             instance.AddComponent<DestroyAfterAnimatorPlayback>();
         }

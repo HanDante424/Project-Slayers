@@ -7,6 +7,8 @@ public class HitReceiver : MonoBehaviour
 
     private GoblinEnemy goblinEnemy;
 
+    public bool IsDead => health != null && health.IsDead;
+
     private void Awake()
     {
         goblinEnemy = GetComponent<GoblinEnemy>();

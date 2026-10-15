@@ -8,6 +8,9 @@ public class AttackHitbox : MonoBehaviour
     private GameObject source;
     private SkillData skillData;
     private int skillLevel = 1;
+    private bool initialized;
+    private CharacterStats sourceStats;
+    private AttackHitboxController effectController;
 
     public void Initialize(
         float newAttack,
@@ -15,6 +18,9 @@ public class AttackHitbox : MonoBehaviour
         SkillData newSkillData,
         int newSkillLevel = 1)
     {
+        initialized = true;
+        sourceStats = null;
+        effectController = null;
         attack = newAttack;
         source = newSource;
         skillData = newSkillData;
@@ -23,8 +29,44 @@ public class AttackHitbox : MonoBehaviour
             : Mathf.Max(1, newSkillLevel);
     }
 
+    internal void InitializeEffect(CharacterStats stats, GameObject owner, EffectAttackSettings settings,
+        AttackHitboxController controller)
+    {
+        settings.skill ??= new LearnedSkill();
+        settings.skill.Bind(settings.skillData);
+        Initialize(stats != null ? stats.FinalAttack : 0f, owner, settings.skillData, settings.skill.CurrentLevel);
+        sourceStats = stats;
+        hitIndex = settings.hitIndex;
+        effectController = controller;
+    }
+
+    internal void ClearEffectInitialization()
+    {
+        initialized = false;
+        source = null;
+        sourceStats = null;
+        skillData = null;
+        effectController = null;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        TryContact(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // Effect windows may open while already overlapping. Legacy animation-event windows stay unchanged.
+        if (effectController != null)
+            TryContact(other);
+    }
+
+    private void TryContact(Collider2D other)
+    {
+        if (!initialized || other == null || !isActiveAndEnabled)
+            return;
+        if (effectController != null && !effectController.CanProcessEffectContact())
+            return;
         if (source != null &&
             (other.transform == source.transform ||
              other.transform.IsChildOf(source.transform)))
@@ -32,8 +74,23 @@ public class AttackHitbox : MonoBehaviour
             return;
         }
 
+        // Ignore attack volumes, including a following effect parented under another actor.
+        if (effectController != null && other.GetComponentInParent<AttackHitbox>() != null)
+            return;
+
         HitReceiver receiver =
             other.GetComponentInParent<HitReceiver>();
+
+        if (effectController != null)
+        {
+            // Existing project identity: Mayhem targets enemy HitReceiver, never player/ally receivers.
+            if (receiver == null || receiver.IsDead || other.GetComponentInParent<PlayerHitReceiver>() != null ||
+                (source != null && source.GetComponentInParent<HitReceiver>() != null))
+                return;
+            if (!effectController.TryRegisterEffectTarget(receiver) || !effectController.IsDamageReady ||
+                source == null || sourceStats == null)
+                return;
+        }
 
         PlayerHitReceiver playerReceiver = null;
 
@@ -71,7 +128,9 @@ public class AttackHitbox : MonoBehaviour
             skillHitData.baseDamagePercent +
             skillHitData.damageGrowthPerLevel * (skillLevel - 1);
 
-        float rawDamage = attack * damagePercent / 100f;
+        // Effect hits read current final attack at impact; the legacy snapshot overload remains compatible.
+        float currentAttack = sourceStats != null ? sourceStats.FinalAttack : attack;
+        float rawDamage = currentAttack * damagePercent / 100f;
 
         // TEMP: rounding rule unresolved.
         int damage = Mathf.RoundToInt(rawDamage);

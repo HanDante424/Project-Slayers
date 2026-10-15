@@ -23,6 +23,7 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
         public Vector2 effectSpawnOffset = Vector2.zero;
         public CharacterMotor2D.MovementControl movementControl =
             CharacterMotor2D.MovementControl.Locked;
+        public EffectAttackSettings attackSettings = new();
 
         public AttackStep(string suffix, bool bloodSlash = false)
         {
@@ -82,6 +83,7 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
 
     private void Awake()
     {
+        effectAttackStats = GetComponent<CharacterStats>();
         swordCombo = new AttackCombo(bloodSword00, bloodSword01, bloodSword02);
         slashCombo = new AttackCombo(bloodSlash00, bloodSlash01, bloodSlash02);
         InitializeBloodRampage();
@@ -244,6 +246,7 @@ public partial class MayhemMechanism : MonoBehaviour, ICharacterMechanism, ISeco
         Vector3 scale = effect.transform.localScale;
         scale.x = Mathf.Abs(scale.x) * facing;
         effect.transform.localScale = scale;
+        InitializeMayhemEffectAttack(effect, step.attackSettings);
         Destroy(effect, step.effectClip.length);
     }
 

@@ -2802,18 +2802,50 @@ MonoBehaviour:
     effectPrefab: {fileID: 48799676336045232, guid: 2accfd6490a777843b3cfe2092519035, type: 3}
     effectAnimationClip: {fileID: 7400000, guid: 0cf02e00ffa0c17468ed90363e7e0550, type: 2}
     effectSpawnOffset: {x: 0, y: 0}
+    attackSettings:
+      hitPermission: 0
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodAxeEffectAttack:
     effectPrefab: {fileID: 6120578073460108736, guid: bc61bae496f6e6e47bdfbb1fc258067a, type: 3}
     effectAnimationClip: {fileID: 7400000, guid: af21e41c10b81fd4f9d3f95fb5f4f0a3, type: 2}
     effectSpawnOffset: {x: 1.9, y: -1.25}
+    attackSettings:
+      hitPermission: 0
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodAxeEffectBurst00:
     effectPrefab: {fileID: 6441742134382726601, guid: dbde45f62bddc954d97cab91a368293e, type: 3}
     effectAnimationClip: {fileID: 7400000, guid: e43035fb5353ed94390f58e8f2c33a1d, type: 2}
     effectSpawnOffset: {x: 0, y: 0}
+    attackSettings:
+      hitPermission: 0
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodAxeEffectBurst01:
     effectPrefab: {fileID: 4108319611262251097, guid: bdf06267e29d7fc4c8f3b6de4dde2412, type: 3}
     effectAnimationClip: {fileID: 7400000, guid: 65af27c74ec652a43b4a9147cd16b4f0, type: 2}
     effectSpawnOffset: {x: 2, y: -1.5}
+    attackSettings:
+      hitPermission: 0
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodCombination00:
     motionAnimationClip: {fileID: 7400000, guid: aea66696d5362d344b2c370ae517b3c8, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_023_BloodCombination_00
@@ -2822,6 +2854,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 428ffa9615dd25b449585666b6c9704f, type: 2}
     effectSpawnOffset: {x: -2, y: -1.75}
     effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodCombination01:
     motionAnimationClip: {fileID: 7400000, guid: 311156901476f4e45afe15c4bca10ed8, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_023_BloodCombination_01
@@ -2830,6 +2870,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: eb9952d01c6a1a04ca86a0f75e148d79, type: 2}
     effectSpawnOffset: {x: 4, y: 0}
     effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodCombination02:
     motionAnimationClip: {fileID: 7400000, guid: 353a14113a537ab4690a66604656af4b, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_023_BloodCombination_02
@@ -2838,6 +2886,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: c9eb1cba63935b841a0b12efde8201da, type: 2}
     effectSpawnOffset: {x: 2.5, y: -1}
     effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage00:
     motionAnimationClip: {fileID: 7400000, guid: e645a57583941c94aaf2311cd62acbe4, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_00
@@ -2846,6 +2902,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 15aa47685db94984d8db7802a71061a2, type: 2}
     effectSpawnOffset: {x: 1.5, y: 0.5}
     effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage01:
     motionAnimationClip: {fileID: 7400000, guid: d190e0acc0916a141833fd63d440eded, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_01
@@ -2854,6 +2918,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 55c854fc1362e1f409bb9620d1092f44, type: 2}
     effectSpawnOffset: {x: -1, y: -1.5}
     effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage02:
     motionAnimationClip: {fileID: 7400000, guid: 36aede80726ce8b46b8f2e4f9ce6c94c, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_02
@@ -2862,6 +2934,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 935523ba0286ae84c977bdde3a73abae, type: 2}
     effectSpawnOffset: {x: 0.5, y: -2}
     effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage03:
     motionAnimationClip: {fileID: 7400000, guid: 12a60f16f3ee2414795acf0b3fc3ebe3, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_03
@@ -2870,6 +2950,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: acb251e25dca59d4b9ed609e893a7b62, type: 2}
     effectSpawnOffset: {x: -3, y: 0}
     effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage04:
     motionAnimationClip: {fileID: 7400000, guid: cb5a9c4d2049cea4c80462f65bbf3efc, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_04
@@ -2878,6 +2966,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 7511fe504a2ddd142b9885ea0840795b, type: 2}
     effectSpawnOffset: {x: -2, y: 0.75}
     effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage05:
     motionAnimationClip: {fileID: 7400000, guid: c46de0c353169b447bf71cf0de34ae39, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_05
@@ -2886,6 +2982,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: af98911375262cd489064e52b082cb7a, type: 2}
     effectSpawnOffset: {x: -1.5, y: 0}
     effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodRampage06:
     motionAnimationClip: {fileID: 7400000, guid: 91c6cc36c48c9cc4682b9ad11c316c04, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_06
@@ -2894,6 +2998,14 @@ MonoBehaviour:
     effectAnimationClip: {fileID: 7400000, guid: 4a527a789e8a23045bd1f40f866e61bf, type: 2}
     effectSpawnOffset: {x: 6, y: 3}
     effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSpearReady:
     animationClip: {fileID: 7400000, guid: ee44aa338bf87804e8b1ae29b789e9d4, type: 2}
     animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_Ready
@@ -2913,10 +3025,26 @@ MonoBehaviour:
     effectPrefab: {fileID: 7549224415003939797, guid: 0d88dd7ef21bd4f4696602ffe3ce4e2e, type: 3}
     effectClip: {fileID: 7400000, guid: 09de96f5af2956a48b16d2629b538e42, type: 2}
     spawnOffset: {x: 2.5, y: 0.25}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSpearEffect01:
     effectPrefab: {fileID: 2998229809439003581, guid: 9ad82e8050593244c8395ac8e6eed18c, type: 3}
     effectClip: {fileID: 7400000, guid: 56b0b8d9655497a42b6d2c3d813a9b5e, type: 2}
     spawnOffset: {x: 3, y: 1.5}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   enableTemporaryBloodSpearFollowUpEffect: 1
   motor: {fileID: 1584064928}
   animator: {fileID: 1365979351}
@@ -2933,6 +3061,14 @@ MonoBehaviour:
     inputBufferEndFrame: -1
     effectSpawnOffset: {x: 1.75, y: -0.5}
     movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSword01:
     animatorTrigger: BloodSword01
     animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_01
@@ -2945,6 +3081,14 @@ MonoBehaviour:
     inputBufferEndFrame: -1
     effectSpawnOffset: {x: -1.75, y: 0}
     movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSword02:
     animatorTrigger: BloodSword02
     animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_02
@@ -2957,6 +3101,14 @@ MonoBehaviour:
     inputBufferEndFrame: -1
     effectSpawnOffset: {x: 1.5, y: -1}
     movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSlash00:
     animatorTrigger: BloodSlash00
     animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_00
@@ -2969,6 +3121,14 @@ MonoBehaviour:
     inputBufferEndFrame: -1
     effectSpawnOffset: {x: 1.25, y: 0.25}
     movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSlash01:
     animatorTrigger: BloodSlash01
     animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_01
@@ -2981,6 +3141,14 @@ MonoBehaviour:
     inputBufferEndFrame: -1
     effectSpawnOffset: {x: 0.5, y: 0}
     movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
   bloodSlash02:
     animatorTrigger: BloodSlash02
     animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_02
@@ -2993,6 +3161,14 @@ MonoBehaviour:
     inputBufferEndFrame: -1
     effectSpawnOffset: {x: 2.5, y: 0}
     movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 0}
+      skill:
+        currentLevel: 1
+      hitIndex: -1
+      hitboxStartTime: 0
+      hitboxEndTime: -1
 --- !u!1 &1594059953
 GameObject:
   m_ObjectHideFlags: 0

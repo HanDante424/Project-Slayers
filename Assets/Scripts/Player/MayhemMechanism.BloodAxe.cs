@@ -23,6 +23,7 @@ public partial class MayhemMechanism
         public GameObject effectPrefab;
         public AnimationClip effectAnimationClip;
         public Vector2 effectSpawnOffset;
+        public EffectAttackSettings attackSettings = new(EffectHitPermission.Unspecified);
     }
 
     private enum AxePhase { Inactive, WaitingReady, Ready, WaitingAttack, Attack }
@@ -146,6 +147,7 @@ public partial class MayhemMechanism
         Vector3 scale = instance.transform.localScale;
         scale.x = Mathf.Abs(scale.x) * axeFacing;
         instance.transform.localScale = scale;
+        InitializeMayhemEffectAttack(instance, effect.attackSettings);
         // Reuse Spear's detached one-shot lifetime; completing the short motion must not cut VFX.
         instance.AddComponent<DestroyAfterAnimatorPlayback>();
         return instance;
