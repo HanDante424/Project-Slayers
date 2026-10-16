@@ -109,11 +109,13 @@ public sealed class TownBattleNavigationController : MonoBehaviour
     public void OpenMonsterDescription()
     {
         ShowDescription(monsterDescriptionPanel);
+        stageSelectController?.RefreshEnemyDetails();
     }
 
     public void OpenRewardDescription()
     {
         ShowDescription(rewardDescriptionPanel);
+        stageSelectController?.RefreshRewardDetails();
     }
 
     public void OpenQuestDescription()

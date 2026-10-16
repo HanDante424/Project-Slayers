@@ -59500,6 +59500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 833063216}
   - component: {fileID: 833063217}
+  - component: {fileID: 833063218}
   m_Layer: 5
   m_Name: StageSelectPanel
   m_TagString: Untagged
@@ -59544,6 +59545,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::TownStageSelectController
   stageManager: {fileID: 878298374}
+  detailsView: {fileID: 833063218}
   rankContent: {fileID: 973384562}
   rankButtonTemplate: {fileID: 1510400138}
   rankPlaceholders:
@@ -59561,6 +59563,47 @@ MonoBehaviour:
   corruptionText: {fileID: 979324950}
   descriptionText: {fileID: 535347626}
   thumbnail: {fileID: 1208200579}
+--- !u!114 &833063218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833063215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56dbfb96cdba42a1af00a2258d02ca57, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TownStageDetailsView
+  enemyContent: {fileID: 907945980}
+  enemyTemplate: {fileID: 167887668}
+  enemyNameText: {fileID: 618736683}
+  dropContent: {fileID: 1198342339}
+  dropTemplate: {fileID: 2109310993}
+  itemNameText: {fileID: 2039042266}
+  dropCountText: {fileID: 612521123}
+  dropChanceText: {fileID: 1954191708}
+  dropSourceText: {fileID: 1358647147}
+  sampleTexts:
+  - {fileID: 1672368170}
+  - {fileID: 2054710778}
+  - {fileID: 1826757564}
+  - {fileID: 1665496056}
+  - {fileID: 690853748}
+  - {fileID: 1467075206}
+  - {fileID: 1918816506}
+  - {fileID: 1900229789}
+  - {fileID: 265488363}
+  - {fileID: 1683485516}
+  - {fileID: 1610325169}
+  - {fileID: 428665926}
+  - {fileID: 732051645}
+  - {fileID: 1896554140}
+  - {fileID: 1990264861}
+  - {fileID: 1172672005}
+  sampleImages:
+  - {fileID: 127826264}
+  - {fileID: 2070587040}
 --- !u!1 &835120337
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class TownStageSelectController : MonoBehaviour
 {
     [SerializeField] private StageManager stageManager;
+    [SerializeField] private TownStageDetailsView detailsView;
     [Header("Existing Layout and Templates")]
     [SerializeField] private RectTransform rankContent;
     [SerializeField] private RectTransform rankButtonTemplate;
@@ -35,6 +36,10 @@ public class TownStageSelectController : MonoBehaviour
 
     private readonly Dictionary<int, Row> rankRows = new();
     private readonly Dictionary<MapData, Row> stageRows = new();
+
+    public void RefreshEnemyDetails() => detailsView?.RefreshEnemies();
+
+    public void RefreshRewardDetails() => detailsView?.RefreshRewards();
 
     public void Show(MapType mapType)
     {
@@ -176,12 +181,13 @@ public class TownStageSelectController : MonoBehaviour
         if (rankText != null) rankText.text = stage != null ? $"Rank : {stage.rank}" : string.Empty;
         if (corruptionText != null) corruptionText.text = stage != null ? $"침식도 : {stage.corruption}" : string.Empty;
         if (descriptionText != null) descriptionText.text = stage != null
-            ? $"Stage Code : {stage.stageCode}\n\n{stage.description}" : string.Empty;
+            ? stage.description : string.Empty;
         if (thumbnail != null)
         {
             thumbnail.sprite = stage != null ? stage.thumbnail : null;
             thumbnail.enabled = thumbnail.sprite != null;
         }
+        detailsView?.ShowStage(stage);
         if (changed) SelectedStageChanged?.Invoke(stage);
     }
 }
