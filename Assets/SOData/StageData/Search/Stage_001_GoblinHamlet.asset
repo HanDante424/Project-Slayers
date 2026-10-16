@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add40ab2e5c745d681d3f2742f5f56a1, type: 3}
   m_Name: Stage_001_GoblinHamlet
   m_EditorClassIdentifier: Assembly-CSharp::MapData
+  stageCode: "001"
   thumbnail: {fileID: 0}
   mapName: "\uACE0\uBE14\uB9B0 \uBD80\uB77D"
   description: "\uACE0\uBE14\uB9B0\uB4E4\uC774 \uC788\uB294 \uBD80\uB77D\uC774\uB2E4."

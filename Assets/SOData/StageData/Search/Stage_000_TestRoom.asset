@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add40ab2e5c745d681d3f2742f5f56a1, type: 3}
   m_Name: Stage_000_TestRoom
   m_EditorClassIdentifier: Assembly-CSharp::MapData
+  stageCode: "000"
   thumbnail: {fileID: 0}
   mapName: "\uD14C\uC2A4\uD2B8\uB8F8"
   description: "\uD14C\uC2A4\uD2B8\uB8F8"

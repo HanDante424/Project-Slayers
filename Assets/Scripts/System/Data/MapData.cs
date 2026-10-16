@@ -6,6 +6,9 @@ using UnityEngine;
     menuName = "Slayers/Map Data")]
 public class MapData : ScriptableObject
 {
+    [Header("Stage Identity")]
+    public string stageCode;
+
     [Header("Identity")]
     public Sprite thumbnail;
     public string mapName;
