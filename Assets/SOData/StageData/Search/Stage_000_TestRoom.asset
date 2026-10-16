@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Stage_000_TestRoom
   m_EditorClassIdentifier: Assembly-CSharp::MapData
   thumbnail: {fileID: 0}
-  mapName: "\uACE0\uBE14\uB9B0 \uBD80\uB77D"
-  description: "\uACE0\uBE14\uB9B0\uB4E4\uC774 \uC788\uB294 \uBD80\uB77D\uC774\uB2E4."
+  mapName: "\uD14C\uC2A4\uD2B8\uB8F8"
+  description: "\uD14C\uC2A4\uD2B8\uB8F8"
   rank: 1
-  corruption: 1
+  corruption: 0
   mapType: 0
   enemies:
   - {fileID: 11400000, guid: ae516f9ac1edb28419c442ced974505c, type: 2}
