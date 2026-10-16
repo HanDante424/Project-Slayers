@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add40ab2e5c745d681d3f2742f5f56a1, type: 3}
   m_Name: Stage_000_TestRoom
   m_EditorClassIdentifier: Assembly-CSharp::MapData
-  stageCode: "000"
-  thumbnail: {fileID: 0}
+  stageCode: 000
+  thumbnail: {fileID: 21300000, guid: 6c14722a006c9e9458dbbcf225ba1a7a, type: 3}
   mapName: "\uD14C\uC2A4\uD2B8\uB8F8"
   description: "\uD14C\uC2A4\uD2B8\uB8F8"
   rank: 1
   corruption: 0
   mapType: 0
+  unlockedByDefault: 1
+  unlockRequiredStage: {fileID: 0}
   enemies:
   - {fileID: 11400000, guid: ae516f9ac1edb28419c442ced974505c, type: 2}
   goldReward: 100
   memoryFragmentReward: 100
-  unlockedByDefault: 1
-  unlockRequiredStage: {fileID: 0}

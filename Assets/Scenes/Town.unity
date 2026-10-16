@@ -59578,9 +59578,11 @@ MonoBehaviour:
   enemyContent: {fileID: 907945980}
   enemyTemplate: {fileID: 167887668}
   enemyNameText: {fileID: 618736683}
+  enemyThumbnail: {fileID: 127826264}
   dropContent: {fileID: 1198342339}
   dropTemplate: {fileID: 2109310993}
   itemNameText: {fileID: 2039042266}
+  itemThumbnail: {fileID: 2070587040}
   dropCountText: {fileID: 612521123}
   dropChanceText: {fileID: 1954191708}
   dropSourceText: {fileID: 1358647147}
@@ -59601,9 +59603,6 @@ MonoBehaviour:
   - {fileID: 1896554140}
   - {fileID: 1990264861}
   - {fileID: 1172672005}
-  sampleImages:
-  - {fileID: 127826264}
-  - {fileID: 2070587040}
 --- !u!1 &835120337
 GameObject:
   m_ObjectHideFlags: 0

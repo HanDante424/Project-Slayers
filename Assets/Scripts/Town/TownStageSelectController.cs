@@ -185,6 +185,7 @@ public class TownStageSelectController : MonoBehaviour
         if (thumbnail != null)
         {
             thumbnail.sprite = stage != null ? stage.thumbnail : null;
+            thumbnail.preserveAspect = true;
             thumbnail.enabled = thumbnail.sprite != null;
         }
         detailsView?.ShowStage(stage);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44edddbd8bf444128e58fc36f3bc0e21, type: 3}
   m_Name: Goblin_Item_GoblinClaw
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: 21300000, guid: 6c14722a006c9e9458dbbcf225ba1a7a, type: 3}
   itemName: "\uACE0\uBE14\uB9B0 \uC190\uD1B1"
   description: "\uACE0\uBE14\uB9B0\uC758 \uC190\uD1B1\uC774\uB2E4."
   rank: 1

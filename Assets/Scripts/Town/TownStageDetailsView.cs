@@ -10,16 +10,17 @@ public class TownStageDetailsView : MonoBehaviour
     [SerializeField] private RectTransform enemyContent;
     [SerializeField] private RectTransform enemyTemplate;
     [SerializeField] private TMP_Text enemyNameText;
+    [SerializeField] private Image enemyThumbnail;
     [Header("Existing Drop List and Detail")]
     [SerializeField] private RectTransform dropContent;
     [SerializeField] private RectTransform dropTemplate;
     [SerializeField] private TMP_Text itemNameText;
+    [SerializeField] private Image itemThumbnail;
     [SerializeField] private TMP_Text dropCountText;
     [SerializeField] private TMP_Text dropChanceText;
     [SerializeField] private TMP_Text dropSourceText;
     [Header("Unconnected Sample Content")]
     [SerializeField] private TMP_Text[] sampleTexts;
-    [SerializeField] private Image[] sampleImages;
 
     private MapData selectedStage;
     private sealed class DetailRow
@@ -54,6 +55,7 @@ public class TownStageDetailsView : MonoBehaviour
         ClearRows(enemyRows);
         if (enemyTemplate != null) enemyTemplate.gameObject.SetActive(false);
         SetText(enemyNameText, string.Empty);
+        SetThumbnail(enemyThumbnail, null);
         if (selectedStage != null && selectedStage.enemies != null)
         {
             foreach (MonsterData monster in selectedStage.enemies)
@@ -110,9 +112,14 @@ public class TownStageDetailsView : MonoBehaviour
 
     private void SelectEnemy(DetailRow selected)
     {
-        if (!enemyRows.Contains(selected) || selected.Monster == null) return;
+        if (!enemyRows.Contains(selected) || selected.Monster == null)
+        {
+            SetThumbnail(enemyThumbnail, null);
+            return;
+        }
         foreach (DetailRow row in enemyRows) row.Visual?.SetSelected(row == selected);
         SetText(enemyNameText, selected.Monster.monsterName);
+        SetThumbnail(enemyThumbnail, selected.Monster.thumbnail);
     }
 
     private void SelectDrop(DetailRow selected)
@@ -124,6 +131,7 @@ public class TownStageDetailsView : MonoBehaviour
         }
         foreach (DetailRow row in dropRows) row.Visual?.SetSelected(row == selected);
         SetText(itemNameText, selected.Drop.item.itemName);
+        SetThumbnail(itemThumbnail, selected.Drop.item.thumbnail);
         SetText(dropCountText, "1개");
         SetText(dropChanceText, selected.Drop.dropChance.ToString("G", CultureInfo.InvariantCulture) + "%");
         SetText(dropSourceText, "드롭 몬스터 : " + selected.Monster.monsterName);
@@ -173,12 +181,12 @@ public class TownStageDetailsView : MonoBehaviour
     private void ClearSamples()
     {
         if (sampleTexts != null) foreach (TMP_Text text in sampleTexts) SetText(text, string.Empty);
-        if (sampleImages != null) foreach (Image image in sampleImages) if (image != null) image.enabled = false;
     }
 
     private void ClearDropDetails()
     {
         SetText(itemNameText, string.Empty);
+        SetThumbnail(itemThumbnail, null);
         SetText(dropCountText, string.Empty);
         SetText(dropChanceText, string.Empty);
         SetText(dropSourceText, string.Empty);
@@ -187,6 +195,7 @@ public class TownStageDetailsView : MonoBehaviour
     private void ClearDetails()
     {
         SetText(enemyNameText, string.Empty);
+        SetThumbnail(enemyThumbnail, null);
         ClearDropDetails();
     }
 
@@ -196,6 +205,14 @@ public class TownStageDetailsView : MonoBehaviour
         ClearRows(dropRows);
         ClearDetails();
         selectedStage = null;
+    }
+
+    private static void SetThumbnail(Image target, Sprite sprite)
+    {
+        if (target == null) return;
+        target.sprite = sprite;
+        target.preserveAspect = true;
+        target.enabled = sprite != null;
     }
 
     private static void SetText(TMP_Text target, string text)
