@@ -3,16 +3,9 @@ using UnityEngine.UI;
 
 public sealed class TownBattleNavigationController : MonoBehaviour
 {
-    private enum BattleType
-    {
-        Search,
-        Attack,
-        Defense,
-        Conquest,
-        Raid
-    }
-
     [SerializeField] private TownTitleController titleController;
+
+    [SerializeField] private TownStageSelectController stageSelectController;
 
     [Header("Battle Screens")]
     [SerializeField] private GameObject battleSelectPanel;
@@ -48,7 +41,7 @@ public sealed class TownBattleNavigationController : MonoBehaviour
     private Button monsterButton;
     private Button rewardButton;
     private Button questButton;
-    private BattleType selectedBattleType;
+    private MapType selectedMapType;
 
     private void OnEnable()
     {
@@ -63,7 +56,7 @@ public sealed class TownBattleNavigationController : MonoBehaviour
         monsterButton = TownButtonBinder.Bind(monsterButtonRoot, OpenMonsterDescription, this);
         rewardButton = TownButtonBinder.Bind(rewardButtonRoot, OpenRewardDescription, this);
         questButton = TownButtonBinder.Bind(questButtonRoot, OpenQuestDescription, this);
-        selectedBattleType = BattleType.Search;
+        selectedMapType = MapType.Search;
         OpenBattleSelect();
     }
 
@@ -92,20 +85,21 @@ public sealed class TownBattleNavigationController : MonoBehaviour
     public void OpenStageSelect()
     {
         SetActive(battleSelectPanel, false);
+        stageSelectController?.Show(selectedMapType);
         SetActive(stageSelectPanel, true);
-        OpenQuestDescription();
+        OpenBasicDescription();
         titleController?.SetTitle(GetSelectedBattleTitle());
     }
 
-    public void SelectSearch() => selectedBattleType = BattleType.Search;
+    public void SelectSearch() => selectedMapType = MapType.Search;
 
-    public void SelectAttack() => selectedBattleType = BattleType.Attack;
+    public void SelectAttack() => selectedMapType = MapType.Attack;
 
-    public void SelectDefense() => selectedBattleType = BattleType.Defense;
+    public void SelectDefense() => selectedMapType = MapType.Defense;
 
-    public void SelectConquest() => selectedBattleType = BattleType.Conquest;
+    public void SelectConquest() => selectedMapType = MapType.Conquest;
 
-    public void SelectRaid() => selectedBattleType = BattleType.Raid;
+    public void SelectRaid() => selectedMapType = MapType.Raid;
 
     public void OpenBasicDescription()
     {
@@ -137,15 +131,15 @@ public sealed class TownBattleNavigationController : MonoBehaviour
 
     private string GetSelectedBattleTitle()
     {
-        switch (selectedBattleType)
+        switch (selectedMapType)
         {
-            case BattleType.Attack:
+            case MapType.Attack:
                 return "공격전";
-            case BattleType.Defense:
+            case MapType.Defense:
                 return "수성전";
-            case BattleType.Conquest:
+            case MapType.Conquest:
                 return "공략전";
-            case BattleType.Raid:
+            case MapType.Raid:
                 return "레이드";
             default:
                 return "수색전";

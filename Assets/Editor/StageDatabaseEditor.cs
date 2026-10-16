@@ -6,7 +6,10 @@ public class StageDatabaseEditor : Editor
 {
     public override void OnInspectorGUI()
     {
-        DrawDefaultInspector();
+        serializedObject.Update();
+        foreach (string category in new[] { "searchStages", "defenseStages", "attackStages", "conquestStages", "raidStages" })
+            EditorGUILayout.PropertyField(serializedObject.FindProperty(category), true);
+        serializedObject.ApplyModifiedProperties();
 
         StageDatabase database = (StageDatabase)target;
         var warnings = database.GetValidationWarnings();

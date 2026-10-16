@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc68d09d04af4e96a92c285ba2e40300, type: 3}
   m_Name: StageDatabase
   m_EditorClassIdentifier: Assembly-CSharp::StageDatabase
-  stages:
+  searchStages:
   - {fileID: 11400000, guid: 4f789574c9601834d8df0750cf8d3431, type: 2}
   - {fileID: 11400000, guid: e9d7f055865eae44fb6791b5c3727a18, type: 2}
+  defenseStages: []
+  attackStages: []
+  conquestStages: []
+  raidStages: []

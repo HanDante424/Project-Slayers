@@ -28,6 +28,13 @@ public class MenuButtonVisual : MonoBehaviour,
     private bool isPointerInside;
     private bool isPressed;
     private bool wasInteractable;
+    private bool isSelected;
+
+    public void SetSelected(bool selected)
+    {
+        isSelected = selected;
+        RefreshVisual();
+    }
 
     private bool IsInteractable => button == null || button.IsInteractable();
 
@@ -106,10 +113,10 @@ public class MenuButtonVisual : MonoBehaviour,
 
         // Button retains ownership of Sprite Swap, including the disabled sprite.
         if (background != null)
-            background.color = pressed ? pressedBackground : hover ? hoverBackground : normalBackground;
+            background.color = pressed ? pressedBackground : hover ? hoverBackground : interactable && isSelected ? pressedBackground : normalBackground;
 
         // Some Town instances intentionally replace/remove the prefab label.
         if (label != null)
-            label.color = !interactable ? disabledText : pressed ? pressedText : hover ? hoverText : normalText;
+            label.color = !interactable ? disabledText : pressed ? pressedText : hover ? hoverText : isSelected ? pressedText : normalText;
     }
 }
