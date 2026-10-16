@@ -17,4 +17,17 @@ MonoBehaviour:
   fullBodyImage: {fileID: 0}
   descriptions: []
   statsData: {fileID: 11400000, guid: b29249a9d35eba64992310f7a60ac885, type: 2}
-  skills: []
+  passiveSkills:
+  - {fileID: 11400000, guid: c212fca1c11005f4ea144fa13678a3ee, type: 2}
+  - {fileID: 11400000, guid: 78b13bcedaedfc240adcc91248d68496, type: 2}
+  - {fileID: 11400000, guid: 1ab67122aa0607b418bf16c55fc43a85, type: 2}
+  - {fileID: 11400000, guid: 1f69436c1dc908246badb7236db6eb51, type: 2}
+  basicSkills:
+  - {fileID: 11400000, guid: 995b3b6ea83bccf4eba96ef2c90c0380, type: 2}
+  - {fileID: 11400000, guid: a3409dadc906e124f8c3b1b1bf7dbac5, type: 2}
+  - {fileID: 11400000, guid: 290e24b5ab52f914fa1962450de9ada7, type: 2}
+  intermediateSkills:
+  - {fileID: 11400000, guid: 7d7eeaefdaf46ec40a89dd42eeeb5fb3, type: 2}
+  - {fileID: 11400000, guid: fea104b043b6e5d4ca7fa3333629aee0, type: 2}
+  advancedSkills: []
+  ultimateSkills: []

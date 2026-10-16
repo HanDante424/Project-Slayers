@@ -58,6 +58,8 @@ public class SkillData : ScriptableObject
     public SkillElementType elementType;
 
     [Header("Classification")]
+    [Tooltip("Progression tier only; Unassigned preserves skills awaiting classification. Does not control execution.")]
+    public SkillTier skillTier;
     public SkillCategory category;
     public List<SkillType> skillTypes = new();
 

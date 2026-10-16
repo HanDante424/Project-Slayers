@@ -21,7 +21,7 @@ MonoBehaviour:
     \uC18C\uBAA8\uD558\uACE0 \uAC01 \uACF5\uACA9\uC744 \uAC15\uD654\uD55C\uB2E4.\n\uD53C\uC758
     \uAC80 : \uCCB4\uB825 \uD68C\uBCF5\n\uD53C\uC758 \uCC3D : \uCE58\uBA85\uD0C0
     \uD655\uB960 \uBC0F \uCE58\uBA85\uD0C0 \uD53C\uD574 \uC99D\uAC00\n\uD53C\uC758
-    \uB3C4\uB07C : \uBB34\uB825\uD654 \uC99D"
+    \uB3C4\uB07C : \uBB34\uB825\uD654 \uC99D\uAC00"
   maxLevel: 50
   mechanism: {fileID: 0}
   costType: 0
@@ -31,6 +31,7 @@ MonoBehaviour:
   cooldown: 0
   attackType: 0
   elementType: 0
+  skillTier: 3
   category: 0
   skillTypes: 00000000
   effects: []

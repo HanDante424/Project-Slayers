@@ -19,6 +19,18 @@ public class PlayableCharacterData : ScriptableObject
     [Header("Stats")]
     public CharacterStatsData statsData;
 
-    [Header("Skills")]
-    public List<SkillData> skills = new();
+    [Header("Passive Skills")]
+    public List<SkillData> passiveSkills = new();
+
+    [Header("Basic Skills")]
+    public List<SkillData> basicSkills = new();
+
+    [Header("Intermediate Skills")]
+    public List<SkillData> intermediateSkills = new();
+
+    [Header("Advanced Skills")]
+    public List<SkillData> advancedSkills = new();
+
+    [Header("Ultimate Skills")]
+    public List<SkillData> ultimateSkills = new();
 }
