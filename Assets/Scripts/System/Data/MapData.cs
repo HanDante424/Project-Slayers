@@ -16,6 +16,12 @@ public class MapData : ScriptableObject
     [Min(0)] public int corruption;
     public MapType mapType;
 
+    [Header("Unlock")]
+    // Definition data only; player unlock progress belongs in separate save data.
+    public bool unlockedByDefault;
+    // Future validation should reject self references and prerequisite cycles.
+    public MapData unlockRequiredStage;
+
     [Header("Enemies")]
     public List<MonsterData> enemies = new();
 

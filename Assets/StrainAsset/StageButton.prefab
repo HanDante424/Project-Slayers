@@ -428,7 +428,7 @@ MonoBehaviour:
   normalBackground: {r: 0.04, g: 0.04, b: 0.04, a: 1}
   hoverBackground: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   pressedBackground: {r: 0.3, g: 0.08, b: 0.06, a: 1}
-  normalText: {r: 0.85, g: 0.84, b: 0.81, a: 1}
+  normalText: {r: 0.6627451, g: 0.050980393, b: 0.003921569, a: 1}
   hoverText: {r: 1, g: 1, b: 1, a: 1}
   pressedText: {r: 0.89, g: 0.6, b: 0.55, a: 1}
 --- !u!114 &1204776165537634787

@@ -22,3 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae516f9ac1edb28419c442ced974505c, type: 2}
   goldReward: 100
   memoryFragmentReward: 100
+  unlockedByDefault: 1
+  unlockRequiredStage: {fileID: 0}

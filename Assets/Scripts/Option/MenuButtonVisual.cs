@@ -1,3 +1,4 @@
+using BloodlinesUI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -21,54 +22,94 @@ public class MenuButtonVisual : MonoBehaviour,
     [SerializeField] private Color normalText = new Color(0.85f, 0.84f, 0.81f, 1f);
     [SerializeField] private Color hoverText = Color.white;
     [SerializeField] private Color pressedText = new Color(0.89f, 0.60f, 0.55f, 1f);
+    [SerializeField] private Color disabledText = new Color(0.21568628f, 0.21568628f, 0.21568628f, 1f);
 
+    private Button button;
     private bool isPointerInside;
+    private bool isPressed;
+    private bool wasInteractable;
+
+    private bool IsInteractable => button == null || button.IsInteractable();
 
     private void Awake()
     {
-        SetNormal();
+        button = GetComponent<Button>();
+
+        // Take over only the shared label; instances without this visual keep the asset behavior.
+        ButtonTextColorChanger textColorChanger = GetComponent<ButtonTextColorChanger>();
+        if (textColorChanger != null && textColorChanger.buttonText == label)
+            textColorChanger.enabled = false;
+    }
+
+    private void OnEnable()
+    {
+        isPointerInside = false;
+        isPressed = false;
+        wasInteractable = IsInteractable;
+        RefreshVisual();
+    }
+
+    private void OnDisable()
+    {
+        isPointerInside = false;
+        isPressed = false;
+        RefreshVisual();
+    }
+
+    private void Update()
+    {
+        // Button and parent CanvasGroups can change interactability without pointer events.
+        bool interactable = IsInteractable;
+        if (wasInteractable == interactable)
+            return;
+
+        wasInteractable = interactable;
+        isPressed = false;
+        RefreshVisual();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         isPointerInside = true;
-        SetHover();
+        RefreshVisual();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         isPointerInside = false;
-        SetNormal();
+        RefreshVisual();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        SetPressed();
+        if (eventData.button != PointerEventData.InputButton.Left || !IsInteractable)
+            return;
+
+        isPressed = true;
+        RefreshVisual();
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (isPointerInside)
-            SetHover();
-        else
-            SetNormal();
+        if (eventData.button != PointerEventData.InputButton.Left)
+            return;
+
+        isPressed = false;
+        RefreshVisual();
     }
 
-    private void SetNormal()
+    private void RefreshVisual()
     {
-        background.color = normalBackground;
-        label.color = normalText;
-    }
+        bool interactable = IsInteractable;
+        bool hover = interactable && isPointerInside;
+        bool pressed = hover && isPressed;
 
-    private void SetHover()
-    {
-        background.color = hoverBackground;
-        label.color = hoverText;
-    }
+        // Button retains ownership of Sprite Swap, including the disabled sprite.
+        if (background != null)
+            background.color = pressed ? pressedBackground : hover ? hoverBackground : normalBackground;
 
-    private void SetPressed()
-    {
-        background.color = pressedBackground;
-        label.color = pressedText;
+        // Some Town instances intentionally replace/remove the prefab label.
+        if (label != null)
+            label.color = !interactable ? disabledText : pressed ? pressedText : hover ? hoverText : normalText;
     }
 }
