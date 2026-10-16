@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3661d248e3d4e6ea90c58352efb7942, type: 3}
   m_Name: MayhemData
   m_EditorClassIdentifier: Assembly-CSharp::PlayableCharacterData
-  characterName: 
-  thumbnail: {fileID: 0}
+  characterName: "\uBA54\uC774\uD5F4"
+  thumbnail: {fileID: -7779474593349695733, guid: fedd525baa74cf34d843e5bdb4638230, type: 3}
   fullBodyImage: {fileID: 0}
   descriptions: []
-  statsData: {fileID: 0}
+  statsData: {fileID: 11400000, guid: b29249a9d35eba64992310f7a60ac885, type: 2}
   skills: []

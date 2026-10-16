@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39100bb5a0048f3b3366cb1064a0449, type: 3}
+  m_Name: Playerable_Mayhem_Skill_Data_003_OverflowingBloodFeast
+  m_EditorClassIdentifier: Assembly-CSharp::SkillData
+  thumbnail: {fileID: -6694830429013006687, guid: 70ee98ad2cce617458d215732e0cc48a, type: 3}
+  skillName: "\uB118\uCE58\uB294 \uD53C\uC758 \uCD95\uC81C"
+  description: "\"\uD53C\uC758 \uC0D8\"\uC5D0 \uD53C\uAC00 \uCC28\uC624\uB97C\uB54C
+    \uBA54\uC774\uD5F4\uC774 \uD765\uBD84\uD558\uBA70 \uC804\uD22C\uB2A5\uB825\uC774
+    \uC624\uB978\uB2E4.\n\"\uD53C\uC758 \uC0D8\"\uC758 \uC218\uCE58\uC5D0 \uB530\uB77C
+    \uBA54\uC774\uD584\uC758 \uACF5\uACA9\uC18D\uB3C4\uC640 \uCE58\uBA85\uD0C0 \uD53C\uD574\uAC00
+    \uC99D\uAC00\uD55C\uB2E4.\n\uB610\uD55C \uC801\uC758 \uACFC\uB2E4\uCD9C\uD608
+    \uC911\uCCA9 \uC218\uAC00 \uCD5C\uB300\uCE58\uC77C\uB54C \uBAA8\uB4E0 \uACFC\uB2E4\uCD9C\uD608\uC744
+    \uC18C\uBAA8\uD558\uACE0 \uD53C\uD574\uB97C \uC785\uD78C \uB4A4 \uCCB4\uB825\uC744
+    \uD68C\uBCF5\uD55C\uB2E4."
+  maxLevel: 50
+  mechanism: {fileID: 0}
+  costType: 0
+  costAmount: 0
+  costGrowthPerLevel: 0
+  prerequisites: []
+  cooldown: 0
+  attackType: 0
+  elementType: 0
+  category: 1
+  skillTypes: 0100000004000000
+  effects: []
+  hits: []

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39100bb5a0048f3b3366cb1064a0449, type: 3}
+  m_Name: Playerable_Mayhem_Skill_Data_020_BloodRampage
+  m_EditorClassIdentifier: Assembly-CSharp::SkillData
+  thumbnail: {fileID: -4045604121554892859, guid: 61c4216869397344cbe8b608a6c60dee, type: 3}
+  skillName: "\uBE14\uB7EC\uB4DC \uB7A8\uD398\uC774\uC9C0"
+  description: "\uD53C\uC758 \uB2E8\uAC80\uC73C\uB85C \uC801\uC744 \uB09C\uB3C4\uC9C8
+    \uD55C\uB2E4.\n\uD53C\uC758 \uC0D8\uC774 \uC77C\uC815\uB7C9 \uCC28\uC788\uC744\uB54C
+    \uD53C\uC758 \uC0D8\uC744 \uC18C\uBAA8\uD558\uACE0 \uD53C\uC758 \uB3C4\uB07C\uB85C
+    \uB0B4\uB824\uCC0D\uC5B4 \uCD94\uAC00 \uD53C\uD574\uB97C \uC785\uD78C\uB2E4."
+  maxLevel: 50
+  mechanism: {fileID: 0}
+  costType: 0
+  costAmount: 0
+  costGrowthPerLevel: 0
+  prerequisites: []
+  cooldown: 0
+  attackType: 0
+  elementType: 0
+  category: 0
+  skillTypes: 00000000
+  effects: []
+  hits: []

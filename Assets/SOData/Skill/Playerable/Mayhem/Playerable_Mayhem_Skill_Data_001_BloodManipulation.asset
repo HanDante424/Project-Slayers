@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39100bb5a0048f3b3366cb1064a0449, type: 3}
+  m_Name: Playerable_Mayhem_Skill_Data_001_BloodManipulation
+  m_EditorClassIdentifier: Assembly-CSharp::SkillData
+  thumbnail: {fileID: -2310134449227392218, guid: 9afd50b66e439444c98bf48165ffb938, type: 3}
+  skillName: "\uD608\uB958 \uC870\uC791"
+  description: "\uBA54\uC774\uD5F4\uC740 \uC120\uCC9C\uC801\uC73C\uB85C \uD53C\uB97C
+    \uC6D0\uD558\uB294 \uB300\uB85C \uB2E4\uB8F0 \uC218 \uC788\uB294 \uD53C\uC758
+    \uD608\uC871\uC774\uB2E4.\n\uC774\uB85C \uC778\uD574 \uBAA8\uB4E0 \uCD9C\uD608\uC744
+    \uACFC\uB2E4\uCD9C\uD608\uB85C \uBCC0\uD658\uD558\uBA70 \uBA54\uC774\uD5F4\uC758
+    \uBAA8\uB4E0 \uACF5\uACA9\uC774 \uCD9C\uD608\uC744 \uC720\uBC1C\uD55C\uB2E4."
+  maxLevel: 50
+  mechanism: {fileID: 0}
+  costType: 0
+  costAmount: 0
+  costGrowthPerLevel: 0
+  prerequisites: []
+  cooldown: 0
+  attackType: 0
+  elementType: 0
+  category: 1
+  skillTypes: 02000000
+  effects: []
+  hits:
+  - baseDamagePercent: 0
+    damageGrowthPerLevel: 0
+    damageCount: 0
+    hitStunDuration: 0
+    knockbackPower: 0
+    knockbackMultiplier: 0
+    staggerPercent: 0
+    effects: []

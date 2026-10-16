@@ -32,26 +32,26 @@ MonoBehaviour:
     level1Value: 2.8
     growthPerLevel: 0.47
   attackSpeed:
-    level1Value: 55
-    growthPerLevel: 2.55
+    level1Value: 100
+    growthPerLevel: 0
   moveSpeed:
-    level1Value: 72
-    growthPerLevel: 3.67
+    level1Value: 100
+    growthPerLevel: 0
   statusResistance:
     level1Value: 4
     growthPerLevel: 0.37
   luck:
-    level1Value: 17
-    growthPerLevel: 1.47
+    level1Value: 100
+    growthPerLevel: 0
   accuracy:
     level1Value: 100
-    growthPerLevel: 0.84
+    growthPerLevel: 0.7
   evasion:
-    level1Value: 1
-    growthPerLevel: 0.37
+    level1Value: 4
+    growthPerLevel: 0.4
   recovery:
-    level1Value: 160
-    growthPerLevel: 4.59
+    level1Value: 100
+    growthPerLevel: 0
   cooldownReduction:
     level1Value: 0
     growthPerLevel: 0
@@ -60,19 +60,19 @@ MonoBehaviour:
     growthPerLevel: 0
   stagger:
     level1Value: 100
-    growthPerLevel: 1.63
+    growthPerLevel: 2.6
   criticalChance:
     level1Value: 4
-    growthPerLevel: 0.55
+    growthPerLevel: 0.2
   criticalDamage:
     level1Value: 200
-    growthPerLevel: 2.49
+    growthPerLevel: 2.5
   defensePenetration:
-    level1Value: 4
-    growthPerLevel: 0.49
+    level1Value: 6
+    growthPerLevel: 0.6
   resistancePenetration:
     level1Value: 1
-    growthPerLevel: 0.14
+    growthPerLevel: 0.1
   staggerGaugeHealthPercent: 40
   fireEnhancement:
     level1Value: 0
@@ -100,19 +100,19 @@ MonoBehaviour:
     growthPerLevel: 0
   fireResistance:
     level1Value: 8
-    growthPerLevel: 0.31
+    growthPerLevel: 0.3
   waterResistance:
     level1Value: 11
-    growthPerLevel: 0.41
+    growthPerLevel: 0.4
   earthResistance:
     level1Value: 6
-    growthPerLevel: 0.31
+    growthPerLevel: 0.3
   windResistance:
     level1Value: 17
-    growthPerLevel: 0.61
+    growthPerLevel: 0.6
   lightningResistance:
     level1Value: 11
-    growthPerLevel: 0.41
+    growthPerLevel: 0.4
   iceResistance:
     level1Value: 3
     growthPerLevel: 0.1
@@ -121,4 +121,4 @@ MonoBehaviour:
     growthPerLevel: 0.1
   darkResistance:
     level1Value: 29
-    growthPerLevel: 0.82
+    growthPerLevel: 0.8
