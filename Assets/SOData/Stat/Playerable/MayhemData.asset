@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayableCharacterData
   characterName: "\uBA54\uC774\uD5F4"
   thumbnail: {fileID: -7779474593349695733, guid: fedd525baa74cf34d843e5bdb4638230, type: 3}
-  fullBodyImage: {fileID: 0}
+  fullBodyImage: {fileID: -8998957423193086790, guid: 1d97ada3adefc76428e4861ab7c95dc6, type: 3}
   descriptions: []
   statsData: {fileID: 11400000, guid: b29249a9d35eba64992310f7a60ac885, type: 2}
   passiveSkills:

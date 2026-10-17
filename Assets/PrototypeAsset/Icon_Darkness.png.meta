@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 921b162efb0825044883f73bce650dfa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3524639260024462171
+    second: Icon_Darkness_0
+  - first:
+      213: 3016402154830740276
+    second: Icon_Darkness_1
+  - first:
+      213: -6863802255775382658
+    second: Icon_Darkness_2
+  - first:
+      213: -4788000026148633689
+    second: Icon_Darkness_3
+  - first:
+      213: 5916683224005537098
+    second: Icon_Darkness_4
+  - first:
+      213: 1755410729293859898
+    second: Icon_Darkness_5
+  - first:
+      213: -3526648743894666604
+    second: Icon_Darkness_6
+  - first:
+      213: -4243010971417316623
+    second: Icon_Darkness_7
+  - first:
+      213: -5152963896845494199
+    second: Icon_Darkness_8
+  - first:
+      213: -1788407532327636670
+    second: Icon_Darkness_9
+  - first:
+      213: -5891550836961850764
+    second: Icon_Darkness_10
+  - first:
+      213: -4295450389174256851
+    second: Icon_Darkness_11
+  - first:
+      213: -3661999516875619566
+    second: Icon_Darkness_12
+  - first:
+      213: -233768960883862303
+    second: Icon_Darkness_13
+  - first:
+      213: -8559237319356180949
+    second: Icon_Darkness_14
+  - first:
+      213: -404255228775025966
+    second: Icon_Darkness_15
+  - first:
+      213: -7930940359625102392
+    second: Icon_Darkness_16
+  - first:
+      213: 3397703998545467866
+    second: Icon_Darkness_17
+  - first:
+      213: -8699011497314178132
+    second: Icon_Darkness_18
+  - first:
+      213: 2785524790739140364
+    second: Icon_Darkness_19
+  - first:
+      213: 3604701061045196405
+    second: Icon_Darkness_20
+  - first:
+      213: 4049116309306570902
+    second: Icon_Darkness_21
+  - first:
+      213: -2238378905279048935
+    second: Icon_Darkness_22
+  - first:
+      213: -4261807430566896927
+    second: Icon_Darkness_23
+  - first:
+      213: -282408541485819942
+    second: Icon_Darkness_24
+  - first:
+      213: -375601707536083284
+    second: Icon_Darkness_25
+  - first:
+      213: 2602835856690754840
+    second: Icon_Darkness_26
+  - first:
+      213: 6817343396062685629
+    second: Icon_Darkness_27
+  - first:
+      213: 1585198284519172706
+    second: Icon_Darkness_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Darkness_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 1121
+        height: 1236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4a8d07447f51fc0800000000000000
+      internalID: -3524639260024462171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 649
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bb86a37c96cd920800000000000000
+      internalID: 3016402154830740276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 633
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73cbffd630eeb0a0800000000000000
+      internalID: -6863802255775382658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 535
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a389d8185b9d8db0800000000000000
+      internalID: -4788000026148633689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 540
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dec575b084c1250800000000000000
+      internalID: 5916683224005537098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_5
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 513
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c487af1c87c5810800000000000000
+      internalID: 1755410729293859898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 487
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492b49407a3de0fc0800000000000000
+      internalID: -3526648743894666604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_7
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 513
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2f59e700ccd15c0800000000000000
+      internalID: -4243010971417316623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9489c1c23aefc78b0800000000000000
+      internalID: -5152963896845494199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 417
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2417af123dc4e27e0800000000000000
+      internalID: -1788407532327636670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 417
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47acbb28ab10d3ea0800000000000000
+      internalID: -5891550836961850764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 433
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b74fa11ae7364c0800000000000000
+      internalID: -4295450389174256851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 439
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2130afc67d6fd2dc0800000000000000
+      internalID: -3661999516875619566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_13
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 418
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4510f5e5c71ccf0800000000000000
+      internalID: -233768960883862303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_14
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 439
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26128fb10b773980800000000000000
+      internalID: -8559237319356180949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_15
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 435
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d23542e20cc36af0800000000000000
+      internalID: -404255228775025966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_16
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 421
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbacb943c3afe190800000000000000
+      internalID: -7930940359625102392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 383
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad91a3de8c1172f20800000000000000
+      internalID: 3397703998545467866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabac8de127e64780800000000000000
+      internalID: -8699011497314178132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_19
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 369
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ffc01f90c28a620800000000000000
+      internalID: 2785524790739140364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 322
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57692193488760230800000000000000
+      internalID: 3604701061045196405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 294
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698757684d9513830800000000000000
+      internalID: 4049116309306570902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_22
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 304
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9135d1ebe3eafe0e0800000000000000
+      internalID: -2238378905279048935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_23
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 272
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea90ffc8b40bd4c0800000000000000
+      internalID: -4261807430566896927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_24
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 278
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad793338deea41cf0800000000000000
+      internalID: -282408541485819942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_25
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 280
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6184dac3899caf0800000000000000
+      internalID: -375601707536083284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_26
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 270
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815b3b6db612f1420800000000000000
+      internalID: 2602835856690754840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 224
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9eb2ae2b11c9e50800000000000000
+      internalID: 6817343396062685629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Darkness_28
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 230
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ae257e071cff510800000000000000
+      internalID: 1585198284519172706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Darkness_0: -3524639260024462171
+      Icon_Darkness_1: 3016402154830740276
+      Icon_Darkness_10: -5891550836961850764
+      Icon_Darkness_11: -4295450389174256851
+      Icon_Darkness_12: -3661999516875619566
+      Icon_Darkness_13: -233768960883862303
+      Icon_Darkness_14: -8559237319356180949
+      Icon_Darkness_15: -404255228775025966
+      Icon_Darkness_16: -7930940359625102392
+      Icon_Darkness_17: 3397703998545467866
+      Icon_Darkness_18: -8699011497314178132
+      Icon_Darkness_19: 2785524790739140364
+      Icon_Darkness_2: -6863802255775382658
+      Icon_Darkness_20: 3604701061045196405
+      Icon_Darkness_21: 4049116309306570902
+      Icon_Darkness_22: -2238378905279048935
+      Icon_Darkness_23: -4261807430566896927
+      Icon_Darkness_24: -282408541485819942
+      Icon_Darkness_25: -375601707536083284
+      Icon_Darkness_26: 2602835856690754840
+      Icon_Darkness_27: 6817343396062685629
+      Icon_Darkness_28: 1585198284519172706
+      Icon_Darkness_3: -4788000026148633689
+      Icon_Darkness_4: 5916683224005537098
+      Icon_Darkness_5: 1755410729293859898
+      Icon_Darkness_6: -3526648743894666604
+      Icon_Darkness_7: -4243010971417316623
+      Icon_Darkness_8: -5152963896845494199
+      Icon_Darkness_9: -1788407532327636670
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
