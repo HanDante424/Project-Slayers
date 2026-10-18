@@ -55,9 +55,6 @@ MonoBehaviour:
   cooldownReduction:
     level1Value: 0
     growthPerLevel: 0
-  awakening:
-    level1Value: 0
-    growthPerLevel: 0
   stagger:
     level1Value: 100
     growthPerLevel: 2.6

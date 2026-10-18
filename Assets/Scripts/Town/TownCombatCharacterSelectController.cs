@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -80,6 +79,7 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
         fullBodyImage.enabled = fullBodyImage.sprite != null;
         if (valid)
         {
+            TownCharacterSelection.Select(definition, PreviewLevel);
             if (preview == null) preview = new GameObject("Character stat preview", typeof(CharacterStats)).GetComponent<CharacterStats>();
             preview.Initialize(definition.statsData, PreviewLevel);
         }
@@ -90,9 +90,7 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
     }
     public static string FormatStat(StatType stat, float value)
     {
-        bool number = stat == StatType.Health || stat == StatType.Mana || stat == StatType.Attack ||
-            stat == StatType.Magic || stat == StatType.Awakening;
-        return value.ToString("0.##", CultureInfo.InvariantCulture) + (number ? "" : "%");
+        return CharacterStatPanelView.FormatStat(stat, value);
     }
     public void Back()
     {

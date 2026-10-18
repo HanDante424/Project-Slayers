@@ -20,6 +20,7 @@ public class CharacterStats : MonoBehaviour
     public int Level => level;
     public CharacterStatsData Data => characterData;
     public int ModifierCount => modifiers.Count;
+    public event Action StatsChanged;
 
 
     // ==================================================
@@ -71,9 +72,6 @@ public class CharacterStats : MonoBehaviour
 
     public float CooldownReduction =>
         characterData.cooldownReduction.GetValue(level);
-
-    public float Awakening =>
-        characterData.awakening.GetValue(level);
 
     public float Stagger =>
         characterData.stagger.GetValue(level);
@@ -173,7 +171,6 @@ public class CharacterStats : MonoBehaviour
     public float FinalRecovery => GetFinalStat(StatType.Recovery);
 
     public float FinalCooldownReduction => GetFinalStat(StatType.CooldownReduction);
-    public float FinalAwakening => GetFinalStat(StatType.Awakening);
     public float FinalStagger => GetFinalStat(StatType.Stagger);
 
     public float FinalCriticalChance => GetFinalStat(StatType.CriticalChance);
@@ -273,7 +270,10 @@ public class CharacterStats : MonoBehaviour
         percentTotals.Clear();
 
         if (characterData == null)
+        {
+            StatsChanged?.Invoke();
             return;
+        }
 
         foreach (StatModifier modifier in modifiers)
         {
@@ -303,6 +303,8 @@ public class CharacterStats : MonoBehaviour
                 (currentLevelStat + flatTotal) *
                 (1f + percentTotal / 100f);
         }
+
+        StatsChanged?.Invoke();
     }
 
 
@@ -352,7 +354,6 @@ public class CharacterStats : MonoBehaviour
             StatType.Evasion => Evasion,
             StatType.Recovery => Recovery,
             StatType.CooldownReduction => CooldownReduction,
-            StatType.Awakening => Awakening,
             StatType.Stagger => Stagger,
             StatType.CriticalChance => CriticalChance,
             StatType.CriticalDamage => CriticalDamage,

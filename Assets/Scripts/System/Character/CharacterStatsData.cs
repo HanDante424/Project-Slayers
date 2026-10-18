@@ -16,6 +16,9 @@ public class CharacterStatsData : ScriptableObject
     public StatGrowth defense = new StatGrowth(0f, 0f);
     public StatGrowth resistance = new StatGrowth(0f, 0f);
 
+    public StatGrowth defensePenetration = new StatGrowth(0f, 0f);
+    public StatGrowth resistancePenetration = new StatGrowth(0f, 0f);
+
     [Header("Detailed Stats")]
     public StatGrowth attackSpeed = new StatGrowth(0f, 0f);
     public StatGrowth moveSpeed = new StatGrowth(0f, 0f);
@@ -25,12 +28,9 @@ public class CharacterStatsData : ScriptableObject
     public StatGrowth evasion = new StatGrowth(0f, 0f);
     public StatGrowth recovery = new StatGrowth(0f, 0f);
     public StatGrowth cooldownReduction = new StatGrowth(0f, 0f);
-    public StatGrowth awakening = new StatGrowth(0f, 0f);
     public StatGrowth stagger = new StatGrowth(0f, 0f);
     public StatGrowth criticalChance = new StatGrowth(0f, 0f);
     public StatGrowth criticalDamage = new StatGrowth(0f, 0f);
-    public StatGrowth defensePenetration = new StatGrowth(0f, 0f);
-    public StatGrowth resistancePenetration = new StatGrowth(0f, 0f);
 
     [Header("Derived Stats")]
     [Min(0f)]
@@ -73,7 +73,6 @@ public class CharacterStatsData : ScriptableObject
         EnsureAndValidate(ref evasion);
         EnsureAndValidate(ref recovery);
         EnsureAndValidate(ref cooldownReduction);
-        EnsureAndValidate(ref awakening);
         EnsureAndValidate(ref stagger);
         EnsureAndValidate(ref criticalChance);
         EnsureAndValidate(ref criticalDamage);

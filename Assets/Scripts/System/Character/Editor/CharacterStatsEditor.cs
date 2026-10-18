@@ -55,11 +55,28 @@ public class CharacterStatsEditor : Editor
             EditorGUI.indentLevel++;
 
             DrawStat("체력", stats.MaxHealth, stats.FinalMaxHealth);
+
             DrawStat("마나", stats.MaxMana, stats.FinalMaxMana);
+
             DrawStat("공격력", stats.Attack, stats.FinalAttack);
+
             DrawStat("마력", stats.Magic, stats.FinalMagic);
+
             DrawStat("방어력", stats.Defense, stats.FinalDefense);
+
             DrawStat("저항력", stats.Resistance, stats.FinalResistance);
+
+            DrawStat(
+                "물리 관통력",
+                stats.DefensePenetration,
+                stats.FinalDefensePenetration
+            );
+
+            DrawStat(
+                "마법 관통력",
+                stats.ResistancePenetration,
+                stats.FinalResistancePenetration
+            );
 
             EditorGUI.indentLevel--;
         }
@@ -78,60 +95,6 @@ public class CharacterStatsEditor : Editor
         if (showDetailedStats)
         {
             EditorGUI.indentLevel++;
-
-            DrawStat(
-                "공격속도",
-                stats.AttackSpeed,
-                stats.FinalAttackSpeed
-            );
-
-            DrawStat(
-                "이동속도",
-                stats.MoveSpeed,
-                stats.FinalMoveSpeed
-            );
-
-            DrawStat(
-                "상태이상 저항력",
-                stats.StatusResistance,
-                stats.FinalStatusResistance
-            );
-
-            DrawStat(
-                "행운",
-                stats.Luck,
-                stats.FinalLuck
-            );
-
-            DrawStat(
-                "적중률",
-                stats.Accuracy,
-                stats.FinalAccuracy
-            );
-
-            DrawStat(
-                "회피율",
-                stats.Evasion,
-                stats.FinalEvasion
-            );
-
-            DrawStat(
-                "회복률",
-                stats.Recovery,
-                stats.FinalRecovery
-            );
-
-            DrawStat(
-                "쿨타임 감소",
-                stats.CooldownReduction,
-                stats.FinalCooldownReduction
-            );
-
-            DrawStat(
-                "각성",
-                stats.Awakening,
-                stats.FinalAwakening
-            );
 
             DrawStat(
                 "무력화",
@@ -158,15 +121,51 @@ public class CharacterStatsEditor : Editor
             );
 
             DrawStat(
-                "물리 관통력",
-                stats.DefensePenetration,
-                stats.FinalDefensePenetration
+                "공격속도",
+                stats.AttackSpeed,
+                stats.FinalAttackSpeed
             );
 
             DrawStat(
-                "마법 관통력",
-                stats.ResistancePenetration,
-                stats.FinalResistancePenetration
+                "이동속도",
+                stats.MoveSpeed,
+                stats.FinalMoveSpeed
+            );
+
+            DrawStat(
+                "적중률",
+                stats.Accuracy,
+                stats.FinalAccuracy
+            );
+
+            DrawStat(
+                "회피율",
+                stats.Evasion,
+                stats.FinalEvasion
+            );
+
+            DrawStat(
+                "상태이상 저항력",
+                stats.StatusResistance,
+                stats.FinalStatusResistance
+            );
+
+            DrawStat(
+                "회복률",
+                stats.Recovery,
+                stats.FinalRecovery
+            );
+
+            DrawStat(
+                "쿨타임 감소",
+                stats.CooldownReduction,
+                stats.FinalCooldownReduction
+            );
+
+            DrawStat(
+                "행운",
+                stats.Luck,
+                stats.FinalLuck
             );
 
             EditorGUI.indentLevel--;

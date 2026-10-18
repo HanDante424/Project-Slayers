@@ -7,6 +7,7 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
 
     [Header("Character Screens")]
     [SerializeField] private GameObject statPanel;
+    [SerializeField] private TownCharacterStatsController statsController;
     [SerializeField] private GameObject equipPanel;
     [SerializeField] private GameObject skillPanel;
 
@@ -108,6 +109,7 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     public void OpenStat()
     {
         ShowCharacterScreen(statPanel);
+        statsController?.CloseDetails();
         titleController?.SetTitle("능력치");
     }
 

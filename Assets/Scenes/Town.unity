@@ -47273,6 +47273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595515305}
   - component: {fileID: 2147000002}
+  - component: {fileID: 2147100003}
   m_Layer: 5
   m_Name: CharacterPanel
   m_TagString: Untagged
@@ -80931,6 +80932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 994624098}
+  - component: {fileID: 2147100001}
   m_Layer: 5
   m_Name: StatDetailPanel
   m_TagString: Untagged
@@ -156330,6 +156332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1940490350}
+  - component: {fileID: 2147100002}
   m_Layer: 5
   m_Name: StatDesc
   m_TagString: Untagged
@@ -172083,7 +172086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TownCharacterNavigationController
   titleController: {fileID: 2147000005}
-  statPanel: {fileID: 0}
+  statPanel: {fileID: 1430258654}
+  statsController: {fileID: 2147100003}
   equipPanel: {fileID: 1189520327}
   skillPanel: {fileID: 2036174503}
   mainStatPanel: {fileID: 0}
@@ -172191,6 +172195,145 @@ MonoBehaviour:
   equipmentButtonRoot: {fileID: 108450168}
   materialsButtonRoot: {fileID: 2049114932}
   questButtonRoot: {fileID: 849066951}
+--- !u!114 &2147100001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994624097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b6aa3db77b41aa972f25f42dc2b387, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStatPanelView
+  statFields:
+  - stat: 0
+    text: {fileID: 1072115853}
+  - stat: 1
+    text: {fileID: 330597772}
+  - stat: 2
+    text: {fileID: 199289860}
+  - stat: 3
+    text: {fileID: 503051898}
+  - stat: 4
+    text: {fileID: 172075335}
+  - stat: 5
+    text: {fileID: 1544493424}
+  - stat: 18
+    text: {fileID: 1882165374}
+  - stat: 19
+    text: {fileID: 429434894}
+  - stat: 15
+    text: {fileID: 759010717}
+  - stat: 16
+    text: {fileID: 714018307}
+  - stat: 17
+    text: {fileID: 763138081}
+  - stat: 6
+    text: {fileID: 1285129383}
+  - stat: 7
+    text: {fileID: 81682333}
+  - stat: 10
+    text: {fileID: 608951561}
+  - stat: 11
+    text: {fileID: 1820122260}
+  - stat: 8
+    text: {fileID: 1996235466}
+  - stat: 12
+    text: {fileID: 558494011}
+  - stat: 13
+    text: {fileID: 1306140545}
+  - stat: 9
+    text: {fileID: 770907515}
+  - stat: 20
+    text: {fileID: 1001301555}
+  - stat: 21
+    text: {fileID: 1835501384}
+  - stat: 22
+    text: {fileID: 224943328}
+  - stat: 23
+    text: {fileID: 2105617324}
+  - stat: 24
+    text: {fileID: 2008269316}
+  - stat: 25
+    text: {fileID: 1700321163}
+  - stat: 26
+    text: {fileID: 895061389}
+  - stat: 27
+    text: {fileID: 1419148287}
+  - stat: 28
+    text: {fileID: 215780360}
+  - stat: 29
+    text: {fileID: 982244373}
+  - stat: 30
+    text: {fileID: 406887601}
+  - stat: 31
+    text: {fileID: 93556017}
+  - stat: 32
+    text: {fileID: 71808134}
+  - stat: 33
+    text: {fileID: 1271855265}
+  - stat: 34
+    text: {fileID: 644564358}
+  - stat: 35
+    text: {fileID: 594674489}
+  staggerGaugeText: {fileID: 2061870801}
+--- !u!114 &2147100002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940490349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b6aa3db77b41aa972f25f42dc2b387, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStatPanelView
+  statFields:
+  - stat: 0
+    text: {fileID: 300469088}
+  - stat: 1
+    text: {fileID: 492500881}
+  - stat: 2
+    text: {fileID: 1357064744}
+  - stat: 3
+    text: {fileID: 1568477782}
+  - stat: 4
+    text: {fileID: 1116355941}
+  - stat: 5
+    text: {fileID: 1261916582}
+  - stat: 18
+    text: {fileID: 1617346184}
+  - stat: 19
+    text: {fileID: 1214365219}
+  - stat: 16
+    text: {fileID: 1320711737}
+  - stat: 9
+    text: {fileID: 331889978}
+  staggerGaugeText: {fileID: 0}
+--- !u!114 &2147100003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595515304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b834b4a921c4fb9a513f680f8748c15, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TownCharacterStatsController
+  defaultCharacter: {fileID: 11400000, guid: ab467d6dac1977a48870fe256a0d1304, type: 2}
+  defaultLevel: 1
+  detailView: {fileID: 2147100001}
+  overviewView: {fileID: 2147100002}
+  characterNameText: {fileID: 1584879703}
+  levelText: {fileID: 902685434}
+  fullBodyImage: {fileID: 1547767019}
+  openDetailButtonRoot: {fileID: 654757719}
+  closeDetailButtonRoot: {fileID: 1092833275}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
