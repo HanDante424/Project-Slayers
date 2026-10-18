@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class TestBattleManager : MonoBehaviour
 {
+    [SerializeField] private CombatResultController resultController;
     [Header("Clear Condition")]
     [SerializeField] private int requiredSkillUses = 3;
 
@@ -40,6 +41,13 @@ public class TestBattleManager : MonoBehaviour
             return;
 
         isCleared = true;
+
+        // This is a prototype/test condition, not a stage-type objective or reward grant.
+        if (resultController != null)
+        {
+            resultController.CompleteForTesting();
+            return;
+        }
 
         if (GameSession.Instance == null)
         {

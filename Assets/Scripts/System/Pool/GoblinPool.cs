@@ -35,6 +35,7 @@ public class GoblinPool : MonoBehaviour
 
     public void SpawnGoblin()
     {
+        if (!isActiveAndEnabled) return;
         // 현재 활성화된 고블린이 있다면
         // 추가 소환하지 않는다.
         if (activeGoblin != null &&

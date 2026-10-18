@@ -14,6 +14,13 @@ public class Health : MonoBehaviour
     public event Action Died;
     public event Action<int, int> HealthChanged;
 
+    // Published once after HP is reduced, before death callbacks can despawn a pooled actor.
+    public static event Action<Health, GameObject, int, bool> DamageApplied;
+    public bool DamageEnabled { get; set; } = true;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetDamageEvents() => DamageApplied = null;
+
     private void Awake()
     {
         ResetHealth();
@@ -35,16 +42,20 @@ public class Health : MonoBehaviour
         HealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage) => TakeDamage(damage, null);
+
+    public void TakeDamage(int damage, GameObject source)
     {
-        if (damage <= 0 || IsDead)
+        if (!DamageEnabled || damage <= 0 || IsDead)
             return;
 
+        int previousHealth = currentHealth;
         currentHealth = Mathf.Max(
             currentHealth - damage,
             0
         );
 
+        DamageApplied?.Invoke(this, source, previousHealth - currentHealth, IsDead);
         HealthChanged?.Invoke(currentHealth, maxHealth);
 
         Debug.Log(

@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 6a063408d9849314cb2d8197e7570529
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6738397669523596957
+    second: Icon_Item_000_Gold_0
+  - first:
+      213: 1174178818472314072
+    second: Icon_Item_000_Gold_1
+  - first:
+      213: 467795129664310466
+    second: Icon_Item_000_Gold_2
+  - first:
+      213: -557664271456701590
+    second: Icon_Item_000_Gold_3
+  - first:
+      213: 3605331908744352511
+    second: Icon_Item_000_Gold_4
+  - first:
+      213: -5391697026660094410
+    second: Icon_Item_000_Gold_5
+  - first:
+      213: -9122150018097593544
+    second: Icon_Item_000_Gold_6
+  - first:
+      213: -5950686607661537560
+    second: Icon_Item_000_Gold_7
+  - first:
+      213: -5578180919681667888
+    second: Icon_Item_000_Gold_8
+  - first:
+      213: 878822794706172503
+    second: Icon_Item_000_Gold_9
+  - first:
+      213: -6198832204864149733
+    second: Icon_Item_000_Gold_10
+  - first:
+      213: 5433452304442884867
+    second: Icon_Item_000_Gold_11
+  - first:
+      213: -365498199613836597
+    second: Icon_Item_000_Gold_12
+  - first:
+      213: 5305305039356704835
+    second: Icon_Item_000_Gold_13
+  - first:
+      213: 7733360654103956826
+    second: Icon_Item_000_Gold_14
+  - first:
+      213: 4436311404824688705
+    second: Icon_Item_000_Gold_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 1167
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9626479af8938d50800000000000000
+      internalID: 6738397669523596957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1126
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d484d11a658b4010800000000000000
+      internalID: 1174178818472314072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_2
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1076
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc8c432131fd7600800000000000000
+      internalID: 467795129664310466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_3
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6375ebbc47c248f0800000000000000
+      internalID: -557664271456701590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_4
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1096
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff29616e446b80230800000000000000
+      internalID: 3605331908744352511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_5
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 966
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e2565ee18dc25b0800000000000000
+      internalID: -5391697026660094410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_6
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 960
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8334877c3ec976180800000000000000
+      internalID: -9122150018097593544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_7
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 208
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6e8a4fe0aea6da0800000000000000
+      internalID: -5950686607661537560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_8
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 184
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc238d02025692b0800000000000000
+      internalID: -5578180919681667888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_9
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 176
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a3af2fca4323c00800000000000000
+      internalID: 878822794706172503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_10
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 191
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1722d6d3f259f9a0800000000000000
+      internalID: -6198832204864149733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_11
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 183
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303885e4510876b40800000000000000
+      internalID: 5433452304442884867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_12
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 157
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2f8fde25d7deaf0800000000000000
+      internalID: -365498199613836597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 86
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34832f713da30a940800000000000000
+      internalID: 5305305039356704835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 93
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d49d3ba8a625b60800000000000000
+      internalID: 7733360654103956826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_000_Gold_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 47
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148f695d7b1f09d30800000000000000
+      internalID: 4436311404824688705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Item_000_Gold_0: 6738397669523596957
+      Icon_Item_000_Gold_1: 1174178818472314072
+      Icon_Item_000_Gold_10: -6198832204864149733
+      Icon_Item_000_Gold_11: 5433452304442884867
+      Icon_Item_000_Gold_12: -365498199613836597
+      Icon_Item_000_Gold_13: 5305305039356704835
+      Icon_Item_000_Gold_14: 7733360654103956826
+      Icon_Item_000_Gold_15: 4436311404824688705
+      Icon_Item_000_Gold_2: 467795129664310466
+      Icon_Item_000_Gold_3: -557664271456701590
+      Icon_Item_000_Gold_4: 3605331908744352511
+      Icon_Item_000_Gold_5: -5391697026660094410
+      Icon_Item_000_Gold_6: -9122150018097593544
+      Icon_Item_000_Gold_7: -5950686607661537560
+      Icon_Item_000_Gold_8: -5578180919681667888
+      Icon_Item_000_Gold_9: 878822794706172503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

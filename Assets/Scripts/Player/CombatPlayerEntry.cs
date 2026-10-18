@@ -18,6 +18,14 @@ public sealed class CombatPlayerEntry : MonoBehaviour
     public MapData SelectedMap { get; private set; }
     public PlayableCharacterData SelectedCharacter { get; private set; }
     private bool followSelectedPlayer;
+    private CombatEntrySelection.Request entryRequest;
+
+    public bool PrepareRetry()
+    {
+        if (entryRequest == null) { CombatEntrySelection.Clear(); return true; }
+        return CombatEntrySelection.TrySet(entryRequest.Map, entryRequest.Character,
+            entryRequest.PlayerPrefab, entryRequest.Level);
+    }
 
     private void Awake()
     {
@@ -40,6 +48,7 @@ public sealed class CombatPlayerEntry : MonoBehaviour
         ActivePlayer.GetComponent<CharacterStats>().Initialize(request.Character.statsData, request.Level);
         ActivePlayer.GetComponent<PlayerActionController>().BindCooldownUI(cooldownUI);
         SelectedMap = request.Map;
+        entryRequest = request;
         SelectedCharacter = request.Character;
         BindPortrait(SelectedCharacter);
         ActivePlayer.SetActive(true);

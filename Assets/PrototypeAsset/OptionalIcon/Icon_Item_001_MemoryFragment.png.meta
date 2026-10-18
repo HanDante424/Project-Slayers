@@ -1,0 +1,1651 @@
+fileFormatVersion: 2
+guid: 4d2ad5ab990a23242ab33d9718e4e1a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8095738472115254503
+    second: Icon_Item_001_MemoryFragment_0
+  - first:
+      213: -3351560647739596629
+    second: Icon_Item_001_MemoryFragment_1
+  - first:
+      213: -7473095457581414011
+    second: Icon_Item_001_MemoryFragment_2
+  - first:
+      213: 3717355304859063006
+    second: Icon_Item_001_MemoryFragment_3
+  - first:
+      213: 5530485158795384095
+    second: Icon_Item_001_MemoryFragment_4
+  - first:
+      213: -3621116512568118191
+    second: Icon_Item_001_MemoryFragment_5
+  - first:
+      213: 8750072506585379235
+    second: Icon_Item_001_MemoryFragment_6
+  - first:
+      213: -9129565909488629089
+    second: Icon_Item_001_MemoryFragment_7
+  - first:
+      213: 6452018091350380174
+    second: Icon_Item_001_MemoryFragment_8
+  - first:
+      213: 3649803204143470783
+    second: Icon_Item_001_MemoryFragment_9
+  - first:
+      213: 2168989399487928114
+    second: Icon_Item_001_MemoryFragment_10
+  - first:
+      213: -8027507214833882573
+    second: Icon_Item_001_MemoryFragment_11
+  - first:
+      213: -1850047834983495138
+    second: Icon_Item_001_MemoryFragment_12
+  - first:
+      213: -815240575291431135
+    second: Icon_Item_001_MemoryFragment_13
+  - first:
+      213: 367226218280634240
+    second: Icon_Item_001_MemoryFragment_14
+  - first:
+      213: 2737207992719114780
+    second: Icon_Item_001_MemoryFragment_15
+  - first:
+      213: 3326513225250863399
+    second: Icon_Item_001_MemoryFragment_16
+  - first:
+      213: -1574511791286748644
+    second: Icon_Item_001_MemoryFragment_17
+  - first:
+      213: -5233984620627056394
+    second: Icon_Item_001_MemoryFragment_18
+  - first:
+      213: -6143761906542041662
+    second: Icon_Item_001_MemoryFragment_19
+  - first:
+      213: -5385706660563788834
+    second: Icon_Item_001_MemoryFragment_20
+  - first:
+      213: -1050374344763713587
+    second: Icon_Item_001_MemoryFragment_21
+  - first:
+      213: -7629123319334677623
+    second: Icon_Item_001_MemoryFragment_22
+  - first:
+      213: 16712471254157632
+    second: Icon_Item_001_MemoryFragment_23
+  - first:
+      213: -3110548185189387425
+    second: Icon_Item_001_MemoryFragment_24
+  - first:
+      213: 2353952339438382355
+    second: Icon_Item_001_MemoryFragment_25
+  - first:
+      213: -8768841325125901173
+    second: Icon_Item_001_MemoryFragment_26
+  - first:
+      213: -2807688320794234543
+    second: Icon_Item_001_MemoryFragment_27
+  - first:
+      213: 3902407996389164644
+    second: Icon_Item_001_MemoryFragment_28
+  - first:
+      213: 4197353014691986652
+    second: Icon_Item_001_MemoryFragment_29
+  - first:
+      213: -9144244790616587862
+    second: Icon_Item_001_MemoryFragment_30
+  - first:
+      213: -1245471804655127188
+    second: Icon_Item_001_MemoryFragment_31
+  - first:
+      213: -7104035310513139886
+    second: Icon_Item_001_MemoryFragment_32
+  - first:
+      213: 1596570614190370728
+    second: Icon_Item_001_MemoryFragment_33
+  - first:
+      213: 4804929977354731441
+    second: Icon_Item_001_MemoryFragment_34
+  - first:
+      213: 3565718839147046673
+    second: Icon_Item_001_MemoryFragment_35
+  - first:
+      213: 4644108256757091683
+    second: Icon_Item_001_MemoryFragment_36
+  - first:
+      213: -8573893476340807682
+    second: Icon_Item_001_MemoryFragment_37
+  - first:
+      213: -8210545568403872614
+    second: Icon_Item_001_MemoryFragment_38
+  - first:
+      213: -1710322773628998880
+    second: Icon_Item_001_MemoryFragment_39
+  - first:
+      213: -5323028504690250093
+    second: Icon_Item_001_MemoryFragment_40
+  - first:
+      213: 6839560019725031493
+    second: Icon_Item_001_MemoryFragment_41
+  - first:
+      213: 2966428160580998386
+    second: Icon_Item_001_MemoryFragment_42
+  - first:
+      213: 324565752485951974
+    second: Icon_Item_001_MemoryFragment_43
+  - first:
+      213: -3656991773310439022
+    second: Icon_Item_001_MemoryFragment_44
+  - first:
+      213: -4647854571534376855
+    second: Icon_Item_001_MemoryFragment_45
+  - first:
+      213: 856238698764173909
+    second: Icon_Item_001_MemoryFragment_46
+  - first:
+      213: 2790383042666394558
+    second: Icon_Item_001_MemoryFragment_47
+  - first:
+      213: -7655935149244975335
+    second: Icon_Item_001_MemoryFragment_48
+  - first:
+      213: 2458867446145228088
+    second: Icon_Item_001_MemoryFragment_49
+  - first:
+      213: 5581921712262165958
+    second: Icon_Item_001_MemoryFragment_50
+  - first:
+      213: -5871893800531753995
+    second: Icon_Item_001_MemoryFragment_51
+  - first:
+      213: 7627953187948761438
+    second: Icon_Item_001_MemoryFragment_52
+  - first:
+      213: 382185874481505826
+    second: Icon_Item_001_MemoryFragment_53
+  - first:
+      213: -3610912680347172697
+    second: Icon_Item_001_MemoryFragment_54
+  - first:
+      213: 6703268506746765819
+    second: Icon_Item_001_MemoryFragment_55
+  - first:
+      213: -3190420338210253695
+    second: Icon_Item_001_MemoryFragment_56
+  - first:
+      213: -6715608832317806520
+    second: Icon_Item_001_MemoryFragment_57
+  - first:
+      213: 6341326133960250412
+    second: Icon_Item_001_MemoryFragment_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 745
+        width: 387
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4b4e05f37d95070800000000000000
+      internalID: 8095738472115254503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 855
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0ad44295ddc71d0800000000000000
+      internalID: -3351560647739596629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 412
+        width: 247
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5894646864b3a4890800000000000000
+      internalID: -7473095457581414011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 851
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2d90254f2b69330800000000000000
+      internalID: 3717355304859063006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 874
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15919d33fa30cc40800000000000000
+      internalID: 5530485158795384095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_5
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 949
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1547312a7b53fbdc0800000000000000
+      internalID: -3621116512568118191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 954
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1fee9b5908e6970800000000000000
+      internalID: 8750072506585379235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_7
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 996
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a0a630d244d4180800000000000000
+      internalID: -9129565909488629089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 308
+        width: 460
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e4553154c2a8950800000000000000
+      internalID: 6452018091350380174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_9
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1162
+        width: 314
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8dd0b3da4b6a230800000000000000
+      internalID: 3649803204143470783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 65
+        width: 566
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237d016fd5cc91e10800000000000000
+      internalID: 2168989399487928114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_11
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1140
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ae0fb38b0989090800000000000000
+      internalID: -8027507214833882573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_12
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 751
+        width: 184
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a045acb4f4356e0800000000000000
+      internalID: -1850047834983495138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_13
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1108
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127e44f140fafa4f0800000000000000
+      internalID: -815240575291431135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_14
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1122
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087c3d4cc46a81500800000000000000
+      internalID: 367226218280634240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_15
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 923
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c120262ca248cf520800000000000000
+      internalID: 2737207992719114780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_16
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 877
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72977bb57262a2e20800000000000000
+      internalID: 3326513225250863399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_17
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1146
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a70b13ed5362ae0800000000000000
+      internalID: -1574511791286748644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_18
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1104
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8aaa7e7b62d57b0800000000000000
+      internalID: -5233984620627056394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_19
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1092
+        width: 202
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c52cf7d819fcbaa0800000000000000
+      internalID: -6143761906542041662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_20
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1046
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbd3a0b3502245b0800000000000000
+      internalID: -5385706660563788834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_21
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1018
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7dc2b39125c61f0800000000000000
+      internalID: -1050374344763713587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_22
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1042
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983586b03c8ef1690800000000000000
+      internalID: -7629123319334677623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_23
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 789
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0494c6077ef5b3000800000000000000
+      internalID: 16712471254157632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_24
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 996
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53fc0de7ec15d4d0800000000000000
+      internalID: -3110548185189387425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_25
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1002
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dac625e2beaa020800000000000000
+      internalID: 2353952339438382355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_26
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 943
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84ea1c2641de4680800000000000000
+      internalID: -8768841325125901173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_27
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1010
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151fb0719561909d0800000000000000
+      internalID: -2807688320794234543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_28
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 966
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4668b699563282630800000000000000
+      internalID: 3902407996389164644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_29
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 889
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc71ad045eff3a30800000000000000
+      internalID: 4197353014691986652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_30
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 937
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1051cafcd191180800000000000000
+      internalID: -9144244790616587862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_31
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 809
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6534c11ef137bee0800000000000000
+      internalID: -1245471804655127188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_32
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 841
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f480d1685696d90800000000000000
+      internalID: -7104035310513139886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_33
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 883
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afe4adb388282610800000000000000
+      internalID: 1596570614190370728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_34
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 845
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfbad65b5a8ea240800000000000000
+      internalID: 4804929977354731441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_35
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 769
+        width: 35
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1172748646afb7130800000000000000
+      internalID: 3565718839147046673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_36
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 827
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d077e9adf237040800000000000000
+      internalID: 4644108256757091683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 457
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7caa84f49630980800000000000000
+      internalID: -8573893476340807682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_38
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 529
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94212f8e484e0e80800000000000000
+      internalID: -8210545568403872614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_39
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 449
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b2592cf76b348e0800000000000000
+      internalID: -1710322773628998880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_40
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 158
+        width: 210
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ea8a017cdc026b0800000000000000
+      internalID: -5323028504690250093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_41
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 333
+        width: 202
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5489ca3b99ffaee50800000000000000
+      internalID: 6839560019725031493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_42
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 408
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4552bf1beda2920800000000000000
+      internalID: 2966428160580998386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_43
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 391
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9be2f05d6118400800000000000000
+      internalID: 324565752485951974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_44
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 415
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2913e459b51cf3dc0800000000000000
+      internalID: -3656991773310439022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_45
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 376
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960a40084e08f7fb0800000000000000
+      internalID: -4647854571534376855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_46
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 376
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55208ca5f88f1eb00800000000000000
+      internalID: 856238698764173909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_47
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 65
+        width: 264
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3776dd79e69b620800000000000000
+      internalID: 2790383042666394558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_48
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 353
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91773dd6b87a0c590800000000000000
+      internalID: -7655935149244975335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_49
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 184
+        width: 62
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d12452ae6af1220800000000000000
+      internalID: 2458867446145228088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_50
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 176
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c53d671938f67d40800000000000000
+      internalID: 5581921712262165958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_51
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 178
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f38c74f2b7d28ea0800000000000000
+      internalID: -5871893800531753995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_52
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 175
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e519ef2820febd960800000000000000
+      internalID: 7627953187948761438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_53
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 264
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22664a6270ccd4500800000000000000
+      internalID: 382185874481505826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_54
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 63
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a004f47c0673edc0800000000000000
+      internalID: -3610912680347172697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_55
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 75
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf144b2013bc60d50800000000000000
+      internalID: 6703268506746765819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_56
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 81
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184dbc02b9959b3d0800000000000000
+      internalID: -3190420338210253695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_57
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 47
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848a83b095d5dc2a0800000000000000
+      internalID: -6715608832317806520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_001_MemoryFragment_58
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 23
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c241a93658ae00850800000000000000
+      internalID: 6341326133960250412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Item_001_MemoryFragment_0: 8095738472115254503
+      Icon_Item_001_MemoryFragment_1: -3351560647739596629
+      Icon_Item_001_MemoryFragment_10: 2168989399487928114
+      Icon_Item_001_MemoryFragment_11: -8027507214833882573
+      Icon_Item_001_MemoryFragment_12: -1850047834983495138
+      Icon_Item_001_MemoryFragment_13: -815240575291431135
+      Icon_Item_001_MemoryFragment_14: 367226218280634240
+      Icon_Item_001_MemoryFragment_15: 2737207992719114780
+      Icon_Item_001_MemoryFragment_16: 3326513225250863399
+      Icon_Item_001_MemoryFragment_17: -1574511791286748644
+      Icon_Item_001_MemoryFragment_18: -5233984620627056394
+      Icon_Item_001_MemoryFragment_19: -6143761906542041662
+      Icon_Item_001_MemoryFragment_2: -7473095457581414011
+      Icon_Item_001_MemoryFragment_20: -5385706660563788834
+      Icon_Item_001_MemoryFragment_21: -1050374344763713587
+      Icon_Item_001_MemoryFragment_22: -7629123319334677623
+      Icon_Item_001_MemoryFragment_23: 16712471254157632
+      Icon_Item_001_MemoryFragment_24: -3110548185189387425
+      Icon_Item_001_MemoryFragment_25: 2353952339438382355
+      Icon_Item_001_MemoryFragment_26: -8768841325125901173
+      Icon_Item_001_MemoryFragment_27: -2807688320794234543
+      Icon_Item_001_MemoryFragment_28: 3902407996389164644
+      Icon_Item_001_MemoryFragment_29: 4197353014691986652
+      Icon_Item_001_MemoryFragment_3: 3717355304859063006
+      Icon_Item_001_MemoryFragment_30: -9144244790616587862
+      Icon_Item_001_MemoryFragment_31: -1245471804655127188
+      Icon_Item_001_MemoryFragment_32: -7104035310513139886
+      Icon_Item_001_MemoryFragment_33: 1596570614190370728
+      Icon_Item_001_MemoryFragment_34: 4804929977354731441
+      Icon_Item_001_MemoryFragment_35: 3565718839147046673
+      Icon_Item_001_MemoryFragment_36: 4644108256757091683
+      Icon_Item_001_MemoryFragment_37: -8573893476340807682
+      Icon_Item_001_MemoryFragment_38: -8210545568403872614
+      Icon_Item_001_MemoryFragment_39: -1710322773628998880
+      Icon_Item_001_MemoryFragment_4: 5530485158795384095
+      Icon_Item_001_MemoryFragment_40: -5323028504690250093
+      Icon_Item_001_MemoryFragment_41: 6839560019725031493
+      Icon_Item_001_MemoryFragment_42: 2966428160580998386
+      Icon_Item_001_MemoryFragment_43: 324565752485951974
+      Icon_Item_001_MemoryFragment_44: -3656991773310439022
+      Icon_Item_001_MemoryFragment_45: -4647854571534376855
+      Icon_Item_001_MemoryFragment_46: 856238698764173909
+      Icon_Item_001_MemoryFragment_47: 2790383042666394558
+      Icon_Item_001_MemoryFragment_48: -7655935149244975335
+      Icon_Item_001_MemoryFragment_49: 2458867446145228088
+      Icon_Item_001_MemoryFragment_5: -3621116512568118191
+      Icon_Item_001_MemoryFragment_50: 5581921712262165958
+      Icon_Item_001_MemoryFragment_51: -5871893800531753995
+      Icon_Item_001_MemoryFragment_52: 7627953187948761438
+      Icon_Item_001_MemoryFragment_53: 382185874481505826
+      Icon_Item_001_MemoryFragment_54: -3610912680347172697
+      Icon_Item_001_MemoryFragment_55: 6703268506746765819
+      Icon_Item_001_MemoryFragment_56: -3190420338210253695
+      Icon_Item_001_MemoryFragment_57: -6715608832317806520
+      Icon_Item_001_MemoryFragment_58: 6341326133960250412
+      Icon_Item_001_MemoryFragment_6: 8750072506585379235
+      Icon_Item_001_MemoryFragment_7: -9129565909488629089
+      Icon_Item_001_MemoryFragment_8: 6452018091350380174
+      Icon_Item_001_MemoryFragment_9: 3649803204143470783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

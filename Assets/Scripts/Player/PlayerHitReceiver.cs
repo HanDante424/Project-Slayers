@@ -11,7 +11,7 @@ public class PlayerHitReceiver : MonoBehaviour
 
     public void ReceiveHit(HitData hitData)
     {
-        if (health.IsDead)
+        if (health.IsDead || !health.DamageEnabled)
             return;
 
         Debug.Log(
@@ -19,7 +19,7 @@ public class PlayerHitReceiver : MonoBehaviour
             this
         );
 
-        health.TakeDamage(hitData.damage);
+        health.TakeDamage(hitData.damage, hitData.source);
 
         if (health.IsDead)
             return;
