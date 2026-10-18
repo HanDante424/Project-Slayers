@@ -62,7 +62,7 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
         selectedMap = map; loading = false;
         stagePanel.SetActive(false);
         characterPanel.SetActive(true);
-        SelectErn();
+        SelectMayhem();
         title?.SetTitle("캐릭터 선택");
     }
     public void SelectErn() => Select(ern);

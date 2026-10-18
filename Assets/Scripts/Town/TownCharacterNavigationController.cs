@@ -110,7 +110,7 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     {
         ShowCharacterScreen(statPanel);
         statsController?.CloseDetails();
-        titleController?.SetTitle("능력치");
+        titleController?.SetTitle("기본 정보");
     }
 
     public void OpenEquip()

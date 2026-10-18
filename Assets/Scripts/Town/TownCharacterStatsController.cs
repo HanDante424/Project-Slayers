@@ -1,9 +1,21 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public sealed class TownCharacterStatsController : MonoBehaviour
 {
+    [Serializable]
+    private sealed class CharacterButton
+    {
+        public PlayableCharacterData character;
+        public Button button;
+        public Image icon;
+    }
+
+    [Header("Character List")]
+    [SerializeField] private CharacterButton mayhem;
+    [SerializeField] private CharacterButton ern;
     [SerializeField] private PlayableCharacterData defaultCharacter;
     [SerializeField, Min(1)] private int defaultLevel = 1;
     [SerializeField] private CharacterStatPanelView detailView;
@@ -21,6 +33,8 @@ public sealed class TownCharacterStatsController : MonoBehaviour
     private void OnEnable()
     {
         TownCharacterSelection.Changed += RefreshCharacter;
+        BindCharacterButton(mayhem, SelectMayhem);
+        BindCharacterButton(ern, SelectErn);
         openDetailButton = TownButtonBinder.Bind(openDetailButtonRoot, OpenDetails, this);
         closeDetailButton = TownButtonBinder.Bind(closeDetailButtonRoot, CloseDetails, this);
         CloseDetails();
@@ -30,6 +44,8 @@ public sealed class TownCharacterStatsController : MonoBehaviour
     private void OnDisable()
     {
         TownCharacterSelection.Changed -= RefreshCharacter;
+        TownButtonBinder.Unbind(mayhem?.button, SelectMayhem);
+        TownButtonBinder.Unbind(ern?.button, SelectErn);
         TownButtonBinder.Unbind(openDetailButton, OpenDetails);
         TownButtonBinder.Unbind(closeDetailButton, CloseDetails);
         CloseDetails();
@@ -73,6 +89,28 @@ public sealed class TownCharacterStatsController : MonoBehaviour
             fullBodyImage.sprite = character != null ? character.fullBodyImage : null;
             fullBodyImage.enabled = fullBodyImage.sprite != null;
         }
+        TownButtonBinder.Select(character == mayhem?.character ? mayhem?.button :
+            character == ern?.character ? ern?.button : null, mayhem?.button, ern?.button);
+    }
+
+    public void SelectMayhem() => SelectCharacter(mayhem);
+    public void SelectErn() => SelectCharacter(ern);
+
+    private void SelectCharacter(CharacterButton option)
+    {
+        if (option?.character != null)
+            TownCharacterSelection.Select(option.character, Mathf.Max(1, defaultLevel));
+    }
+
+    private static void BindCharacterButton(CharacterButton option, UnityEngine.Events.UnityAction action)
+    {
+        if (option?.button == null) return;
+        if (option.icon != null)
+        {
+            option.icon.sprite = option.character != null ? option.character.thumbnail : null;
+            option.icon.enabled = option.icon.sprite != null;
+        }
+        option.button.onClick.AddListener(action);
     }
 
     public void OpenDetails()
