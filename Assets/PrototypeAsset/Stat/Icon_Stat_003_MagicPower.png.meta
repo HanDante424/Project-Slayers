@@ -1,0 +1,1989 @@
+fileFormatVersion: 2
+guid: 43392d30b8b7d184ea82ad10f4d9ca9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2940112206415166168
+    second: Icon_Stat_003_MagicPower_0
+  - first:
+      213: 5054734838262610196
+    second: Icon_Stat_003_MagicPower_1
+  - first:
+      213: 3660683065204631423
+    second: Icon_Stat_003_MagicPower_2
+  - first:
+      213: -821177795283015171
+    second: Icon_Stat_003_MagicPower_3
+  - first:
+      213: -6430141123277004799
+    second: Icon_Stat_003_MagicPower_4
+  - first:
+      213: -6932830822432635399
+    second: Icon_Stat_003_MagicPower_5
+  - first:
+      213: -3799806419165636415
+    second: Icon_Stat_003_MagicPower_6
+  - first:
+      213: -1443766995495074904
+    second: Icon_Stat_003_MagicPower_7
+  - first:
+      213: -8400430192820388472
+    second: Icon_Stat_003_MagicPower_8
+  - first:
+      213: -5491891563224851963
+    second: Icon_Stat_003_MagicPower_9
+  - first:
+      213: -2495724730698855325
+    second: Icon_Stat_003_MagicPower_10
+  - first:
+      213: -2438649650793155734
+    second: Icon_Stat_003_MagicPower_11
+  - first:
+      213: 832630344169063147
+    second: Icon_Stat_003_MagicPower_12
+  - first:
+      213: 7911750915496905648
+    second: Icon_Stat_003_MagicPower_13
+  - first:
+      213: -209547746872696122
+    second: Icon_Stat_003_MagicPower_14
+  - first:
+      213: 7136422541586189562
+    second: Icon_Stat_003_MagicPower_15
+  - first:
+      213: -8840382590055021943
+    second: Icon_Stat_003_MagicPower_16
+  - first:
+      213: 1363991502375188271
+    second: Icon_Stat_003_MagicPower_17
+  - first:
+      213: 5771790897276024104
+    second: Icon_Stat_003_MagicPower_18
+  - first:
+      213: 473650523397853539
+    second: Icon_Stat_003_MagicPower_19
+  - first:
+      213: -5407279681490404418
+    second: Icon_Stat_003_MagicPower_20
+  - first:
+      213: -7670690915028523225
+    second: Icon_Stat_003_MagicPower_21
+  - first:
+      213: -8463109254015267976
+    second: Icon_Stat_003_MagicPower_22
+  - first:
+      213: 3219430302043485078
+    second: Icon_Stat_003_MagicPower_23
+  - first:
+      213: -7761568665769082752
+    second: Icon_Stat_003_MagicPower_24
+  - first:
+      213: -5256713267140684467
+    second: Icon_Stat_003_MagicPower_25
+  - first:
+      213: 2796456102426607324
+    second: Icon_Stat_003_MagicPower_26
+  - first:
+      213: -429257245277902223
+    second: Icon_Stat_003_MagicPower_27
+  - first:
+      213: -293711301823980952
+    second: Icon_Stat_003_MagicPower_28
+  - first:
+      213: -5273677927680747411
+    second: Icon_Stat_003_MagicPower_29
+  - first:
+      213: 4202495502550414039
+    second: Icon_Stat_003_MagicPower_30
+  - first:
+      213: 1302035408584008893
+    second: Icon_Stat_003_MagicPower_31
+  - first:
+      213: -232083909065518850
+    second: Icon_Stat_003_MagicPower_32
+  - first:
+      213: 403273188023045449
+    second: Icon_Stat_003_MagicPower_33
+  - first:
+      213: -1331703966532577372
+    second: Icon_Stat_003_MagicPower_34
+  - first:
+      213: 6073539920906423835
+    second: Icon_Stat_003_MagicPower_35
+  - first:
+      213: 6179010883438510409
+    second: Icon_Stat_003_MagicPower_36
+  - first:
+      213: -7098080263843918639
+    second: Icon_Stat_003_MagicPower_37
+  - first:
+      213: 1573195012812005947
+    second: Icon_Stat_003_MagicPower_38
+  - first:
+      213: -3120142109196878088
+    second: Icon_Stat_003_MagicPower_39
+  - first:
+      213: -8445941213230098651
+    second: Icon_Stat_003_MagicPower_40
+  - first:
+      213: 7743227833005690990
+    second: Icon_Stat_003_MagicPower_41
+  - first:
+      213: -1918251009063793808
+    second: Icon_Stat_003_MagicPower_42
+  - first:
+      213: -1590674658959493091
+    second: Icon_Stat_003_MagicPower_43
+  - first:
+      213: 8064155331407193206
+    second: Icon_Stat_003_MagicPower_44
+  - first:
+      213: 5191294234915506843
+    second: Icon_Stat_003_MagicPower_45
+  - first:
+      213: -1610102141463456713
+    second: Icon_Stat_003_MagicPower_46
+  - first:
+      213: 4805201729516198834
+    second: Icon_Stat_003_MagicPower_47
+  - first:
+      213: -5020421534736127673
+    second: Icon_Stat_003_MagicPower_48
+  - first:
+      213: -5366938000417971917
+    second: Icon_Stat_003_MagicPower_49
+  - first:
+      213: -4505987811201623854
+    second: Icon_Stat_003_MagicPower_50
+  - first:
+      213: 4896050854377648537
+    second: Icon_Stat_003_MagicPower_51
+  - first:
+      213: -6040277825432211099
+    second: Icon_Stat_003_MagicPower_52
+  - first:
+      213: -7858770887576656229
+    second: Icon_Stat_003_MagicPower_53
+  - first:
+      213: 8093053516382786768
+    second: Icon_Stat_003_MagicPower_54
+  - first:
+      213: 4762697597226751372
+    second: Icon_Stat_003_MagicPower_55
+  - first:
+      213: -6320903366473513067
+    second: Icon_Stat_003_MagicPower_56
+  - first:
+      213: 1880641903257002118
+    second: Icon_Stat_003_MagicPower_57
+  - first:
+      213: -5407870823730788285
+    second: Icon_Stat_003_MagicPower_58
+  - first:
+      213: -8746206389314690236
+    second: Icon_Stat_003_MagicPower_59
+  - first:
+      213: -2843317263428682836
+    second: Icon_Stat_003_MagicPower_60
+  - first:
+      213: -436830382503769383
+    second: Icon_Stat_003_MagicPower_61
+  - first:
+      213: -1718470794404510150
+    second: Icon_Stat_003_MagicPower_62
+  - first:
+      213: 437779936526941617
+    second: Icon_Stat_003_MagicPower_63
+  - first:
+      213: -2317279441428261326
+    second: Icon_Stat_003_MagicPower_64
+  - first:
+      213: -8117664802990457297
+    second: Icon_Stat_003_MagicPower_65
+  - first:
+      213: -2065216195463794002
+    second: Icon_Stat_003_MagicPower_66
+  - first:
+      213: 177947698630800821
+    second: Icon_Stat_003_MagicPower_67
+  - first:
+      213: 589646085174183318
+    second: Icon_Stat_003_MagicPower_68
+  - first:
+      213: 4729951712915830439
+    second: Icon_Stat_003_MagicPower_69
+  - first:
+      213: -8842850828269033817
+    second: Icon_Stat_003_MagicPower_70
+  - first:
+      213: -3545220431928947590
+    second: Icon_Stat_003_MagicPower_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1246
+        height: 1234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82585d0968f9237d0800000000000000
+      internalID: -2940112206415166168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1179
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4193f64ed86062640800000000000000
+      internalID: 5054734838262610196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_2
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1181
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f776fc84adb5dc230800000000000000
+      internalID: 3660683065204631423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1159
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9a7be55279a94f0800000000000000
+      internalID: -821177795283015171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_4
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1163
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100617b77bc83c6a0800000000000000
+      internalID: -6430141123277004799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1148
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f506054913a9cf90800000000000000
+      internalID: -6932830822432635399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_6
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1146
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8126aa130644bc0800000000000000
+      internalID: -3799806419165636415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_7
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1140
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a345172195b6fbe0800000000000000
+      internalID: -1443766995495074904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 988
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d797c3f3dab6b80800000000000000
+      internalID: -8400430192820388472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 987
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a940578b1e8c3b0800000000000000
+      internalID: -5491891563224851963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_10
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 996
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c898194976d5dd0800000000000000
+      internalID: -2495724730698855325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 982
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63f7d8201d282ed0800000000000000
+      internalID: -2438649650793155734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 990
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be28865f2e81e8b00800000000000000
+      internalID: 832630344169063147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb80951a8f2ccd60800000000000000
+      internalID: 7911750915496905648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 954
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c26b283f69871df0800000000000000
+      internalID: -209547746872696122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_15
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 955
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcc55ebd7aa90360800000000000000
+      internalID: 7136422541586189562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_16
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 677
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98209396fd6a05580800000000000000
+      internalID: -8840382590055021943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_17
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 650
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2779bf6b0fdde210800000000000000
+      internalID: 1363991502375188271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 625
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82578f5ad35891050800000000000000
+      internalID: 5771790897276024104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3619eca34aeb29600800000000000000
+      internalID: 473650523397853539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 592
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebbb39757cb75f4b0800000000000000
+      internalID: -5407279681490404418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 531
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727a8ebf04b3c8590800000000000000
+      internalID: -7670690915028523225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_22
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 481
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b491319fefc8a80800000000000000
+      internalID: -8463109254015267976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_23
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 511
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6933e6c6dc6bdac20800000000000000
+      internalID: 3219430302043485078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 457
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0800809cb6e594490800000000000000
+      internalID: -7761568665769082752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_25
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 403
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d451ff182276c07b0800000000000000
+      internalID: -5256713267140684467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_26
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 449
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde7c1742020fc620800000000000000
+      internalID: 2796456102426607324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 385
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17aa2f94fc8fa0af0800000000000000
+      internalID: -429257245277902223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_28
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 142
+        width: 239
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a934c80278cebf0800000000000000
+      internalID: -293711301823980952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_29
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 372
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6855ccadd120d6b0800000000000000
+      internalID: -5273677927680747411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_30
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 256
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2b1bfc463425a30800000000000000
+      internalID: 4202495502550414039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_31
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 258
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db461ad3e42c11210800000000000000
+      internalID: 1302035408584008893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_32
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 232
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0d0121ae877ccf0800000000000000
+      internalID: -232083909065518850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_33
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 174
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d8d8fe3d6b89500800000000000000
+      internalID: 403273188023045449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_34
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 150
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7d8d05c46d48de0800000000000000
+      internalID: -1331703966532577372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_35
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 184
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e08ca016c894450800000000000000
+      internalID: 6073539920906423835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_36
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 174
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94100a229a140c550800000000000000
+      internalID: 6179010883438510409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_37
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 143
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc4f567b9d8e7d90800000000000000
+      internalID: -7098080263843918639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_38
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 150
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32631d678c15d510800000000000000
+      internalID: 1573195012812005947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_39
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 136
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fef49c684703b4d0800000000000000
+      internalID: -3120142109196878088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_40
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 112
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527969f073df9ca80800000000000000
+      internalID: -8445941213230098651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_41
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 97
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60d83150b8757b60800000000000000
+      internalID: 7743227833005690990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_42
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 101
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bc7beded00165e0800000000000000
+      internalID: -1918251009063793808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_43
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 112
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18f08f43d9cce9e0800000000000000
+      internalID: -1590674658959493091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_44
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 116
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67429165c82a9ef60800000000000000
+      internalID: 8064155331407193206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_45
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a0cac1a9e2b0840800000000000000
+      internalID: 5191294234915506843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_46
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 75
+        width: 66
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73499fd02a4c7a9e0800000000000000
+      internalID: -1610102141463456713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_47
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 95
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbd7e193818fa240800000000000000
+      internalID: 4805201729516198834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_48
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 95
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749e457a631e35ab0800000000000000
+      internalID: -5020421534736127673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_49
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 79
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331aa89e25ec485b0800000000000000
+      internalID: -5366938000417971917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_50
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 93
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8561f95f38771c0800000000000000
+      internalID: -4505987811201623854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_51
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 79
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9917d69cf4442f340800000000000000
+      internalID: 4896050854377648537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_52
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 81
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561b17e025f9c2ca0800000000000000
+      internalID: -6040277825432211099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_53
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 65
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96efcae38900f290800000000000000
+      internalID: -7858770887576656229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_54
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 59
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4d8385b4d405070800000000000000
+      internalID: 8093053516382786768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_55
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c859e471b30881240800000000000000
+      internalID: 4762697597226751372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_56
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 63
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59786c5b0e3a748a0800000000000000
+      internalID: -6320903366473513067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_57
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 71
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6802951d8d1691a10800000000000000
+      internalID: 1880641903257002118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_58
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348c350532263f4b0800000000000000
+      internalID: -5407870823730788285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_59
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 67
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44365a8d0ab3f9680800000000000000
+      internalID: -8746206389314690236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_60
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 63
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabf89173028a88d0800000000000000
+      internalID: -2843317263428682836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_61
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 65
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dac3cfd41110f9f0800000000000000
+      internalID: -436830382503769383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_62
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 65
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36c2a6dae3c628e0800000000000000
+      internalID: -1718470794404510150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_63
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 61
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd3b76688e431600800000000000000
+      internalID: 437779936526941617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_64
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 63
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2365a5020ae57dfd0800000000000000
+      internalID: -2317279441428261326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_65
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 67
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2eff04fed2485f80800000000000000
+      internalID: -8117664802990457297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_66
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 47
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea23ffcefc0e653e0800000000000000
+      internalID: -2065216195463794002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_67
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 33
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5bc753d72387200800000000000000
+      internalID: 177947698630800821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_68
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 21
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695c10a8df7de2800800000000000000
+      internalID: 589646085174183318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_69
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 21
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a63915c50a24a140800000000000000
+      internalID: 4729951712915830439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_70
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 9
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6614be502e74580800000000000000
+      internalID: -8842850828269033817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_003_MagicPower_71
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 10
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c0b60fcc8dccec0800000000000000
+      internalID: -3545220431928947590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Stat_003_MagicPower_0: -2940112206415166168
+      Icon_Stat_003_MagicPower_1: 5054734838262610196
+      Icon_Stat_003_MagicPower_10: -2495724730698855325
+      Icon_Stat_003_MagicPower_11: -2438649650793155734
+      Icon_Stat_003_MagicPower_12: 832630344169063147
+      Icon_Stat_003_MagicPower_13: 7911750915496905648
+      Icon_Stat_003_MagicPower_14: -209547746872696122
+      Icon_Stat_003_MagicPower_15: 7136422541586189562
+      Icon_Stat_003_MagicPower_16: -8840382590055021943
+      Icon_Stat_003_MagicPower_17: 1363991502375188271
+      Icon_Stat_003_MagicPower_18: 5771790897276024104
+      Icon_Stat_003_MagicPower_19: 473650523397853539
+      Icon_Stat_003_MagicPower_2: 3660683065204631423
+      Icon_Stat_003_MagicPower_20: -5407279681490404418
+      Icon_Stat_003_MagicPower_21: -7670690915028523225
+      Icon_Stat_003_MagicPower_22: -8463109254015267976
+      Icon_Stat_003_MagicPower_23: 3219430302043485078
+      Icon_Stat_003_MagicPower_24: -7761568665769082752
+      Icon_Stat_003_MagicPower_25: -5256713267140684467
+      Icon_Stat_003_MagicPower_26: 2796456102426607324
+      Icon_Stat_003_MagicPower_27: -429257245277902223
+      Icon_Stat_003_MagicPower_28: -293711301823980952
+      Icon_Stat_003_MagicPower_29: -5273677927680747411
+      Icon_Stat_003_MagicPower_3: -821177795283015171
+      Icon_Stat_003_MagicPower_30: 4202495502550414039
+      Icon_Stat_003_MagicPower_31: 1302035408584008893
+      Icon_Stat_003_MagicPower_32: -232083909065518850
+      Icon_Stat_003_MagicPower_33: 403273188023045449
+      Icon_Stat_003_MagicPower_34: -1331703966532577372
+      Icon_Stat_003_MagicPower_35: 6073539920906423835
+      Icon_Stat_003_MagicPower_36: 6179010883438510409
+      Icon_Stat_003_MagicPower_37: -7098080263843918639
+      Icon_Stat_003_MagicPower_38: 1573195012812005947
+      Icon_Stat_003_MagicPower_39: -3120142109196878088
+      Icon_Stat_003_MagicPower_4: -6430141123277004799
+      Icon_Stat_003_MagicPower_40: -8445941213230098651
+      Icon_Stat_003_MagicPower_41: 7743227833005690990
+      Icon_Stat_003_MagicPower_42: -1918251009063793808
+      Icon_Stat_003_MagicPower_43: -1590674658959493091
+      Icon_Stat_003_MagicPower_44: 8064155331407193206
+      Icon_Stat_003_MagicPower_45: 5191294234915506843
+      Icon_Stat_003_MagicPower_46: -1610102141463456713
+      Icon_Stat_003_MagicPower_47: 4805201729516198834
+      Icon_Stat_003_MagicPower_48: -5020421534736127673
+      Icon_Stat_003_MagicPower_49: -5366938000417971917
+      Icon_Stat_003_MagicPower_5: -6932830822432635399
+      Icon_Stat_003_MagicPower_50: -4505987811201623854
+      Icon_Stat_003_MagicPower_51: 4896050854377648537
+      Icon_Stat_003_MagicPower_52: -6040277825432211099
+      Icon_Stat_003_MagicPower_53: -7858770887576656229
+      Icon_Stat_003_MagicPower_54: 8093053516382786768
+      Icon_Stat_003_MagicPower_55: 4762697597226751372
+      Icon_Stat_003_MagicPower_56: -6320903366473513067
+      Icon_Stat_003_MagicPower_57: 1880641903257002118
+      Icon_Stat_003_MagicPower_58: -5407870823730788285
+      Icon_Stat_003_MagicPower_59: -8746206389314690236
+      Icon_Stat_003_MagicPower_6: -3799806419165636415
+      Icon_Stat_003_MagicPower_60: -2843317263428682836
+      Icon_Stat_003_MagicPower_61: -436830382503769383
+      Icon_Stat_003_MagicPower_62: -1718470794404510150
+      Icon_Stat_003_MagicPower_63: 437779936526941617
+      Icon_Stat_003_MagicPower_64: -2317279441428261326
+      Icon_Stat_003_MagicPower_65: -8117664802990457297
+      Icon_Stat_003_MagicPower_66: -2065216195463794002
+      Icon_Stat_003_MagicPower_67: 177947698630800821
+      Icon_Stat_003_MagicPower_68: 589646085174183318
+      Icon_Stat_003_MagicPower_69: 4729951712915830439
+      Icon_Stat_003_MagicPower_7: -1443766995495074904
+      Icon_Stat_003_MagicPower_70: -8842850828269033817
+      Icon_Stat_003_MagicPower_71: -3545220431928947590
+      Icon_Stat_003_MagicPower_8: -8400430192820388472
+      Icon_Stat_003_MagicPower_9: -5491891563224851963
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

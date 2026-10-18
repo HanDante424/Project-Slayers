@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 0fe48f85357ae2244b30cb0b1b8f6851
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5084706671844011418
+    second: Icon_EquipPatrs_006_Earrings_0
+  - first:
+      213: 4508041947167315204
+    second: Icon_EquipPatrs_006_Earrings_1
+  - first:
+      213: 3030266406556120482
+    second: Icon_EquipPatrs_006_Earrings_2
+  - first:
+      213: -6950655645842380145
+    second: Icon_EquipPatrs_006_Earrings_3
+  - first:
+      213: -5422938680747948651
+    second: Icon_EquipPatrs_006_Earrings_4
+  - first:
+      213: 2394023291767428980
+    second: Icon_EquipPatrs_006_Earrings_5
+  - first:
+      213: -7019118236660294436
+    second: Icon_EquipPatrs_006_Earrings_6
+  - first:
+      213: -499984430691644860
+    second: Icon_EquipPatrs_006_Earrings_7
+  - first:
+      213: -6332014288304261498
+    second: Icon_EquipPatrs_006_Earrings_8
+  - first:
+      213: -7699552353934140400
+    second: Icon_EquipPatrs_006_Earrings_9
+  - first:
+      213: 8163501288660488492
+    second: Icon_EquipPatrs_006_Earrings_10
+  - first:
+      213: -7333254425777798941
+    second: Icon_EquipPatrs_006_Earrings_11
+  - first:
+      213: -7383835200553554876
+    second: Icon_EquipPatrs_006_Earrings_12
+  - first:
+      213: 3867517021706132000
+    second: Icon_EquipPatrs_006_Earrings_13
+  - first:
+      213: 5911536623133521290
+    second: Icon_EquipPatrs_006_Earrings_14
+  - first:
+      213: 5184320537584708794
+    second: Icon_EquipPatrs_006_Earrings_15
+  - first:
+      213: -7722951177400967625
+    second: Icon_EquipPatrs_006_Earrings_16
+  - first:
+      213: 6559863539521329576
+    second: Icon_EquipPatrs_006_Earrings_17
+  - first:
+      213: -2732472828101839301
+    second: Icon_EquipPatrs_006_Earrings_18
+  - first:
+      213: 7297866894256219665
+    second: Icon_EquipPatrs_006_Earrings_19
+  - first:
+      213: 2667203927714753766
+    second: Icon_EquipPatrs_006_Earrings_20
+  - first:
+      213: -6312907546596173331
+    second: Icon_EquipPatrs_006_Earrings_21
+  - first:
+      213: 804161054668288667
+    second: Icon_EquipPatrs_006_Earrings_22
+  - first:
+      213: 200222237864164948
+    second: Icon_EquipPatrs_006_Earrings_23
+  - first:
+      213: 754315814796499898
+    second: Icon_EquipPatrs_006_Earrings_24
+  - first:
+      213: 4113963272640708439
+    second: Icon_EquipPatrs_006_Earrings_25
+  - first:
+      213: 920010470179481809
+    second: Icon_EquipPatrs_006_Earrings_26
+  - first:
+      213: -5202966243209805971
+    second: Icon_EquipPatrs_006_Earrings_27
+  - first:
+      213: 2896836809504225569
+    second: Icon_EquipPatrs_006_Earrings_28
+  - first:
+      213: -8647003823556531387
+    second: Icon_EquipPatrs_006_Earrings_29
+  - first:
+      213: -8870875066553601454
+    second: Icon_EquipPatrs_006_Earrings_30
+  - first:
+      213: 450432171106842106
+    second: Icon_EquipPatrs_006_Earrings_31
+  - first:
+      213: -8347603963985400670
+    second: Icon_EquipPatrs_006_Earrings_32
+  - first:
+      213: 2958948489605533390
+    second: Icon_EquipPatrs_006_Earrings_33
+  - first:
+      213: 8072554429528381155
+    second: Icon_EquipPatrs_006_Earrings_34
+  - first:
+      213: 3028176458477504316
+    second: Icon_EquipPatrs_006_Earrings_35
+  - first:
+      213: -6219234152331618504
+    second: Icon_EquipPatrs_006_Earrings_36
+  - first:
+      213: -2883808143823283033
+    second: Icon_EquipPatrs_006_Earrings_37
+  - first:
+      213: -8278176260542532497
+    second: Icon_EquipPatrs_006_Earrings_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_0
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1229
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d225237c1809640800000000000000
+      internalID: 5084706671844011418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 596
+        height: 1226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405d77d2448cf8e30800000000000000
+      internalID: 4508041947167315204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1185
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5b391ed3bad0a20800000000000000
+      internalID: 3030266406556120482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 16
+        width: 594
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a6089248f4a8f90800000000000000
+      internalID: -6950655645842380145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_4
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1155
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5950b47700addb4b0800000000000000
+      internalID: -5422938680747948651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_5
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1195
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4771fc1ff77493120800000000000000
+      internalID: 2394023291767428980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 869
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc95631725179e90800000000000000
+      internalID: -7019118236660294436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 527
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a066f2fc2bf09f0800000000000000
+      internalID: -499984430691644860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_8
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 620
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6863de0ad8a2028a0800000000000000
+      internalID: -6332014288304261498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_9
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 608
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c9b369de1b52590800000000000000
+      internalID: -7699552353934140400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_10
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 618
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c215d028b259a4170800000000000000
+      internalID: 8163501288660488492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_11
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 541
+        width: 59
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e004f7f3fb0b3a90800000000000000
+      internalID: -7333254425777798941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_12
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 594
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ceafe9109578990800000000000000
+      internalID: -7383835200553554876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 539
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a12918d3e2ca530800000000000000
+      internalID: 3867517021706132000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_14
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 570
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85f592fc3ff90250800000000000000
+      internalID: 5911536623133521290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_15
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 539
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcaf7caf0862f740800000000000000
+      internalID: 5184320537584708794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_16
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 521
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e945572d092d490800000000000000
+      internalID: -7722951177400967625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_17
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 497
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a994303221590b50800000000000000
+      internalID: 6559863539521329576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 440
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36359aa07e441ad0800000000000000
+      internalID: -2732472828101839301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 435
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116a93a464b374560800000000000000
+      internalID: 7297866894256219665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_20
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 352
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ece6fe37dfc30520800000000000000
+      internalID: 2667203927714753766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_21
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 355
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de99049980c0468a0800000000000000
+      internalID: -6312907546596173331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_22
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 343
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92f4b5f734f82b00800000000000000
+      internalID: 804161054668288667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_23
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 337
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ef604801557c200800000000000000
+      internalID: 200222237864164948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_24
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 345
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb976dac3ed77a00800000000000000
+      internalID: 754315814796499898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_25
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 335
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fb0ccbccbb71930800000000000000
+      internalID: 4113963272640708439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_26
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 280
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d820b0f5a884cc00800000000000000
+      internalID: 920010470179481809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_27
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 271
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f712fa4c95bc7b0800000000000000
+      internalID: -5202966243209805971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_28
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 296
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12976caeab1a33820800000000000000
+      internalID: 2896836809504225569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_29
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 296
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54be77516dbaff780800000000000000
+      internalID: -8647003823556531387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_30
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 290
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252f33b702254e480800000000000000
+      internalID: -8870875066553601454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_31
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 288
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af53b325ca1404600800000000000000
+      internalID: 450432171106842106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_32
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 280
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ace1091c6a572c80800000000000000
+      internalID: -8347603963985400670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_33
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 262
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ececd9f59fb401920800000000000000
+      internalID: 2958948489605533390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_34
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 264
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e69b02cb79770070800000000000000
+      internalID: 8072554429528381155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_35
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 247
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3780cce17e360a20800000000000000
+      internalID: 3028176458477504316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 246
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837db474d77d0b9a0800000000000000
+      internalID: -6219234152331618504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_37
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 117
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acd803b5c7aaf7d0800000000000000
+      internalID: -2883808143823283033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_EquipPatrs_006_Earrings_38
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 0
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f647a4afc820e1d80800000000000000
+      internalID: -8278176260542532497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_EquipPatrs_006_Earrings_0: 5084706671844011418
+      Icon_EquipPatrs_006_Earrings_1: 4508041947167315204
+      Icon_EquipPatrs_006_Earrings_10: 8163501288660488492
+      Icon_EquipPatrs_006_Earrings_11: -7333254425777798941
+      Icon_EquipPatrs_006_Earrings_12: -7383835200553554876
+      Icon_EquipPatrs_006_Earrings_13: 3867517021706132000
+      Icon_EquipPatrs_006_Earrings_14: 5911536623133521290
+      Icon_EquipPatrs_006_Earrings_15: 5184320537584708794
+      Icon_EquipPatrs_006_Earrings_16: -7722951177400967625
+      Icon_EquipPatrs_006_Earrings_17: 6559863539521329576
+      Icon_EquipPatrs_006_Earrings_18: -2732472828101839301
+      Icon_EquipPatrs_006_Earrings_19: 7297866894256219665
+      Icon_EquipPatrs_006_Earrings_2: 3030266406556120482
+      Icon_EquipPatrs_006_Earrings_20: 2667203927714753766
+      Icon_EquipPatrs_006_Earrings_21: -6312907546596173331
+      Icon_EquipPatrs_006_Earrings_22: 804161054668288667
+      Icon_EquipPatrs_006_Earrings_23: 200222237864164948
+      Icon_EquipPatrs_006_Earrings_24: 754315814796499898
+      Icon_EquipPatrs_006_Earrings_25: 4113963272640708439
+      Icon_EquipPatrs_006_Earrings_26: 920010470179481809
+      Icon_EquipPatrs_006_Earrings_27: -5202966243209805971
+      Icon_EquipPatrs_006_Earrings_28: 2896836809504225569
+      Icon_EquipPatrs_006_Earrings_29: -8647003823556531387
+      Icon_EquipPatrs_006_Earrings_3: -6950655645842380145
+      Icon_EquipPatrs_006_Earrings_30: -8870875066553601454
+      Icon_EquipPatrs_006_Earrings_31: 450432171106842106
+      Icon_EquipPatrs_006_Earrings_32: -8347603963985400670
+      Icon_EquipPatrs_006_Earrings_33: 2958948489605533390
+      Icon_EquipPatrs_006_Earrings_34: 8072554429528381155
+      Icon_EquipPatrs_006_Earrings_35: 3028176458477504316
+      Icon_EquipPatrs_006_Earrings_36: -6219234152331618504
+      Icon_EquipPatrs_006_Earrings_37: -2883808143823283033
+      Icon_EquipPatrs_006_Earrings_38: -8278176260542532497
+      Icon_EquipPatrs_006_Earrings_4: -5422938680747948651
+      Icon_EquipPatrs_006_Earrings_5: 2394023291767428980
+      Icon_EquipPatrs_006_Earrings_6: -7019118236660294436
+      Icon_EquipPatrs_006_Earrings_7: -499984430691644860
+      Icon_EquipPatrs_006_Earrings_8: -6332014288304261498
+      Icon_EquipPatrs_006_Earrings_9: -7699552353934140400
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
