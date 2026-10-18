@@ -25,6 +25,7 @@ MonoBehaviour:
   cooldown: 1
   attackType: 1
   elementType: 1
+  skillTier: 2
   category: 0
   skillTypes: 00000000
   effects: []

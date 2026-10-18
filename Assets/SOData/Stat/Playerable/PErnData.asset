@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3661d248e3d4e6ea90c58352efb7942, type: 3}
+  m_Name: PErnData
+  m_EditorClassIdentifier: Assembly-CSharp::PlayableCharacterData
+  characterName: "\uC5D0\uB978 \uC2A4\uD2B8\uB808\uC774"
+  thumbnail: {fileID: 583255051, guid: 6b714e10528933c45be834e77d933313, type: 3}
+  fullBodyImage: {fileID: -1048451645090824486, guid: b2983d35ef207f6488d37e201f507ba7, type: 3}
+  descriptions: []
+  statsData: {fileID: 11400000, guid: 94931a40be21f4643b467f21d11c9c44, type: 2}
+  passiveSkills: []
+  basicSkills:
+  - {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+  intermediateSkills: []
+  advancedSkills: []
+  ultimateSkills: []
