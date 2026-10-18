@@ -7,6 +7,8 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -35,18 +37,58 @@ public static class VerifyCombatResult
         var root = new GameObject("Temporary Combat Result Verification");
         UnityEngine.Object.DontDestroyOnLoad(root);
         root.AddComponent<CombatResultVerification>();
+        // Menu shortcuts retain editor focus; mouse devices are suppressed until Game view owns focus.
+        Resources.FindObjectsOfTypeAll<EditorWindow>()
+            .Where(window => window.GetType().FullName == "UnityEditor.GameView")
+            .OrderByDescending(window => window.position.width * window.position.height)
+            .FirstOrDefault()?.Focus();
     }
 }
 
 public sealed class CombatResultVerification : MonoBehaviour
 {
     private int checks, errors;
+    // Keep the existing settings object installed: swapping/destroying it conflicts with editor play-mode restoration.
+    private static InputSettings originalInputSettings;
+    private InputSettings.BackgroundBehavior previousBackgroundBehavior;
+    private InputSettings.EditorInputBehaviorInPlayMode previousEditorInputBehavior;
+    private Mouse testMouse;
     private object Read(object target, string field) => target.GetType().GetField(field,
         BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance).GetValue(target);
     private void Check(bool result, string label)
     { checks++; if (!result) throw new Exception(label); }
     private void Click(Button button) => ExecuteEvents.Execute(button.gameObject,
         new PointerEventData(EventSystem.current) { button = PointerEventData.InputButton.Left }, ExecuteEvents.pointerClickHandler);
+    private void CheckPointerTarget(Button button)
+    {
+        Canvas.ForceUpdateCanvases();
+        var canvas = button.GetComponentInParent<Canvas>();
+        var camera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
+        var rect = (RectTransform)button.transform;
+        Vector2 position = RectTransformUtility.WorldToScreenPoint(camera, rect.TransformPoint(rect.rect.center));
+        var hits = new System.Collections.Generic.List<RaycastResult>();
+        EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current) { position = position }, hits);
+        var top = hits.Count > 0 ? hits[0].gameObject : null;
+        var handler = top != null ? ExecuteEvents.GetEventHandler<IPointerClickHandler>(top) : null;
+        Check(handler == button.gameObject,
+            $"Pointer must reach {button.transform.parent.name}/{button.name}; top raycast={top?.name ?? "none"}, handler={handler?.name ?? "none"}");
+    }
+    private IEnumerator ClickWithMouse(Button button)
+    {
+        Check(testMouse != null && testMouse.added, "Mouse device available for full UI input-path test");
+        Canvas.ForceUpdateCanvases();
+        var canvas = button.GetComponentInParent<Canvas>();
+        var camera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
+        var rect = (RectTransform)button.transform;
+        Vector2 position = RectTransformUtility.WorldToScreenPoint(camera, rect.TransformPoint(rect.rect.center));
+        // Feed separate mouse frames through InputSystemUIInputModule, rather than invoking OnClick.
+        InputSystem.QueueStateEvent(testMouse, new MouseState { position = position });
+        yield return null; yield return null;
+        InputSystem.QueueStateEvent(testMouse, new MouseState { position = position }.WithButton(MouseButton.Left));
+        yield return null; yield return null;
+        InputSystem.QueueStateEvent(testMouse, new MouseState { position = position });
+        yield return null; yield return null;
+    }
     private T Find<T>() where T : UnityEngine.Object => FindFirstObjectByType<T>();
     private TMP_Text Text(CombatResultView view, string field) => (TMP_Text)Read(view, field);
     private void Log(string message, string trace, LogType type)
@@ -54,6 +96,14 @@ public sealed class CombatResultVerification : MonoBehaviour
 
     private IEnumerator Start()
     {
+        // Temporarily allow the virtual test mouse through when the automation window loses focus.
+        // Restore both values without saving the settings asset or touching the native mouse state.
+        originalInputSettings = InputSystem.settings;
+        previousBackgroundBehavior = originalInputSettings.backgroundBehavior;
+        previousEditorInputBehavior = originalInputSettings.editorInputBehaviorInPlayMode;
+        originalInputSettings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
+        originalInputSettings.editorInputBehaviorInPlayMode = InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
+        testMouse = InputSystem.AddDevice<Mouse>("ResultVerificationMouse");
         Application.logMessageReceived += Log;
         var body = Body(); bool failed = false;
         while (true)
@@ -63,11 +113,26 @@ public sealed class CombatResultVerification : MonoBehaviour
             catch (Exception error) { failed = true; Debug.LogError("[CombatResultTest] FAIL " + error); break; }
             yield return next;
         }
+        RestoreInput();
         Application.logMessageReceived -= Log;
         Debug.Log($"[CombatResultTest] RESULT checks={checks}, errors={errors}, failed={failed}");
         Time.timeScale = 1f;
         EditorApplication.delayCall += () => EditorApplication.isPlaying = false;
     }
+
+    private void RestoreInput()
+    {
+        if (testMouse != null && testMouse.added) InputSystem.RemoveDevice(testMouse);
+        testMouse = null;
+        if (originalInputSettings != null)
+        {
+            originalInputSettings.backgroundBehavior = previousBackgroundBehavior;
+            originalInputSettings.editorInputBehaviorInPlayMode = previousEditorInputBehavior;
+        }
+        originalInputSettings = null;
+    }
+
+    private void OnDestroy() => RestoreInput();
 
     private IEnumerator Body()
     {
@@ -115,9 +180,13 @@ public sealed class CombatResultVerification : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         var inputModule = EventSystem.current.GetComponent<InputSystemUIInputModule>();
         Check(inputModule != null && inputModule.leftClick.action.enabled,"UI click input enabled before result");
-        Click((Button)Read(controller,"testClearButton"));
+        var clearClick = ClickWithMouse((Button)Read(controller,"testClearButton"));
+        while (clearClick.MoveNext()) yield return clearClick.Current;
         var result = controller.Result;
         Check(result != null && result.IsTestClear && view.IsVisible && Time.timeScale == 0f,"Clear test button opens test result and pauses combat");
+        yield return new WaitForEndOfFrame();
+        CheckPointerTarget(view.RetryButton);
+        CheckPointerTarget(view.TownButton);
         Check(!controller.Record.IsRecording && result.Kills == 2 && result.DamageDealt == 7 + lifeHP + nextLifeHP &&
             result.DamageReceived == 3,"Immutable result captures actual combat totals");
         Check(Text(view,"stageDescription").text.Contains("미선택") && Text(view,"stageName").text.Contains("없음"),"Standalone has no fabricated stage identity");
@@ -155,14 +224,19 @@ public sealed class CombatResultVerification : MonoBehaviour
             Check(scroll.content.Cast<Transform>().All(t=>!t.gameObject.activeSelf),"Re-show resets item presentation without granting anything");
         }
         else Debug.LogWarning("[CombatResultTest] No ItemData fixture: dynamic item view not tested.");
-        Click(view.RetryButton); yield return null; yield return null; yield return null;
+        var retryClick = ClickWithMouse(view.RetryButton);
+        while (retryClick.MoveNext()) yield return retryClick.Current;
+        yield return null; yield return null; yield return null;
         controller = Find<CombatResultController>(); entry = Find<CombatPlayerEntry>(); view = Find<CombatResultView>();
         Check(SceneManager.GetActiveScene().name == "Dev_Combat" && Time.timeScale == 1f && !view.IsVisible &&
             controller.Result == null && controller.Record.DamageDealt == 0 && controller.Record.Kills == 0,"Retry reloads and clears record/UI/pause");
         Check(entry.SelectedMap == null && entry.SelectedCharacter == null && entry.ActivePlayer.name == "Playerable","Standalone retry retains authored player");
         entry.ActivePlayer.GetComponent<Health>().TakeDamage(1);
         Check(controller.Record.DamageReceived == 1,"No stale static event subscriptions after retry");
-        controller.CompleteForTesting(); Click(view.TownButton); yield return null; yield return null;
+        controller.CompleteForTesting();
+        var townClick = ClickWithMouse(view.TownButton);
+        while (townClick.MoveNext()) yield return townClick.Current;
+        yield return null; yield return null;
         Check(SceneManager.GetActiveScene().name == "Town" && Time.timeScale == 1f && Find<CharacterMotor2D>() == null,
             "Town return restores time and unloads combat actors");
         foreach (bool ern in new[] {true,false})
@@ -179,7 +253,9 @@ public sealed class CombatResultVerification : MonoBehaviour
             Check(!selectedResult.IsTestClear && selectedResult.Stage == map && Text(view,"stageName").text == map.mapName &&
                 Text(view,"stageDescription").text.Contains(map.rank + "등급") &&
                 Text(view,"stageDescription").text.Contains("침식도 " + map.corruption),"Completion API displays selected MapData without inventing an objective");
-            Click(view.RetryButton); yield return null; yield return null; yield return null;
+            var selectedRetryClick = ClickWithMouse(view.RetryButton);
+            while (selectedRetryClick.MoveNext()) yield return selectedRetryClick.Current;
+            yield return null; yield return null; yield return null;
             entry = Find<CombatPlayerEntry>(); controller = Find<CombatResultController>(); view = Find<CombatResultView>();
             Check(entry.SelectedMap == map && entry.SelectedCharacter == character && entry.ActivePlayer.GetComponent<CharacterStats>().Level == 1,
                 "Retry preserves selected map, character and level " + character.characterName);
