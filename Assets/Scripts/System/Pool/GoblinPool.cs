@@ -31,6 +31,8 @@ public class GoblinPool : MonoBehaviour
         );
     }
 
+    public void SetPlayer(Transform target) => player = target;
+
     public void SpawnGoblin()
     {
         // 현재 활성화된 고블린이 있다면

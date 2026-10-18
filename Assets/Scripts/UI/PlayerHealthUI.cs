@@ -6,11 +6,20 @@ public class PlayerHealthUI : MonoBehaviour
     [SerializeField] private Health health;
     [SerializeField] private Image healthCover;
 
+    public void Bind(Health target)
+    {
+        if (isActiveAndEnabled) OnDisable();
+        health = target;
+        if (isActiveAndEnabled) OnEnable();
+    }
+
     private void OnEnable()
     {
         if (health == null)
             return;
 
+        // Entry binding may run before Unity invokes this view's first OnEnable.
+        health.HealthChanged -= UpdateHealth;
         health.HealthChanged += UpdateHealth;
         UpdateHealth(health.CurrentHealth, health.MaxHealth);
     }

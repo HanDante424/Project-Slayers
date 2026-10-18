@@ -91,7 +91,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
         ringsButton = TownButtonBinder.Bind(ringsButtonRoot, OpenRings, this);
         badgeButton = TownButtonBinder.Bind(badgeButtonRoot, OpenBadge, this);
 
-        OpenBlackMarket();
+        OpenGeneralExchange();
     }
 
     private void OnDisable()
@@ -137,6 +137,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
         currentBlackSmithFunction = BlackSmithFunction.Craft;
         ShowShopScreen(blackSmithPanel);
         ShowBlackSmithMenuButtons();
+        SelectFunction(craftButton);
         ShowCraftLabels();
         OpenBlackSmithParts();
         titleController?.SetTitle("대장간 - 제작");
@@ -144,11 +145,13 @@ public sealed class TownShopNavigationController : MonoBehaviour
 
     public void OpenBuy()
     {
+        SelectFunction(buyButton);
         titleController?.SetTitle($"{GetCurrentShopName()} - 구매");
     }
 
     public void OpenSell()
     {
+        SelectFunction(sellButton);
         titleController?.SetTitle($"{GetCurrentShopName()} - 판매");
     }
 
@@ -160,6 +163,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
     public void OpenEnhance()
     {
         OpenBlackSmith();
+        SelectFunction(enhanceButton);
         currentBlackSmithFunction = BlackSmithFunction.Enhance;
         ShowEnhanceLabels();
         titleController?.SetTitle("대장간 - 강화");
@@ -167,6 +171,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
 
     public void OpenQuest()
     {
+        SelectFunction(questButton);
         titleController?.SetTitle($"{GetCurrentShopName()} - 퀘스트");
     }
 
@@ -202,6 +207,9 @@ public sealed class TownShopNavigationController : MonoBehaviour
 
     private void ShowShopScreen(GameObject targetPanel)
     {
+        TownButtonBinder.Select(targetPanel == generalExchangePanel ? generalExchangeButton :
+            targetPanel == blackMarketPanel ? blackMarketButton : blackSmithButton,
+            generalExchangeButton, blackMarketButton, blackSmithButton);
         SetActive(generalExchangePanel, generalExchangePanel == targetPanel);
         SetActive(blackMarketPanel, blackMarketPanel == targetPanel);
         SetActive(blackSmithPanel, blackSmithPanel == targetPanel);
@@ -215,6 +223,9 @@ public sealed class TownShopNavigationController : MonoBehaviour
         SetButtonActive(craftButtonRoot, false);
         SetButtonActive(enhanceButtonRoot, false);
     }
+
+    private void SelectFunction(Button button) => TownButtonBinder.Select(button,
+        buyButton, sellButton, craftButton, enhanceButton, questButton);
 
     private void ShowBlackSmithMenuButtons()
     {

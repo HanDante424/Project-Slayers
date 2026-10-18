@@ -35,21 +35,28 @@ public sealed class TownStorageNavigationController : MonoBehaviour
 
     public void OpenAll()
     {
+        SelectCategory(allButton);
         titleController?.SetTitle("창고 - 전체");
     }
 
     public void OpenEquipment()
     {
+        SelectCategory(equipmentButton);
         titleController?.SetTitle("창고 - 장비");
     }
 
     public void OpenMaterials()
     {
+        SelectCategory(materialsButton);
         titleController?.SetTitle("창고 - 소재");
     }
 
     public void OpenQuest()
     {
+        SelectCategory(questButton);
         titleController?.SetTitle("창고 - 퀘스트");
     }
+
+    private void SelectCategory(Button button) => TownButtonBinder.Select(button,
+        allButton, equipmentButton, materialsButton, questButton);
 }

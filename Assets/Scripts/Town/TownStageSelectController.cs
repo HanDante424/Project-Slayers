@@ -32,10 +32,12 @@ public class TownStageSelectController : MonoBehaviour
         public RectTransform Root;
         public Button Button;
         public MenuButtonVisual Visual;
+        public LayoutElement Layout;
     }
 
     private readonly Dictionary<int, Row> rankRows = new();
     private readonly Dictionary<MapData, Row> stageRows = new();
+    private float rankLayoutWidth = -1f;
 
     public void RefreshEnemyDetails() => detailsView?.RefreshEnemies();
 
@@ -55,10 +57,12 @@ public class TownStageSelectController : MonoBehaviour
         rankRows.Clear();
         ClearStages();
         SelectedRank = null;
+        rankLayoutWidth = -1f;
     }
 
     public void Refresh()
     {
+        rankLayoutWidth = -1f;
         HideTemplates();
         ClearRows(rankRows.Values);
         rankRows.Clear();
@@ -75,7 +79,32 @@ public class TownStageSelectController : MonoBehaviour
             row.Button.onClick.AddListener(() => SelectRank(capturedRank));
             rankRows.Add(rank, row);
         }
+        Canvas.ForceUpdateCanvases();
+        UpdateRankLayout();
         if (ranks.Count > 0) SelectRank(ranks[0]);
+    }
+
+    private void LateUpdate() => UpdateRankLayout();
+
+    private void UpdateRankLayout()
+    {
+        if (rankContent == null || rankRows.Count == 0) return;
+        float width = rankContent.rect.width;
+        if (width <= 0f || Mathf.Approximately(rankLayoutWidth, width)) return;
+        var group = rankContent.GetComponent<HorizontalLayoutGroup>();
+        if (group == null) return;
+        // Preserve the authored six-slot strip even when only one rank is available.
+        // A hidden template's rect is layout-driven and may have zero width.
+        int slots = Mathf.Max(rankRows.Count, rankPlaceholders != null ? rankPlaceholders.Length : 1);
+        float buttonWidth = Mathf.Max(0f, (width - group.padding.horizontal - group.spacing * (slots - 1)) / slots);
+        foreach (Row row in rankRows.Values)
+        {
+            if (row.Layout == null) continue;
+            row.Layout.preferredWidth = buttonWidth;
+            row.Layout.flexibleWidth = 0f;
+        }
+        rankLayoutWidth = width;
+        LayoutRebuilder.MarkLayoutForRebuild(rankContent);
     }
 
     public void SelectRank(int rank)
@@ -126,15 +155,6 @@ public class TownStageSelectController : MonoBehaviour
         if (template == null || parent == null) return null;
         RectTransform root = Instantiate(template, parent, false);
         root.name = name;
-        if (template == rankButtonTemplate)
-        {
-            LayoutElement layout = root.GetComponent<LayoutElement>();
-            if (layout != null)
-            {
-                layout.preferredWidth = template.rect.width;
-                layout.flexibleWidth = 0;
-            }
-        }
         Button button = root.GetComponentInChildren<Button>(true);
         if (button == null)
         {
@@ -148,9 +168,9 @@ public class TownStageSelectController : MonoBehaviour
         TMP_Text label = button.GetComponentInChildren<TMP_Text>(true);
         if (label != null) label.text = text;
         root.gameObject.SetActive(true);
-        var visual = button.GetComponent<MenuButtonVisual>();
+        var visual = TownButtonBinder.GetVisual(button);
         visual?.SetSelected(false);
-        return new Row { Root = root, Button = button, Visual = visual };
+        return new Row { Root = root, Button = button, Visual = visual, Layout = root.GetComponent<LayoutElement>() };
     }
 
     private void ClearStages()

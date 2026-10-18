@@ -313,7 +313,16 @@ public class CharacterStats : MonoBehaviour
     }
 
 
-    private float GetFinalStat(StatType statType)
+    public void Initialize(CharacterStatsData definition, int characterLevel)
+    {
+        if (definition == null) throw new ArgumentNullException(nameof(definition));
+        characterData = definition;
+        level = Mathf.Max(1, characterLevel);
+        modifiers.Clear();
+        RecalculateFinalStats();
+    }
+
+    public float GetFinalStat(StatType statType)
     {
         if (!finalStats.TryGetValue(statType, out float value))
         {

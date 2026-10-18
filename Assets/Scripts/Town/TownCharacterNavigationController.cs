@@ -177,6 +177,8 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
 
     private void ShowCharacterScreen(GameObject targetPanel)
     {
+        TownButtonBinder.Select(targetPanel == statPanel ? statButton : targetPanel == equipPanel ? equipButton : skillButton,
+            statButton, equipButton, skillButton);
         SetActive(statPanel, statPanel == targetPanel);
         SetActive(equipPanel, equipPanel == targetPanel);
         SetActive(skillPanel, skillPanel == targetPanel);

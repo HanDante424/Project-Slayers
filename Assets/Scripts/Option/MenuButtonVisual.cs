@@ -30,6 +30,19 @@ public class MenuButtonVisual : MonoBehaviour,
     private bool wasInteractable;
     private bool isSelected;
 
+    // Used by Town buttons that do not yet have an authored visual component.
+    public void Initialize(Image targetBackground, TMP_Text targetLabel)
+    {
+        background = targetBackground;
+        label = targetLabel;
+        if (background != null) normalBackground = background.color;
+        if (label != null) normalText = label.color;
+        ButtonTextColorChanger textColorChanger = GetComponent<ButtonTextColorChanger>();
+        if (textColorChanger != null && textColorChanger.buttonText == label)
+            textColorChanger.enabled = false;
+        RefreshVisual();
+    }
+
     public void SetSelected(bool selected)
     {
         isSelected = selected;

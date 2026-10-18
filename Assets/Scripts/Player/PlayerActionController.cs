@@ -33,6 +33,8 @@ public class PlayerActionController : MonoBehaviour
     private static readonly int TripleSlashHash =
         Animator.StringToHash("TripleSlash");
 
+    public void BindCooldownUI(SkillCooldownUI view) => tripleSlashCooldownUI = view;
+
     private void Awake()
     {
         characterMechanism = characterMechanismBehaviour as ICharacterMechanism;

@@ -1,0 +1,899 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &433360445887310880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5001441038369759358}
+  m_Layer: 8
+  m_Name: SkillMechanism
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5001441038369759358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433360445887310880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7739720371565552500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1797524147470270424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2440112790309723112}
+  m_Layer: 8
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2440112790309723112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797524147470270424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7739720371565552500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3437711596555847595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7739720371565552500}
+  - component: {fileID: 6238615659194636293}
+  - component: {fileID: 6026784950299866808}
+  - component: {fileID: 5924101345099937018}
+  - component: {fileID: 645405263674206714}
+  - component: {fileID: 1310615073161229423}
+  - component: {fileID: 4490906059633910093}
+  - component: {fileID: 7487429247854141157}
+  - component: {fileID: 4537081409154533274}
+  - component: {fileID: 8064916128700431635}
+  - component: {fileID: 5468051855236292929}
+  - component: {fileID: 8148312560847854926}
+  - component: {fileID: 7272175492452080801}
+  - component: {fileID: 9138342996376539888}
+  - component: {fileID: 9064581010291661355}
+  m_Layer: 8
+  m_Name: Mayhem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7739720371565552500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.764, y: -4.311, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2210157646717792663}
+  - {fileID: 3527886695147697280}
+  - {fileID: 2440112790309723112}
+  - {fileID: 5001441038369759358}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &6238615659194636293
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0
+  m_GravityScale: 3
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!70 &6026784950299866808
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f51ad6e4c0d7d9f48b14c41475d49372, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1}
+  m_Size: {x: 0.4, y: 1.8}
+  m_Direction: 0
+--- !u!114 &5924101345099937018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 97a18d07475997a4587b751962cbf2b0, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme:
+  m_DefaultActionMap: player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &645405263674206714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af4d4467d7cb4d4faf706bc83973706, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputReader
+--- !u!114 &1310615073161229423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7612ea8b260b7de4dab326ddb35bd765, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterMotor2D
+  inputReader: {fileID: 645405263674206714}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 5
+  jumpForce: 10
+  groundCheckDistance: 0.08
+  movementControl: 0
+  reducedMoveMultiplier: 0.5
+--- !u!114 &4490906059633910093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960f4a392081c7044aee02b46510d164, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
+  animator: {fileID: 3677944353199458200}
+  motor: {fileID: 1310615073161229423}
+  rb: {fileID: 6238615659194636293}
+  moveThreshold: 0.01
+  verticalThreshold: 0.05
+  moveGraceTime: 0.08
+--- !u!114 &7487429247854141157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d598ad7a07929498c835ea7d3c7050, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBindingLoader
+  playerInput: {fileID: 5924101345099937018}
+--- !u!114 &4537081409154533274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d9dede5a921774b83179934cf2109d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
+  characterData: {fileID: 11400000, guid: b29249a9d35eba64992310f7a60ac885, type: 2}
+  level: 1
+--- !u!114 &8064916128700431635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef31671144f32c438a7f4d12f81022f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerActionController
+  inputReader: {fileID: 645405263674206714}
+  motor: {fileID: 1310615073161229423}
+  animator: {fileID: 3677944353199458200}
+  characterMechanismBehaviour: {fileID: 9064581010291661355}
+  tripleSlashClip: {fileID: 7400000, guid: 3d55f38dd1bddd24689519bbbaaa1b89, type: 2}
+  tripleSlashSkillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+  tripleSlashSkill:
+    currentLevel: 1
+  tripleSlashCooldownUI: {fileID: 0}
+  tripleSlashEffectPrefab: {fileID: 2868521879224747355, guid: b3bb9abb9252cfa4384ea654c04cb795, type: 3}
+  effectSpawnPoint: {fileID: 3527886695147697280}
+--- !u!114 &5468051855236292929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd489b83a4c2b40b2bcd5ad2088d08, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 100
+--- !u!114 &8148312560847854926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a3d39278ce4c4a93df14214a21e8af, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHitReceiver
+  health: {fileID: 5468051855236292929}
+  animationController: {fileID: 4490906059633910093}
+  motor: {fileID: 1310615073161229423}
+--- !u!114 &7272175492452080801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0dc4bcee0c24c298710a8e3222c2bfe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMana
+  characterStats: {fileID: 4537081409154533274}
+--- !u!114 &9138342996376539888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdb483158294318ad5ab476395985a1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  characterStats: {fileID: 4537081409154533274}
+  health: {fileID: 5468051855236292929}
+--- !u!114 &9064581010291661355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437711596555847595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cf61bfb56c4f2a9cbb9fa2eb58ac91, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::MayhemMechanism
+  bloodAxeReady:
+    animationClip: {fileID: 7400000, guid: 82c821b06449092469d70672fed3a991, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_012_BloodAxe_Ready
+    animatorTrigger: BloodAxeReady
+  bloodAxeAttack:
+    animationClip: {fileID: 7400000, guid: 1578f8bf233263b4790966010c2d447f, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_012_BloodAxe_Attack
+    animatorTrigger: BloodAxeAttack
+  bloodAxeEffectReady:
+    effectPrefab: {fileID: 48799676336045232, guid: 2accfd6490a777843b3cfe2092519035, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 0cf02e00ffa0c17468ed90363e7e0550, type: 2}
+    effectSpawnOffset: {x: 0, y: 0}
+    attackSettings:
+      hitPermission: 1
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodAxeEffectAttack:
+    effectPrefab: {fileID: 6120578073460108736, guid: bc61bae496f6e6e47bdfbb1fc258067a, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: af21e41c10b81fd4f9d3f95fb5f4f0a3, type: 2}
+    effectSpawnOffset: {x: 1.9, y: -1.25}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodAxeEffectBurst00:
+    effectPrefab: {fileID: 6441742134382726601, guid: dbde45f62bddc954d97cab91a368293e, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: e43035fb5353ed94390f58e8f2c33a1d, type: 2}
+    effectSpawnOffset: {x: 0, y: 0}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodAxeEffectBurst01:
+    effectPrefab: {fileID: 4108319611262251097, guid: bdf06267e29d7fc4c8f3b6de4dde2412, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 65af27c74ec652a43b4a9147cd16b4f0, type: 2}
+    effectSpawnOffset: {x: 2, y: -1.5}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodCombination00:
+    motionAnimationClip: {fileID: 7400000, guid: aea66696d5362d344b2c370ae517b3c8, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_023_BloodCombination_00
+    animatorTrigger: BloodCombination00
+    effectPrefab: {fileID: 4686326441024120220, guid: b6c025be047d9f1419d887953799bc4c, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 428ffa9615dd25b449585666b6c9704f, type: 2}
+    effectSpawnOffset: {x: -2, y: -1.75}
+    effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodCombination01:
+    motionAnimationClip: {fileID: 7400000, guid: 311156901476f4e45afe15c4bca10ed8, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_023_BloodCombination_01
+    animatorTrigger: BloodCombination01
+    effectPrefab: {fileID: 5261600277052312968, guid: 0860537632bd1084985c9cca683e56f0, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: eb9952d01c6a1a04ca86a0f75e148d79, type: 2}
+    effectSpawnOffset: {x: 4, y: 0}
+    effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodCombination02:
+    motionAnimationClip: {fileID: 7400000, guid: 353a14113a537ab4690a66604656af4b, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_023_BloodCombination_02
+    animatorTrigger: BloodCombination02
+    effectPrefab: {fileID: 6056375405736794868, guid: 0874040ec269225459f1581b6d3d630e, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: c9eb1cba63935b841a0b12efde8201da, type: 2}
+    effectSpawnOffset: {x: 2.5, y: -1}
+    effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage00:
+    motionAnimationClip: {fileID: 7400000, guid: e645a57583941c94aaf2311cd62acbe4, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_00
+    animatorTrigger: BloodRampage00
+    effectPrefab: {fileID: 4116792233763330721, guid: 81a627f97ae8d0140915c377d5f4c0b4, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 15aa47685db94984d8db7802a71061a2, type: 2}
+    effectSpawnOffset: {x: 1.5, y: 0.5}
+    effectSpawnFrame: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage01:
+    motionAnimationClip: {fileID: 7400000, guid: d190e0acc0916a141833fd63d440eded, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_01
+    animatorTrigger: BloodRampage01
+    effectPrefab: {fileID: 3577073536530358742, guid: 1882ed118a4c6a64c885bd498dfa6891, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 55c854fc1362e1f409bb9620d1092f44, type: 2}
+    effectSpawnOffset: {x: -1, y: -1.5}
+    effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage02:
+    motionAnimationClip: {fileID: 7400000, guid: 36aede80726ce8b46b8f2e4f9ce6c94c, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_02
+    animatorTrigger: BloodRampage02
+    effectPrefab: {fileID: 6530653202786414497, guid: 385452411075e7740be5dd2392f08097, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 935523ba0286ae84c977bdde3a73abae, type: 2}
+    effectSpawnOffset: {x: 0.5, y: -2}
+    effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage03:
+    motionAnimationClip: {fileID: 7400000, guid: 12a60f16f3ee2414795acf0b3fc3ebe3, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_03
+    animatorTrigger: BloodRampage03
+    effectPrefab: {fileID: 4584980425047760863, guid: 71e2f158269b7d5418291805365804c2, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: acb251e25dca59d4b9ed609e893a7b62, type: 2}
+    effectSpawnOffset: {x: -3, y: 0}
+    effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage04:
+    motionAnimationClip: {fileID: 7400000, guid: cb5a9c4d2049cea4c80462f65bbf3efc, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_04
+    animatorTrigger: BloodRampage04
+    effectPrefab: {fileID: 4883616476546417416, guid: 5f075dab3a853ff428c2fcf35c130069, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 7511fe504a2ddd142b9885ea0840795b, type: 2}
+    effectSpawnOffset: {x: -2, y: 0.75}
+    effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage05:
+    motionAnimationClip: {fileID: 7400000, guid: c46de0c353169b447bf71cf0de34ae39, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_05
+    animatorTrigger: BloodRampage05
+    effectPrefab: {fileID: 6186949303136281204, guid: 3b3d3d027102bf94eba101c92380f00d, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: af98911375262cd489064e52b082cb7a, type: 2}
+    effectSpawnOffset: {x: -1.5, y: 0}
+    effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodRampage06:
+    motionAnimationClip: {fileID: 7400000, guid: 91c6cc36c48c9cc4682b9ad11c316c04, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_020_BloodRampage_06
+    animatorTrigger: BloodRampage06
+    effectPrefab: {fileID: 33423686378015161, guid: 728899a0a06ca0b45abc3c2ebfb216c8, type: 3}
+    effectAnimationClip: {fileID: 7400000, guid: 4a527a789e8a23045bd1f40f866e61bf, type: 2}
+    effectSpawnOffset: {x: 6, y: 3}
+    effectSpawnFrame: 0
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSpearReady:
+    animationClip: {fileID: 7400000, guid: ee44aa338bf87804e8b1ae29b789e9d4, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_Ready
+    animatorTrigger: BloodSpearReady
+  bloodSpearAttackDash:
+    animationClip: {fileID: 7400000, guid: 69a59bb07c51b874db54907c142736cd, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_AttackDash
+    animatorTrigger: BloodSpearAttackDash
+  bloodSpearAttackFinish:
+    animationClip: {fileID: 7400000, guid: 963da0107ad0c7c4f8c8115f8719a4ca, type: 2}
+    animatorState: Playerable_Mayhem_Skill_Motion_011_BloodSpear_AttackFinish
+    animatorTrigger: BloodSpearAttackFinish
+  bloodSpearDashDistance: 2.5
+  bloodSpearDashSpeed: 15
+  bloodSpearMaximumDashDuration: 0.5
+  bloodSpearEffect00:
+    effectPrefab: {fileID: 7549224415003939797, guid: 0d88dd7ef21bd4f4696602ffe3ce4e2e, type: 3}
+    effectClip: {fileID: 7400000, guid: 09de96f5af2956a48b16d2629b538e42, type: 2}
+    spawnOffset: {x: 2.5, y: 0.25}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSpearEffect01:
+    effectPrefab: {fileID: 2998229809439003581, guid: 9ad82e8050593244c8395ac8e6eed18c, type: 3}
+    effectClip: {fileID: 7400000, guid: 56b0b8d9655497a42b6d2c3d813a9b5e, type: 2}
+    spawnOffset: {x: 3, y: 1.5}
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  enableTemporaryBloodSpearFollowUpEffect: 1
+  motor: {fileID: 1310615073161229423}
+  animator: {fileID: 3677944353199458200}
+  effectSpawnPoint: {fileID: 3527886695147697280}
+  bloodSword00:
+    animatorTrigger: BloodSword00
+    animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_00
+    animationClip: {fileID: 7400000, guid: b514ae8b30fb21a41bd78f3ad2bc14ad, type: 2}
+    effectPrefab: {fileID: 8874275379427361900, guid: 752ce0c76189e834b821b0d02062369d, type: 3}
+    effectClip: {fileID: 7400000, guid: 297c55cdedb10314d93881956115b2ad, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 1.75, y: -0.5}
+    movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSword01:
+    animatorTrigger: BloodSword01
+    animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_01
+    animationClip: {fileID: 7400000, guid: 1d550fecf911f0b43839920c9d122d49, type: 2}
+    effectPrefab: {fileID: 7512385157729660577, guid: a72cf64171671694aac566cb29531ed5, type: 3}
+    effectClip: {fileID: 7400000, guid: f18dbdc15949bf7439b860b942b73abd, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: -1.75, y: 0}
+    movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSword02:
+    animatorTrigger: BloodSword02
+    animatorState: Playerable_Mayhem_Skill_Animation_004_BloodSword_02
+    animationClip: {fileID: 7400000, guid: f8f0449edcf544f47ab3cabfbcdd4ec1, type: 2}
+    effectPrefab: {fileID: 6776932425870002335, guid: ef1c1b0c7f338f84a914de49680d4c0e, type: 3}
+    effectClip: {fileID: 7400000, guid: 318d3d25757462848b5279437fb1b3b3, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 1.5, y: -1}
+    movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSlash00:
+    animatorTrigger: BloodSlash00
+    animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_00
+    animationClip: {fileID: 7400000, guid: 92188e3d90393b74ca5732928dce7da7, type: 2}
+    effectPrefab: {fileID: 2950378199197764691, guid: dec19ccb651f4a8408e7a11c207b5de0, type: 3}
+    effectClip: {fileID: 7400000, guid: 9cc487e2614442b43aeb5b73efa364b4, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 1.25, y: 0.25}
+    movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSlash01:
+    animatorTrigger: BloodSlash01
+    animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_01
+    animationClip: {fileID: 7400000, guid: 28665fd27f9fb7c4f88c9bd76b9f8b90, type: 2}
+    effectPrefab: {fileID: 3203232088661709218, guid: a46196a127463694890bb9295ffcd0a4, type: 3}
+    effectClip: {fileID: 7400000, guid: e0d9f5bac71119c48a92f00762ad0126, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 0.5, y: 0}
+    movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+  bloodSlash02:
+    animatorTrigger: BloodSlash02
+    animatorState: Playerable_Mayhem_Skill_Motion_010_BloodSlash_02
+    animationClip: {fileID: 7400000, guid: 6a00dc28129239243a8229465572525a, type: 2}
+    effectPrefab: {fileID: 8404979042444256450, guid: cd48406b4ef827643b4550026a2d73ea, type: 3}
+    effectClip: {fileID: 7400000, guid: a23ae478b52836b48976e5f19bd82d19, type: 2}
+    effectSpawnFrame: 2
+    comboGraceFrames: 12
+    inputBufferStartFrame: 0
+    inputBufferEndFrame: -1
+    effectSpawnOffset: {x: 2.5, y: 0}
+    movementControl: 2
+    attackSettings:
+      hitPermission: 2
+      skillData: {fileID: 11400000, guid: 55d6cec5c8e94c3e9b1dc943b78e81a9, type: 2}
+      skill:
+        currentLevel: 1
+      hitIndex: 0
+      hitboxStartTime: 0
+      hitboxEndTime: -1
+--- !u!1 &7303641801836451212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2210157646717792663}
+  - component: {fileID: 5666952485708576943}
+  - component: {fileID: 3677944353199458200}
+  m_Layer: 0
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2210157646717792663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303641801836451212}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7739720371565552500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5666952485708576943
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303641801836451212}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 4746843545702648217, guid: e15e03013ebf4e84eac134411863aeb7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.64, y: 20.03}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!95 &3677944353199458200
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303641801836451212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f6436fb6f24dd4146a96da801419b3b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8260240837098497021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3527886695147697280}
+  m_Layer: 0
+  m_Name: EffectSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3527886695147697280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8260240837098497021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7739720371565552500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

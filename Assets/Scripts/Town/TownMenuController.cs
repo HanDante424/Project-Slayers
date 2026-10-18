@@ -80,6 +80,10 @@ public class TownMenuController : MonoBehaviour
 
     private void ShowPanel(GameObject targetPanel)
     {
+        TownButtonBinder.Select(targetPanel == battlePanel ? battleButton :
+            targetPanel == characterPanel ? characterButton : targetPanel == shopPanel ? shopButton :
+            targetPanel == researchPanel ? researchButton : targetPanel == storagePanel ? storageButton : null,
+            battleButton, characterButton, shopButton, researchButton, storageButton);
         if (battlePanel != null)
             battlePanel.SetActive(battlePanel == targetPanel);
 
@@ -102,6 +106,21 @@ public class TownMenuController : MonoBehaviour
 
 internal static class TownButtonBinder
 {
+    public static void Select(Button selected, params Button[] group)
+    {
+        foreach (Button button in group)
+            if (button != null) GetVisual(button).SetSelected(button == selected);
+    }
+
+    public static MenuButtonVisual GetVisual(Button button)
+    {
+        var visual = button.GetComponent<MenuButtonVisual>();
+        if (visual != null) return visual;
+        visual = button.gameObject.AddComponent<MenuButtonVisual>();
+        visual.Initialize(button.targetGraphic as Image, button.GetComponentInChildren<TMPro.TMP_Text>(true));
+        return visual;
+    }
+
     public static Button Bind(Transform buttonRoot, UnityAction listener, Object context)
     {
         if (buttonRoot == null)

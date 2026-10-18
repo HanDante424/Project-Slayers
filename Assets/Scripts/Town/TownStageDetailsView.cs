@@ -153,7 +153,7 @@ public class TownStageDetailsView : MonoBehaviour
         button.interactable = true;
         SetText(button.GetComponentInChildren<TMP_Text>(true), text);
         root.gameObject.SetActive(true);
-        MenuButtonVisual visual = button.GetComponent<MenuButtonVisual>();
+        MenuButtonVisual visual = TownButtonBinder.GetVisual(button);
         visual?.SetSelected(false);
         return new DetailRow { Root = root, Button = button, Visual = visual };
     }

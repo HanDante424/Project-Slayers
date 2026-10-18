@@ -10,6 +10,7 @@ public sealed class TownBattleNavigationController : MonoBehaviour
     [Header("Battle Screens")]
     [SerializeField] private GameObject battleSelectPanel;
     [SerializeField] private GameObject stageSelectPanel;
+    [SerializeField] private GameObject characterSelectPanel;
 
     [Header("Stage Description Tabs")]
     [SerializeField] private GameObject basicDescriptionPanel;
@@ -77,6 +78,8 @@ public sealed class TownBattleNavigationController : MonoBehaviour
 
     public void OpenBattleSelect()
     {
+        SelectSearch();
+        SetActive(characterSelectPanel, false);
         SetActive(battleSelectPanel, true);
         SetActive(stageSelectPanel, false);
         titleController?.SetTitle("전투");
@@ -84,6 +87,7 @@ public sealed class TownBattleNavigationController : MonoBehaviour
 
     public void OpenStageSelect()
     {
+        SetActive(characterSelectPanel, false);
         SetActive(battleSelectPanel, false);
         stageSelectController?.Show(selectedMapType);
         SetActive(stageSelectPanel, true);
@@ -91,15 +95,21 @@ public sealed class TownBattleNavigationController : MonoBehaviour
         titleController?.SetTitle(GetSelectedBattleTitle());
     }
 
-    public void SelectSearch() => selectedMapType = MapType.Search;
+    public void SelectSearch() => SelectBattle(MapType.Search, searchButton);
 
-    public void SelectAttack() => selectedMapType = MapType.Attack;
+    public void SelectAttack() => SelectBattle(MapType.Attack, attackButton);
 
-    public void SelectDefense() => selectedMapType = MapType.Defense;
+    public void SelectDefense() => SelectBattle(MapType.Defense, defenseButton);
 
-    public void SelectConquest() => selectedMapType = MapType.Conquest;
+    public void SelectConquest() => SelectBattle(MapType.Conquest, conquestButton);
 
-    public void SelectRaid() => selectedMapType = MapType.Raid;
+    public void SelectRaid() => SelectBattle(MapType.Raid, raidButton);
+
+    private void SelectBattle(MapType type, Button button)
+    {
+        selectedMapType = type;
+        TownButtonBinder.Select(button, searchButton, attackButton, defenseButton, conquestButton, raidButton);
+    }
 
     public void OpenBasicDescription()
     {
@@ -125,6 +135,10 @@ public sealed class TownBattleNavigationController : MonoBehaviour
 
     private void ShowDescription(GameObject targetPanel)
     {
+        TownButtonBinder.Select(targetPanel == basicDescriptionPanel ? basicButton :
+            targetPanel == monsterDescriptionPanel ? monsterButton :
+            targetPanel == rewardDescriptionPanel ? rewardButton : questButton,
+            basicButton, monsterButton, rewardButton, questButton);
         SetActive(basicDescriptionPanel, basicDescriptionPanel == targetPanel);
         SetActive(monsterDescriptionPanel, monsterDescriptionPanel == targetPanel);
         SetActive(rewardDescriptionPanel, rewardDescriptionPanel == targetPanel);

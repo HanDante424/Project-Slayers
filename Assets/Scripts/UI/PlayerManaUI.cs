@@ -6,11 +6,20 @@ public class PlayerManaUI : MonoBehaviour
     [SerializeField] private PlayerMana playerMana;
     [SerializeField] private Image manaCover;
 
+    public void Bind(PlayerMana target)
+    {
+        if (isActiveAndEnabled) OnDisable();
+        playerMana = target;
+        if (isActiveAndEnabled) OnEnable();
+    }
+
     private void OnEnable()
     {
         if (playerMana == null)
             return;
 
+        // Entry binding may run before Unity invokes this view's first OnEnable.
+        playerMana.ManaChanged -= UpdateMana;
         playerMana.ManaChanged += UpdateMana;
         UpdateMana(playerMana.CurrentMana, playerMana.MaxMana);
     }

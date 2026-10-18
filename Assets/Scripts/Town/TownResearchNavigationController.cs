@@ -22,6 +22,7 @@ public sealed class TownResearchNavigationController : MonoBehaviour
 
     public void OpenSkillResearch()
     {
+        TownButtonBinder.Select(skillButton, skillButton);
         if (skillPanel != null)
             skillPanel.SetActive(true);
 
