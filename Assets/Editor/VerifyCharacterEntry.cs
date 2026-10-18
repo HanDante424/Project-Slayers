@@ -200,5 +200,10 @@ public class CharacterEntryVerification : MonoBehaviour
         Vector3 standaloneFraming = ((Camera)Read(standalone,"combatCamera")).WorldToViewportPoint(standalone.ActivePlayer.transform.position);
         Check(Mathf.Abs(standaloneFraming.x - .19f) < .005f && Mathf.Abs(standaloneFraming.y - .15f) < .005f, "Standalone matches reference viewport framing");
         Click(FindObjectsByType<Button>(FindObjectsSortMode.None).Single(b => b.name == "SpawnButton")); Check(FindFirstObjectByType<GoblinEnemy>() != null, "Standalone SpawnButton works");
+        Click(FindObjectsByType<Button>(FindObjectsSortMode.None).Single(b => b.name == "BackMenuButton"));
+        yield return null; yield return null;
+        Check(SceneManager.GetActiveScene().name == "Town", "BackMenuButton returns to Town");
+        Check(FindFirstObjectByType<CharacterMotor2D>() == null && FindFirstObjectByType<GoblinEnemy>() == null,
+            "Returning to Town unloads combat player and goblin");
     }
 }
