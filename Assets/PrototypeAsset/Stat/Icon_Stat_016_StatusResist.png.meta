@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 548b2c44f44419b40af1b83e86b377fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2967203943044323998
+    second: Icon_Stat_016_StatusResist_0
+  - first:
+      213: -3824031913746245993
+    second: Icon_Stat_016_StatusResist_1
+  - first:
+      213: -8484162460417205380
+    second: Icon_Stat_016_StatusResist_2
+  - first:
+      213: 632020607345126389
+    second: Icon_Stat_016_StatusResist_3
+  - first:
+      213: -3365301759139899432
+    second: Icon_Stat_016_StatusResist_4
+  - first:
+      213: 6523544170027599775
+    second: Icon_Stat_016_StatusResist_5
+  - first:
+      213: -7101425496238683902
+    second: Icon_Stat_016_StatusResist_6
+  - first:
+      213: -3406389291022790795
+    second: Icon_Stat_016_StatusResist_7
+  - first:
+      213: 4250326502186727812
+    second: Icon_Stat_016_StatusResist_8
+  - first:
+      213: -934930666805615514
+    second: Icon_Stat_016_StatusResist_9
+  - first:
+      213: 1928556644043370409
+    second: Icon_Stat_016_StatusResist_10
+  - first:
+      213: -2055776019075316202
+    second: Icon_Stat_016_StatusResist_11
+  - first:
+      213: 3860611367266986823
+    second: Icon_Stat_016_StatusResist_12
+  - first:
+      213: -7080258404523642156
+    second: Icon_Stat_016_StatusResist_13
+  - first:
+      213: 2077605128385427467
+    second: Icon_Stat_016_StatusResist_14
+  - first:
+      213: 8117297914973126140
+    second: Icon_Stat_016_StatusResist_15
+  - first:
+      213: -364856265887598977
+    second: Icon_Stat_016_StatusResist_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1241
+        height: 1246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26564b61cbf52d6d0800000000000000
+      internalID: -2967203943044323998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_1
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1225
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796d56b2c3f4eeac0800000000000000
+      internalID: -3824031913746245993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_2
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1221
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bd02a7133324a80800000000000000
+      internalID: -8484162460417205380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1124
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb688fc46365c800800000000000000
+      internalID: 632020607345126389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_4
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1084
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7187451eb0c41d0800000000000000
+      internalID: -3365301759139899432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1066
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97c0130cd8488a50800000000000000
+      internalID: 6523544170027599775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_6
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 915
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2098ac9d22ba27d90800000000000000
+      internalID: -7101425496238683902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_7
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 513
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f44e5dcf21ab0d0800000000000000
+      internalID: -3406389291022790795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 451
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489b44e3f613cfa30800000000000000
+      internalID: 4250326502186727812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_9
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 369
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664ae6313857603f0800000000000000
+      internalID: -934930666805615514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 240
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afac61cc0c93ca10800000000000000
+      internalID: 1928556644043370409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_11
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 184
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616cf354a9a6873e0800000000000000
+      internalID: -2055776019075316202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_12
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 162
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ba8c98595a39530800000000000000
+      internalID: 3860611367266986823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_13
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 124
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2f4607e7eddbd90800000000000000
+      internalID: -7080258404523642156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_14
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0871fc4bd225dc10800000000000000
+      internalID: 2077605128385427467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_15
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 6
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdfdf5427f66a070800000000000000
+      internalID: 8117297914973126140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_016_StatusResist_16
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 15
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76b1b5c825cfeaf0800000000000000
+      internalID: -364856265887598977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Stat_016_StatusResist_0: -2967203943044323998
+      Icon_Stat_016_StatusResist_1: -3824031913746245993
+      Icon_Stat_016_StatusResist_10: 1928556644043370409
+      Icon_Stat_016_StatusResist_11: -2055776019075316202
+      Icon_Stat_016_StatusResist_12: 3860611367266986823
+      Icon_Stat_016_StatusResist_13: -7080258404523642156
+      Icon_Stat_016_StatusResist_14: 2077605128385427467
+      Icon_Stat_016_StatusResist_15: 8117297914973126140
+      Icon_Stat_016_StatusResist_16: -364856265887598977
+      Icon_Stat_016_StatusResist_2: -8484162460417205380
+      Icon_Stat_016_StatusResist_3: 632020607345126389
+      Icon_Stat_016_StatusResist_4: -3365301759139899432
+      Icon_Stat_016_StatusResist_5: 6523544170027599775
+      Icon_Stat_016_StatusResist_6: -7101425496238683902
+      Icon_Stat_016_StatusResist_7: -3406389291022790795
+      Icon_Stat_016_StatusResist_8: 4250326502186727812
+      Icon_Stat_016_StatusResist_9: -934930666805615514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

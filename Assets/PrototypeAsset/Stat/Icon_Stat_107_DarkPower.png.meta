@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 3886db38c27aa8f47820ada06434293e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2635402271405948348
+    second: Icon_Stat_107_DarkPower_0
+  - first:
+      213: -1923423030805441973
+    second: Icon_Stat_107_DarkPower_1
+  - first:
+      213: 5103042774285334424
+    second: Icon_Stat_107_DarkPower_2
+  - first:
+      213: -4011475804333944643
+    second: Icon_Stat_107_DarkPower_3
+  - first:
+      213: 8481745255479706823
+    second: Icon_Stat_107_DarkPower_4
+  - first:
+      213: 1891260445222995883
+    second: Icon_Stat_107_DarkPower_5
+  - first:
+      213: -4200469155820368108
+    second: Icon_Stat_107_DarkPower_6
+  - first:
+      213: -4693978934347588972
+    second: Icon_Stat_107_DarkPower_7
+  - first:
+      213: -8175139456315780250
+    second: Icon_Stat_107_DarkPower_8
+  - first:
+      213: 3311561428078382751
+    second: Icon_Stat_107_DarkPower_9
+  - first:
+      213: -5182508897216409542
+    second: Icon_Stat_107_DarkPower_10
+  - first:
+      213: 8839837892993514492
+    second: Icon_Stat_107_DarkPower_11
+  - first:
+      213: 4596469467651934472
+    second: Icon_Stat_107_DarkPower_12
+  - first:
+      213: -1526414689484122011
+    second: Icon_Stat_107_DarkPower_13
+  - first:
+      213: -1205198387588250916
+    second: Icon_Stat_107_DarkPower_14
+  - first:
+      213: 8145805050887717709
+    second: Icon_Stat_107_DarkPower_15
+  - first:
+      213: 6133107337102011362
+    second: Icon_Stat_107_DarkPower_16
+  - first:
+      213: 2000027741608442481
+    second: Icon_Stat_107_DarkPower_17
+  - first:
+      213: -7193722864682091021
+    second: Icon_Stat_107_DarkPower_18
+  - first:
+      213: 3519210343620478797
+    second: Icon_Stat_107_DarkPower_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 1183
+        height: 1236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442479cd89b2d6bd0800000000000000
+      internalID: -2635402271405948348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 649
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b425908b1f0ae45e0800000000000000
+      internalID: -1923423030805441973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 633
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897b6eabd56a1d640800000000000000
+      internalID: 5103042774285334424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 535
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0d99972006458c0800000000000000
+      internalID: -4011475804333944643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 540
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c409342f5635b570800000000000000
+      internalID: 8481745255479706823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 487
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba78347ca5b1f3a10800000000000000
+      internalID: 1891260445222995883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 433
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f875dce8fe4b5c0800000000000000
+      internalID: -4200469155820368108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_7
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 439
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a9b0b6703abdeb0800000000000000
+      internalID: -4693978934347588972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663940d6af11c8e80800000000000000
+      internalID: -8175139456315780250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 417
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e4f7cc29705fd20800000000000000
+      internalID: 3311561428078382751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 417
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a305d18bd970418b0800000000000000
+      internalID: -5182508897216409542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_11
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 418
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb7aeb6ab96daa70800000000000000
+      internalID: 8839837892993514492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 383
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8098250b0a0f9cf30800000000000000
+      internalID: 4596469467651934472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5685c5d5de511dae0800000000000000
+      internalID: -1526414689484122011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 322
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2cdefa376464fe0800000000000000
+      internalID: -1205198387588250916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 294
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43ceb31986bb0170800000000000000
+      internalID: 8145805050887717709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_16
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 278
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebae45e0ac2d1550800000000000000
+      internalID: 6133107337102011362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_17
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 280
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a7f7762a681cb10800000000000000
+      internalID: 2000027741608442481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 272
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdb4062b23ca2c90800000000000000
+      internalID: -7193722864682091021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Stat_107_DarkPower_19
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 224
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d470165792fb6d030800000000000000
+      internalID: 3519210343620478797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Stat_107_DarkPower_0: -2635402271405948348
+      Icon_Stat_107_DarkPower_1: -1923423030805441973
+      Icon_Stat_107_DarkPower_10: -5182508897216409542
+      Icon_Stat_107_DarkPower_11: 8839837892993514492
+      Icon_Stat_107_DarkPower_12: 4596469467651934472
+      Icon_Stat_107_DarkPower_13: -1526414689484122011
+      Icon_Stat_107_DarkPower_14: -1205198387588250916
+      Icon_Stat_107_DarkPower_15: 8145805050887717709
+      Icon_Stat_107_DarkPower_16: 6133107337102011362
+      Icon_Stat_107_DarkPower_17: 2000027741608442481
+      Icon_Stat_107_DarkPower_18: -7193722864682091021
+      Icon_Stat_107_DarkPower_19: 3519210343620478797
+      Icon_Stat_107_DarkPower_2: 5103042774285334424
+      Icon_Stat_107_DarkPower_3: -4011475804333944643
+      Icon_Stat_107_DarkPower_4: 8481745255479706823
+      Icon_Stat_107_DarkPower_5: 1891260445222995883
+      Icon_Stat_107_DarkPower_6: -4200469155820368108
+      Icon_Stat_107_DarkPower_7: -4693978934347588972
+      Icon_Stat_107_DarkPower_8: -8175139456315780250
+      Icon_Stat_107_DarkPower_9: 3311561428078382751
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
