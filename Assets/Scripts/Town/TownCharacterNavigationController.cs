@@ -9,6 +9,7 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     [SerializeField] private GameObject statPanel;
     [SerializeField] private TownCharacterStatsController statsController;
     [SerializeField] private GameObject equipPanel;
+    [SerializeField] private TownCharacterEquipmentController equipmentController;
     [SerializeField] private GameObject skillPanel;
 
     [Header("Stat Categories")]
@@ -147,33 +148,35 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
 
     public void OpenEquipMain()
     {
+        equipmentController?.CloseSetPopup();
         SetActive(equipMainPanel, true);
         SetActive(equipSelectPartsPanel, false);
         titleController?.SetTitle("장비");
     }
 
-    public void OpenBeltSelection() => OpenEquipSelection("장비 - 벨트");
+    public void OpenBeltSelection() => OpenEquipSelection("장비 - 벨트", "Belt");
 
-    public void OpenBraceletSelection() => OpenEquipSelection("장비 - 팔찌");
+    public void OpenBraceletSelection() => OpenEquipSelection("장비 - 팔찌", "Bracelet");
 
-    public void OpenNecklaceSelection() => OpenEquipSelection("장비 - 목걸이");
+    public void OpenNecklaceSelection() => OpenEquipSelection("장비 - 목걸이", "Necklace");
 
-    public void OpenGlovesSelection() => OpenEquipSelection("장비 - 장갑");
+    public void OpenGlovesSelection() => OpenEquipSelection("장비 - 장갑", "Gloves");
 
-    public void OpenHairAccessorySelection() => OpenEquipSelection("장비 - 머리 장식");
+    public void OpenHairAccessorySelection() => OpenEquipSelection("장비 - 머리 장식", "HairAccessory");
 
-    public void OpenBackAccessorySelection() => OpenEquipSelection("장비 - 등 장식");
+    public void OpenBackAccessorySelection() => OpenEquipSelection("장비 - 등 장식", "BackAccessory");
 
-    public void OpenEarringsSelection() => OpenEquipSelection("장비 - 귀걸이");
+    public void OpenEarringsSelection() => OpenEquipSelection("장비 - 귀걸이", "Earrings");
 
-    public void OpenRingsSelection() => OpenEquipSelection("장비 - 반지");
+    public void OpenRingsSelection() => OpenEquipSelection("장비 - 반지", "Rings");
 
-    public void OpenBadgeSelection() => OpenEquipSelection("장비 - 문양");
+    public void OpenBadgeSelection() => OpenEquipSelection("장비 - 문양", "Badge");
 
-    private void OpenEquipSelection(string title)
+    private void OpenEquipSelection(string title, string slot)
     {
         SetActive(equipMainPanel, false);
         SetActive(equipSelectPartsPanel, true);
+        equipmentController?.ShowSlot(slot);
         titleController?.SetTitle(title);
     }
 
