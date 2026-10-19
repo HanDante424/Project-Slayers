@@ -14,6 +14,7 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
         public Image icon;
     }
     [Serializable] public struct StatField { public StatType stat; public TMP_Text text; }
+    [SerializeField] private TownBattleNavigationController navigationController;
     [SerializeField] private TownStageSelectController stages;
     [SerializeField] private StageManager stageManager;
     [SerializeField] private TownTitleController title;
@@ -95,7 +96,8 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
     public void Back()
     {
         characterPanel.SetActive(false); stagePanel.SetActive(true);
-        GetComponent<TownBattleNavigationController>()?.OpenBasicDescription();
+        var navigation = navigationController != null ? navigationController : GetComponent<TownBattleNavigationController>();
+        navigation?.OpenBasicDescription();
         title?.SetTitle(selectedMap != null ? GetMapTitle(selectedMap.mapType) : "전투");
     }
     private static string GetMapTitle(MapType type) => type switch

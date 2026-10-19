@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44edddbd8bf444128e58fc36f3bc0e21, type: 3}
-  m_Name: Goblin_Item_GoblinClaw
+  m_Name: Item_Monster_000_GreenLeather
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  thumbnail: {fileID: 21300000, guid: 6c14722a006c9e9458dbbcf225ba1a7a, type: 3}
-  itemName: "\uACE0\uBE14\uB9B0 \uC190\uD1B1"
-  description: "\uACE0\uBE14\uB9B0\uC758 \uC190\uD1B1\uC774\uB2E4."
+  thumbnail: {fileID: 21300000, guid: 999d2912a530151418efd1307fa3e302, type: 3}
+  itemName: "\uCD08\uB85D \uAC00\uC8FD"
+  description: "\uACE0\uBE14\uB9B0\uC758 \uCD08\uB85D \uBE5B \uAC00\uC8FD\uC774\uB2E4."
   rank: 1
   category: 1
