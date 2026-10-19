@@ -2,6 +2,7 @@ using System;
 using System.Globalization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class CharacterStatPanelView : MonoBehaviour
 {
@@ -10,8 +11,13 @@ public sealed class CharacterStatPanelView : MonoBehaviour
     {
         public StatType stat;
         public TMP_Text text;
+        public Image icon;
+        public Sprite fallbackIcon;
     }
 
+    [SerializeField] private IconRegistry iconRegistry;
+    [SerializeField] private Image staggerGaugeImage;
+    [SerializeField] private Sprite staggerGaugeFallback;
     [SerializeField] private StatField[] statFields = Array.Empty<StatField>();
     [SerializeField] private TMP_Text staggerGaugeText;
     private CharacterStats source;
@@ -51,13 +57,22 @@ public sealed class CharacterStatPanelView : MonoBehaviour
     public void Refresh()
     {
         bool valid = source != null && source.Data != null;
-        foreach (StatField field in statFields)
+        foreach (StatField field in statFields ?? Array.Empty<StatField>())
         {
+            SetIcon(field.icon, (iconRegistry != null ? iconRegistry.GetStatIcon(field.stat) : null) ?? field.fallbackIcon);
             if (field.text != null)
                 field.text.text = valid ? FormatStat(field.stat, source.GetFinalStat(field.stat)) : "—";
         }
+        SetIcon(staggerGaugeImage, (iconRegistry != null ? iconRegistry.GetStaggerGaugeIcon() : null) ?? staggerGaugeFallback);
         if (staggerGaugeText != null)
             staggerGaugeText.text = valid ? FormatNumber(source.FinalStaggerGauge) : "—";
+    }
+
+    private static void SetIcon(Image target, Sprite sprite)
+    {
+        if (target == null) return;
+        target.sprite = sprite;
+        target.enabled = sprite != null;
     }
 
     public static string FormatNumber(float value) =>

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public sealed class TownCharacterOverviewView : MonoBehaviour
 {
+    [SerializeField] private IconRegistry iconRegistry;
     [Serializable] public struct ElementSlot { public TMP_Text text; public Image icon; }
     [Header("Element sprites (assigned by the user)")]
     [SerializeField] private Sprite fire, water, earth, wind, lightning, ice;
@@ -51,7 +52,7 @@ public sealed class TownCharacterOverviewView : MonoBehaviour
         {
             bool valid = i < order.Length; int index = valid ? order[i] : 0;
             if (slots[i].text != null) slots[i].text.text = valid ? Names[index] + " " + CharacterStatPanelView.FormatStat((resistance ? Resist : Power)[index], source.GetFinalStat((resistance ? Resist : Power)[index])) : "";
-            if (slots[i].icon != null) { slots[i].icon.sprite = valid ? sprites[index] : null; slots[i].icon.enabled = slots[i].icon.sprite != null; }
+            if (slots[i].icon != null) { slots[i].icon.sprite = valid ? (iconRegistry != null ? iconRegistry.GetElementIcon((SkillElementType)(index + 1)) : null) ?? sprites[index] : null; slots[i].icon.enabled = slots[i].icon.sprite != null; }
         }
     }
 }

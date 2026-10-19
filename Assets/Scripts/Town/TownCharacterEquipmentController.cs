@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 public sealed class TownCharacterEquipmentController : MonoBehaviour
 {
-    [Serializable] public struct SlotView { public string key; public TMP_Text overviewName, mainName; public Image overviewIcon, mainIcon; }
+    [Serializable] public struct SlotView { public string key; public TMP_Text overviewName, mainName; public Image overviewIcon, mainIcon; public Sprite fallbackPartIcon; }
     [Serializable] public struct StatIcon { public StatType stat; public Sprite sprite; }
     [Serializable] public struct ItemView { public TMP_Text name, upgrade, stats, setName; public Image icon; public Button setButton; }
+    [SerializeField] private IconRegistry iconRegistry;
     [SerializeField] private TownCharacterStatsController characterStats;
     [SerializeField] private TownCharacterDataSource dataSource;
     [SerializeField] private SlotView[] slots;
@@ -67,11 +68,13 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
             var item = dataSource != null ? dataSource.GetEquipped(character, slot.key) : null;
             bool valid = item?.Definition != null;
             Text(slot.overviewName, valid ? item.Definition.equipmentName : "없음"); Text(slot.mainName, valid ? item.Definition.equipmentName + (string.IsNullOrEmpty(item.UpgradeText) ? "" : " " + item.UpgradeText) : "없음");
-            Icon(slot.overviewIcon, valid ? item.Definition.thumbnail : null); Icon(slot.mainIcon, valid ? item.Definition.thumbnail : null);
+            // These Images identify parts; actual item thumbnails belong to ItemView.
+            var partIcon = (iconRegistry != null ? iconRegistry.GetEquipmentPartIcon(slot.key) : null) ?? slot.fallbackPartIcon;
+            Icon(slot.overviewIcon, partIcon); Icon(slot.mainIcon, partIcon);
         }
         var sets = dataSource != null ? dataSource.GetSets(character) : null;
         var active = sets?.Where(s => s != null && s.Active).ToList() ?? new List<TownEquipmentSet>();
-        Icon(summaryIcon, active.Count > 0 ? active[0].Icon : null); Text(summaryName, active.Count > 0 ? active[0].Name : ""); Text(summaryExtra, active.Count > 1 ? "+" + (active.Count - 1) : "");
+        Icon(summaryIcon, active.Count > 0 ? SetIcon(active[0]) : null); Text(summaryName, active.Count > 0 ? active[0].Name : ""); Text(summaryExtra, active.Count > 1 ? "+" + (active.Count - 1) : "");
         foreach (var set in active) AddSet(set);
         ShowDeltas(equipmentDeltaContent, CurrentStats, dataSource != null ? dataSource.GetStatsWithoutEquipment(character) : null);
         if (!string.IsNullOrEmpty(SelectedSlot)) BuildOwned();
@@ -139,11 +142,11 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
     private void ShowDeltas(Transform parent, CharacterStats after, CharacterStats before)
     {
         if (parent == null) return;
-        var values = GetDifferences(after, before).Select(e => (name: StatName(e.stat), value: (e.delta > 0 ? "+" : "") + CharacterStatPanelView.FormatStat(e.stat, e.delta), sprite: (statIcons ?? Array.Empty<StatIcon>()).FirstOrDefault(i => i.stat == e.stat).sprite)).ToList();
+        var values = GetDifferences(after, before).Select(e => (name: StatName(e.stat), value: (e.delta > 0 ? "+" : "") + CharacterStatPanelView.FormatStat(e.stat, e.delta), sprite: (iconRegistry != null ? iconRegistry.GetStatIcon(e.stat) : null) ?? (statIcons ?? Array.Empty<StatIcon>()).FirstOrDefault(i => i.stat == e.stat).sprite)).ToList();
         if (after != null && before != null && after.Data != null && after.Data == before.Data && after.Level == before.Level)
         {
             float gauge = after.FinalStaggerGauge - before.FinalStaggerGauge;
-            if (gauge != 0) values.Add(("무력화 게이지", (gauge > 0 ? "+" : "") + CharacterStatPanelView.FormatNumber(gauge), staggerGaugeIcon));
+            if (gauge != 0) values.Add(("무력화 게이지", (gauge > 0 ? "+" : "") + CharacterStatPanelView.FormatNumber(gauge), (iconRegistry != null ? iconRegistry.GetStaggerGaugeIcon() : null) ?? staggerGaugeIcon));
         }
         for (int i = 0; i < values.Count; i += 2)
         {
@@ -164,11 +167,12 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
         StatType.FireEnhancement => "화염 강화", StatType.WaterEnhancement => "물 강화", StatType.EarthEnhancement => "대지 강화", StatType.WindEnhancement => "바람 강화", StatType.LightningEnhancement => "번개 강화", StatType.IceEnhancement => "얼음 강화", StatType.LightEnhancement => "빛 강화", StatType.DarkEnhancement => "어둠 강화",
         StatType.FireResistance => "화염 저항", StatType.WaterResistance => "물 저항", StatType.EarthResistance => "대지 저항", StatType.WindResistance => "바람 저항", StatType.LightningResistance => "번개 저항", StatType.IceResistance => "얼음 저항", StatType.LightResistance => "빛 저항", StatType.DarkResistance => "어둠 저항", _ => stat.ToString()
     };
+    private Sprite SetIcon(TownEquipmentSet set) => (iconRegistry != null ? iconRegistry.GetSetIcon(set.Definition) : null) ?? set.Icon;
     private void AddSet(TownEquipmentSet set)
     {
         var title = Clone(setTitleTemplate, setContent, setRows); var desc = Clone(setDescriptionTemplate, setContent, setRows);
         if (title == null || desc == null) return;
-        var button = title.GetComponentInChildren<Button>(true); Text(button?.GetComponentInChildren<TMP_Text>(true), set.Name); Icon(title.transform.Find("Image")?.GetComponent<Image>(), set.Icon);
+        var button = title.GetComponentInChildren<Button>(true); Text(button?.GetComponentInChildren<TMP_Text>(true), set.Name); Icon(title.transform.Find("Image")?.GetComponent<Image>(), SetIcon(set));
         var texts = desc.GetComponentsInChildren<TMP_Text>(true); for (int i = 0; i < texts.Length; i++) { Text(texts[i], ""); texts[i].gameObject.SetActive(i == 0); } if (texts.Length > 0) Text(texts[0], set.Effects);
         desc.SetActive(false);
         if (button != null) { button.onClick = new Button.ButtonClickedEvent(); button.onClick.AddListener(() => ToggleSetDescription(desc, (RectTransform)setContent)); }
