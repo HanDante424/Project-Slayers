@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 999d2912a530151418efd1307fa3e302
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6979089897299193642
+    second: Icon_Item_Monster_000_GreenLeather_0
+  - first:
+      213: 2047294249027517880
+    second: Icon_Item_Monster_000_GreenLeather_1
+  - first:
+      213: 126279164801309211
+    second: Icon_Item_Monster_000_GreenLeather_2
+  - first:
+      213: 8080749167392720228
+    second: Icon_Item_Monster_000_GreenLeather_3
+  - first:
+      213: 2251759247060174852
+    second: Icon_Item_Monster_000_GreenLeather_4
+  - first:
+      213: 810681477249177580
+    second: Icon_Item_Monster_000_GreenLeather_5
+  - first:
+      213: 3369935493914596156
+    second: Icon_Item_Monster_000_GreenLeather_6
+  - first:
+      213: -4621251499546592088
+    second: Icon_Item_Monster_000_GreenLeather_7
+  - first:
+      213: 8960010058403982812
+    second: Icon_Item_Monster_000_GreenLeather_8
+  - first:
+      213: -6407680702068028331
+    second: Icon_Item_Monster_000_GreenLeather_9
+  - first:
+      213: 265557845787854164
+    second: Icon_Item_Monster_000_GreenLeather_10
+  - first:
+      213: 4772235918702507797
+    second: Icon_Item_Monster_000_GreenLeather_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1235
+        height: 1238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f2908e845bad060800000000000000
+      internalID: 6979089897299193642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_1
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1235
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd3cffb543796c10800000000000000
+      internalID: 2047294249027517880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1205
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ad3883b32a0c100800000000000000
+      internalID: 126279164801309211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_3
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1233
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4650a79dd86942070800000000000000
+      internalID: 8080749167392720228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_4
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1181
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40809b8da1bdf3f10800000000000000
+      internalID: 2251759247060174852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_5
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1156
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce71d65228e104b00800000000000000
+      internalID: 810681477249177580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_6
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1148
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3392ce1a7a64ce20800000000000000
+      internalID: 3369935493914596156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_7
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 901
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acb8cfde340edfb0800000000000000
+      internalID: -4621251499546592088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_8
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 63
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdda81b0da9585c70800000000000000
+      internalID: 8960010058403982812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_9
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 49
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c0c1fc9585317a0800000000000000
+      internalID: -6407680702068028331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_10
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 47
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455c08924737fa300800000000000000
+      internalID: 265557845787854164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Item_Monster_000_GreenLeather_11
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 23
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5177f9e98436a3240800000000000000
+      internalID: 4772235918702507797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Item_Monster_000_GreenLeather_0: 6979089897299193642
+      Icon_Item_Monster_000_GreenLeather_1: 2047294249027517880
+      Icon_Item_Monster_000_GreenLeather_10: 265557845787854164
+      Icon_Item_Monster_000_GreenLeather_11: 4772235918702507797
+      Icon_Item_Monster_000_GreenLeather_2: 126279164801309211
+      Icon_Item_Monster_000_GreenLeather_3: 8080749167392720228
+      Icon_Item_Monster_000_GreenLeather_4: 2251759247060174852
+      Icon_Item_Monster_000_GreenLeather_5: 810681477249177580
+      Icon_Item_Monster_000_GreenLeather_6: 3369935493914596156
+      Icon_Item_Monster_000_GreenLeather_7: -4621251499546592088
+      Icon_Item_Monster_000_GreenLeather_8: 8960010058403982812
+      Icon_Item_Monster_000_GreenLeather_9: -6407680702068028331
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
