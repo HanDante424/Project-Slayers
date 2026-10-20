@@ -12,13 +12,21 @@ public sealed class CombatPlayerEntry : MonoBehaviour
     [SerializeField] private PlayerManaUI manaUI;
     [SerializeField] private SkillCooldownUI cooldownUI;
     [SerializeField] private Camera combatCamera;
-    [Tooltip("Player feet position in the camera viewport (0..1). Applies to Town entry and standalone testing.")]
-    [SerializeField] private Vector2 playerViewportPosition = new(0.19f, 0.15f);
+    [Header("Directional Camera Framing")]
+    [Tooltip("Player feet viewport position when facing right. Left-facing X is mirrored (1-X); Y stays unchanged.")]
+    [SerializeField] private Vector2 playerViewportPosition = new(0.3f, 0.15f);
+    [Tooltip("Net horizontal world distance in the new facing direction after a turn before changing framing.")]
+    [Min(0f)] [SerializeField] private float framingTurnDistance = 3f;
+    [Tooltip("Framing transition duration in seconds. Fast start, very slow finish (ease-out quintic).")]
+    [Min(0f)] [SerializeField] private float framingTransitionDuration = 0.2f;
     public GameObject ActivePlayer { get; private set; }
     public MapData SelectedMap { get; private set; }
     public PlayableCharacterData SelectedCharacter { get; private set; }
     private bool followSelectedPlayer;
     private CombatEntrySelection.Request entryRequest;
+    private int observedFacingDirection, framingDirection;
+    private float facingChangeX, lastPlayerX;
+    private float framingX, framingFromX, framingTargetX, framingElapsed;
 
     public bool PrepareRetry()
     {
@@ -68,16 +76,56 @@ public sealed class CombatPlayerEntry : MonoBehaviour
     private void LateUpdate()
     {
         if (!followSelectedPlayer || combatCamera == null || ActivePlayer == null) return;
+        int facing = ActivePlayer.transform.localScale.x < 0f ? -1 : 1;
+        UpdateHorizontalFraming(ActivePlayer.transform.position.x, facing, Time.deltaTime);
         Vector3 current = combatCamera.WorldToViewportPoint(ActivePlayer.transform.position);
         Vector3 desired = combatCamera.ViewportToWorldPoint(new Vector3(
-            Mathf.Clamp01(playerViewportPosition.x), Mathf.Clamp01(playerViewportPosition.y), current.z));
+            framingX, Mathf.Clamp01(playerViewportPosition.y), current.z));
         combatCamera.transform.position += ActivePlayer.transform.position - desired;
     }
 
     private void ConfigureCamera()
     {
         followSelectedPlayer = combatCamera != null && ActivePlayer != null;
+        if (followSelectedPlayer)
+        {
+            observedFacingDirection = framingDirection = ActivePlayer.transform.localScale.x < 0f ? -1 : 1;
+            facingChangeX = lastPlayerX = ActivePlayer.transform.position.x;
+            framingX = framingFromX = framingTargetX = FramingTarget(framingDirection);
+            framingElapsed = Mathf.Max(0f, framingTransitionDuration);
+        }
         LateUpdate();
+    }
+
+    private float FramingTarget(int direction)
+    {
+        float rightX = Mathf.Clamp01(playerViewportPosition.x);
+        return direction < 0 ? 1f - rightX : rightX;
+    }
+
+    private void UpdateHorizontalFraming(float playerX, int facing, float deltaTime)
+    {
+        if (facing != observedFacingDirection)
+        {
+            observedFacingDirection = facing;
+            // Include movement in the first frame of the turn, not just subsequent frames.
+            facingChangeX = lastPlayerX;
+        }
+        if (facing != framingDirection && (playerX - facingChangeX) * facing >= Mathf.Max(0f, framingTurnDistance))
+        {
+            framingDirection = facing;
+            framingFromX = framingX;
+            framingTargetX = FramingTarget(facing);
+            framingElapsed = 0f;
+        }
+        lastPlayerX = playerX;
+        float duration = Mathf.Max(0f, framingTransitionDuration);
+        framingElapsed += Mathf.Max(0f, deltaTime);
+        float t = duration > 0f ? Mathf.Clamp01(framingElapsed / duration) : 1f;
+        // At ~28% of the duration, ~80% of the shift is done; the remaining travel eases out slowly.
+        float eased = 1f - Mathf.Pow(1f - t, 5f);
+        framingX = Mathf.Lerp(framingFromX, framingTargetX, eased);
+        if (t >= 1f) framingFromX = framingTargetX;
     }
 
     private void BindPortrait(PlayableCharacterData character)
