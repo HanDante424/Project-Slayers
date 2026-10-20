@@ -24,6 +24,8 @@ public sealed class TownShopNavigationController : MonoBehaviour
     [SerializeField] private GameObject blackMarketPanel;
     [SerializeField] private GameObject blackSmithPanel;
 
+    [SerializeField] private TownBlacksmithCraftController blacksmithCraft;
+
     [Header("Blacksmith Screens")]
     [SerializeField] private GameObject blackSmithPartsPanel;
     [SerializeField] private GameObject blackSmithMainPanel;
@@ -187,23 +189,23 @@ public sealed class TownShopNavigationController : MonoBehaviour
         SetActive(blackSmithMainPanel, true);
     }
 
-    public void OpenBelt() => OpenBlackSmithPart("벨트");
+    public void OpenBelt() => OpenBlackSmithPart("벨트", EquipmentSlot.Belt);
 
-    public void OpenBracelet() => OpenBlackSmithPart("팔찌");
+    public void OpenBracelet() => OpenBlackSmithPart("팔찌", EquipmentSlot.Bracelet);
 
-    public void OpenNecklace() => OpenBlackSmithPart("목걸이");
+    public void OpenNecklace() => OpenBlackSmithPart("목걸이", EquipmentSlot.Necklace);
 
-    public void OpenGloves() => OpenBlackSmithPart("장갑");
+    public void OpenGloves() => OpenBlackSmithPart("장갑", EquipmentSlot.Gloves);
 
-    public void OpenHairAccessory() => OpenBlackSmithPart("머리 장식");
+    public void OpenHairAccessory() => OpenBlackSmithPart("머리 장식", EquipmentSlot.HairAccessory);
 
-    public void OpenBackAccessory() => OpenBlackSmithPart("등 장식");
+    public void OpenBackAccessory() => OpenBlackSmithPart("등 장식", EquipmentSlot.BackAccessory);
 
-    public void OpenEarrings() => OpenBlackSmithPart("귀걸이");
+    public void OpenEarrings() => OpenBlackSmithPart("귀걸이", EquipmentSlot.Earrings);
 
-    public void OpenRings() => OpenBlackSmithPart("반지");
+    public void OpenRings() => OpenBlackSmithPart("반지", EquipmentSlot.Rings);
 
-    public void OpenBadge() => OpenBlackSmithPart("문양");
+    public void OpenBadge() => OpenBlackSmithPart("문양", EquipmentSlot.Badge);
 
     private void ShowShopScreen(GameObject targetPanel)
     {
@@ -261,9 +263,10 @@ public sealed class TownShopNavigationController : MonoBehaviour
         }
     }
 
-    private void OpenBlackSmithPart(string partName)
+    private void OpenBlackSmithPart(string partName, EquipmentSlot slot)
     {
         OpenBlackSmithMain();
+        blacksmithCraft?.ShowSlot(slot, currentBlackSmithFunction == BlackSmithFunction.Craft);
         string functionName = currentBlackSmithFunction == BlackSmithFunction.Enhance ? "강화" : "제작";
         titleController?.SetTitle($"대장간 - {functionName} - {partName}");
     }

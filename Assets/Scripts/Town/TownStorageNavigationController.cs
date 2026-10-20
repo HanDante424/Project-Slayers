@@ -5,6 +5,8 @@ public sealed class TownStorageNavigationController : MonoBehaviour
 {
     [SerializeField] private TownTitleController titleController;
 
+    [SerializeField] private TownStorageListView storageList;
+
     [Header("Category Buttons")]
     [SerializeField] private Transform allButtonRoot;
     [SerializeField] private Transform equipmentButtonRoot;
@@ -36,24 +38,28 @@ public sealed class TownStorageNavigationController : MonoBehaviour
     public void OpenAll()
     {
         SelectCategory(allButton);
+        storageList?.Show(TownStorageListView.Category.All);
         titleController?.SetTitle("창고 - 전체");
     }
 
     public void OpenEquipment()
     {
         SelectCategory(equipmentButton);
+        storageList?.Show(TownStorageListView.Category.Equipment);
         titleController?.SetTitle("창고 - 장비");
     }
 
     public void OpenMaterials()
     {
         SelectCategory(materialsButton);
+        storageList?.Show(TownStorageListView.Category.Materials);
         titleController?.SetTitle("창고 - 소재");
     }
 
     public void OpenQuest()
     {
         SelectCategory(questButton);
+        storageList?.Show(TownStorageListView.Category.Quest);
         titleController?.SetTitle("창고 - 퀘스트");
     }
 

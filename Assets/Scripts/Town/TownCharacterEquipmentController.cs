@@ -160,7 +160,7 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
             }
         }
     }
-    private static string StatName(StatType stat) => stat switch
+    internal static string StatName(StatType stat) => stat switch
     {
         StatType.Health => "체력", StatType.Mana => "마나", StatType.Attack => "공격력", StatType.Magic => "마력", StatType.Defense => "방어력", StatType.Resistance => "저항력", StatType.DefensePenetration => "방어 관통", StatType.ResistancePenetration => "저항 관통",
         StatType.Stagger => "무력화 증가", StatType.CriticalChance => "치명타 확률", StatType.CriticalDamage => "치명타 피해", StatType.AttackSpeed => "공격속도", StatType.MoveSpeed => "이동속도", StatType.Accuracy => "적중률", StatType.Evasion => "회피율", StatType.StatusResistance => "상태이상 저항력", StatType.Recovery => "회복력", StatType.CooldownReduction => "쿨타임 감소", StatType.Luck => "행운",

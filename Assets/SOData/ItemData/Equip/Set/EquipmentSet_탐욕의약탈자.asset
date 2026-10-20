@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f247fa1773d94aae9d5a94f55846ba81, type: 3}
+  m_Name: EquipmentSet_탐욕의약탈자
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentSetData
+  setName: "탐욕의 약탈자"
+  bonuses:
+  - requiredEquipmentCount: 3
+    statModifiers:
+    - statType: 0
+      modifierType: 1
+      value: 5
+    additionalStaggerGaugePercent: 0

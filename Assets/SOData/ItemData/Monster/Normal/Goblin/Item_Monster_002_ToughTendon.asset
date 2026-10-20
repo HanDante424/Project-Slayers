@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44edddbd8bf444128e58fc36f3bc0e21, type: 3}
   m_Name: Item_Monster_002_ToughTendon
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemCode: 2
+  itemEnglishName: ToughTendon
   thumbnail: {fileID: 21300000, guid: bc7a4e389fa14cc4ebc78bd8d390ef89, type: 3}
-  itemName: "\uC9C8\uAE34 \uD798\uC904"
+  itemName: "질긴 힘줄"
   description: "\uACE0\uBE14\uB9B0\uC758 \uC9C8\uAE34 \uD798\uC904\uC774\uB2E4."
   rank: 2
   category: 1

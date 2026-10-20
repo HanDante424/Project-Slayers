@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44edddbd8bf444128e58fc36f3bc0e21, type: 3}
   m_Name: Item_Monster_000_GreenLeather
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemCode: 0
+  itemEnglishName: GreenLeather
   thumbnail: {fileID: 21300000, guid: 999d2912a530151418efd1307fa3e302, type: 3}
-  itemName: "\uCD08\uB85D \uAC00\uC8FD"
+  itemName: "초록 가죽"
   description: "\uACE0\uBE14\uB9B0\uC758 \uCD08\uB85D \uBE5B \uAC00\uC8FD\uC774\uB2E4."
   rank: 1
   category: 1

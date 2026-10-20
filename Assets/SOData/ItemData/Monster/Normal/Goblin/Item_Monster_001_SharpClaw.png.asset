@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44edddbd8bf444128e58fc36f3bc0e21, type: 3}
   m_Name: Item_Monster_001_SharpClaw.png
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemCode: 1
+  itemEnglishName: SharpClaw
   thumbnail: {fileID: 21300000, guid: aae07df631a96224387cadf45ebba967, type: 3}
-  itemName: "\uBFB0\uC871\uD55C \uC190\uD1B1"
+  itemName: "뾰족한 손톱"
   description: "\uACE0\uBE14\uB9B0\uC758 \uBFB0\uC871\uD55C \uC190\uD1B1\uC774\uB2E4."
   rank: 1
   category: 1

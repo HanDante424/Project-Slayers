@@ -24,7 +24,11 @@ public class EquipmentData : ScriptableObject
     [Tooltip("Definition only; not yet applied at runtime. 30 means +30% of the base stagger-gauge health ratio, not +30 percentage points.")]
     public float additionalStaggerGaugePercent;
 
+    [Header("Crafting")]
+    public int craftingGold;
+    public int craftingMemoryFragments;
+    public List<EquipmentCraftingMaterial> craftingMaterials = new();
+
     [Header("Set")]
     public EquipmentSetData set;
-
 }
