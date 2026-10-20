@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18760c1b08ed44788326402a91215a17, type: 3}
-  m_Name: EquipmentData
+  m_Name: Equipment__000_GreenLeatherBracelet
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  thumbnail: {fileID: 0}
-  equipmentName: 
+  equipmentCode: 0
+  equipmentEnglishName: GreenLeatherBracelet
+  thumbnail: {fileID: 3316782419790663544, guid: ade9df1b995faf8499c8396f8e1a6f65, type: 3}
+  equipmentName: "\uCD08\uB85D \uAC00\uC8FD \uD314\uCC0C"
   description: 
-  rank: 0
-  slot: 0
+  rank: 1
+  slot: 11
   baseStatModifiers: []
   detailStatModifiers: []
   elementEnhancementModifiers: []
   elementResistanceModifiers: []
+  additionalStaggerGaugePercent: 0
   set: {fileID: 0}

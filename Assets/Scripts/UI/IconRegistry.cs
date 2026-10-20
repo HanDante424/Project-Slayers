@@ -46,7 +46,11 @@ public sealed class IconRegistry : MonoBehaviour
             if (entry.part == part && entry.sprite != null) return entry.sprite;
         return null;
     }
-    public Sprite GetEquipmentPartIcon(string part) => Enum.TryParse(part, out EquipmentPartIcon key) ? GetEquipmentPartIcon(key) : null;
+    public Sprite GetEquipmentPartIcon(EquipmentSlot slot)
+        => EquipmentSlotUtility.IsValid(slot) && Enum.TryParse(slot.ToString(), out EquipmentPartIcon part)
+            ? GetEquipmentPartIcon(part) : null;
+    public Sprite GetEquipmentPartIcon(string part)
+        => EquipmentSlotUtility.TryParse(part, out var slot) ? GetEquipmentPartIcon(slot) : null;
     public Sprite GetCurrencyIcon(CurrencyIcon currency)
     {
         foreach (var entry in currencies ?? Array.Empty<CurrencyEntry>())

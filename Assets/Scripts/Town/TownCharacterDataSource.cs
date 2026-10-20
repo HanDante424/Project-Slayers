@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Optional adapter to an actual inventory/progression owner. No state is stored in definition SOs.
-// Slot keys use the authored UI names until the gameplay EquipmentSlot model supports them.
+// Slot keys match EquipmentSlot names; string virtual methods remain compatible with existing adapters.
 public abstract class TownCharacterDataSource : MonoBehaviour
 {
     public event Action Changed;
