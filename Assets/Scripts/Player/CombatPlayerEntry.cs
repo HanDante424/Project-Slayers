@@ -46,6 +46,12 @@ public sealed class CombatPlayerEntry : MonoBehaviour
         // Authored entry prefabs are inactive so data is configured before gameplay Awake/OnEnable.
         ActivePlayer = Instantiate(request.PlayerPrefab, position, rotation);
         ActivePlayer.GetComponent<CharacterStats>().Initialize(request.Character.statsData, request.Level);
+        string characterId = InventorySession.GetCharacterId(request.Character);
+        if (characterId != null)
+        {
+            var binding = ActivePlayer.GetComponent<CharacterEquipmentBinding>() ?? ActivePlayer.AddComponent<CharacterEquipmentBinding>();
+            binding.Initialize(ActivePlayer.GetComponent<CharacterStats>(), characterId);
+        }
         ActivePlayer.GetComponent<PlayerActionController>().BindCooldownUI(cooldownUI);
         SelectedMap = request.Map;
         entryRequest = request;

@@ -16,6 +16,7 @@ public abstract class TownCharacterDataSource : MonoBehaviour
     public virtual IReadOnlyList<TownEquipmentSet> GetSets(PlayableCharacterData character) => Array.Empty<TownEquipmentSet>();
     public virtual bool CanEquip(PlayableCharacterData character, string slot, TownEquipmentItem item) => false;
     public virtual bool TryEquip(PlayableCharacterData character, string slot, TownEquipmentItem item) => false;
+    public virtual bool TryUnequip(PlayableCharacterData character, string slot) => false;
     // Both snapshots must retain identical non-equipment modifiers. Replacement must include set gains/losses.
     // Return null while the inventory/set evaluator cannot provide an authoritative result.
     public virtual CharacterStats GetStatsWithoutEquipment(PlayableCharacterData character) => null;
@@ -24,9 +25,13 @@ public abstract class TownCharacterDataSource : MonoBehaviour
 
 public sealed class TownEquipmentItem
 {
+    public EquipmentInstance Instance { get; }
+    public string InstanceId => Instance?.InstanceId;
     public EquipmentData Definition { get; }
-    public string UpgradeText { get; }
-    public TownEquipmentItem(EquipmentData definition, string upgradeText = "") { Definition = definition; UpgradeText = upgradeText; }
+    private readonly string upgradeText;
+    public string UpgradeText => Instance != null ? "+" + Instance.EnhancementLevel : upgradeText;
+    public TownEquipmentItem(EquipmentData definition, string upgradeText = "") { Definition = definition; this.upgradeText = upgradeText; }
+    public TownEquipmentItem(EquipmentInstance instance) { Instance = instance; Definition = instance?.Definition; }
 }
 
 // Presentation data supplied by the future set evaluator, not invented conditions on EquipmentSetData.

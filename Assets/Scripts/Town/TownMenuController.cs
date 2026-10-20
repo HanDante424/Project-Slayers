@@ -18,12 +18,14 @@ public class TownMenuController : MonoBehaviour
     [SerializeField] private Transform shopButtonRoot;
     [SerializeField] private Transform researchButtonRoot;
     [SerializeField] private Transform storageButtonRoot;
+    [SerializeField] private Transform optionButtonRoot;
 
     private Button battleButton;
     private Button characterButton;
     private Button shopButton;
     private Button researchButton;
     private Button storageButton;
+    private Button optionButton;
 
     private void Awake()
     {
@@ -32,6 +34,8 @@ public class TownMenuController : MonoBehaviour
         shopButton = TownButtonBinder.Bind(shopButtonRoot, OpenShop, this);
         researchButton = TownButtonBinder.Bind(researchButtonRoot, OpenResearch, this);
         storageButton = TownButtonBinder.Bind(storageButtonRoot, OpenStorage, this);
+        // Settings uses the scene's existing persistent OpenOption listener.
+        optionButton = optionButtonRoot != null ? optionButtonRoot.GetComponentInChildren<Button>(true) : null;
     }
 
     private void Start()
@@ -82,8 +86,9 @@ public class TownMenuController : MonoBehaviour
     {
         TownButtonBinder.Select(targetPanel == battlePanel ? battleButton :
             targetPanel == characterPanel ? characterButton : targetPanel == shopPanel ? shopButton :
-            targetPanel == researchPanel ? researchButton : targetPanel == storagePanel ? storageButton : null,
-            battleButton, characterButton, shopButton, researchButton, storageButton);
+            targetPanel == researchPanel ? researchButton : targetPanel == storagePanel ? storageButton :
+            targetPanel == optionPanel ? optionButton : null,
+            battleButton, characterButton, shopButton, researchButton, storageButton, optionButton);
         if (battlePanel != null)
             battlePanel.SetActive(battlePanel == targetPanel);
 

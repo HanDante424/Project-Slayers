@@ -14,10 +14,12 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
         public Image icon;
     }
     [Serializable] public struct StatField { public StatType stat; public TMP_Text text; }
+    [Serializable] public struct EquipmentField { public EquipmentSlot slot; public TMP_Text text; }
     [SerializeField] private TownBattleNavigationController navigationController;
     [SerializeField] private TownStageSelectController stages;
     [SerializeField] private StageManager stageManager;
     [SerializeField] private TownTitleController title;
+    [SerializeField] private TownCharacterDataSource dataSource;
     [SerializeField] private GameObject stagePanel;
     [SerializeField] private GameObject characterPanel;
     [SerializeField] private Button stageConfirm;
@@ -30,9 +32,12 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
     [SerializeField] private Image fullBodyImage;
     [SerializeField] private StatField[] statFields;
     [SerializeField] private TMP_Text[] equipmentTexts;
+    [SerializeField] private EquipmentField[] equipmentFields = Array.Empty<EquipmentField>();
+    [SerializeField] private TMP_Text[] setTexts = Array.Empty<TMP_Text>();
     private CharacterOption selected;
     private MapData selectedMap;
     private CharacterStats preview;
+    private CharacterStats displayedStats;
     private bool loading;
     public PlayableCharacterData SelectedCharacter => selected?.character;
     public MapData SelectedMap => selectedMap;
@@ -55,6 +60,7 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
         if (ern?.button != null) ern.button.onClick.RemoveListener(SelectErn);
         if (mayhem?.button != null) mayhem.button.onClick.RemoveListener(SelectMayhem);
         if (preview != null) Destroy(preview.gameObject);
+        if (displayedStats != null) displayedStats.StatsChanged -= RefreshDisplayedStats;
     }
     public void OpenSelectedStage()
     {
@@ -84,10 +90,31 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
             if (preview == null) preview = new GameObject("Character stat preview", typeof(CharacterStats)).GetComponent<CharacterStats>();
             preview.Initialize(definition.statsData, PreviewLevel);
         }
-        foreach (var field in statFields)
-            if (field.text != null) field.text.text = valid ? FormatStat(field.stat, preview.GetFinalStat(field.stat)) : "—";
-        foreach (var text in equipmentTexts) if (text != null) text.text = "미등록";
+        if (displayedStats != null) displayedStats.StatsChanged -= RefreshDisplayedStats;
+        displayedStats = valid ? (dataSource != null ? dataSource.GetStats(definition) : null) ?? preview : null;
+        if (displayedStats != null) displayedStats.StatsChanged += RefreshDisplayedStats;
+        RefreshDisplayedStats();
         TownButtonBinder.Select(option?.button, ern.button, mayhem.button);
+    }
+    private void RefreshDisplayedStats()
+    {
+        foreach (var field in statFields)
+            if (field.text != null) field.text.text = displayedStats != null ? FormatStat(field.stat, displayedStats.GetFinalStat(field.stat)) : "—";
+        foreach (var text in equipmentTexts) if (text != null) text.text = dataSource != null ? "없음" : "미등록";
+        if (dataSource == null) return;
+        foreach (var field in equipmentFields)
+        {
+            var item = dataSource.GetEquipped(selected?.character, field.slot.ToString());
+            if (field.text != null) field.text.text = item?.Definition != null ? item.Definition.equipmentName + " " + item.UpgradeText : "없음";
+        }
+        int index = 0;
+        foreach (var set in dataSource.GetSets(selected?.character) ?? Array.Empty<TownEquipmentSet>())
+        {
+            if (set == null || !set.Active) continue;
+            if (index >= setTexts.Length) break;
+            if (setTexts[index] != null) setTexts[index].text = set.Name;
+            index++;
+        }
     }
     public static string FormatStat(StatType stat, float value)
     {

@@ -8,7 +8,8 @@ public sealed class TownShopNavigationController : MonoBehaviour
     {
         GeneralShop,
         BlackMarket,
-        BlackSmith
+        BlackSmith,
+        Dev
     }
 
     private enum BlackSmithFunction
@@ -23,6 +24,8 @@ public sealed class TownShopNavigationController : MonoBehaviour
     [SerializeField] private GameObject generalExchangePanel;
     [SerializeField] private GameObject blackMarketPanel;
     [SerializeField] private GameObject blackSmithPanel;
+    [SerializeField] private GameObject devPanel;
+    [SerializeField] private TownDevShopController devShop;
 
     [SerializeField] private TownBlacksmithCraftController blacksmithCraft;
 
@@ -36,6 +39,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
     [SerializeField] private Transform generalExchangeButtonRoot;
     [SerializeField] private Transform blackMarketButtonRoot;
     [SerializeField] private Transform blackSmithButtonRoot;
+    [SerializeField] private Transform devButtonRoot;
     [SerializeField] private Transform buyButtonRoot;
     [SerializeField] private Transform sellButtonRoot;
     [SerializeField] private Transform craftButtonRoot;
@@ -56,6 +60,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
     private Button generalExchangeButton;
     private Button blackMarketButton;
     private Button blackSmithButton;
+    private Button devButton;
     private Button buyButton;
     private Button sellButton;
     private Button craftButton;
@@ -78,6 +83,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
         generalExchangeButton = TownButtonBinder.Bind(generalExchangeButtonRoot, OpenGeneralExchange, this);
         blackMarketButton = TownButtonBinder.Bind(blackMarketButtonRoot, OpenBlackMarket, this);
         blackSmithButton = TownButtonBinder.Bind(blackSmithButtonRoot, OpenBlackSmith, this);
+        devButton = TownButtonBinder.Bind(devButtonRoot, OpenDev, this);
         buyButton = TownButtonBinder.Bind(buyButtonRoot, OpenBuy, this);
         sellButton = TownButtonBinder.Bind(sellButtonRoot, OpenSell, this);
         craftButton = TownButtonBinder.Bind(craftButtonRoot, OpenCraft, this);
@@ -101,6 +107,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
         TownButtonBinder.Unbind(generalExchangeButton, OpenGeneralExchange);
         TownButtonBinder.Unbind(blackMarketButton, OpenBlackMarket);
         TownButtonBinder.Unbind(blackSmithButton, OpenBlackSmith);
+        TownButtonBinder.Unbind(devButton, OpenDev);
         TownButtonBinder.Unbind(buyButton, OpenBuy);
         TownButtonBinder.Unbind(sellButton, OpenSell);
         TownButtonBinder.Unbind(craftButton, OpenCraft);
@@ -145,15 +152,25 @@ public sealed class TownShopNavigationController : MonoBehaviour
         titleController?.SetTitle("대장간 - 제작");
     }
 
+    public void OpenDev()
+    {
+        currentShop = ShopType.Dev;
+        ShowShopScreen(devPanel);
+        ShowRetailMenuButtons();
+        OpenBuy();
+    }
+
     public void OpenBuy()
     {
         SelectFunction(buyButton);
+        if (currentShop == ShopType.Dev) devShop?.Show(TownDevShopController.Mode.Buy);
         titleController?.SetTitle($"{GetCurrentShopName()} - 구매");
     }
 
     public void OpenSell()
     {
         SelectFunction(sellButton);
+        if (currentShop == ShopType.Dev) devShop?.Show(TownDevShopController.Mode.Sell);
         titleController?.SetTitle($"{GetCurrentShopName()} - 판매");
     }
 
@@ -174,6 +191,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
     public void OpenQuest()
     {
         SelectFunction(questButton);
+        if (currentShop == ShopType.Dev) devShop?.Show(TownDevShopController.Mode.Quest);
         titleController?.SetTitle($"{GetCurrentShopName()} - 퀘스트");
     }
 
@@ -210,11 +228,12 @@ public sealed class TownShopNavigationController : MonoBehaviour
     private void ShowShopScreen(GameObject targetPanel)
     {
         TownButtonBinder.Select(targetPanel == generalExchangePanel ? generalExchangeButton :
-            targetPanel == blackMarketPanel ? blackMarketButton : blackSmithButton,
-            generalExchangeButton, blackMarketButton, blackSmithButton);
+            targetPanel == blackMarketPanel ? blackMarketButton : targetPanel == devPanel ? devButton : blackSmithButton,
+            generalExchangeButton, blackMarketButton, blackSmithButton, devButton);
         SetActive(generalExchangePanel, generalExchangePanel == targetPanel);
         SetActive(blackMarketPanel, blackMarketPanel == targetPanel);
         SetActive(blackSmithPanel, blackSmithPanel == targetPanel);
+        SetActive(devPanel, devPanel == targetPanel);
     }
 
     private void ShowRetailMenuButtons()
@@ -258,6 +277,8 @@ public sealed class TownShopNavigationController : MonoBehaviour
                 return "잡화점";
             case ShopType.BlackSmith:
                 return "대장간";
+            case ShopType.Dev:
+                return "Dev";
             default:
                 return "암상인";
         }

@@ -143,7 +143,7 @@ public class CharacterEntryVerification : MonoBehaviour
                 Check(((Image)Read(controller,"fullBodyImage")).sprite == option.character.fullBodyImage, "SO full body image");
                 var preview = (CharacterStats)Read(controller,"preview");
                 foreach (var stat in fields) Check(stat.text.text == TownCombatCharacterSelectController.FormatStat(stat.stat, preview.GetFinalStat(stat.stat)), "Actual level stat " + stat.stat);
-                Check(((TMP_Text[])Read(controller,"equipmentTexts")).All(t => t.text == "미등록"), "No invented equipment");
+                Check(((TMP_Text[])Read(controller,"equipmentTexts")).All(t => t.text == "없음"), "Empty inventory displays no invented equipment");
             }
             Check(TownCombatCharacterSelectController.FormatStat(StatType.Health, 1) == "1" && TownCombatCharacterSelectController.FormatStat(StatType.CriticalDamage, 200) == "200%", "Numeric / percent formatting");
             nav.OpenQuestDescription();
@@ -297,7 +297,7 @@ public class CharacterEntryVerification : MonoBehaviour
             CheckSelected(optionName == "ern" ? townMayhem : townErn, false);
             Check(((TMP_Text)Read(controller, "characterNameText")).text == option.character.characterName, "Town name follows selection");
             Check(((Image)Read(controller, "fullBodyImage")).sprite == option.character.fullBodyImage, "Town illustration follows selection");
-            var stats = (CharacterStats)Read(controller, "preview");
+            var stats = controller.CurrentStats;
             Check(stats.Data == option.character.statsData && stats.Level == 1, "Town stats use selected SO / level");
             yield return new WaitForEndOfFrame();
             CheckClickable(ButtonField(controller, "openDetailButton"));
@@ -329,7 +329,7 @@ public class CharacterEntryVerification : MonoBehaviour
             Check(title.text == "기본 정보" && !detail.gameObject.activeSelf, "Basic info returns with details closed");
             menu.OpenStorage(); menu.OpenCharacter();
             Check(TownCharacterSelection.Character == option.character, "Town reentry preserves character selection");
-            VerifyView(overview, (CharacterStats)Read(controller, "preview"));
+            VerifyView(overview, controller.CurrentStats);
         }
         foreach (var root in SceneManager.GetActiveScene().GetRootGameObjects())
             foreach (var component in root.GetComponentsInChildren<Component>(true))

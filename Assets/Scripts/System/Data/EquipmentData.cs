@@ -21,7 +21,7 @@ public class EquipmentData : ScriptableObject
     public List<EquipmentStatModifier> detailStatModifiers = new();
     public List<EquipmentStatModifier> elementEnhancementModifiers = new();
     public List<EquipmentStatModifier> elementResistanceModifiers = new();
-    [Tooltip("Definition only; not yet applied at runtime. 30 means +30% of the base stagger-gauge health ratio, not +30 percentage points.")]
+    [Tooltip("30 means +30% of the base stagger-gauge health ratio, not +30 percentage points. Applied by the equipment evaluator.")]
     public float additionalStaggerGaugePercent;
 
     [Header("Crafting")]

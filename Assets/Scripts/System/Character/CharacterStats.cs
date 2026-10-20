@@ -16,6 +16,7 @@ public class CharacterStats : MonoBehaviour
     private readonly Dictionary<StatType, float> finalStats = new();
     private readonly Dictionary<StatType, float> flatTotals = new();
     private readonly Dictionary<StatType, float> percentTotals = new();
+    private readonly Dictionary<string, float> staggerGaugeModifiers = new();
 
     public int Level => level;
     public CharacterStatsData Data => characterData;
@@ -183,7 +184,17 @@ public class CharacterStats : MonoBehaviour
     // Final Derived Stat
     public float FinalStaggerGauge =>
         FinalMaxHealth *
-        (characterData.staggerGaugeHealthPercent / 100f);
+        (FinalStaggerGaugeHealthPercent / 100f);
+
+    public float FinalStaggerGaugeHealthPercent
+    {
+        get
+        {
+            float additional = 0f;
+            foreach (float value in staggerGaugeModifiers.Values) additional += value;
+            return EquipmentStatModifier.CalculateStaggerGaugeHealthPercent(characterData.staggerGaugeHealthPercent, additional);
+        }
+    }
 
 
     // Final Element Enhancement
@@ -255,10 +266,40 @@ public class CharacterStats : MonoBehaviour
 
     public void ClearModifiers()
     {
-        if (modifiers.Count == 0)
+        if (modifiers.Count == 0 && staggerGaugeModifiers.Count == 0)
             return;
 
         modifiers.Clear();
+        staggerGaugeModifiers.Clear();
+        RecalculateFinalStats();
+    }
+
+    // Replace only the caller's namespace, in one calculation/notification. Buffs from other owners survive.
+    public void ReplaceOwnedModifiers(string sourcePrefix, IEnumerable<StatModifier> replacement, float additionalGaugePercent)
+    {
+        if (string.IsNullOrEmpty(sourcePrefix)) throw new ArgumentException("A source namespace is required.", nameof(sourcePrefix));
+        if (float.IsNaN(additionalGaugePercent) || float.IsInfinity(additionalGaugePercent)) throw new ArgumentOutOfRangeException(nameof(additionalGaugePercent));
+        var incoming = new List<StatModifier>(replacement ?? Array.Empty<StatModifier>());
+        foreach (var modifier in incoming)
+            if (modifier == null || modifier.SourceId == null || !modifier.SourceId.StartsWith(sourcePrefix, StringComparison.Ordinal))
+                throw new ArgumentException("Replacement modifiers must belong to the caller's namespace.", nameof(replacement));
+        modifiers.RemoveAll(m => m.SourceId != null && m.SourceId.StartsWith(sourcePrefix, StringComparison.Ordinal));
+        modifiers.AddRange(incoming);
+        if (additionalGaugePercent == 0f) staggerGaugeModifiers.Remove(sourcePrefix);
+        else staggerGaugeModifiers[sourcePrefix] = additionalGaugePercent;
+        RecalculateFinalStats();
+    }
+
+    // Used by equipment comparisons; copy runtime modifiers, never definition assets or current HP/MP.
+    public void CopyRuntimeModifiersFrom(CharacterStats source, string excludedSourcePrefix = null)
+    {
+        if (source == null || source == this) throw new ArgumentException("A separate source is required.", nameof(source));
+        modifiers.Clear(); staggerGaugeModifiers.Clear();
+        foreach (var modifier in source.modifiers)
+            if (excludedSourcePrefix == null || modifier.SourceId == null || !modifier.SourceId.StartsWith(excludedSourcePrefix, StringComparison.Ordinal))
+                modifiers.Add(modifier);
+        foreach (var pair in source.staggerGaugeModifiers)
+            if (excludedSourcePrefix == null || !pair.Key.StartsWith(excludedSourcePrefix, StringComparison.Ordinal)) staggerGaugeModifiers.Add(pair.Key, pair.Value);
         RecalculateFinalStats();
     }
 
@@ -321,6 +362,7 @@ public class CharacterStats : MonoBehaviour
         characterData = definition;
         level = Mathf.Max(1, characterLevel);
         modifiers.Clear();
+        staggerGaugeModifiers.Clear();
         RecalculateFinalStats();
     }
 

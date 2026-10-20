@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Registered-definition display only. Owned inventory and equipment instances are not created here.
+// Displays ownership, never the definition catalogue. Equipped instances remain in this inventory.
 public sealed class TownStorageListView : MonoBehaviour
 {
     public enum Category { All, Equipment, Materials, Quest }
@@ -22,14 +22,20 @@ public sealed class TownStorageListView : MonoBehaviour
         public UnityEngine.Object Definition;
         public string Name;
         public Sprite Thumbnail;
+        public string Key;
+        public EquipmentInstance Instance;
     }
     public Category CurrentCategory { get; private set; } = Category.All;
     public UnityEngine.Object SelectedDefinition { get; private set; }
+    public string SelectedInstanceId { get; private set; }
+    private string selectedKey;
+    private SharedInventory inventory;
     public int VisibleCount => entries.Count;
 
-    private void OnEnable() => Refresh();
+    private void OnEnable() { inventory = InventorySession.Inventory; inventory.Changed += Refresh; Refresh(); }
     private void OnDisable()
     {
+        if (inventory != null) inventory.Changed -= Refresh;
         foreach (var row in rows)
             if (row != null) { row.SetActive(false); Destroy(row); }
         rows.Clear(); entries.Clear(); SelectedDefinition = null;
@@ -45,17 +51,18 @@ public sealed class TownStorageListView : MonoBehaviour
         foreach (var sample in authoredSamples ?? Array.Empty<GameObject>())
             if (sample != null) sample.SetActive(false);
         entries.Clear();
-        if (registry != null)
+        if (inventory != null)
         {
             if (CurrentCategory == Category.All || CurrentCategory == Category.Equipment)
-                foreach (var equipment in registry.GetAllEquipment())
-                    entries.Add(new Entry { Definition = equipment, Name = equipment.equipmentName, Thumbnail = equipment.thumbnail });
-            foreach (var item in registry.GetAllItems())
-                if (Matches(item.category))
-                    entries.Add(new Entry { Definition = item, Name = item.itemName, Thumbnail = item.thumbnail });
+                foreach (var instance in inventory.Equipment)
+                    entries.Add(new Entry { Definition = instance.Definition, Name = instance.Definition.equipmentName + " +" + instance.EnhancementLevel + " [" + instance.InstanceId.Substring(0, 8) + "]", Thumbnail = instance.Definition.thumbnail, Key = "equipment/" + instance.InstanceId, Instance = instance });
+            foreach (var item in inventory.Items)
+                if (Matches(item.Definition.category))
+                    entries.Add(new Entry { Definition = item.Definition, Name = item.Definition.itemName + " ×" + item.Quantity, Thumbnail = item.Definition.thumbnail, Key = "item/" + item.Definition.itemCode });
         }
-        if (!entries.Any(entry => entry.Definition == SelectedDefinition))
-            SelectedDefinition = entries.Count > 0 ? entries[0].Definition : null;
+        if (!entries.Any(entry => entry.Key == selectedKey)) selectedKey = entries.Count > 0 ? entries[0].Key : null;
+        var selectedEntry = entries.FirstOrDefault(e => e.Key == selectedKey);
+        SelectedDefinition = selectedEntry.Definition; SelectedInstanceId = selectedEntry.Instance?.InstanceId;
         int count = Math.Max(1, entries.Count);
         for (int index = 0; index < count; index++)
         {
@@ -70,10 +77,10 @@ public sealed class TownStorageListView : MonoBehaviour
                 button.interactable = entry.Definition != null;
                 if (entry.Definition != null)
                 {
-                    var definition = entry.Definition;
-                    button.onClick.AddListener(() => SelectDefinition(definition));
+                    string key = entry.Key;
+                    button.onClick.AddListener(() => SelectKey(key));
                 }
-                TownButtonBinder.GetVisual(button).SetSelected(entry.Definition != null && entry.Definition == SelectedDefinition);
+                TownButtonBinder.GetVisual(button).SetSelected(entry.Definition != null && entry.Key == selectedKey);
                 // This is the authored icon inside the list button; the right Desc is intentionally not referenced.
                 var icon = button.transform.Find("Image")?.GetComponent<Image>();
                 if (icon != null)
@@ -90,11 +97,17 @@ public sealed class TownStorageListView : MonoBehaviour
     public void SelectDefinition(UnityEngine.Object definition)
     {
         if (definition == null || !entries.Any(entry => entry.Definition == definition)) return;
-        SelectedDefinition = definition;
+        SelectKey(entries.First(e => e.Definition == definition).Key);
+    }
+    public void SelectInstance(string id) => SelectKey("equipment/" + id);
+    private void SelectKey(string key)
+    {
+        var entry = entries.FirstOrDefault(e => e.Key == key); if (entry.Definition == null) return;
+        selectedKey = key; SelectedDefinition = entry.Definition; SelectedInstanceId = entry.Instance?.InstanceId;
         for (int index = 0; index < entries.Count && index < rows.Count; index++)
         {
             var button = rows[index].GetComponentInChildren<Button>(true);
-            if (button != null) TownButtonBinder.GetVisual(button).SetSelected(entries[index].Definition == definition);
+            if (button != null) TownButtonBinder.GetVisual(button).SetSelected(entries[index].Key == key);
         }
     }
     private bool Matches(ItemCategory category) => CurrentCategory switch

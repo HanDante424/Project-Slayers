@@ -87,16 +87,21 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
     }
     private void BuildOwned()
     {
+        // The previously unused authored list starts disabled; enable it when supplying actual ownership rows.
+        var ownedScroll = ownedContent != null ? ownedContent.GetComponentInParent<ScrollRect>(true) : null;
+        if (ownedScroll != null) ownedScroll.gameObject.SetActive(true);
         var owned = dataSource != null ? dataSource.GetOwned(character, SelectedSlot) : null;
         if (selected != null && !(owned?.Contains(selected) ?? false)) selected = null;
+        if (selected == null) selected = owned?.FirstOrDefault();
         foreach (var item in owned ?? Array.Empty<TownEquipmentItem>())
         {
             if (item?.Definition == null) continue;
             var root = Clone(ownedTemplate, ownedContent, ownedRows); if (root == null) continue;
             var button = root.GetComponentInChildren<Button>(true);
-            Text(button?.GetComponentInChildren<TMP_Text>(true), item.Definition.equipmentName);
+            Text(button?.GetComponentInChildren<TMP_Text>(true), item.Definition.equipmentName + " " + item.UpgradeText +
+                (item.InstanceId != null ? " [" + item.InstanceId.Substring(0, 8) + "]" : ""));
             Icon(root.transform.Find("Image")?.GetComponent<Image>(), item.Definition.thumbnail);
-            if (button != null) { button.onClick = new Button.ButtonClickedEvent(); button.onClick.AddListener(() => SelectOwned(item)); }
+            if (button != null) { button.onClick = new Button.ButtonClickedEvent(); button.onClick.AddListener(() => SelectOwned(item)); TownButtonBinder.GetVisual(button).SetSelected(item == selected); }
         }
         if (ownedRows.Count == 0)
         {
@@ -105,18 +110,29 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
             if (button != null) { button.onClick = new Button.ButtonClickedEvent(); button.interactable = false; Text(button.GetComponentInChildren<TMP_Text>(true), "없음"); }
             if (root != null) Icon(root.transform.Find("Image")?.GetComponent<Image>(), null);
         }
+        if (ownedContent is RectTransform rect)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(rect);
+            var scroll = ownedContent.GetComponentInParent<ScrollRect>();
+            if (scroll != null) scroll.verticalNormalizedPosition = 1f;
+        }
     }
     private void SelectOwned(TownEquipmentItem item)
     {
         var owned = dataSource != null ? dataSource.GetOwned(character, SelectedSlot) : null;
         if (item?.Definition == null || !(owned?.Contains(item) ?? false)) return;
-        selected = item; Clear(deltaRows); ShowDeltas(equipmentDeltaContent, CurrentStats, dataSource.GetStatsWithoutEquipment(character)); ShowComparison();
+        selected = item; Refresh();
     }
     private void ShowComparison()
     {
         var equipped = dataSource != null && SelectedSlot != null ? dataSource.GetEquipped(character, SelectedSlot) : null;
         ShowItem(selectedView, selected); ShowItem(equippedView, equipped);
-        if (equipButton != null) equipButton.interactable = selected?.Definition != null && dataSource != null && dataSource.CanEquip(character, SelectedSlot, selected);
+        bool unequip = equipped?.InstanceId != null && (selected == null || selected.InstanceId == equipped.InstanceId);
+        if (equipButton != null)
+        {
+            equipButton.interactable = unequip || (selected?.Definition != null && dataSource != null && dataSource.CanEquip(character, SelectedSlot, selected));
+            Text(equipButton.GetComponentInChildren<TMP_Text>(true), unequip ? "장착 해제" : "장착하기");
+        }
         // The evaluator owns replacement semantics and set thresholds; this view only subtracts final snapshots.
         var after = selected != null && dataSource != null ? dataSource.GetReplacementStats(character, SelectedSlot, selected) : null;
         ShowDeltas(replacementDeltaContent, after, CurrentStats);
@@ -125,8 +141,13 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
     {
         var definition = item?.Definition;
         Text(view.name, definition != null ? definition.equipmentName : "없음"); Text(view.upgrade, definition != null ? item.UpgradeText : ""); Icon(view.icon, definition != null ? definition.thumbnail : null);
-        Text(view.stats, definition != null ? FormatEquipment(definition) : "");
-        var set = FindSet(definition?.set); Text(view.setName, set?.Name ?? "없음");
+        Text(view.stats, definition != null ? FormatEquipment(definition) +
+            (item.Instance != null ? string.Concat(item.Instance.AdditionalModifiers.Select(m => "\n" + StatName(m.StatType) + " " + CharacterStatPanelView.FormatNumber(m.Value) + (m.ModifierType == StatModifierType.Percent ? "%" : ""))) : "") : "");
+        var set = FindSet(definition?.set);
+        var names = new List<string>();
+        if (definition?.set != null) names.Add(definition.set.setName);
+        if (item?.Instance != null) names.AddRange(item.Instance.AdditionalSets.Where(s => s != null).Select(s => s.setName));
+        Text(view.setName, names.Count > 0 ? string.Join(" / ", names) : "없음");
         if (view.setButton != null) view.setButton.interactable = set != null;
     }
     private static string FormatEquipment(EquipmentData item)
@@ -197,6 +218,9 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
     public void CloseSetPopup() { if (setPopup != null) setPopup.SetActive(false); }
     private void EquipSelected()
     {
+        var equipped = dataSource != null ? dataSource.GetEquipped(character, SelectedSlot) : null;
+        if (equipped?.InstanceId != null && (selected == null || selected.InstanceId == equipped.InstanceId))
+        { dataSource.TryUnequip(character, SelectedSlot); return; }
         if (selected?.Definition == null || dataSource == null || !(dataSource.GetOwned(character, SelectedSlot)?.Contains(selected) ?? false) || !dataSource.CanEquip(character, SelectedSlot, selected)) return;
         if (dataSource.TryEquip(character, SelectedSlot, selected)) { selected = null; characterStats?.RefreshCharacter(); Refresh(); }
     }

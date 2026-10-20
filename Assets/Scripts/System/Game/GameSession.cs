@@ -28,6 +28,7 @@ public class GameSession : MonoBehaviour
     public void NewGame()
     {
         data = new GameData();
+        InventorySession.Inventory.Clear();
 
         Debug.Log("[GameSession] 새 게임 데이터 생성");
     }
