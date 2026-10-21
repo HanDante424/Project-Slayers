@@ -49,6 +49,10 @@ public class SkillData : ScriptableObject
     [Tooltip("Additional cost per skill level: costAmount + costGrowthPerLevel * (skillLevel - 1).")]
     public float costGrowthPerLevel;
 
+    [Header("Unlock")]
+    [Min(0)]
+    public int memoryFragmentCost;
+
     [Header("Prerequisites")]
     public List<SkillPrerequisite> prerequisites = new();
 

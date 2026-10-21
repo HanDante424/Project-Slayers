@@ -1,6 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class StartingSkillEntry
+{
+    public SkillData skill;
+
+    [Min(1)]
+    public int startingLevel = 1;
+}
+
 [CreateAssetMenu(
     fileName = "PlayableCharacterData",
     menuName = "Slayers/Character/Playable Character Data")]
@@ -18,6 +27,9 @@ public class PlayableCharacterData : ScriptableObject
 
     [Header("Stats")]
     public CharacterStatsData statsData;
+
+    [Header("Starting Skills")]
+    public List<StartingSkillEntry> startingSkills = new();
 
     [Header("Passive Skills")]
     public List<SkillData> passiveSkills = new();
