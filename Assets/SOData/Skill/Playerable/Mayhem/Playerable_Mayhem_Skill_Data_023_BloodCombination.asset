@@ -27,6 +27,7 @@ MonoBehaviour:
   costType: 0
   costAmount: 0
   costGrowthPerLevel: 0
+  memoryFragmentCost: 2000
   prerequisites: []
   cooldown: 0
   attackType: 0
