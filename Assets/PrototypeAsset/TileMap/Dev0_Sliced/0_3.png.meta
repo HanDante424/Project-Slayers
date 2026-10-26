@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: d898587792625d04ca41724192338593
+guid: e2ee1182a6ac2c04eb117bfc40cba46b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -875222139279434753
-    second: Tilemap_99999_Dev_1_0
-  - first:
-      213: -206680950384668472
-    second: Tilemap_99999_Dev_1_1
-  - first:
-      213: 2027067132800846894
-    second: Tilemap_99999_Dev_1_2
+      213: 4829121702020418249
+    second: 0_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,57 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tilemap_99999_Dev_1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1036
-        width: 1254
-        height: 215
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffb11b8f9169ad3f0800000000000000
-      internalID: -875222139279434753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilemap_99999_Dev_1_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 620
-        width: 1254
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c05b7a45c8b12df0800000000000000
-      internalID: -206680950384668472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilemap_99999_Dev_1_2
+      name: 0_3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1254
-        height: 621
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2cc67241d6912c10800000000000000
-      internalID: 2027067132800846894
+      spriteID: 9ca8e0a2a9c740340800000000000000
+      internalID: 4829121702020418249
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tilemap_99999_Dev_1_0: -875222139279434753
-      Tilemap_99999_Dev_1_1: -206680950384668472
-      Tilemap_99999_Dev_1_2: 2027067132800846894
+      0_3_0: 4829121702020418249
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
