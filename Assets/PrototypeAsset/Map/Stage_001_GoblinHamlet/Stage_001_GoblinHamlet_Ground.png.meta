@@ -1,0 +1,2379 @@
+fileFormatVersion: 2
+guid: 4aec7d96f83b7754d960c19615aaa47f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8138572604430472341
+    second: Stage_001_GoblinHamlet_Ground_0
+  - first:
+      213: 7528424279378804771
+    second: Stage_001_GoblinHamlet_Ground_1
+  - first:
+      213: 1069384363914718032
+    second: Stage_001_GoblinHamlet_Ground_2
+  - first:
+      213: 1016397506067178558
+    second: Stage_001_GoblinHamlet_Ground_3
+  - first:
+      213: 8884713728661531925
+    second: Stage_001_GoblinHamlet_Ground_4
+  - first:
+      213: -4419269002131819532
+    second: Stage_001_GoblinHamlet_Ground_5
+  - first:
+      213: 2837958594519487978
+    second: Stage_001_GoblinHamlet_Ground_6
+  - first:
+      213: -1595911108717489125
+    second: Stage_001_GoblinHamlet_Ground_7
+  - first:
+      213: 384987904033826756
+    second: Stage_001_GoblinHamlet_Ground_8
+  - first:
+      213: 5100539173297523187
+    second: Stage_001_GoblinHamlet_Ground_9
+  - first:
+      213: -3929204572004036607
+    second: Stage_001_GoblinHamlet_Ground_10
+  - first:
+      213: -3027966801300688343
+    second: Stage_001_GoblinHamlet_Ground_11
+  - first:
+      213: 3708987927735653353
+    second: Stage_001_GoblinHamlet_Ground_12
+  - first:
+      213: -150442092241550870
+    second: Stage_001_GoblinHamlet_Ground_13
+  - first:
+      213: -2585841223260600852
+    second: Stage_001_GoblinHamlet_Ground_14
+  - first:
+      213: -7662950555815413919
+    second: Stage_001_GoblinHamlet_Ground_15
+  - first:
+      213: -8121543183832566661
+    second: Stage_001_GoblinHamlet_Ground_16
+  - first:
+      213: -2920918161736925095
+    second: Stage_001_GoblinHamlet_Ground_17
+  - first:
+      213: -9020023394960663501
+    second: Stage_001_GoblinHamlet_Ground_18
+  - first:
+      213: 1786194732002012237
+    second: Stage_001_GoblinHamlet_Ground_19
+  - first:
+      213: -7705516108027452735
+    second: Stage_001_GoblinHamlet_Ground_20
+  - first:
+      213: -8044290737872784107
+    second: Stage_001_GoblinHamlet_Ground_21
+  - first:
+      213: -6741032997282285340
+    second: Stage_001_GoblinHamlet_Ground_22
+  - first:
+      213: -2077511095164429592
+    second: Stage_001_GoblinHamlet_Ground_23
+  - first:
+      213: 3662347279317049774
+    second: Stage_001_GoblinHamlet_Ground_24
+  - first:
+      213: -4451207065985344648
+    second: Stage_001_GoblinHamlet_Ground_25
+  - first:
+      213: -4374936376079148308
+    second: Stage_001_GoblinHamlet_Ground_26
+  - first:
+      213: 731906232455569836
+    second: Stage_001_GoblinHamlet_Ground_27
+  - first:
+      213: 5541951337636021035
+    second: Stage_001_GoblinHamlet_Ground_28
+  - first:
+      213: 7636123303556315695
+    second: Stage_001_GoblinHamlet_Ground_29
+  - first:
+      213: -1898469690230740591
+    second: Stage_001_GoblinHamlet_Ground_30
+  - first:
+      213: 9044650309325792405
+    second: Stage_001_GoblinHamlet_Ground_31
+  - first:
+      213: -5583068239582235923
+    second: Stage_001_GoblinHamlet_Ground_32
+  - first:
+      213: 3072833087989512349
+    second: Stage_001_GoblinHamlet_Ground_33
+  - first:
+      213: 8688869137266210888
+    second: Stage_001_GoblinHamlet_Ground_34
+  - first:
+      213: 670014442028113722
+    second: Stage_001_GoblinHamlet_Ground_35
+  - first:
+      213: 6715451366655020774
+    second: Stage_001_GoblinHamlet_Ground_36
+  - first:
+      213: -3091892919895752495
+    second: Stage_001_GoblinHamlet_Ground_37
+  - first:
+      213: 5047470513061137308
+    second: Stage_001_GoblinHamlet_Ground_38
+  - first:
+      213: -1627372350186081528
+    second: Stage_001_GoblinHamlet_Ground_39
+  - first:
+      213: -2882736617313888096
+    second: Stage_001_GoblinHamlet_Ground_40
+  - first:
+      213: -5136043881145611942
+    second: Stage_001_GoblinHamlet_Ground_41
+  - first:
+      213: -8385667868919316082
+    second: Stage_001_GoblinHamlet_Ground_42
+  - first:
+      213: 8382466443127238226
+    second: Stage_001_GoblinHamlet_Ground_43
+  - first:
+      213: -1921207180405437530
+    second: Stage_001_GoblinHamlet_Ground_44
+  - first:
+      213: -6452070656640866148
+    second: Stage_001_GoblinHamlet_Ground_45
+  - first:
+      213: -7437967767674674038
+    second: Stage_001_GoblinHamlet_Ground_46
+  - first:
+      213: 7983921836543726019
+    second: Stage_001_GoblinHamlet_Ground_47
+  - first:
+      213: 2574218729641129607
+    second: Stage_001_GoblinHamlet_Ground_48
+  - first:
+      213: 7035896696116482239
+    second: Stage_001_GoblinHamlet_Ground_49
+  - first:
+      213: 8209022925331905373
+    second: Stage_001_GoblinHamlet_Ground_50
+  - first:
+      213: 8636268166871393243
+    second: Stage_001_GoblinHamlet_Ground_51
+  - first:
+      213: -2578741643065448630
+    second: Stage_001_GoblinHamlet_Ground_52
+  - first:
+      213: -7232042672432588066
+    second: Stage_001_GoblinHamlet_Ground_53
+  - first:
+      213: -1366969786390499394
+    second: Stage_001_GoblinHamlet_Ground_54
+  - first:
+      213: 3344735467819828916
+    second: Stage_001_GoblinHamlet_Ground_55
+  - first:
+      213: 3060815261233921566
+    second: Stage_001_GoblinHamlet_Ground_56
+  - first:
+      213: 8810227431603290206
+    second: Stage_001_GoblinHamlet_Ground_57
+  - first:
+      213: -1429005720448078593
+    second: Stage_001_GoblinHamlet_Ground_58
+  - first:
+      213: 8546145679239681824
+    second: Stage_001_GoblinHamlet_Ground_59
+  - first:
+      213: 753946161820280526
+    second: Stage_001_GoblinHamlet_Ground_60
+  - first:
+      213: 820924519147121885
+    second: Stage_001_GoblinHamlet_Ground_61
+  - first:
+      213: 3826529658287081392
+    second: Stage_001_GoblinHamlet_Ground_62
+  - first:
+      213: -7152495196662547288
+    second: Stage_001_GoblinHamlet_Ground_63
+  - first:
+      213: 6297659594601193687
+    second: Stage_001_GoblinHamlet_Ground_64
+  - first:
+      213: -194262929722803864
+    second: Stage_001_GoblinHamlet_Ground_65
+  - first:
+      213: -2765341258631325616
+    second: Stage_001_GoblinHamlet_Ground_66
+  - first:
+      213: 8933830309972074696
+    second: Stage_001_GoblinHamlet_Ground_67
+  - first:
+      213: -6076417833565816293
+    second: Stage_001_GoblinHamlet_Ground_68
+  - first:
+      213: -5215093378525420274
+    second: Stage_001_GoblinHamlet_Ground_69
+  - first:
+      213: -3194627299635502219
+    second: Stage_001_GoblinHamlet_Ground_70
+  - first:
+      213: 3555673529919454852
+    second: Stage_001_GoblinHamlet_Ground_71
+  - first:
+      213: 6331763098633324703
+    second: Stage_001_GoblinHamlet_Ground_72
+  - first:
+      213: -3626675752638870834
+    second: Stage_001_GoblinHamlet_Ground_73
+  - first:
+      213: -5594048857943854766
+    second: Stage_001_GoblinHamlet_Ground_74
+  - first:
+      213: 3502356315128430062
+    second: Stage_001_GoblinHamlet_Ground_75
+  - first:
+      213: -5428486865293005020
+    second: Stage_001_GoblinHamlet_Ground_76
+  - first:
+      213: -8734297872177502028
+    second: Stage_001_GoblinHamlet_Ground_77
+  - first:
+      213: 5417469505118685930
+    second: Stage_001_GoblinHamlet_Ground_78
+  - first:
+      213: -6327508158749977624
+    second: Stage_001_GoblinHamlet_Ground_79
+  - first:
+      213: 1594413332821901703
+    second: Stage_001_GoblinHamlet_Ground_80
+  - first:
+      213: 5963149699765246144
+    second: Stage_001_GoblinHamlet_Ground_81
+  - first:
+      213: -2258961469180604818
+    second: Stage_001_GoblinHamlet_Ground_82
+  - first:
+      213: -4492936669543538876
+    second: Stage_001_GoblinHamlet_Ground_83
+  - first:
+      213: -6560662971250793028
+    second: Stage_001_GoblinHamlet_Ground_84
+  - first:
+      213: 6282340812178653818
+    second: Stage_001_GoblinHamlet_Ground_85
+  - first:
+      213: 3663244458296734599
+    second: Stage_001_GoblinHamlet_Ground_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 578
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594ddc9e9a402f070800000000000000
+      internalID: 8138572604430472341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 506
+        width: 217
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320cccaaef55a7860800000000000000
+      internalID: 7528424279378804771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 560
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b6e73c96737de00800000000000000
+      internalID: 1069384363914718032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 522
+        width: 210
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e342abb8528fa1e00800000000000000
+      internalID: 1016397506067178558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 602
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d28ef1018dc4b70800000000000000
+      internalID: 8884713728661531925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_5
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 600
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3b901c14a9ba2c0800000000000000
+      internalID: -4419269002131819532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 582
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5d9993e44726720800000000000000
+      internalID: 2837958594519487978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 594
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b145bc75d4f2ad9e0800000000000000
+      internalID: -1595911108717489125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_8
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 653
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c722ce7570c75500800000000000000
+      internalID: 384987904033826756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_9
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 629
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f90d53ba51c8c640800000000000000
+      internalID: 5100539173297523187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_10
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 602
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100dbd37249a879c0800000000000000
+      internalID: -3929204572004036607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_11
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 530
+        width: 138
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922fbc0bc308af5d0800000000000000
+      internalID: -3027966801300688343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_12
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 546
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e355e48ed8f87330800000000000000
+      internalID: 3708987927735653353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_13
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 532
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae10da4d6b589edf0800000000000000
+      internalID: -150442092241550870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_14
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 548
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce58df99b1f3d1cd0800000000000000
+      internalID: -2585841223260600852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_15
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 542
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1677d3dc11bb7a590800000000000000
+      internalID: -7662950555815413919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_16
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 548
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b743aab018b7a4f80800000000000000
+      internalID: -8121543183832566661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 562
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9500fa75860d677d0800000000000000
+      internalID: -2920918161736925095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_18
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 594
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c18ad238072d280800000000000000
+      internalID: -9020023394960663501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_19
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 546
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c67a425a6d9c810800000000000000
+      internalID: 1786194732002012237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_20
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 506
+        width: 174
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c229f1ece1801590800000000000000
+      internalID: -7705516108027452735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_21
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 554
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515b023c130fc5090800000000000000
+      internalID: -8044290737872784107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_22
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 548
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e87dc9543a0372a0800000000000000
+      internalID: -6741032997282285340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_23
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 554
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea9ac38aa23b23e0800000000000000
+      internalID: -2077511095164429592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_24
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 562
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1afc3527543d230800000000000000
+      internalID: 3662347279317049774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_25
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 522
+        width: 150
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b1c3ac1c22a32c0800000000000000
+      internalID: -4451207065985344648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_26
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 564
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea1edc9b8a1943c0800000000000000
+      internalID: -4374936376079148308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_27
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 554
+        width: 67
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1a86237d0482a00800000000000000
+      internalID: 731906232455569836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_28
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 556
+        width: 164
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23cb4a0167f8ec40800000000000000
+      internalID: 5541951337636021035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_29
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 578
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a7e89cfa5f8f960800000000000000
+      internalID: 7636123303556315695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_30
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 568
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19963f010e747a5e0800000000000000
+      internalID: -1898469690230740591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_31
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 587
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594adf4298d058d70800000000000000
+      internalID: 9044650309325792405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_32
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 617
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de27fe63405f482b0800000000000000
+      internalID: -5583068239582235923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_33
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 546
+        width: 18
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d987ea7b965e4aa20800000000000000
+      internalID: 3072833087989512349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_34
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 596
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8487b9ad170159870800000000000000
+      internalID: 8688869137266210888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_35
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 624
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f977bc59e5c4900800000000000000
+      internalID: 670014442028113722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_36
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 584
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee42ef1073123d50800000000000000
+      internalID: 6715451366655020774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_37
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 626
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0811a55c36715d0800000000000000
+      internalID: -3091892919895752495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_38
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 498
+        width: 218
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b844160b73c0640800000000000000
+      internalID: 5047470513061137308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_39
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 542
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803bddd38796a69e0800000000000000
+      internalID: -1627372350186081528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_40
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 538
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a89ef7e1567ef7d0800000000000000
+      internalID: -2882736617313888096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_41
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 577
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a594f715d4b19b8b0800000000000000
+      internalID: -5136043881145611942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_42
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 504
+        width: 186
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8148ac908f10ab80800000000000000
+      internalID: -8385667868919316082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_43
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 548
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e2b3c51d0845470800000000000000
+      internalID: 8382466443127238226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_44
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 522
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab01089f308655e0800000000000000
+      internalID: -1921207180405437530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_45
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 528
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98233d1ce3a576a0800000000000000
+      internalID: -6452070656640866148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_46
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 530
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8422fc29b707c890800000000000000
+      internalID: -7437967767674674038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_47
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 554
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c15ca51c969cce60800000000000000
+      internalID: 7983921836543726019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_48
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 602
+        width: 89
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786ba6abb4679b320800000000000000
+      internalID: 2574218729641129607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_49
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 548
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb01e5074c684a160800000000000000
+      internalID: 7035896696116482239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_50
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 545
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b32797bde4ce170800000000000000
+      internalID: 8209022925331905373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_51
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 585
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3226f04203ad770800000000000000
+      internalID: 8636268166871393243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_52
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 514
+        width: 124
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47a39d6328763cd0800000000000000
+      internalID: -2578741643065448630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2171
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda5035a18f92ab90800000000000000
+      internalID: -7232042672432588066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_54
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 136
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfa087c83c870de0800000000000000
+      internalID: -1366969786390499394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_55
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 53
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b60d03df23ea6e20800000000000000
+      internalID: 3344735467819828916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_56
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 53
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e31f063433a7a20800000000000000
+      internalID: 3060815261233921566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_57
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 78
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50cd13ab27344a70800000000000000
+      internalID: 8810227431603290206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_58
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 129
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffce0b25ed62b2ce0800000000000000
+      internalID: -1429005720448078593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_59
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 150
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02712d147320a9670800000000000000
+      internalID: 8546145679239681824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_60
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 77
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec621132a0e867a00800000000000000
+      internalID: 753946161820280526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_61
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 87
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc2c2f2082846b00800000000000000
+      internalID: 820924519147121885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_62
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 47
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7c2bc43709a1530800000000000000
+      internalID: 3826529658287081392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_63
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 78
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acbd31a38b3dbc90800000000000000
+      internalID: -7152495196662547288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_64
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 55
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0e88ce808c56750800000000000000
+      internalID: 6297659594601193687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_65
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 71
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86978d805e6dd4df0800000000000000
+      internalID: -194262929722803864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_66
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 85
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0585c84d6c88f99d0800000000000000
+      internalID: -2765341258631325616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_67
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 95
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0e08d55575bfb70800000000000000
+      internalID: 8933830309972074696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_68
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 103
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1af573bc2a3caba0800000000000000
+      internalID: -6076417833565816293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_69
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 95
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e052086f33440a7b0800000000000000
+      internalID: -5215093378525420274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_70
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 112
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573e57795676aa3d0800000000000000
+      internalID: -3194627299635502219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_71
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 65
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ebb189c3a485130800000000000000
+      internalID: 3555673529919454852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_72
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 87
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9847f7bdf0fed750800000000000000
+      internalID: 6331763098633324703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_73
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 77
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca00703e957badc0800000000000000
+      internalID: -3626675752638870834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_74
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 78
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251b316c332fd52b0800000000000000
+      internalID: -5594048857943854766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_75
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed7318238eda9030800000000000000
+      internalID: 3502356315128430062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_76
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 47
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f265615f32aa4b0800000000000000
+      internalID: -5428486865293005020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_77
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 33
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8e86e8c5a89c680800000000000000
+      internalID: -8734297872177502028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_78
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 46
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea4c1adfc7be2b40800000000000000
+      internalID: 5417469505118685930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_79
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3525caadc2038a0800000000000000
+      internalID: -6327508158749977624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_80
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7810ff78a7e702610800000000000000
+      internalID: 1594413332821901703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_81
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 55
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c81cfcce0d51c250800000000000000
+      internalID: 5963149699765246144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_82
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 74
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e0234238e86a0e0800000000000000
+      internalID: -2258961469180604818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_83
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 81
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fd78557e1e5a1c0800000000000000
+      internalID: -4492936669543538876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_84
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 87
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5a98b99c7d3f4a0800000000000000
+      internalID: -6560662971250793028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_85
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 81
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7209d3feab5f2750800000000000000
+      internalID: 6282340812178653818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage_001_GoblinHamlet_Ground_86
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 71
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783f1361d6576d230800000000000000
+      internalID: 3663244458296734599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stage_001_GoblinHamlet_Ground_0: 8138572604430472341
+      Stage_001_GoblinHamlet_Ground_1: 7528424279378804771
+      Stage_001_GoblinHamlet_Ground_10: -3929204572004036607
+      Stage_001_GoblinHamlet_Ground_11: -3027966801300688343
+      Stage_001_GoblinHamlet_Ground_12: 3708987927735653353
+      Stage_001_GoblinHamlet_Ground_13: -150442092241550870
+      Stage_001_GoblinHamlet_Ground_14: -2585841223260600852
+      Stage_001_GoblinHamlet_Ground_15: -7662950555815413919
+      Stage_001_GoblinHamlet_Ground_16: -8121543183832566661
+      Stage_001_GoblinHamlet_Ground_17: -2920918161736925095
+      Stage_001_GoblinHamlet_Ground_18: -9020023394960663501
+      Stage_001_GoblinHamlet_Ground_19: 1786194732002012237
+      Stage_001_GoblinHamlet_Ground_2: 1069384363914718032
+      Stage_001_GoblinHamlet_Ground_20: -7705516108027452735
+      Stage_001_GoblinHamlet_Ground_21: -8044290737872784107
+      Stage_001_GoblinHamlet_Ground_22: -6741032997282285340
+      Stage_001_GoblinHamlet_Ground_23: -2077511095164429592
+      Stage_001_GoblinHamlet_Ground_24: 3662347279317049774
+      Stage_001_GoblinHamlet_Ground_25: -4451207065985344648
+      Stage_001_GoblinHamlet_Ground_26: -4374936376079148308
+      Stage_001_GoblinHamlet_Ground_27: 731906232455569836
+      Stage_001_GoblinHamlet_Ground_28: 5541951337636021035
+      Stage_001_GoblinHamlet_Ground_29: 7636123303556315695
+      Stage_001_GoblinHamlet_Ground_3: 1016397506067178558
+      Stage_001_GoblinHamlet_Ground_30: -1898469690230740591
+      Stage_001_GoblinHamlet_Ground_31: 9044650309325792405
+      Stage_001_GoblinHamlet_Ground_32: -5583068239582235923
+      Stage_001_GoblinHamlet_Ground_33: 3072833087989512349
+      Stage_001_GoblinHamlet_Ground_34: 8688869137266210888
+      Stage_001_GoblinHamlet_Ground_35: 670014442028113722
+      Stage_001_GoblinHamlet_Ground_36: 6715451366655020774
+      Stage_001_GoblinHamlet_Ground_37: -3091892919895752495
+      Stage_001_GoblinHamlet_Ground_38: 5047470513061137308
+      Stage_001_GoblinHamlet_Ground_39: -1627372350186081528
+      Stage_001_GoblinHamlet_Ground_4: 8884713728661531925
+      Stage_001_GoblinHamlet_Ground_40: -2882736617313888096
+      Stage_001_GoblinHamlet_Ground_41: -5136043881145611942
+      Stage_001_GoblinHamlet_Ground_42: -8385667868919316082
+      Stage_001_GoblinHamlet_Ground_43: 8382466443127238226
+      Stage_001_GoblinHamlet_Ground_44: -1921207180405437530
+      Stage_001_GoblinHamlet_Ground_45: -6452070656640866148
+      Stage_001_GoblinHamlet_Ground_46: -7437967767674674038
+      Stage_001_GoblinHamlet_Ground_47: 7983921836543726019
+      Stage_001_GoblinHamlet_Ground_48: 2574218729641129607
+      Stage_001_GoblinHamlet_Ground_49: 7035896696116482239
+      Stage_001_GoblinHamlet_Ground_5: -4419269002131819532
+      Stage_001_GoblinHamlet_Ground_50: 8209022925331905373
+      Stage_001_GoblinHamlet_Ground_51: 8636268166871393243
+      Stage_001_GoblinHamlet_Ground_52: -2578741643065448630
+      Stage_001_GoblinHamlet_Ground_53: -7232042672432588066
+      Stage_001_GoblinHamlet_Ground_54: -1366969786390499394
+      Stage_001_GoblinHamlet_Ground_55: 3344735467819828916
+      Stage_001_GoblinHamlet_Ground_56: 3060815261233921566
+      Stage_001_GoblinHamlet_Ground_57: 8810227431603290206
+      Stage_001_GoblinHamlet_Ground_58: -1429005720448078593
+      Stage_001_GoblinHamlet_Ground_59: 8546145679239681824
+      Stage_001_GoblinHamlet_Ground_6: 2837958594519487978
+      Stage_001_GoblinHamlet_Ground_60: 753946161820280526
+      Stage_001_GoblinHamlet_Ground_61: 820924519147121885
+      Stage_001_GoblinHamlet_Ground_62: 3826529658287081392
+      Stage_001_GoblinHamlet_Ground_63: -7152495196662547288
+      Stage_001_GoblinHamlet_Ground_64: 6297659594601193687
+      Stage_001_GoblinHamlet_Ground_65: -194262929722803864
+      Stage_001_GoblinHamlet_Ground_66: -2765341258631325616
+      Stage_001_GoblinHamlet_Ground_67: 8933830309972074696
+      Stage_001_GoblinHamlet_Ground_68: -6076417833565816293
+      Stage_001_GoblinHamlet_Ground_69: -5215093378525420274
+      Stage_001_GoblinHamlet_Ground_7: -1595911108717489125
+      Stage_001_GoblinHamlet_Ground_70: -3194627299635502219
+      Stage_001_GoblinHamlet_Ground_71: 3555673529919454852
+      Stage_001_GoblinHamlet_Ground_72: 6331763098633324703
+      Stage_001_GoblinHamlet_Ground_73: -3626675752638870834
+      Stage_001_GoblinHamlet_Ground_74: -5594048857943854766
+      Stage_001_GoblinHamlet_Ground_75: 3502356315128430062
+      Stage_001_GoblinHamlet_Ground_76: -5428486865293005020
+      Stage_001_GoblinHamlet_Ground_77: -8734297872177502028
+      Stage_001_GoblinHamlet_Ground_78: 5417469505118685930
+      Stage_001_GoblinHamlet_Ground_79: -6327508158749977624
+      Stage_001_GoblinHamlet_Ground_8: 384987904033826756
+      Stage_001_GoblinHamlet_Ground_80: 1594413332821901703
+      Stage_001_GoblinHamlet_Ground_81: 5963149699765246144
+      Stage_001_GoblinHamlet_Ground_82: -2258961469180604818
+      Stage_001_GoblinHamlet_Ground_83: -4492936669543538876
+      Stage_001_GoblinHamlet_Ground_84: -6560662971250793028
+      Stage_001_GoblinHamlet_Ground_85: 6282340812178653818
+      Stage_001_GoblinHamlet_Ground_86: 3663244458296734599
+      Stage_001_GoblinHamlet_Ground_9: 5100539173297523187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
