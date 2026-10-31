@@ -3,6 +3,11 @@
 상태: 현재 활성 구현 기준  
 용도: 플레이어/전투 행동, 이동 권한, 캔슬, 강제 중단, 종료 및 정리 구조 정의
 
+> 구현 현황 (2026-10-31): 이 문서는 목표 구조다. 현재 코드에는 공통 `ActionController`,
+> 행동 단계(`Startup`~`Finished`), `CancelPower` / `InterruptArmor`가 아직 없다.
+> 이동 권한(`CharacterMotor2D.MovementControl`)과 액션별 입력 버퍼(`ActionInputBuffer`)는 존재하며,
+> 메이헴 액션은 `MayhemMechanism`이 캐릭터 단위로 직접 관리한다.
+
 ---
 
 ## 1. 기본 원칙
