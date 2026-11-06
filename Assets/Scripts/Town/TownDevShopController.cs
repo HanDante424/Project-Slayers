@@ -13,6 +13,8 @@ public sealed class TownDevShopController : MonoBehaviour
     [SerializeField] private Sprite goldIcon;
     [SerializeField] private Sprite memoryFragmentIcon;
     [SerializeField] private ItemEquipmentRegistry registry;
+    [Tooltip("Authored dev shop screen. Opened/closed by TownShopNavigationController; this object itself stays active.")]
+    [SerializeField] private Transform uiRoot;
     [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private Transform content;
     [SerializeField] private Transform itemTemplate;
@@ -39,8 +41,12 @@ public sealed class TownDevShopController : MonoBehaviour
     public int Quantity { get; private set; } = 1;
     public int VisibleCount => available.Count + (CurrentMode == Mode.Buy ? 2 : 0);
 
-    private void OnEnable()
+    private bool isOpen;
+
+    public void Open()
     {
+        if (isOpen) return;
+        isOpen = true;
         inventory = InventorySession.Inventory;
         inventory.Changed += Refresh;
         resetButton = TownButtonBinder.Bind(resetButtonRoot, ResetQuantity, this);
@@ -48,12 +54,14 @@ public sealed class TownDevShopController : MonoBehaviour
         if (increaseButton != null) increaseButton.onClick.AddListener(Increase);
         if (decreaseButton != null) decreaseButton.onClick.AddListener(Decrease);
         // The user's decorative frames must not intercept the controls underneath them.
-        foreach (var image in GetComponentsInChildren<Image>(true))
+        foreach (var image in (uiRoot != null ? uiRoot : transform).GetComponentsInChildren<Image>(true))
             if (image.name == "Frame") image.raycastTarget = false;
         Refresh();
     }
-    private void OnDisable()
+    public void Close()
     {
+        if (!isOpen) return;
+        isOpen = false;
         if (inventory != null) inventory.Changed -= Refresh;
         TownButtonBinder.Unbind(resetButton, ResetQuantity);
         TownButtonBinder.Unbind(exchangeButton, Exchange);
@@ -62,14 +70,16 @@ public sealed class TownDevShopController : MonoBehaviour
         foreach (var row in rows) if (row != null) { row.SetActive(false); Destroy(row); }
         rows.Clear(); available.Clear(); SelectedItem = null; SelectedCurrency = Currency.None;
     }
+    // The inventory outlives the scene, so never leave this view subscribed after destruction.
+    private void OnDestroy() { if (inventory != null) inventory.Changed -= Refresh; }
     public void Show(Mode mode)
     {
         CurrentMode = mode; SelectedItem = null; SelectedCurrency = Currency.None; Quantity = 1;
-        if (isActiveAndEnabled) Refresh();
+        if (isOpen) Refresh();
     }
     public void Refresh()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         foreach (var sample in authoredSamples ?? Array.Empty<Transform>()) if (sample != null) sample.gameObject.SetActive(false);
         available.Clear();
         if (CurrentMode == Mode.Buy && registry != null) available.AddRange(registry.GetAllItems());

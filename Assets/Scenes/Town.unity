@@ -5030,7 +5030,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 71433031}
-  - component: {fileID: 2147000003}
   m_Layer: 5
   m_Name: ShopPanel
   m_TagString: Untagged
@@ -14476,7 +14475,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 153.0003, y: 10}
+  m_SizeDelta: {x: 753.0003, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199729606
 MonoBehaviour:
@@ -21916,7 +21915,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 289976095}
-  - component: {fileID: 289976096}
   m_Layer: 5
   m_Name: MainPanel
   m_TagString: Untagged
@@ -21946,94 +21944,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &289976096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289976094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ed7a48cb9d34ec2a207d4e5b88392a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownBlacksmithCraftController
-  registry: {fileID: 112602170}
-  iconRegistry: {fileID: 1456807887}
-  dataSource: {fileID: 2147300001}
-  itemContent: {fileID: 1209137080}
-  itemTemplate: {fileID: 1540515249}
-  statContent: {fileID: 9432519}
-  statTemplate: {fileID: 1585522310}
-  materialContent: {fileID: 79228539}
-  materialTemplate: {fileID: 232858853}
-  authoredSamples:
-  - {fileID: 1540515248}
-  - {fileID: 1585522309}
-  - {fileID: 2123630723}
-  - {fileID: 1509024758}
-  - {fileID: 2008737818}
-  - {fileID: 1632219926}
-  - {fileID: 1171049568}
-  - {fileID: 232858852}
-  - {fileID: 1740465931}
-  - {fileID: 1387138282}
-  - {fileID: 1176451125}
-  - {fileID: 797808564}
-  - {fileID: 206676332}
-  - {fileID: 1433385516}
-  - {fileID: 1494962673}
-  - {fileID: 965771821}
-  - {fileID: 847594384}
-  - {fileID: 1429769175}
-  - {fileID: 732679489}
-  - {fileID: 879682687}
-  - {fileID: 2009190242}
-  - {fileID: 131598825}
-  - {fileID: 1134922707}
-  - {fileID: 1260184071}
-  - {fileID: 2090471133}
-  - {fileID: 2084216777}
-  - {fileID: 1094004121}
-  - {fileID: 1063328267}
-  - {fileID: 244438573}
-  - {fileID: 921790574}
-  - {fileID: 327006948}
-  - {fileID: 128371960}
-  - {fileID: 1612384381}
-  thumbnail: {fileID: 1373868119}
-  setIcon: {fileID: 485751511}
-  fallbackSetIcon: {fileID: 21300000, guid: 2ba92c557d4e43c419e39f4239e418a1, type: 3}
-  nameText: {fileID: 1752400549}
-  rankText: {fileID: 393067607}
-  partText: {fileID: 1083117521}
-  upgradeText: {fileID: 1764365252}
-  setNameText: {fileID: 1845777970}
-  setThresholdTexts:
-  - {fileID: 1485634007}
-  - {fileID: 1621519618}
-  - {fileID: 362308399}
-  - {fileID: 818816676}
-  - {fileID: 1095707575}
-  - {fileID: 117335737}
-  - {fileID: 292978871}
-  - {fileID: 546979148}
-  - {fileID: 732793705}
-  goldText: {fileID: 711070509}
-  memoryText: {fileID: 1522014224}
-  quantityText: {fileID: 14640646}
-  increaseButton: {fileID: 748004797}
-  decreaseButton: {fileID: 1206003542}
-  resetButton: {fileID: 1383434912}
-  craftButton: {fileID: 1262671787}
-  setButton: {fileID: 1387851871}
-  popupCloseButton: {fileID: 71665556}
-  setPopup: {fileID: 541955086}
-  popupName: {fileID: 1944350219}
-  memberContent: {fileID: 1450765738}
-  memberTemplate: {fileID: 1433385517}
-  effectContent: {fileID: 590169881}
-  effectTemplate: {fileID: 1260184072}
 --- !u!1 &290707216
 GameObject:
   m_ObjectHideFlags: 0
@@ -30828,6 +30738,209 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406887598}
   m_CullTransparentMesh: 1
+--- !u!1 &407470812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407470815}
+  - component: {fileID: 407470813}
+  - component: {fileID: 407470814}
+  - component: {fileID: 407470816}
+  m_Layer: 0
+  m_Name: Shop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &407470813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407470812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0032c5dd8d24721843815fa62d45305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownShopNavigationController
+  panel: {fileID: 71433030}
+  titleController: {fileID: 2147000005}
+  generalExchangePanel: {fileID: 845344791}
+  blackMarketPanel: {fileID: 218173743}
+  blackSmithPanel: {fileID: 322119463}
+  devPanel: {fileID: 1957977641}
+  devShop: {fileID: 407470816}
+  blacksmithCraft: {fileID: 407470814}
+  blackSmithPartsPanel: {fileID: 1753200443}
+  blackSmithMainPanel: {fileID: 289976094}
+  blackSmithMaterialLabel: {fileID: 337110135}
+  blackSmithCostLabel: {fileID: 1311522338}
+  generalExchangeButtonRoot: {fileID: 1508586917}
+  blackMarketButtonRoot: {fileID: 691322757}
+  blackSmithButtonRoot: {fileID: 200552818}
+  devButtonRoot: {fileID: 15832870}
+  buyButtonRoot: {fileID: 1911125974}
+  sellButtonRoot: {fileID: 359393195}
+  craftButtonRoot: {fileID: 244422918}
+  enhanceButtonRoot: {fileID: 906319405}
+  questButtonRoot: {fileID: 896294350}
+  beltButtonRoot: {fileID: 1692299736}
+  braceletButtonRoot: {fileID: 1882601088}
+  necklaceButtonRoot: {fileID: 804998343}
+  glovesButtonRoot: {fileID: 2081304242}
+  hairAccessoryButtonRoot: {fileID: 857013516}
+  backAccessoryButtonRoot: {fileID: 112932140}
+  earringsButtonRoot: {fileID: 717169470}
+  ringsButtonRoot: {fileID: 1431523529}
+  badgeButtonRoot: {fileID: 1791752742}
+--- !u!114 &407470814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407470812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed7a48cb9d34ec2a207d4e5b88392a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownBlacksmithCraftController
+  registry: {fileID: 112602170}
+  iconRegistry: {fileID: 1456807887}
+  dataSource: {fileID: 2147300001}
+  uiRoot: {fileID: 289976095}
+  itemContent: {fileID: 1209137080}
+  itemTemplate: {fileID: 1540515249}
+  statContent: {fileID: 9432519}
+  statTemplate: {fileID: 1585522310}
+  materialContent: {fileID: 79228539}
+  materialTemplate: {fileID: 232858853}
+  authoredSamples:
+  - {fileID: 1540515248}
+  - {fileID: 1585522309}
+  - {fileID: 2123630723}
+  - {fileID: 1509024758}
+  - {fileID: 2008737818}
+  - {fileID: 1632219926}
+  - {fileID: 1171049568}
+  - {fileID: 232858852}
+  - {fileID: 1740465931}
+  - {fileID: 1387138282}
+  - {fileID: 1176451125}
+  - {fileID: 797808564}
+  - {fileID: 206676332}
+  - {fileID: 1433385516}
+  - {fileID: 1494962673}
+  - {fileID: 965771821}
+  - {fileID: 847594384}
+  - {fileID: 1429769175}
+  - {fileID: 732679489}
+  - {fileID: 879682687}
+  - {fileID: 2009190242}
+  - {fileID: 131598825}
+  - {fileID: 1134922707}
+  - {fileID: 1260184071}
+  - {fileID: 2090471133}
+  - {fileID: 2084216777}
+  - {fileID: 1094004121}
+  - {fileID: 1063328267}
+  - {fileID: 244438573}
+  - {fileID: 921790574}
+  - {fileID: 327006948}
+  - {fileID: 128371960}
+  - {fileID: 1612384381}
+  thumbnail: {fileID: 1373868119}
+  setIcon: {fileID: 485751511}
+  fallbackSetIcon: {fileID: 21300000, guid: 2ba92c557d4e43c419e39f4239e418a1, type: 3}
+  nameText: {fileID: 1752400549}
+  rankText: {fileID: 393067607}
+  partText: {fileID: 1083117521}
+  upgradeText: {fileID: 1764365252}
+  setNameText: {fileID: 1845777970}
+  setThresholdTexts:
+  - {fileID: 1485634007}
+  - {fileID: 1621519618}
+  - {fileID: 362308399}
+  - {fileID: 818816676}
+  - {fileID: 1095707575}
+  - {fileID: 117335737}
+  - {fileID: 292978871}
+  - {fileID: 546979148}
+  - {fileID: 732793705}
+  goldText: {fileID: 711070509}
+  memoryText: {fileID: 1522014224}
+  quantityText: {fileID: 14640646}
+  increaseButton: {fileID: 748004797}
+  decreaseButton: {fileID: 1206003542}
+  resetButton: {fileID: 1383434912}
+  craftButton: {fileID: 1262671787}
+  setButton: {fileID: 1387851871}
+  popupCloseButton: {fileID: 71665556}
+  setPopup: {fileID: 541955086}
+  popupName: {fileID: 1944350219}
+  memberContent: {fileID: 1450765738}
+  memberTemplate: {fileID: 1433385517}
+  effectContent: {fileID: 590169881}
+  effectTemplate: {fileID: 1260184072}
+--- !u!4 &407470815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407470812}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 739763656}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &407470816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407470812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58d3a837a594d12a8d4958ba0c35310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownDevShopController
+  goldIcon: {fileID: 21300000, guid: 6a063408d9849314cb2d8197e7570529, type: 3}
+  memoryFragmentIcon: {fileID: 21300000, guid: 4d2ad5ab990a23242ab33d9718e4e1a6, type: 3}
+  registry: {fileID: 112602170}
+  uiRoot: {fileID: 1957977642}
+  scrollRect: {fileID: 599236809}
+  content: {fileID: 1078091367}
+  itemTemplate: {fileID: 238895950}
+  authoredSamples:
+  - {fileID: 238895950}
+  - {fileID: 1105464073}
+  - {fileID: 632317190}
+  - {fileID: 1810905857}
+  - {fileID: 1390653104}
+  - {fileID: 1588024034}
+  thumbnail: {fileID: 1630814784}
+  nameText: {fileID: 209920210}
+  rankText: {fileID: 2111107636}
+  descriptionText: {fileID: 2147400002}
+  quantityText: {fileID: 1461213072}
+  priceText: {fileID: 1197440874}
+  ownedText: {fileID: 597452671}
+  exchangeControls: {fileID: 1147693121}
+  increaseButton: {fileID: 1496538349}
+  decreaseButton: {fileID: 1795212860}
+  resetButtonRoot: {fileID: 1432583607}
+  exchangeButtonRoot: {fileID: 428082631}
 --- !u!1 &408251356
 GameObject:
   m_ObjectHideFlags: 0
@@ -56537,6 +56650,7 @@ Transform:
   - {fileID: 2137451644}
   - {fileID: 928119630}
   - {fileID: 90729440}
+  - {fileID: 407470815}
   m_Father: {fileID: 1311012026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740101192
@@ -90077,6 +90191,7 @@ MonoBehaviour:
   - {fileID: 2137451643}
   - {fileID: 928119629}
   - {fileID: 90729438}
+  - {fileID: 407470813}
 --- !u!1 &1192624116
 GameObject:
   m_ObjectHideFlags: 0
@@ -148447,7 +148562,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957977642}
-  - component: {fileID: 2147400001}
   m_Layer: 5
   m_Name: DevPanel
   m_TagString: Untagged
@@ -162857,47 +162971,6 @@ MonoBehaviour:
   ringsButtonRoot: {fileID: 1864109579}
   badgeButtonRoot: {fileID: 229640441}
   equipBackButtonRoot: {fileID: 1357840102}
---- !u!114 &2147000003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71433030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0032c5dd8d24721843815fa62d45305, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownShopNavigationController
-  titleController: {fileID: 2147000005}
-  generalExchangePanel: {fileID: 845344791}
-  blackMarketPanel: {fileID: 218173743}
-  blackSmithPanel: {fileID: 322119463}
-  devPanel: {fileID: 1957977641}
-  devShop: {fileID: 2147400001}
-  blacksmithCraft: {fileID: 289976096}
-  blackSmithPartsPanel: {fileID: 1753200443}
-  blackSmithMainPanel: {fileID: 289976094}
-  blackSmithMaterialLabel: {fileID: 337110135}
-  blackSmithCostLabel: {fileID: 1311522338}
-  generalExchangeButtonRoot: {fileID: 1508586917}
-  blackMarketButtonRoot: {fileID: 691322757}
-  blackSmithButtonRoot: {fileID: 200552818}
-  devButtonRoot: {fileID: 15832870}
-  buyButtonRoot: {fileID: 1911125974}
-  sellButtonRoot: {fileID: 359393195}
-  craftButtonRoot: {fileID: 244422918}
-  enhanceButtonRoot: {fileID: 906319405}
-  questButtonRoot: {fileID: 896294350}
-  beltButtonRoot: {fileID: 1692299736}
-  braceletButtonRoot: {fileID: 1882601088}
-  necklaceButtonRoot: {fileID: 804998343}
-  glovesButtonRoot: {fileID: 2081304242}
-  hairAccessoryButtonRoot: {fileID: 857013516}
-  backAccessoryButtonRoot: {fileID: 112932140}
-  earringsButtonRoot: {fileID: 717169470}
-  ringsButtonRoot: {fileID: 1431523529}
-  badgeButtonRoot: {fileID: 1791752742}
 --- !u!114 &2147000005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163811,43 +163884,6 @@ MonoBehaviour:
     id: ab467d6dac1977a48870fe256a0d1304
   - character: {fileID: 11400000, guid: 454ec2df292140c47911baf09bc5f3d9, type: 2}
     id: 454ec2df292140c47911baf09bc5f3d9
---- !u!114 &2147400001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957977641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c58d3a837a594d12a8d4958ba0c35310, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownDevShopController
-  goldIcon: {fileID: 21300000, guid: 6a063408d9849314cb2d8197e7570529, type: 3}
-  memoryFragmentIcon: {fileID: 21300000, guid: 4d2ad5ab990a23242ab33d9718e4e1a6, type: 3}
-  registry: {fileID: 112602170}
-  scrollRect: {fileID: 599236809}
-  content: {fileID: 1078091367}
-  itemTemplate: {fileID: 238895950}
-  authoredSamples:
-  - {fileID: 238895950}
-  - {fileID: 1105464073}
-  - {fileID: 632317190}
-  - {fileID: 1810905857}
-  - {fileID: 1390653104}
-  - {fileID: 1588024034}
-  thumbnail: {fileID: 1630814784}
-  nameText: {fileID: 209920210}
-  rankText: {fileID: 2111107636}
-  descriptionText: {fileID: 2147400002}
-  quantityText: {fileID: 1461213072}
-  priceText: {fileID: 1197440874}
-  ownedText: {fileID: 597452671}
-  exchangeControls: {fileID: 1147693121}
-  increaseButton: {fileID: 1496538349}
-  decreaseButton: {fileID: 1795212860}
-  resetButtonRoot: {fileID: 1432583607}
-  exchangeButtonRoot: {fileID: 428082631}
 --- !u!114 &2147400002
 MonoBehaviour:
   m_ObjectHideFlags: 0
