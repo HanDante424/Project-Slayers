@@ -117,6 +117,27 @@ public static class TownSystemRestructure
             Run(ShopPanel, true);
     }
 
+    private static void BattlePanel(Context c)
+    {
+        MovePanelController<TownBattleNavigationController>(c, "Battle");
+        MovePanelView<TownStageSelectController>(c, "Battle");
+        MovePanelView<TownStageDetailsView>(c, "Battle");
+        // Leaves [System]/Data/Character holding only the Town CharacterStats.
+        MovePanelView<TownCombatCharacterSelectController>(c, "Battle");
+    }
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3e - Battle Panel (Report)")]
+    public static void ReportBattlePanel() => Run(BattlePanel, false);
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3e - Battle Panel (Apply)")]
+    public static void ApplyBattlePanel()
+    {
+        if (EditorUtility.DisplayDialog("Town Restructure",
+                "Move the battle navigation, stage select, stage details and combat character select controllers to [System]/TownUI/Battle?\n\nRun Report first. The scene is not saved automatically.",
+                "Apply", "Cancel"))
+            Run(BattlePanel, true);
+    }
+
     private static void Run(Action<Context> step, bool apply)
     {
         if (EditorApplication.isPlaying) { Debug.LogError("[Town Restructure] Exit Play Mode first."); return; }
