@@ -46,18 +46,30 @@ public class TownStageSelectController : MonoBehaviour
     public void Show(MapType mapType)
     {
         SelectedMapType = mapType;
-        if (isActiveAndEnabled) Refresh();
+        if (isOpen) Refresh();
     }
 
-    private void OnEnable() => Refresh();
+    // Opened/closed by TownBattleNavigationController with the stage select screen; this object itself stays active.
+    private bool isOpen;
 
-    private void OnDisable()
+    public void Open()
     {
+        if (isOpen) return;
+        detailsView?.Open();
+        isOpen = true;
+        Refresh();
+    }
+
+    public void Close()
+    {
+        if (!isOpen) return;
+        isOpen = false;
         ClearRows(rankRows.Values);
         rankRows.Clear();
         ClearStages();
         SelectedRank = null;
         rankLayoutWidth = -1f;
+        detailsView?.Close();
     }
 
     public void Refresh()

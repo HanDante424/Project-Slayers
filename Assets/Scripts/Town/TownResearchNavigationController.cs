@@ -1,23 +1,27 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class TownResearchNavigationController : MonoBehaviour
+public sealed class TownResearchNavigationController : MonoBehaviour, ITownPanel
 {
+    [SerializeField] private GameObject panel;
     [SerializeField] private TownTitleController titleController;
     [SerializeField] private GameObject skillPanel;
     [SerializeField] private Transform skillButtonRoot;
 
     private Button skillButton;
 
-    private void OnEnable()
+    public GameObject Panel => panel;
+
+    public void OnPanelShown()
     {
         skillButton = TownButtonBinder.Bind(skillButtonRoot, OpenSkillResearch, this);
         OpenSkillResearch();
     }
 
-    private void OnDisable()
+    public void OnPanelHidden()
     {
         TownButtonBinder.Unbind(skillButton, OpenSkillResearch);
+        skillButton = null;
     }
 
     public void OpenSkillResearch()

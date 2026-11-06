@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class TownBattleNavigationController : MonoBehaviour
+public sealed class TownBattleNavigationController : MonoBehaviour, ITownPanel
 {
+    [SerializeField] private GameObject panel;
     [SerializeField] private TownTitleController titleController;
 
     [SerializeField] private TownStageSelectController stageSelectController;
@@ -43,9 +44,13 @@ public sealed class TownBattleNavigationController : MonoBehaviour
     private Button rewardButton;
     private Button questButton;
     private MapType selectedMapType;
+    private bool shown;
 
-    private void OnEnable()
+    public GameObject Panel => panel;
+
+    public void OnPanelShown()
     {
+        shown = true;
         searchButton = TownButtonBinder.Bind(searchButtonRoot, SelectSearch, this);
         attackButton = TownButtonBinder.Bind(attackButtonRoot, SelectAttack, this);
         defenseButton = TownButtonBinder.Bind(defenseButtonRoot, SelectDefense, this);
@@ -61,8 +66,10 @@ public sealed class TownBattleNavigationController : MonoBehaviour
         OpenBattleSelect();
     }
 
-    private void OnDisable()
+    public void OnPanelHidden()
     {
+        shown = false;
+        SyncStageSelect();
         TownButtonBinder.Unbind(searchButton, SelectSearch);
         TownButtonBinder.Unbind(attackButton, SelectAttack);
         TownButtonBinder.Unbind(defenseButton, SelectDefense);
@@ -74,6 +81,17 @@ public sealed class TownBattleNavigationController : MonoBehaviour
         TownButtonBinder.Unbind(monsterButton, OpenMonsterDescription);
         TownButtonBinder.Unbind(rewardButton, OpenRewardDescription);
         TownButtonBinder.Unbind(questButton, OpenQuestDescription);
+        searchButton = attackButton = defenseButton = conquestButton = raidButton = null;
+        selectButton = backButton = basicButton = monsterButton = rewardButton = questButton = null;
+    }
+
+    // Stage select and its details live under [System] too. Call after toggling the stage select screen,
+    // including from TownCombatCharacterSelectController, so they are open only while it is visible.
+    public void SyncStageSelect()
+    {
+        if (stageSelectController == null) return;
+        if (shown && stageSelectPanel != null && stageSelectPanel.activeInHierarchy) stageSelectController.Open();
+        else stageSelectController.Close();
     }
 
     public void OpenBattleSelect()
@@ -82,6 +100,7 @@ public sealed class TownBattleNavigationController : MonoBehaviour
         SetActive(characterSelectPanel, false);
         SetActive(battleSelectPanel, true);
         SetActive(stageSelectPanel, false);
+        SyncStageSelect();
         titleController?.SetTitle("전투");
     }
 
@@ -91,6 +110,7 @@ public sealed class TownBattleNavigationController : MonoBehaviour
         SetActive(battleSelectPanel, false);
         stageSelectController?.Show(selectedMapType);
         SetActive(stageSelectPanel, true);
+        SyncStageSelect();
         OpenBasicDescription();
         titleController?.SetTitle(GetSelectedBattleTitle());
     }

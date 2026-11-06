@@ -135,8 +135,8 @@ public class AttackHitbox : MonoBehaviour
         float currentAttack = sourceStats != null ? sourceStats.FinalAttack : attack;
         float rawDamage = currentAttack * damagePercent / 100f;
 
-        // TEMP: rounding rule unresolved.
-        int damage = Mathf.RoundToInt(rawDamage);
+        // Final damage truncates decimals (Docs/02_StatsAndDamage.md 13-1).
+        int damage = Mathf.FloorToInt(rawDamage);
 
         float staggerAmount =
             damage * skillHitData.staggerPercent / 100f;

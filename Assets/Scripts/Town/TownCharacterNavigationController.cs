@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class TownCharacterNavigationController : MonoBehaviour
+public sealed class TownCharacterNavigationController : MonoBehaviour, ITownPanel
 {
+    [SerializeField] private GameObject panel;
     [SerializeField] private TownTitleController titleController;
 
     [Header("Character Screens")]
@@ -11,6 +12,8 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     [SerializeField] private GameObject equipPanel;
     [SerializeField] private TownCharacterEquipmentController equipmentController;
     [SerializeField] private GameObject skillPanel;
+    [SerializeField] private TownCharacterSkillController skillController;
+    [SerializeField] private TownCharacterOverviewView overviewView;
 
     [Header("Stat Categories")]
     [SerializeField] private GameObject mainStatPanel;
@@ -62,9 +65,14 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
     private Button ringsButton;
     private Button badgeButton;
     private Button equipBackButton;
+    private bool shown;
 
-    private void OnEnable()
+    public GameObject Panel => panel;
+
+    // Same order the components used to receive OnEnable on CharacterPanel: navigation, stats, overview, equipment.
+    public void OnPanelShown()
     {
+        shown = true;
         statButton = TownButtonBinder.Bind(statButtonRoot, OpenStat, this);
         equipButton = TownButtonBinder.Bind(equipButtonRoot, OpenEquip, this);
         skillButton = TownButtonBinder.Bind(skillButtonRoot, OpenSkill, this);
@@ -84,10 +92,15 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
         equipBackButton = TownButtonBinder.Bind(equipBackButtonRoot, OpenEquipMain, this);
 
         OpenStat();
+        statsController?.Open();
+        overviewView?.Open();
+        equipmentController?.Open();
     }
 
-    private void OnDisable()
+    public void OnPanelHidden()
     {
+        shown = false;
+        SyncSubViews();
         TownButtonBinder.Unbind(statButton, OpenStat);
         TownButtonBinder.Unbind(equipButton, OpenEquip);
         TownButtonBinder.Unbind(skillButton, OpenSkill);
@@ -105,6 +118,13 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
         TownButtonBinder.Unbind(ringsButton, OpenRingsSelection);
         TownButtonBinder.Unbind(badgeButton, OpenBadgeSelection);
         TownButtonBinder.Unbind(equipBackButton, OpenEquipMain);
+        statButton = equipButton = skillButton = null;
+        mainStatButton = subStatButton = elementPowerButton = elementResistButton = null;
+        beltButton = braceletButton = necklaceButton = glovesButton = hairAccessoryButton = null;
+        backAccessoryButton = earringsButton = ringsButton = badgeButton = equipBackButton = null;
+        statsController?.Close();
+        overviewView?.Close();
+        equipmentController?.Close();
     }
 
     public void OpenStat()
@@ -187,6 +207,15 @@ public sealed class TownCharacterNavigationController : MonoBehaviour
         SetActive(statPanel, statPanel == targetPanel);
         SetActive(equipPanel, equipPanel == targetPanel);
         SetActive(skillPanel, skillPanel == targetPanel);
+        SyncSubViews();
+    }
+
+    // The skill view also lives under [System]; it is open only while the skill screen is visible.
+    private void SyncSubViews()
+    {
+        if (skillController == null) return;
+        if (shown && skillPanel != null && skillPanel.activeInHierarchy) skillController.Open();
+        else skillController.Close();
     }
 
     private static void TogglePanel(GameObject panel)
