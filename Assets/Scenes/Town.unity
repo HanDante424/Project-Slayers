@@ -14475,7 +14475,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 753.0003, y: 10}
+  m_SizeDelta: {x: 153.0003, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199729606
 MonoBehaviour:
@@ -34610,130 +34610,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &445533325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185698820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cec0613b85c95694193ed2e9208cfd0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownCombatCharacterSelectController
-  navigationController: {fileID: 2147000001}
-  stages: {fileID: 833063217}
-  stageManager: {fileID: 686373047}
-  title: {fileID: 2147000005}
-  dataSource: {fileID: 2147300002}
-  stagePanel: {fileID: 833063215}
-  characterPanel: {fileID: 797000001}
-  stageConfirm: {fileID: 31753933}
-  characterConfirm: {fileID: 1277056413}
-  backButton: {fileID: 1615394623}
-  ern:
-    character: {fileID: 11400000, guid: 454ec2df292140c47911baf09bc5f3d9, type: 2}
-    playerPrefab: {fileID: 7798031930983570203, guid: ef7e36270687cca4a85ce335dba85cb5, type: 3}
-    button: {fileID: 1939933574}
-    icon: {fileID: 643615858}
-  mayhem:
-    character: {fileID: 11400000, guid: ab467d6dac1977a48870fe256a0d1304, type: 2}
-    playerPrefab: {fileID: 3437711596555847595, guid: fad63bd1c2b48ad4fb17b3aff0aceadd, type: 3}
-    button: {fileID: 71064550}
-    icon: {fileID: 694543085}
-  characterNameText: {fileID: 392406936}
-  levelText: {fileID: 1953371053}
-  fullBodyImage: {fileID: 1823783887}
-  statFields:
-  - stat: 0
-    text: {fileID: 666430873}
-  - stat: 1
-    text: {fileID: 20443729}
-  - stat: 2
-    text: {fileID: 648927100}
-  - stat: 3
-    text: {fileID: 1045873871}
-  - stat: 4
-    text: {fileID: 1627249274}
-  - stat: 5
-    text: {fileID: 1867553191}
-  - stat: 18
-    text: {fileID: 388114282}
-  - stat: 19
-    text: {fileID: 2081814487}
-  - stat: 16
-    text: {fileID: 1969174396}
-  - stat: 9
-    text: {fileID: 1558053970}
-  - stat: 20
-    text: {fileID: 1765828500}
-  - stat: 21
-    text: {fileID: 1377584106}
-  - stat: 22
-    text: {fileID: 1958270345}
-  - stat: 23
-    text: {fileID: 48992427}
-  - stat: 24
-    text: {fileID: 651204965}
-  - stat: 25
-    text: {fileID: 1477682690}
-  - stat: 26
-    text: {fileID: 2123570125}
-  - stat: 27
-    text: {fileID: 1294862815}
-  - stat: 28
-    text: {fileID: 1472451161}
-  - stat: 29
-    text: {fileID: 392749362}
-  - stat: 30
-    text: {fileID: 1219542308}
-  - stat: 31
-    text: {fileID: 820909928}
-  - stat: 32
-    text: {fileID: 333369979}
-  - stat: 33
-    text: {fileID: 1707023387}
-  - stat: 34
-    text: {fileID: 1068977852}
-  - stat: 35
-    text: {fileID: 808288509}
-  equipmentTexts:
-  - {fileID: 766948733}
-  - {fileID: 182717258}
-  - {fileID: 1132543165}
-  - {fileID: 1382090943}
-  - {fileID: 452634997}
-  - {fileID: 1347118557}
-  - {fileID: 1962063894}
-  - {fileID: 412176028}
-  - {fileID: 1322249284}
-  - {fileID: 1174247576}
-  - {fileID: 172947161}
-  - {fileID: 1824767145}
-  equipmentFields:
-  - slot: 10
-    text: {fileID: 766948733}
-  - slot: 11
-    text: {fileID: 182717258}
-  - slot: 12
-    text: {fileID: 1132543165}
-  - slot: 13
-    text: {fileID: 1382090943}
-  - slot: 14
-    text: {fileID: 452634997}
-  - slot: 15
-    text: {fileID: 1347118557}
-  - slot: 16
-    text: {fileID: 1962063894}
-  - slot: 17
-    text: {fileID: 412176028}
-  - slot: 18
-    text: {fileID: 1322249284}
-  setTexts:
-  - {fileID: 1174247576}
-  - {fileID: 172947161}
-  - {fileID: 1824767145}
 --- !u!1 &446828282
 GameObject:
   m_ObjectHideFlags: 0
@@ -56651,6 +56527,7 @@ Transform:
   - {fileID: 928119630}
   - {fileID: 90729440}
   - {fileID: 407470815}
+  - {fileID: 1651374787}
   m_Father: {fileID: 1311012026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740101192
@@ -63394,8 +63271,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833063216}
-  - component: {fileID: 833063217}
-  - component: {fileID: 833063218}
   m_Layer: 5
   m_Name: StageSelectPanel
   m_TagString: Untagged
@@ -63427,77 +63302,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &833063217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833063215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4069c00e2e294b0b8c9181ea7b8f1ec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownStageSelectController
-  stageManager: {fileID: 686373047}
-  detailsView: {fileID: 833063218}
-  rankContent: {fileID: 973384562}
-  rankButtonTemplate: {fileID: 1510400138}
-  rankPlaceholders:
-  - {fileID: 1367944264}
-  - {fileID: 1868490281}
-  - {fileID: 749154847}
-  - {fileID: 126948900}
-  - {fileID: 1251199621}
-  - {fileID: 835694423}
-  stageContent: {fileID: 437970002}
-  stageButtonTemplate: {fileID: 2049938329}
-  selectionButton: {fileID: 31753933}
-  stageNameText: {fileID: 1227293132}
-  rankText: {fileID: 717599190}
-  corruptionText: {fileID: 979324950}
-  descriptionText: {fileID: 535347626}
-  thumbnail: {fileID: 1208200579}
---- !u!114 &833063218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833063215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56dbfb96cdba42a1af00a2258d02ca57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownStageDetailsView
-  enemyContent: {fileID: 907945980}
-  enemyTemplate: {fileID: 167887668}
-  enemyNameText: {fileID: 618736683}
-  enemyThumbnail: {fileID: 127826264}
-  dropContent: {fileID: 1198342339}
-  dropTemplate: {fileID: 2109310993}
-  itemNameText: {fileID: 2039042266}
-  itemThumbnail: {fileID: 2070587040}
-  dropCountText: {fileID: 612521123}
-  dropChanceText: {fileID: 1954191708}
-  dropSourceText: {fileID: 1358647147}
-  sampleTexts:
-  - {fileID: 1672368170}
-  - {fileID: 2054710778}
-  - {fileID: 1826757564}
-  - {fileID: 1665496056}
-  - {fileID: 690853748}
-  - {fileID: 1467075206}
-  - {fileID: 1918816506}
-  - {fileID: 1900229789}
-  - {fileID: 265488363}
-  - {fileID: 1683485516}
-  - {fileID: 1610325169}
-  - {fileID: 428665926}
-  - {fileID: 732051645}
-  - {fileID: 1896554140}
-  - {fileID: 1990264861}
-  - {fileID: 1172672005}
 --- !u!1 &833636435
 GameObject:
   m_ObjectHideFlags: 0
@@ -88032,7 +87836,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1158290237}
-  - component: {fileID: 2147000001}
   m_Layer: 5
   m_Name: BattlePanel
   m_TagString: Untagged
@@ -89661,7 +89464,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1185698821}
   - component: {fileID: 1185698822}
-  - component: {fileID: 445533325}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -90192,6 +89994,7 @@ MonoBehaviour:
   - {fileID: 928119629}
   - {fileID: 90729438}
   - {fileID: 407470813}
+  - {fileID: 1651374784}
 --- !u!1 &1192624116
 GameObject:
   m_ObjectHideFlags: 0
@@ -125716,6 +125519,269 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650511992}
   m_CullTransparentMesh: 1
+--- !u!1 &1651374783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651374787}
+  - component: {fileID: 1651374784}
+  - component: {fileID: 1651374785}
+  - component: {fileID: 1651374786}
+  - component: {fileID: 1651374788}
+  m_Layer: 0
+  m_Name: Battle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1651374784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651374783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f6b08088ef43efa51093785eae8cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownBattleNavigationController
+  panel: {fileID: 1158290236}
+  titleController: {fileID: 2147000005}
+  stageSelectController: {fileID: 1651374785}
+  battleSelectPanel: {fileID: 1898182178}
+  stageSelectPanel: {fileID: 833063215}
+  characterSelectPanel: {fileID: 797000001}
+  basicDescriptionPanel: {fileID: 1765971311}
+  monsterDescriptionPanel: {fileID: 502827523}
+  rewardDescriptionPanel: {fileID: 370600278}
+  questDescriptionPanel: {fileID: 989926049}
+  searchButtonRoot: {fileID: 1155836889}
+  attackButtonRoot: {fileID: 198884373}
+  defenseButtonRoot: {fileID: 23760956}
+  conquestButtonRoot: {fileID: 1721172603}
+  raidButtonRoot: {fileID: 263321578}
+  selectButtonRoot: {fileID: 1203108354}
+  backButtonRoot: {fileID: 1116524381}
+  basicButtonRoot: {fileID: 1956722660}
+  monsterButtonRoot: {fileID: 1664099029}
+  rewardButtonRoot: {fileID: 697342506}
+  questButtonRoot: {fileID: 13709612}
+--- !u!114 &1651374785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651374783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4069c00e2e294b0b8c9181ea7b8f1ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownStageSelectController
+  stageManager: {fileID: 686373047}
+  detailsView: {fileID: 1651374786}
+  rankContent: {fileID: 973384562}
+  rankButtonTemplate: {fileID: 1510400138}
+  rankPlaceholders:
+  - {fileID: 1367944264}
+  - {fileID: 1868490281}
+  - {fileID: 749154847}
+  - {fileID: 126948900}
+  - {fileID: 1251199621}
+  - {fileID: 835694423}
+  stageContent: {fileID: 437970002}
+  stageButtonTemplate: {fileID: 2049938329}
+  selectionButton: {fileID: 31753933}
+  stageNameText: {fileID: 1227293132}
+  rankText: {fileID: 717599190}
+  corruptionText: {fileID: 979324950}
+  descriptionText: {fileID: 535347626}
+  thumbnail: {fileID: 1208200579}
+--- !u!114 &1651374786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651374783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56dbfb96cdba42a1af00a2258d02ca57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownStageDetailsView
+  enemyContent: {fileID: 907945980}
+  enemyTemplate: {fileID: 167887668}
+  enemyNameText: {fileID: 618736683}
+  enemyThumbnail: {fileID: 127826264}
+  dropContent: {fileID: 1198342339}
+  dropTemplate: {fileID: 2109310993}
+  itemNameText: {fileID: 2039042266}
+  itemThumbnail: {fileID: 2070587040}
+  dropCountText: {fileID: 612521123}
+  dropChanceText: {fileID: 1954191708}
+  dropSourceText: {fileID: 1358647147}
+  sampleTexts:
+  - {fileID: 1672368170}
+  - {fileID: 2054710778}
+  - {fileID: 1826757564}
+  - {fileID: 1665496056}
+  - {fileID: 690853748}
+  - {fileID: 1467075206}
+  - {fileID: 1918816506}
+  - {fileID: 1900229789}
+  - {fileID: 265488363}
+  - {fileID: 1683485516}
+  - {fileID: 1610325169}
+  - {fileID: 428665926}
+  - {fileID: 732051645}
+  - {fileID: 1896554140}
+  - {fileID: 1990264861}
+  - {fileID: 1172672005}
+--- !u!4 &1651374787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651374783}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 739763656}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1651374788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651374783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec0613b85c95694193ed2e9208cfd0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownCombatCharacterSelectController
+  navigationController: {fileID: 1651374784}
+  stages: {fileID: 1651374785}
+  stageManager: {fileID: 686373047}
+  title: {fileID: 2147000005}
+  dataSource: {fileID: 2147300002}
+  stagePanel: {fileID: 833063215}
+  characterPanel: {fileID: 797000001}
+  stageConfirm: {fileID: 31753933}
+  characterConfirm: {fileID: 1277056413}
+  backButton: {fileID: 1615394623}
+  ern:
+    character: {fileID: 11400000, guid: 454ec2df292140c47911baf09bc5f3d9, type: 2}
+    playerPrefab: {fileID: 7798031930983570203, guid: ef7e36270687cca4a85ce335dba85cb5, type: 3}
+    button: {fileID: 1939933574}
+    icon: {fileID: 643615858}
+  mayhem:
+    character: {fileID: 11400000, guid: ab467d6dac1977a48870fe256a0d1304, type: 2}
+    playerPrefab: {fileID: 3437711596555847595, guid: fad63bd1c2b48ad4fb17b3aff0aceadd, type: 3}
+    button: {fileID: 71064550}
+    icon: {fileID: 694543085}
+  characterNameText: {fileID: 392406936}
+  levelText: {fileID: 1953371053}
+  fullBodyImage: {fileID: 1823783887}
+  statFields:
+  - stat: 0
+    text: {fileID: 666430873}
+  - stat: 1
+    text: {fileID: 20443729}
+  - stat: 2
+    text: {fileID: 648927100}
+  - stat: 3
+    text: {fileID: 1045873871}
+  - stat: 4
+    text: {fileID: 1627249274}
+  - stat: 5
+    text: {fileID: 1867553191}
+  - stat: 18
+    text: {fileID: 388114282}
+  - stat: 19
+    text: {fileID: 2081814487}
+  - stat: 16
+    text: {fileID: 1969174396}
+  - stat: 9
+    text: {fileID: 1558053970}
+  - stat: 20
+    text: {fileID: 1765828500}
+  - stat: 21
+    text: {fileID: 1377584106}
+  - stat: 22
+    text: {fileID: 1958270345}
+  - stat: 23
+    text: {fileID: 48992427}
+  - stat: 24
+    text: {fileID: 651204965}
+  - stat: 25
+    text: {fileID: 1477682690}
+  - stat: 26
+    text: {fileID: 2123570125}
+  - stat: 27
+    text: {fileID: 1294862815}
+  - stat: 28
+    text: {fileID: 1472451161}
+  - stat: 29
+    text: {fileID: 392749362}
+  - stat: 30
+    text: {fileID: 1219542308}
+  - stat: 31
+    text: {fileID: 820909928}
+  - stat: 32
+    text: {fileID: 333369979}
+  - stat: 33
+    text: {fileID: 1707023387}
+  - stat: 34
+    text: {fileID: 1068977852}
+  - stat: 35
+    text: {fileID: 808288509}
+  equipmentTexts:
+  - {fileID: 766948733}
+  - {fileID: 182717258}
+  - {fileID: 1132543165}
+  - {fileID: 1382090943}
+  - {fileID: 452634997}
+  - {fileID: 1347118557}
+  - {fileID: 1962063894}
+  - {fileID: 412176028}
+  - {fileID: 1322249284}
+  - {fileID: 1174247576}
+  - {fileID: 172947161}
+  - {fileID: 1824767145}
+  equipmentFields:
+  - slot: 10
+    text: {fileID: 766948733}
+  - slot: 11
+    text: {fileID: 182717258}
+  - slot: 12
+    text: {fileID: 1132543165}
+  - slot: 13
+    text: {fileID: 1382090943}
+  - slot: 14
+    text: {fileID: 452634997}
+  - slot: 15
+    text: {fileID: 1347118557}
+  - slot: 16
+    text: {fileID: 1962063894}
+  - slot: 17
+    text: {fileID: 412176028}
+  - slot: 18
+    text: {fileID: 1322249284}
+  setTexts:
+  - {fileID: 1174247576}
+  - {fileID: 172947161}
+  - {fileID: 1824767145}
 --- !u!1 &1654082218
 GameObject:
   m_ObjectHideFlags: 0
@@ -162898,38 +162964,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145719863}
   m_CullTransparentMesh: 1
---- !u!114 &2147000001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158290236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f6b08088ef43efa51093785eae8cb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownBattleNavigationController
-  titleController: {fileID: 2147000005}
-  stageSelectController: {fileID: 833063217}
-  battleSelectPanel: {fileID: 1898182178}
-  stageSelectPanel: {fileID: 833063215}
-  characterSelectPanel: {fileID: 797000001}
-  basicDescriptionPanel: {fileID: 1765971311}
-  monsterDescriptionPanel: {fileID: 502827523}
-  rewardDescriptionPanel: {fileID: 370600278}
-  questDescriptionPanel: {fileID: 989926049}
-  searchButtonRoot: {fileID: 1155836889}
-  attackButtonRoot: {fileID: 198884373}
-  defenseButtonRoot: {fileID: 23760956}
-  conquestButtonRoot: {fileID: 1721172603}
-  raidButtonRoot: {fileID: 263321578}
-  selectButtonRoot: {fileID: 1203108354}
-  backButtonRoot: {fileID: 1116524381}
-  basicButtonRoot: {fileID: 1956722660}
-  monsterButtonRoot: {fileID: 1664099029}
-  rewardButtonRoot: {fileID: 697342506}
-  questButtonRoot: {fileID: 13709612}
 --- !u!114 &2147000002
 MonoBehaviour:
   m_ObjectHideFlags: 0
