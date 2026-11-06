@@ -15,22 +15,22 @@ MonoBehaviour:
   characterName: "\uBA54\uC774\uD5F4"
   health:
     level1Value: 443
-    growthPerLevel: 110.78
+    growthPerLevel: 73.8
   mana:
-    level1Value: 81
-    growthPerLevel: 12.45
+    level1Value: 121
+    growthPerLevel: 20.2
   attack:
-    level1Value: 9
-    growthPerLevel: 8.43
+    level1Value: 8.2
+    growthPerLevel: 9
   magic:
-    level1Value: 2
-    growthPerLevel: 1.86
+    level1Value: 3.1
+    growthPerLevel: 3.3
   defense:
-    level1Value: 3
-    growthPerLevel: 0.43
+    level1Value: 5.2
+    growthPerLevel: 0.6
   resistance:
-    level1Value: 2.8
-    growthPerLevel: 0.47
+    level1Value: 4.3
+    growthPerLevel: 0.7
   attackSpeed:
     level1Value: 100
     growthPerLevel: 0
@@ -38,8 +38,8 @@ MonoBehaviour:
     level1Value: 100
     growthPerLevel: 0
   statusResistance:
-    level1Value: 4
-    growthPerLevel: 0.37
+    level1Value: 6
+    growthPerLevel: 0.4
   luck:
     level1Value: 100
     growthPerLevel: 0
