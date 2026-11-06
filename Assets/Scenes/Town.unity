@@ -3271,8 +3271,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 37586870}
-  - component: {fileID: 2147000006}
-  - component: {fileID: 2147000007}
   m_Layer: 5
   m_Name: StoragePanel
   m_TagString: Untagged
@@ -6517,6 +6515,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89729763}
   m_CullTransparentMesh: 1
+--- !u!1 &90729437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90729440}
+  - component: {fileID: 90729438}
+  - component: {fileID: 90729439}
+  m_Layer: 0
+  m_Name: Storage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &90729438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90729437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f26f0170ae4d3c8bd3487f3b10e622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownStorageNavigationController
+  panel: {fileID: 37586869}
+  titleController: {fileID: 2147000005}
+  storageList: {fileID: 90729439}
+  allButtonRoot: {fileID: 2090147612}
+  equipmentButtonRoot: {fileID: 108450168}
+  materialsButtonRoot: {fileID: 2049114932}
+  questButtonRoot: {fileID: 849066951}
+--- !u!114 &90729439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90729437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8275b2808549afbe6399f1828d114a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownStorageListView
+  registry: {fileID: 112602170}
+  scrollRect: {fileID: 1745309581}
+  content: {fileID: 273953231}
+  itemTemplate: {fileID: 1793708311}
+  authoredSamples:
+  - {fileID: 1436028009}
+--- !u!4 &90729440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90729437}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 739763656}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90817824
 GameObject:
   m_ObjectHideFlags: 0
@@ -56468,6 +56536,7 @@ Transform:
   - {fileID: 1189737313}
   - {fileID: 2137451644}
   - {fileID: 928119630}
+  - {fileID: 90729440}
   m_Father: {fileID: 1311012026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740101192
@@ -90007,6 +90076,7 @@ MonoBehaviour:
   panelControllers:
   - {fileID: 2137451643}
   - {fileID: 928119629}
+  - {fileID: 90729438}
 --- !u!1 &1192624116
 GameObject:
   m_ObjectHideFlags: 0
@@ -162841,42 +162911,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TownTitleController
   titleText: {fileID: 171765958}
---- !u!114 &2147000006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37586869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f26f0170ae4d3c8bd3487f3b10e622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownStorageNavigationController
-  titleController: {fileID: 2147000005}
-  storageList: {fileID: 2147000007}
-  allButtonRoot: {fileID: 2090147612}
-  equipmentButtonRoot: {fileID: 108450168}
-  materialsButtonRoot: {fileID: 2049114932}
-  questButtonRoot: {fileID: 849066951}
---- !u!114 &2147000007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37586869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e8275b2808549afbe6399f1828d114a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownStorageListView
-  registry: {fileID: 112602170}
-  scrollRect: {fileID: 1745309581}
-  content: {fileID: 273953231}
-  itemTemplate: {fileID: 1793708311}
-  authoredSamples:
-  - {fileID: 1436028009}
 --- !u!114 &2147100001
 MonoBehaviour:
   m_ObjectHideFlags: 0

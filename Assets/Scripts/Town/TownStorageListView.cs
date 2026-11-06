@@ -32,22 +32,33 @@ public sealed class TownStorageListView : MonoBehaviour
     private SharedInventory inventory;
     public int VisibleCount => entries.Count;
 
-    private void OnEnable() { inventory = InventorySession.Inventory; inventory.Changed += Refresh; Refresh(); }
-    private void OnDisable()
+    // Opened/closed by TownStorageNavigationController with the storage panel; this object itself stays active.
+    private bool isOpen;
+
+    public void Open()
     {
+        if (isOpen) return;
+        isOpen = true; inventory = InventorySession.Inventory; inventory.Changed += Refresh; Refresh();
+    }
+    public void Close()
+    {
+        if (!isOpen) return;
+        isOpen = false;
         if (inventory != null) inventory.Changed -= Refresh;
         foreach (var row in rows)
             if (row != null) { row.SetActive(false); Destroy(row); }
         rows.Clear(); entries.Clear(); SelectedDefinition = null;
     }
+    // The inventory outlives the scene, so never leave this view subscribed after destruction.
+    private void OnDestroy() { if (inventory != null) inventory.Changed -= Refresh; }
     public void Show(Category category)
     {
         CurrentCategory = category; SelectedDefinition = null;
-        if (isActiveAndEnabled) Refresh();
+        if (isOpen) Refresh();
     }
     public void Refresh()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         foreach (var sample in authoredSamples ?? Array.Empty<GameObject>())
             if (sample != null) sample.SetActive(false);
         entries.Clear();

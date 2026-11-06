@@ -80,6 +80,24 @@ public static class TownSystemRestructure
             Run(ResearchPanel, true);
     }
 
+    private static void StoragePanel(Context c)
+    {
+        MovePanelController<TownStorageNavigationController>(c, "Storage");
+        MovePanelView<TownStorageListView>(c, "Storage");
+    }
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3c - Storage Panel (Report)")]
+    public static void ReportStoragePanel() => Run(StoragePanel, false);
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3c - Storage Panel (Apply)")]
+    public static void ApplyStoragePanel()
+    {
+        if (EditorUtility.DisplayDialog("Town Restructure",
+                "Move TownStorageNavigationController and TownStorageListView to [System]/TownUI/Storage?\n\nRun Report first. The scene is not saved automatically.",
+                "Apply", "Cancel"))
+            Run(StoragePanel, true);
+    }
+
     private static void Run(Action<Context> step, bool apply)
     {
         if (EditorApplication.isPlaying) { Debug.LogError("[Town Restructure] Exit Play Mode first."); return; }
@@ -199,17 +217,7 @@ public static class TownSystemRestructure
         c.Changes++;
         if (!c.Apply) return;
 
-        Transform host = townUI != null ? townUI.Find(name) : null;
-        if (host == null)
-        {
-            var created = new GameObject(name);
-            Undo.RegisterCreatedObjectUndo(created, "Town Restructure");
-            Undo.SetTransformParent(created.transform, Group(c, "TownUI"), "Town Restructure");
-            created.transform.localPosition = Vector3.zero;
-            host = created.transform;
-        }
-
-        T copy = MoveTo(c, source, host.gameObject);
+        T copy = MoveTo(c, source, TownUIHost(c, name).gameObject);
         var copyObject = new SerializedObject(copy);
         copyObject.FindProperty("panel").objectReferenceValue = panel;
         copyObject.ApplyModifiedProperties();
@@ -219,6 +227,37 @@ public static class TownSystemRestructure
         controllers.InsertArrayElementAtIndex(controllers.arraySize);
         controllers.GetArrayElementAtIndex(controllers.arraySize - 1).objectReferenceValue = copy;
         menuObject.ApplyModifiedProperties();
+    }
+
+    // Views driven by a panel controller (no ITownPanel of their own) share that controller's host.
+    private static void MovePanelView<T>(Context c, string name) where T : MonoBehaviour
+    {
+        T source = FindSingle<T>(c);
+        if (source == null) return;
+        Transform townUI = c.System.Find("TownUI");
+        Transform host = townUI != null ? townUI.Find(name) : null;
+        if (host != null && source.transform == host)
+        {
+            c.Log.AppendLine($"  OK   {typeof(T).Name} on {PathOf(host)}");
+            return;
+        }
+
+        int incoming = CountReferences(c, source);
+        c.Log.AppendLine($"  MOVE {typeof(T).Name} {PathOf(source.transform)} -> {SystemRootName}/TownUI/{name} ({incoming} reference(s) retargeted)");
+        c.Changes++;
+        if (c.Apply) MoveTo(c, source, TownUIHost(c, name).gameObject);
+    }
+
+    private static Transform TownUIHost(Context c, string name)
+    {
+        Transform townUI = Group(c, "TownUI");
+        Transform host = townUI.Find(name);
+        if (host != null) return host;
+        var created = new GameObject(name);
+        Undo.RegisterCreatedObjectUndo(created, "Town Restructure");
+        Undo.SetTransformParent(created.transform, townUI, "Town Restructure");
+        created.transform.localPosition = Vector3.zero;
+        return created.transform;
     }
 
     private static T MoveTo<T>(Context c, T source, GameObject target) where T : MonoBehaviour
