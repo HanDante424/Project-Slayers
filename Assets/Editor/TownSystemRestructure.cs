@@ -66,6 +66,20 @@ public static class TownSystemRestructure
             Run(SettingsPanel, true);
     }
 
+    private static void ResearchPanel(Context c) => MovePanelController<TownResearchNavigationController>(c, "Research");
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3b - Research Panel (Report)")]
+    public static void ReportResearchPanel() => Run(ResearchPanel, false);
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3b - Research Panel (Apply)")]
+    public static void ApplyResearchPanel()
+    {
+        if (EditorUtility.DisplayDialog("Town Restructure",
+                "Move TownResearchNavigationController to [System]/TownUI/Research?\n\nRun Report first. The scene is not saved automatically.",
+                "Apply", "Cancel"))
+            Run(ResearchPanel, true);
+    }
+
     private static void Run(Action<Context> step, bool apply)
     {
         if (EditorApplication.isPlaying) { Debug.LogError("[Town Restructure] Exit Play Mode first."); return; }

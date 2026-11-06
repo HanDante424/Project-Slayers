@@ -56467,6 +56467,7 @@ Transform:
   m_Children:
   - {fileID: 1189737313}
   - {fileID: 2137451644}
+  - {fileID: 928119630}
   m_Father: {fileID: 1311012026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740101192
@@ -70708,6 +70709,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924352635}
   m_CullTransparentMesh: 1
+--- !u!1 &928119628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928119630}
+  - component: {fileID: 928119629}
+  m_Layer: 0
+  m_Name: Research
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &928119629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928119628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbba83a81304dddae0ef0c685bf3992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TownResearchNavigationController
+  panel: {fileID: 1447030877}
+  titleController: {fileID: 2147000005}
+  skillPanel: {fileID: 660130814}
+  skillButtonRoot: {fileID: 212338176}
+--- !u!4 &928119630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928119628}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 739763656}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929685118
 GameObject:
   m_ObjectHideFlags: 0
@@ -89957,6 +90006,7 @@ MonoBehaviour:
   optionButtonRoot: {fileID: 665295590}
   panelControllers:
   - {fileID: 2137451643}
+  - {fileID: 928119629}
 --- !u!1 &1192624116
 GameObject:
   m_ObjectHideFlags: 0
@@ -110423,7 +110473,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1447030878}
-  - component: {fileID: 2147000004}
   m_Layer: 5
   m_Name: ResearchPanel
   m_TagString: Untagged
@@ -162779,21 +162828,6 @@ MonoBehaviour:
   earringsButtonRoot: {fileID: 717169470}
   ringsButtonRoot: {fileID: 1431523529}
   badgeButtonRoot: {fileID: 1791752742}
---- !u!114 &2147000004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447030877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbbba83a81304dddae0ef0c685bf3992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TownResearchNavigationController
-  titleController: {fileID: 2147000005}
-  skillPanel: {fileID: 660130814}
-  skillButtonRoot: {fileID: 212338176}
 --- !u!114 &2147000005
 MonoBehaviour:
   m_ObjectHideFlags: 0
