@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class TownStorageNavigationController : MonoBehaviour
+public sealed class TownStorageNavigationController : MonoBehaviour, ITownPanel
 {
+    [SerializeField] private GameObject panel;
     [SerializeField] private TownTitleController titleController;
 
     [SerializeField] private TownStorageListView storageList;
@@ -18,21 +19,26 @@ public sealed class TownStorageNavigationController : MonoBehaviour
     private Button materialsButton;
     private Button questButton;
 
-    private void OnEnable()
+    public GameObject Panel => panel;
+
+    public void OnPanelShown()
     {
         allButton = TownButtonBinder.Bind(allButtonRoot, OpenAll, this);
         equipmentButton = TownButtonBinder.Bind(equipmentButtonRoot, OpenEquipment, this);
         materialsButton = TownButtonBinder.Bind(materialsButtonRoot, OpenMaterials, this);
         questButton = TownButtonBinder.Bind(questButtonRoot, OpenQuest, this);
+        storageList?.Open();
         OpenAll();
     }
 
-    private void OnDisable()
+    public void OnPanelHidden()
     {
         TownButtonBinder.Unbind(allButton, OpenAll);
         TownButtonBinder.Unbind(equipmentButton, OpenEquipment);
         TownButtonBinder.Unbind(materialsButton, OpenMaterials);
         TownButtonBinder.Unbind(questButton, OpenQuest);
+        allButton = equipmentButton = materialsButton = questButton = null;
+        storageList?.Close();
     }
 
     public void OpenAll()
