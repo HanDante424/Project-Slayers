@@ -98,6 +98,25 @@ public static class TownSystemRestructure
             Run(StoragePanel, true);
     }
 
+    private static void ShopPanel(Context c)
+    {
+        MovePanelController<TownShopNavigationController>(c, "Shop");
+        MovePanelView<TownBlacksmithCraftController>(c, "Shop", "uiRoot");
+        MovePanelView<TownDevShopController>(c, "Shop", "uiRoot");
+    }
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3d - Shop Panel (Report)")]
+    public static void ReportShopPanel() => Run(ShopPanel, false);
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3d - Shop Panel (Apply)")]
+    public static void ApplyShopPanel()
+    {
+        if (EditorUtility.DisplayDialog("Town Restructure",
+                "Move TownShopNavigationController, TownBlacksmithCraftController and TownDevShopController to [System]/TownUI/Shop?\n\nRun Report first. The scene is not saved automatically.",
+                "Apply", "Cancel"))
+            Run(ShopPanel, true);
+    }
+
     private static void Run(Action<Context> step, bool apply)
     {
         if (EditorApplication.isPlaying) { Debug.LogError("[Town Restructure] Exit Play Mode first."); return; }
@@ -230,7 +249,8 @@ public static class TownSystemRestructure
     }
 
     // Views driven by a panel controller (no ITownPanel of their own) share that controller's host.
-    private static void MovePanelView<T>(Context c, string name) where T : MonoBehaviour
+    // rootField, when given, receives the view's original host so it can still find its authored UI.
+    private static void MovePanelView<T>(Context c, string name, string rootField = null) where T : MonoBehaviour
     {
         T source = FindSingle<T>(c);
         if (source == null) return;
@@ -243,9 +263,17 @@ public static class TownSystemRestructure
         }
 
         int incoming = CountReferences(c, source);
-        c.Log.AppendLine($"  MOVE {typeof(T).Name} {PathOf(source.transform)} -> {SystemRootName}/TownUI/{name} ({incoming} reference(s) retargeted)");
+        Transform originalHost = source.transform;
+        c.Log.AppendLine($"  MOVE {typeof(T).Name} {PathOf(originalHost)} -> {SystemRootName}/TownUI/{name} ({incoming} reference(s) retargeted)");
+        if (rootField != null) c.Log.AppendLine($"       {rootField} = {PathOf(originalHost)}");
         c.Changes++;
-        if (c.Apply) MoveTo(c, source, TownUIHost(c, name).gameObject);
+        if (!c.Apply) return;
+
+        T copy = MoveTo(c, source, TownUIHost(c, name).gameObject);
+        if (rootField == null) return;
+        var copyObject = new SerializedObject(copy);
+        copyObject.FindProperty(rootField).objectReferenceValue = originalHost;
+        copyObject.ApplyModifiedProperties();
     }
 
     private static Transform TownUIHost(Context c, string name)

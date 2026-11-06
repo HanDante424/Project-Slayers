@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public sealed class TownShopNavigationController : MonoBehaviour
+public sealed class TownShopNavigationController : MonoBehaviour, ITownPanel
 {
     private enum ShopType
     {
@@ -18,6 +18,7 @@ public sealed class TownShopNavigationController : MonoBehaviour
         Enhance
     }
 
+    [SerializeField] private GameObject panel;
     [SerializeField] private TownTitleController titleController;
 
     [Header("Shop Screens")]
@@ -77,9 +78,13 @@ public sealed class TownShopNavigationController : MonoBehaviour
     private Button badgeButton;
     private ShopType currentShop;
     private BlackSmithFunction currentBlackSmithFunction;
+    private bool shown;
 
-    private void OnEnable()
+    public GameObject Panel => panel;
+
+    public void OnPanelShown()
     {
+        shown = true;
         generalExchangeButton = TownButtonBinder.Bind(generalExchangeButtonRoot, OpenGeneralExchange, this);
         blackMarketButton = TownButtonBinder.Bind(blackMarketButtonRoot, OpenBlackMarket, this);
         blackSmithButton = TownButtonBinder.Bind(blackSmithButtonRoot, OpenBlackSmith, this);
@@ -102,8 +107,10 @@ public sealed class TownShopNavigationController : MonoBehaviour
         OpenGeneralExchange();
     }
 
-    private void OnDisable()
+    public void OnPanelHidden()
     {
+        shown = false;
+        SyncSubViews();
         TownButtonBinder.Unbind(generalExchangeButton, OpenGeneralExchange);
         TownButtonBinder.Unbind(blackMarketButton, OpenBlackMarket);
         TownButtonBinder.Unbind(blackSmithButton, OpenBlackSmith);
@@ -122,6 +129,10 @@ public sealed class TownShopNavigationController : MonoBehaviour
         TownButtonBinder.Unbind(earringsButton, OpenEarrings);
         TownButtonBinder.Unbind(ringsButton, OpenRings);
         TownButtonBinder.Unbind(badgeButton, OpenBadge);
+        generalExchangeButton = blackMarketButton = blackSmithButton = devButton = null;
+        buyButton = sellButton = craftButton = enhanceButton = questButton = null;
+        beltButton = braceletButton = necklaceButton = glovesButton = hairAccessoryButton = null;
+        backAccessoryButton = earringsButton = ringsButton = badgeButton = null;
     }
 
     public void OpenGeneralExchange()
@@ -199,12 +210,14 @@ public sealed class TownShopNavigationController : MonoBehaviour
     {
         SetActive(blackSmithPartsPanel, true);
         SetActive(blackSmithMainPanel, false);
+        SyncSubViews();
     }
 
     public void OpenBlackSmithMain()
     {
         SetActive(blackSmithPartsPanel, false);
         SetActive(blackSmithMainPanel, true);
+        SyncSubViews();
     }
 
     public void OpenBelt() => OpenBlackSmithPart("벨트", EquipmentSlot.Belt);
@@ -234,6 +247,24 @@ public sealed class TownShopNavigationController : MonoBehaviour
         SetActive(blackMarketPanel, blackMarketPanel == targetPanel);
         SetActive(blackSmithPanel, blackSmithPanel == targetPanel);
         SetActive(devPanel, devPanel == targetPanel);
+        SyncSubViews();
+    }
+
+    // The blacksmith and dev views also live under [System]; each is open only while its authored screen is visible.
+    private void SyncSubViews()
+    {
+        bool blacksmithVisible = shown && blackSmithMainPanel != null && blackSmithMainPanel.activeInHierarchy;
+        bool devVisible = shown && devPanel != null && devPanel.activeInHierarchy;
+        if (blacksmithCraft != null)
+        {
+            if (blacksmithVisible) blacksmithCraft.Open();
+            else blacksmithCraft.Close();
+        }
+        if (devShop != null)
+        {
+            if (devVisible) devShop.Open();
+            else devShop.Close();
+        }
     }
 
     private void ShowRetailMenuButtons()

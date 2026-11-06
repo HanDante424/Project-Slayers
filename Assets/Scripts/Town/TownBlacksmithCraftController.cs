@@ -11,6 +11,8 @@ public sealed class TownBlacksmithCraftController : MonoBehaviour
     [SerializeField] private ItemEquipmentRegistry registry;
     [SerializeField] private IconRegistry iconRegistry;
     [SerializeField] private TownCraftingDataSource dataSource;
+    [Tooltip("Authored blacksmith screen. Opened/closed by TownShopNavigationController; this object itself stays active.")]
+    [SerializeField] private Transform uiRoot;
     [Header("Existing list and templates")]
     [SerializeField] private Transform itemContent;
     [SerializeField] private Transform itemTemplate;
@@ -52,11 +54,14 @@ public sealed class TownBlacksmithCraftController : MonoBehaviour
     public EquipmentData SelectedEquipment { get; private set; }
     public int Quantity { get; private set; } = 1;
     public bool IsCraftMode { get; private set; } = true;
+    private bool isOpen;
 
-    private void OnEnable()
+    public void Open()
     {
+        if (isOpen) return;
+        isOpen = true;
         // The authored full-panel frames sit above the quantity controls; they are decoration only.
-        foreach (var image in GetComponentsInChildren<Image>(true))
+        foreach (var image in (uiRoot != null ? uiRoot : transform).GetComponentsInChildren<Image>(true))
             if (image.name == "Frame" || image.name == "BackGround") image.raycastTarget = false;
         PreserveArrowVisual(increaseButton); PreserveArrowVisual(decreaseButton);
         Bind(increaseButton, Increase); Bind(decreaseButton, Decrease); Bind(resetButton, ResetQuantity);
@@ -69,22 +74,25 @@ public sealed class TownBlacksmithCraftController : MonoBehaviour
                     setButton.onClick.SetPersistentListenerState(i, UnityEngine.Events.UnityEventCallState.Off);
         Refresh();
     }
-    private void OnDisable()
+    public void Close()
     {
+        if (!isOpen) return;
+        isOpen = false;
         Unbind(increaseButton, Increase); Unbind(decreaseButton, Decrease); Unbind(resetButton, ResetQuantity);
         Unbind(craftButton, Craft); Unbind(setButton, OpenSetPopup); Unbind(popupCloseButton, CloseSetPopup);
         if (dataSource != null) dataSource.Changed -= RefreshRecipe;
         foreach (var rows in new[] { itemRows, statRows, materialRows, memberRows, effectRows }) Clear(rows);
         available.Clear(); SelectedEquipment = null; CloseSetPopup();
     }
+    private void OnDestroy() { if (dataSource != null) dataSource.Changed -= RefreshRecipe; }
     public void ShowSlot(EquipmentSlot slot, bool craftMode)
     {
         SelectedSlot = slot; IsCraftMode = craftMode; SelectedEquipment = null; Quantity = 1;
-        if (isActiveAndEnabled) Refresh();
+        if (isOpen) Refresh();
     }
     public void Refresh()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         foreach (var sample in authoredSamples ?? Array.Empty<GameObject>()) if (sample != null) sample.SetActive(false);
         CloseSetPopup(); available.Clear();
         if (IsCraftMode && registry != null)
@@ -145,7 +153,7 @@ public sealed class TownBlacksmithCraftController : MonoBehaviour
     }
     public void RefreshRecipe()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         var definition = SelectedEquipment;
         Text(quantityText, definition != null ? Quantity.ToString(CultureInfo.InvariantCulture) : "");
         Text(goldText, definition != null ? Number((long)definition.craftingGold * Quantity) : "");
