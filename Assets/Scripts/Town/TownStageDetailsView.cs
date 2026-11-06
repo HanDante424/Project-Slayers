@@ -34,10 +34,25 @@ public class TownStageDetailsView : MonoBehaviour
     private readonly List<DetailRow> enemyRows = new();
     private readonly List<DetailRow> dropRows = new();
 
+    // Opened/closed together with TownStageSelectController; this object itself stays active.
+    private bool isOpen;
+
+    public void Open() => isOpen = true;
+
+    public void Close()
+    {
+        if (!isOpen) return;
+        isOpen = false;
+        ClearRows(enemyRows);
+        ClearRows(dropRows);
+        ClearDetails();
+        selectedStage = null;
+    }
+
     public void ShowStage(MapData stage)
     {
         selectedStage = stage;
-        if (!isActiveAndEnabled)
+        if (!isOpen)
         {
             ClearRows(enemyRows);
             ClearRows(dropRows);
@@ -51,7 +66,7 @@ public class TownStageDetailsView : MonoBehaviour
 
     public void RefreshEnemies()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         ClearRows(enemyRows);
         if (enemyTemplate != null) enemyTemplate.gameObject.SetActive(false);
         SetText(enemyNameText, string.Empty);
@@ -79,7 +94,7 @@ public class TownStageDetailsView : MonoBehaviour
 
     public void RefreshRewards()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         ClearRows(dropRows);
         if (dropTemplate != null) dropTemplate.gameObject.SetActive(false);
         ClearDropDetails();
@@ -197,14 +212,6 @@ public class TownStageDetailsView : MonoBehaviour
         SetText(enemyNameText, string.Empty);
         SetThumbnail(enemyThumbnail, null);
         ClearDropDetails();
-    }
-
-    private void OnDisable()
-    {
-        ClearRows(enemyRows);
-        ClearRows(dropRows);
-        ClearDetails();
-        selectedStage = null;
     }
 
     private static void SetThumbnail(Image target, Sprite sprite)

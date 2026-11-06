@@ -42,6 +42,8 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
     public PlayableCharacterData SelectedCharacter => selected?.character;
     public MapData SelectedMap => selectedMap;
     public const int PreviewLevel = 1;
+    private TownBattleNavigationController Navigation =>
+        navigationController != null ? navigationController : GetComponent<TownBattleNavigationController>();
 
     private void Awake()
     {
@@ -68,6 +70,7 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
         if (map == null || stageManager == null || !stageManager.IsStageUnlocked(map)) return;
         selectedMap = map; loading = false;
         stagePanel.SetActive(false);
+        Navigation?.SyncStageSelect();
         characterPanel.SetActive(true);
         SelectMayhem();
         title?.SetTitle("캐릭터 선택");
@@ -123,8 +126,8 @@ public sealed class TownCombatCharacterSelectController : MonoBehaviour
     public void Back()
     {
         characterPanel.SetActive(false); stagePanel.SetActive(true);
-        var navigation = navigationController != null ? navigationController : GetComponent<TownBattleNavigationController>();
-        navigation?.OpenBasicDescription();
+        Navigation?.SyncStageSelect();
+        Navigation?.OpenBasicDescription();
         title?.SetTitle(selectedMap != null ? GetMapTitle(selectedMap.mapType) : "전투");
     }
     private static string GetMapTitle(MapType type) => type switch
