@@ -27,16 +27,23 @@ public sealed class TownCharacterSkillController : MonoBehaviour
     private InputActionAsset bindingPreview;
     public SkillData SelectedSkill { get; private set; }
 
-    private void OnEnable()
+    // Opened/closed by TownCharacterNavigationController with the skill screen; this object itself stays active.
+    private bool isOpen;
+
+    public void Open()
     {
+        if (isOpen) return;
+        isOpen = true;
         TownCharacterSelection.Changed += Refresh;
         if (characterStats != null) characterStats.Refreshed += Refresh;
         if (dataSource != null) dataSource.Changed += Refresh;
         if (keyBindingButton != null) keyBindingButton.onClick.AddListener(RequestBinding);
         Refresh();
     }
-    private void OnDisable()
+    public void Close()
     {
+        if (!isOpen) return;
+        isOpen = false;
         TownCharacterSelection.Changed -= Refresh;
         if (characterStats != null) characterStats.Refreshed -= Refresh;
         if (dataSource != null) dataSource.Changed -= Refresh;
@@ -45,6 +52,14 @@ public sealed class TownCharacterSkillController : MonoBehaviour
         if (bindingPreview != null) Destroy(bindingPreview);
         bindingPreview = null;
     }
+    // TownCharacterSelection is static and outlives the scene.
+    private void OnDestroy()
+    {
+        TownCharacterSelection.Changed -= Refresh;
+        if (characterStats != null) characterStats.Refreshed -= Refresh;
+        if (dataSource != null) dataSource.Changed -= Refresh;
+        if (bindingPreview != null) Destroy(bindingPreview);
+    }
     public static IReadOnlyList<SkillData> GetSkills(PlayableCharacterData character, SkillTier tier)
     {
         if (character == null) return Array.Empty<SkillData>();
@@ -52,7 +67,7 @@ public sealed class TownCharacterSkillController : MonoBehaviour
     }
     public void Refresh()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         var next = characterStats != null ? characterStats.CurrentCharacter : TownCharacterSelection.Character;
         bool changed = character != next; character = next;
         var previous = changed ? null : SelectedSkill;

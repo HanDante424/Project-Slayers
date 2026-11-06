@@ -43,9 +43,13 @@ public sealed class TownCharacterStatsController : MonoBehaviour
     private CharacterStats preview;
     private Button openDetailButton;
     private Button closeDetailButton;
+    // Opened/closed by TownCharacterNavigationController with the character panel; this object itself stays active.
+    private bool isOpen;
 
-    private void OnEnable()
+    public void Open()
     {
+        if (isOpen) return;
+        isOpen = true;
         TownCharacterSelection.Changed += RefreshCharacter;
         BindCharacterButton(mayhem, SelectMayhem);
         BindCharacterButton(ern, SelectErn);
@@ -63,8 +67,10 @@ public sealed class TownCharacterStatsController : MonoBehaviour
         RefreshCharacter();
     }
 
-    private void OnDisable()
+    public void Close()
     {
+        if (!isOpen) return;
+        isOpen = false;
         TownCharacterSelection.Changed -= RefreshCharacter;
         if (dataSource != null) dataSource.Changed -= RefreshCharacter;
         foreach (var pair in additionalListeners) TownButtonBinder.Unbind(pair.Key, pair.Value);
@@ -79,6 +85,9 @@ public sealed class TownCharacterStatsController : MonoBehaviour
 
     private void OnDestroy()
     {
+        // TownCharacterSelection is static and outlives the scene.
+        TownCharacterSelection.Changed -= RefreshCharacter;
+        if (dataSource != null) dataSource.Changed -= RefreshCharacter;
         if (detailView != null) detailView.Bind(null);
         if (overviewView != null) overviewView.Bind(null);
         elementOverview?.Bind(null);
@@ -150,7 +159,7 @@ public sealed class TownCharacterStatsController : MonoBehaviour
     private void SubscribeStats(CharacterStats stats)
     {
         if (subscribedStats != null) subscribedStats.StatsChanged -= OnStatsChanged;
-        subscribedStats = isActiveAndEnabled ? stats : null;
+        subscribedStats = isOpen ? stats : null;
         if (subscribedStats != null) subscribedStats.StatsChanged += OnStatsChanged;
     }
     private void OnStatsChanged()

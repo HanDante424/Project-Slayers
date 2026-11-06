@@ -138,6 +138,30 @@ public static class TownSystemRestructure
             Run(BattlePanel, true);
     }
 
+    // CharacterStatPanelView (x2) stays on its own widgets: it is a reusable display bound to that UI.
+    private static void CharacterPanel(Context c)
+    {
+        MovePanelController<TownCharacterNavigationController>(c, "Character");
+        MovePanelView<TownCharacterStatsController>(c, "Character");
+        MovePanelView<TownCharacterOverviewView>(c, "Character");
+        MovePanelView<TownCharacterEquipmentController>(c, "Character");
+        MovePanelView<TownCharacterSkillController>(c, "Character");
+        Link<TownCharacterNavigationController, TownCharacterSkillController>(c, "skillController");
+        Link<TownCharacterNavigationController, TownCharacterOverviewView>(c, "overviewView");
+    }
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3f - Character Panel (Report)")]
+    public static void ReportCharacterPanel() => Run(CharacterPanel, false);
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3f - Character Panel (Apply)")]
+    public static void ApplyCharacterPanel()
+    {
+        if (EditorUtility.DisplayDialog("Town Restructure",
+                "Move the character navigation, stats, overview, equipment and skill controllers to [System]/TownUI/Character?\n\nRun Report first. The scene is not saved automatically.",
+                "Apply", "Cancel"))
+            Run(CharacterPanel, true);
+    }
+
     private static void Run(Action<Context> step, bool apply)
     {
         if (EditorApplication.isPlaying) { Debug.LogError("[Town Restructure] Exit Play Mode first."); return; }
@@ -307,6 +331,27 @@ public static class TownSystemRestructure
         Undo.SetTransformParent(created.transform, townUI, "Town Restructure");
         created.transform.localPosition = Vector3.zero;
         return created.transform;
+    }
+
+    // Fills a reference field that a controller gained in code and the scene never had.
+    private static void Link<TOwner, TTarget>(Context c, string field) where TOwner : MonoBehaviour where TTarget : MonoBehaviour
+    {
+        TOwner owner = FindSingle<TOwner>(c);
+        TTarget target = FindSingle<TTarget>(c);
+        if (owner == null || target == null) return;
+        var ownerObject = new SerializedObject(owner);
+        SerializedProperty property = ownerObject.FindProperty(field);
+        if (property.objectReferenceValue == target)
+        {
+            c.Log.AppendLine($"  OK   {typeof(TOwner).Name}.{field}");
+            return;
+        }
+
+        c.Log.AppendLine($"  LINK {typeof(TOwner).Name}.{field} = {typeof(TTarget).Name}");
+        c.Changes++;
+        if (!c.Apply) return;
+        property.objectReferenceValue = target;
+        ownerObject.ApplyModifiedProperties();
     }
 
     private static T MoveTo<T>(Context c, T source, GameObject target) where T : MonoBehaviour

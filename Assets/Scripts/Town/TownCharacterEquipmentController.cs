@@ -34,8 +34,13 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
     private PlayableCharacterData CurrentCharacter => characterStats != null ? characterStats.CurrentCharacter : TownCharacterSelection.Character;
     private CharacterStats CurrentStats => characterStats != null ? characterStats.CurrentStats : null;
 
-    private void OnEnable()
+    // Opened/closed by TownCharacterNavigationController with the character panel; this object itself stays active.
+    private bool isOpen;
+
+    public void Open()
     {
+        if (isOpen) return;
+        isOpen = true;
         TownCharacterSelection.Changed += Refresh;
         if (characterStats != null) characterStats.Refreshed += Refresh;
         if (dataSource != null) dataSource.Changed += Refresh;
@@ -45,8 +50,10 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
         if (equippedView.setButton != null) equippedView.setButton.onClick.AddListener(OpenEquippedSet);
         Refresh();
     }
-    private void OnDisable()
+    public void Close()
     {
+        if (!isOpen) return;
+        isOpen = false;
         TownCharacterSelection.Changed -= Refresh;
         if (characterStats != null) characterStats.Refreshed -= Refresh;
         if (dataSource != null) dataSource.Changed -= Refresh;
@@ -56,9 +63,16 @@ public sealed class TownCharacterEquipmentController : MonoBehaviour
         if (equippedView.setButton != null) equippedView.setButton.onClick.RemoveListener(OpenEquippedSet);
         Clear(setRows); Clear(ownedRows); Clear(deltaRows); CloseSetPopup();
     }
+    // TownCharacterSelection is static and outlives the scene.
+    private void OnDestroy()
+    {
+        TownCharacterSelection.Changed -= Refresh;
+        if (characterStats != null) characterStats.Refreshed -= Refresh;
+        if (dataSource != null) dataSource.Changed -= Refresh;
+    }
     public void Refresh()
     {
-        if (!isActiveAndEnabled) return;
+        if (!isOpen) return;
         if (authoredSamples != null) foreach (var sample in authoredSamples) if (sample != null) sample.SetActive(false);
         if (placeholderTexts != null) foreach (var text in placeholderTexts) Text(text, "");
         if (CurrentCharacter != character) { character = CurrentCharacter; selected = null; CloseSetPopup(); }
