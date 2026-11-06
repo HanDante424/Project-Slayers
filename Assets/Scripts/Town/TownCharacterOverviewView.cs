@@ -29,12 +29,14 @@ public sealed class TownCharacterOverviewView : MonoBehaviour
         Subscribe();
         Refresh();
     }
-    private void OnEnable() { Subscribe(); Refresh(); }
-    private void OnDisable() => Unsubscribe();
+    // Opened/closed by TownCharacterNavigationController with the character panel; this object itself stays active.
+    private bool isOpen;
+    public void Open() { if (isOpen) return; isOpen = true; Subscribe(); Refresh(); }
+    public void Close() { isOpen = false; Unsubscribe(); }
     private void OnDestroy() => Unsubscribe();
     private void Subscribe()
     {
-        if (!isActiveAndEnabled || source == null || subscribedSource != null) return;
+        if (!isOpen || source == null || subscribedSource != null) return;
         subscribedSource = source; subscribedSource.StatsChanged += Refresh;
     }
     private void Unsubscribe()
