@@ -1,21 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class TownSettingsController : MonoBehaviour
+public sealed class TownSettingsController : MonoBehaviour, ITownPanel
 {
+    [SerializeField] private GameObject panel;
     [SerializeField] private TownTitleController titleController;
     [SerializeField] private Transform resetDataButtonRoot;
     private Button resetDataButton;
 
-    private void OnEnable()
+    public GameObject Panel => panel;
+
+    public void OnPanelShown()
     {
         resetDataButton = TownButtonBinder.Bind(resetDataButtonRoot, ResetInventory, this);
         titleController?.SetTitle("설정");
     }
 
-    private void OnDisable()
+    public void OnPanelHidden()
     {
         TownButtonBinder.Unbind(resetDataButton, ResetInventory);
+        resetDataButton = null;
     }
 
     public void ResetInventory()

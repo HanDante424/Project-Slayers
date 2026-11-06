@@ -51,6 +51,21 @@ public static class TownSystemRestructure
             Run(SystemGroups, true);
     }
 
+    // Step 3: panel controllers move to [System]/TownUI/<name> and are registered with TownMenuController.
+    private static void SettingsPanel(Context c) => MovePanelController<TownSettingsController>(c, "Settings");
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3a - Settings Panel (Report)")]
+    public static void ReportSettingsPanel() => Run(SettingsPanel, false);
+
+    [MenuItem("Tools/Slayers/Town Restructure/Step 3a - Settings Panel (Apply)")]
+    public static void ApplySettingsPanel()
+    {
+        if (EditorUtility.DisplayDialog("Town Restructure",
+                "Move TownSettingsController to [System]/TownUI/Settings?\n\nRun Report first. The scene is not saved automatically.",
+                "Apply", "Cancel"))
+            Run(SettingsPanel, true);
+    }
+
     private static void Run(Action<Context> step, bool apply)
     {
         if (EditorApplication.isPlaying) { Debug.LogError("[Town Restructure] Exit Play Mode first."); return; }
@@ -135,16 +150,73 @@ public static class TownSystemRestructure
         int incoming = CountReferences(c, source);
         c.Log.AppendLine($"  MOVE {typeof(T).Name} {PathOf(source.transform)} -> {SystemRootName}/{groupName} ({incoming} reference(s) retargeted)");
         c.Changes++;
+        if (c.Apply) MoveTo(c, source, Group(c, groupName).gameObject);
+    }
+
+    private static void MovePanelController<T>(Context c, string name) where T : MonoBehaviour, ITownPanel
+    {
+        T source = FindSingle<T>(c);
+        TownMenuController menu = FindSingle<TownMenuController>(c);
+        if (source == null || menu == null) return;
+
+        Transform townUI = c.System.Find("TownUI");
+        if (townUI != null && source.transform.parent == townUI)
+        {
+            c.Log.AppendLine($"  OK   {typeof(T).Name} on {PathOf(source.transform)}");
+            return;
+        }
+
+        // The panel is the TownMenuController panel that contains the controller's current host.
+        GameObject panel = null;
+        var menuObject = new SerializedObject(menu);
+        foreach (string field in new[] { "battlePanel", "characterPanel", "shopPanel", "researchPanel", "storagePanel", "optionPanel" })
+            if (menuObject.FindProperty(field).objectReferenceValue is GameObject candidate &&
+                source.transform.IsChildOf(candidate.transform))
+                panel = candidate;
+        if (panel == null)
+        {
+            c.Log.AppendLine($"  SKIP {typeof(T).Name}: {PathOf(source.transform)} is not inside a TownMenuController panel.");
+            return;
+        }
+
+        int incoming = CountReferences(c, source);
+        c.Log.AppendLine($"  MOVE {typeof(T).Name} {PathOf(source.transform)} -> {SystemRootName}/TownUI/{name} ({incoming} reference(s) retargeted)");
+        c.Log.AppendLine($"       panel = {PathOf(panel.transform)}, registered in TownMenuController.panelControllers");
+        c.Changes++;
         if (!c.Apply) return;
 
-        group = Group(c, groupName);
-        T copy = Undo.AddComponent<T>(group.gameObject);
+        Transform host = townUI != null ? townUI.Find(name) : null;
+        if (host == null)
+        {
+            var created = new GameObject(name);
+            Undo.RegisterCreatedObjectUndo(created, "Town Restructure");
+            Undo.SetTransformParent(created.transform, Group(c, "TownUI"), "Town Restructure");
+            created.transform.localPosition = Vector3.zero;
+            host = created.transform;
+        }
+
+        T copy = MoveTo(c, source, host.gameObject);
+        var copyObject = new SerializedObject(copy);
+        copyObject.FindProperty("panel").objectReferenceValue = panel;
+        copyObject.ApplyModifiedProperties();
+
+        menuObject.Update();
+        SerializedProperty controllers = menuObject.FindProperty("panelControllers");
+        controllers.InsertArrayElementAtIndex(controllers.arraySize);
+        controllers.GetArrayElementAtIndex(controllers.arraySize - 1).objectReferenceValue = copy;
+        menuObject.ApplyModifiedProperties();
+    }
+
+    private static T MoveTo<T>(Context c, T source, GameObject target) where T : MonoBehaviour
+    {
+        T copy = Undo.AddComponent<T>(target);
         ComponentUtility.CopyComponent(source);
         ComponentUtility.PasteComponentValues(copy);
         Retarget(c, source, copy);
         c.Behaviours.Remove(source);
         c.Behaviours.Add(copy);
         Undo.DestroyObjectImmediate(source);
+        return copy;
     }
 
     private static int CountReferences(Context c, Object target)
