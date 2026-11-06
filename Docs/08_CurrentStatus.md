@@ -1,7 +1,7 @@
 # Project Slayers - Current Status
 
 상태: 현재 활성 구현 현황  
-기준: GitHub `main` 커밋 `dd29f44` (2026-10-26), 2026-10-31 소스 정적 검토  
+기준: GitHub `main` 커밋 `f9d2f30` (2026-11-06, Town 구조 정리 병합 후), 소스·씬 정적 검토  
 용도: 무엇이 구현되어 있고 무엇이 비어 있는지에 대한 단일 기준. `05_DevelopmentRestartPlan.md`를 대체한다.
 
 이 문서는 구현 현황만 기록한다. 게임 디자인·수치의 기준은 `01`~`07` 문서다.
@@ -27,6 +27,32 @@
 - 전투 진입 캐릭터 선택
 - 개발용 상점 (`06` 문서)
 - 옵션: 세션 데이터 초기화 (`06` 문서)
+
+### Town 씬 구조 (2026-11-06 정리, PR #5~#12)
+
+```
+[System]
+├ Managers   StageManager, SceneLoader, InputBindingManager
+├ Data       ItemEquipmentRegistry (+ InventoryCharacterDataSource, InventoryCraftingDataSource), Icon, Character(CharacterStats)
+├ TownUI
+│ ├ TownMenuController   Panel Controllers 목록 (6개)
+│ ├ Settings             TownSettingsController
+│ ├ Research             TownResearchNavigationController
+│ ├ Storage              TownStorageNavigationController, TownStorageListView
+│ ├ Shop                 TownShopNavigationController, TownBlacksmithCraftController, TownDevShopController
+│ ├ Battle               TownBattleNavigationController, TownStageSelectController, TownStageDetailsView, TownCombatCharacterSelectController
+│ └ Character            TownCharacterNavigationController, Stats, Overview, Equipment, Skill
+└ Debug      TownTestMenu
+```
+
+규칙:
+
+- 패널 컨트롤러는 `ITownPanel`(`Panel`, `OnPanelShown`, `OnPanelHidden`)을 구현하고 `TownMenuController.panelControllers`에 등록한다. `[System]`은 항상 켜져 있으므로 패널 열림/닫힘을 `OnEnable`/`OnDisable`에 의존하지 않는다.
+- 패널 안의 하위 화면에 묶인 뷰(대장간, 개발 상점, 스테이지 선택/상세, 스킬 등)는 `Open()`/`Close()`와 `isOpen`을 가지며, 소유 패널 컨트롤러가 하위 화면이 보일 때만 연다.
+- 자기 자식 UI를 검색하던 뷰는 `uiRoot` 참조로 원래 화면을 가리킨다.
+- 씬보다 오래 사는 이벤트(`InventorySession`, `TownCharacterSelection` 등) 구독은 `OnDestroy`에서도 해제한다.
+- `Canvas`에는 UI 위젯 성격의 스크립트만 남긴다: `TownTitleController`(Canvas/Title), `CharacterStatPanelView` ×2, `RotatedFitToParent`.
+- 새 Town 패널을 추가하거나 옮길 때는 `Assets/Editor/TownSystemRestructure.cs`의 단계 패턴(Report/Apply)을 사용할 수 있다.
 
 ### 캐릭터 스탯
 
@@ -67,6 +93,11 @@
 - Verify Equipment Inventory
 - Verify Search Combat
 - Verify Camera Bounds
+- Town Cleanup / Town Restructure (Report·Apply): Town 씬 구조 정리용 일회성 도구
+
+알려진 기존 실패:
+
+- `Verify Character Entry`의 "Selected character matches reference viewport framing" 검사는 2026-10-20 카메라 연출 변경(캐릭터 위치 30%/70%) 이후 기대값 19%가 갱신되지 않아 실패한다. 이 검사에서 멈추므로 그 뒤의 전투 쪽 검사는 실행되지 않는다. 사용자 결정으로 현재는 그대로 둔다(2026-11-06).
 
 ---
 
@@ -100,11 +131,12 @@
 
 ### 코드 반영이 필요한 항목
 
-- `AttackHitbox`의 `Mathf.RoundToInt`를 확정 규칙(버림)에 맞게 수정해야 한다.
+- ~~`AttackHitbox`의 `Mathf.RoundToInt`를 확정 규칙(버림)에 맞게 수정~~ → 완료 (PR #3, `Mathf.FloorToInt`)
 - `MayhemStats.asset`의 체력·마나·공격력·마력·방어력·저항력·상태이상 저항력 값이 기준 시트(`02` 12절)와 다르다.
   - 체력 성장 110.78 → 73.8, 마나 81 / 12.45 → 121 / 20.2, 공격력 9 / 8.43 → 8.2 / 9, 마력 2 / 1.86 → 3.1 / 3.3,
     방어력 3 / 0.43 → 5.2 / 0.6, 저항력 2.8 / 0.47 → 4.3 / 0.7, 상태이상 저항력 4 / 0.37 → 6 / 0.4
   - 나머지 스탯과 속성 저항은 시트와 일치한다.
+  - PR #4에서 반영 대기 중.
 
 ### [CHECK] 남은 결정
 
