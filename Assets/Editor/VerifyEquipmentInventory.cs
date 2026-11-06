@@ -368,7 +368,7 @@ public sealed class EquipmentInventoryVerification : MonoBehaviour
             option.onClick.GetPersistentMethodName(0) == nameof(TownMenuController.OpenOption), "Settings has exactly one persistent OpenOption event");
         yield return new WaitForEndOfFrame(); Clickable(option); Click(option);
         var settings = FindFirstObjectByType<TownSettingsController>();
-        Check(settings != null && settings.isActiveAndEnabled && !((GameObject)Read(menu, "battlePanel")).activeSelf, "Settings button opens authored panel, not battle");
+        Check(settings != null && settings.Panel != null && settings.Panel.activeInHierarchy && !((GameObject)Read(menu, "battlePanel")).activeSelf, "Settings button opens authored panel, not battle");
         title = (TownTitleController)Read(settings, "titleController");
         Check(((TMPro.TMP_Text)Read(title, "titleText")).text == "설정", "Settings title");
         for (int i = 0; i < 3; i++) { menu.OpenStorage(); Click(option); }
@@ -391,7 +391,7 @@ public sealed class EquipmentInventoryVerification : MonoBehaviour
             Check(gameSession.Data.testCurrency == 0 && gameSession.Data.testSkillUnlocked == savedUnlocked &&
                 gameSession.Data.stage1Cleared == savedCleared && gameSession.Data.controlBindingsJson == savedBindings, "Reset only clears legacy currency, preserves other game data");
         Click(resetButton);
-        Check(settings.isActiveAndEnabled && inventory.Equipment.Count == 0, "Empty reset is safe and stays on settings");
+        Check(settings.Panel.activeInHierarchy && inventory.Equipment.Count == 0, "Empty reset is safe and stays on settings");
         menu.OpenStorage();
         Check(FindFirstObjectByType<TownStorageListView>().VisibleCount == 0, "Storage refreshes empty after reset");
     }

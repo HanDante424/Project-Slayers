@@ -20,6 +20,11 @@ public class TownMenuController : MonoBehaviour
     [SerializeField] private Transform storageButtonRoot;
     [SerializeField] private Transform optionButtonRoot;
 
+    [Header("Panel Controllers")]
+    [Tooltip("ITownPanel controllers under [System]/TownUI. Each is notified when its Panel opens or closes.")]
+    [SerializeField] private MonoBehaviour[] panelControllers = new MonoBehaviour[0];
+
+    private GameObject currentPanel;
     private Button battleButton;
     private Button characterButton;
     private Button shopButton;
@@ -43,8 +48,16 @@ public class TownMenuController : MonoBehaviour
         OpenBattle();
     }
 
+    private void OnValidate()
+    {
+        foreach (MonoBehaviour behaviour in panelControllers)
+            if (behaviour != null && behaviour is not ITownPanel)
+                Debug.LogWarning($"[Town] {behaviour.GetType().Name} does not implement ITownPanel.", this);
+    }
+
     private void OnDestroy()
     {
+        NotifyPanelControllers(currentPanel, null);
         TownButtonBinder.Unbind(battleButton, OpenBattle);
         TownButtonBinder.Unbind(characterButton, OpenCharacter);
         TownButtonBinder.Unbind(shopButton, OpenShop);
@@ -106,6 +119,27 @@ public class TownMenuController : MonoBehaviour
 
         if (optionPanel != null)
             optionPanel.SetActive(optionPanel == targetPanel);
+
+        GameObject previousPanel = currentPanel;
+        currentPanel = targetPanel;
+        NotifyPanelControllers(previousPanel, targetPanel);
+    }
+
+    // Mirrors OnEnable/OnDisable: only an actual panel change notifies, reopening the same panel does not.
+    private void NotifyPanelControllers(GameObject hiddenPanel, GameObject shownPanel)
+    {
+        if (hiddenPanel == shownPanel)
+            return;
+
+        foreach (MonoBehaviour behaviour in panelControllers)
+        {
+            if (behaviour == null || behaviour is not ITownPanel controller || controller.Panel == null)
+                continue;
+            if (controller.Panel == hiddenPanel)
+                controller.OnPanelHidden();
+            if (controller.Panel == shownPanel)
+                controller.OnPanelShown();
+        }
     }
 }
 
